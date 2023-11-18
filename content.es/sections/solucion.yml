@@ -1,0 +1,27 @@
+id: solucion
+title: ¡La Solución!
+subtitle: ¡Nosotros te ayudamos!
+icon: life-ring
+more:
+  menu: Solución
+rows:
+- type: columns
+  design:
+    num: 2
+    align: left
+    align_y: center
+  items:
+  - image: solucion.svg
+  - description: |
+      Olvídate de ~~Wordpress~~. \
+      Hemos desarrollado un [sistema propio](#sansoul) enfocado en:
+
+      - icon-bullseye-pointer **Diseño Efectivo**
+      - icon-magnifying-glass **SEO / Visibilidad**
+      - icon-rocket-launch **Aumentar tus Ventas**
+      - icon-piggy-bank **Ahorrarte Tiempo, Dinero y Preocupaciones**
+
+      ¿Te parece muy loco? ¡Pues sigue leyendo y flipa! 🤩
+      {.subtitle}
+
+      [btn icon-circle-check Características](#caracteristicas)

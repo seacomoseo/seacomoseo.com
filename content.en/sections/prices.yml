@@ -1,0 +1,74 @@
+id: prices
+title: Prices
+subtitle: Options for all tastes
+icon: tags
+more:
+  icon_type: bottom
+rows:
+- type: columns
+  design:
+    num: 3
+    color: white
+    link: /presupuesto/
+    label: Budget
+    licon: calculator
+    slider: true
+  items:
+  - title: Complete Website
+    price: '**Since** 700 €'
+    link: /presupuesto/#budget_WyIiLDEsMCwwLDAsMCwwLDAsMSwwLDAsMSwwLDEsMSwiNCIsIjEiLCIwIl0=
+    icon: user-astronaut
+    description: |
+      - icon-xmark Up to 10 sections
+      - icon-check Effective and adapted design
+      - icon-check **Free hosting** (save €/€/year)
+      - icon-check Initial visibility impulse on Google
+      - icon-bolt Maximum 2 weeks of delivery
+
+      icon-star<br>SERVICE<br>OUTSTANDING
+      {.offer}
+  - title: Basic website
+    price: '**Since** 300 €'
+    order: -1
+    link: /presupuesto/#budget_WyIiLDEsMCwwLDAsMCwwLDAsMSwwLDAsMSwwLDEsMSwiMCIsIjEiLCIwIl0=
+    icon: user-helmet-safety
+    description: |
+      - icon-xmark Only 3 sections: header, services and contact
+      - icon-check **Free hosting** (save €/€/year)
+      - icon-check Initial visibility impulse on Google
+      - icon-bolt Maximum 2 weeks of delivery
+  - title: Online Store
+    subtitle: Website with eCommerce functionalities
+    price: '**Since** 900 €'
+    link: /presupuesto/#budget_WyIiLDEsMCwwLDAsMCwxLDEsMCwxLDAsMSwwLDEsMSwiNCIsIjEiLCIwIl0=
+    icon: cart-shopping
+    description: |
+      - icon-check Same pros that "complete web"
+      - icon-check Product catalog
+      - icon-check Variations, categories, labels, brands, filters...
+      - icon-check Purchase cart and payment catwalk
+      - icon-circle-question User Registration <br> + rest of functionalities
+  - title: SEO
+    price: '**Since** 800 € <br> **+** 100 €/month'
+    link: /presupuesto/#budget_WyIiLDEsMSwwLDAsMCwwLDAsMCwxLDAsMSwwLDAsMCwiNCIsIjEiLCIwIl0=
+    icon: searchengin
+    description: |
+      - icon-circle-info Ideal for **receive long - term traffic** with high or moderate competition
+      - icon-check Keyword study <br> + adapt content
+      - icon-check Design + implement strategy
+      - icon-check Linkbuilding
+  - title: SEM
+    price: '**Since** 300 €<br>**+ Investment in Google**'
+    link: /presupuesto/#budget_WyIiLDAsMCwxLDAsMCwwLDEsMCwxLDAsMSwwLDEsMCwiNCIsIjEiLCIwIl0=
+    icon: rocket-launch
+    description: |
+      - icon-circle-info Ideal for **receive traffic instantly**
+      - icon-check Keyword study <br> + adapt content
+      - icon-check Google Ads advertising campaign
+  - title: Multi Language
+    price: 15 % **of the total**
+    icon: language
+    description: |
+      - icon-check For each additional language to the main
+      - icon-check Options of different domains, subdomains and directories
+      - icon-check Developed and optimized for web positioning (SEO)

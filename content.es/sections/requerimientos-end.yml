@@ -1,0 +1,8 @@
+id: body
+description: |
+  ---
+  Eso es todo, cualquier duda [nos contactas](/#contacto).
+more:
+  align: center
+  flip_x: true
+  divider: arrow-side-rounded

@@ -1,0 +1,79 @@
+id: features
+title: Features
+subtitle: You're going to save a lot of time, money and concerns
+icon: circle-check
+more:
+  icon_type: bottom
+rows:
+- type: columns
+  design:
+    num: 3
+  items:
+  - title: Speed
+    icon: gauge-max
+    description: |
+      Your website can be ready between 2 days and 2 weeks since you facilitate all the content.
+  - title: Affordable Prices
+    icon: tags
+    description: |
+      The price is incredible, and even more for the quality of the service. Compare and salt of doubts!
+  - title: Free Hosting
+    icon: piggy-bank
+    description: |
+      We house your site through high quality Freemium services, saving € 100/year.
+  - title: Without Maintenance
+    icon: wrench
+    description: |
+      It is not necessary to recurrently update the system, neither its themes nor plugins, as with WordPress.
+  - title: Security
+    icon: lock
+    description: |
+      Lacking databases there are almost no possibilities for hackeos. It is not necessary to install plugins or safety configurations.
+  - title: Self-Managed
+    icon: pen-to-square
+    description: |
+      It incorporates a simple content manager (CMS) to use, you will not depend on technicians to edit or add content.
+- type: columns
+  items:
+  - subtitle: ¡La calidad por bandera!
+- type: columns
+  design:
+    num: 3
+  items:
+  - title: SEO OnPage
+    icon: searchengin
+    description: |
+      Have I told you that I am a specialist in web positioning OnPage? Well, I have based the development of that!
+  - title: Speed
+    icon: stopwatch
+    description: |
+      Being an optimized system for SEO and preparses the pages, the load speed is unbeatable.
+  - title: Design and Usability
+    icon: pen-ruler
+    description: |
+      Check the [portfolio] (#Portfolio) to judge yourself the design and user experience when navigating the websites with this system.
+- type: columns
+  items:
+  - subtitle: It also characterizes me a personal and human side
+- type: columns
+  design:
+    num: 3
+  items:
+  - title: Honesty
+    icon: heart
+    description: |
+      My priority is that we both won, so if I am aware that something is not interested, I will let you know.
+  - title: Clarity
+    icon: sun
+    description: |
+      I make my greatest effort to tell you things as they are, without saturating you with technicalities (unless you are interested).
+  - title: Adaptability
+    icon: people-arrows-left-right
+    description: |
+      I adapt to your needs with pleasure; For example, attention is personalized and can be in writing, audios, called, video call ... how do you prefer!
+- type: columns
+  items:
+  - link: '#compatibility'
+    label: Compatibility
+    more:
+      licon: heart-pulse

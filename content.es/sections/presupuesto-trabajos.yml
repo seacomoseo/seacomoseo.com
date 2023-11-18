@@ -1,0 +1,51 @@
+id: trabajos-posicionamiento
+title: Trabajos de Posicionamiento
+subtitle: Lista de acciones de optimización que realizamos
+icon: searchengin
+description: |
+  #### Diseñar e Implementar Estrategia
+
+  - **Información del cliente** sobre necesidades, segmentación y competencia
+    - Auditoría Técnica
+    - Indexación en Google
+    - Rastreo con Screaming Frog
+  - **Estudio de Palabras Clave** (KW)
+    - Investigación y propuesta de KW
+    - Análisis de patrones y agrupación de KW
+    - Propuesta de estructura de contenidos
+  - **Adaptar contenido** a la propuesta
+    - Optimizar URLs a indexar + 301
+    - Titles, Metadescriptions y Encabezados
+    - Añadir KW en textos y enlaces
+  - **Optimizar ficha/s de Empresa de Google** (Gmaps)
+
+  #### Optimizaciones Técnicas
+
+  - **Analítica**
+    - Dar de alta el sitio web en Google Analytics y Google Search Console (SC)
+    - Sincronizar ambos servicios y realizar acciones básicas de optimización
+  - **Rastreo e Indexación**
+    - Metaetiqueta robots noindex en páginas y taxonomías irrelevantes
+    - Metaetiquetas canonical, hreflang, etc.
+    - Quitar enlaces innecesarios + posibles 301
+    - Corregir enlaces que llevan a 404, 301 o canonicals
+    - Ofuscación de enlaces
+    - Crear y optimizar archivo robots.txt y sitemap XML y enviar a SC
+    - Recopilar URLs (SERPs, SC, Sitemap XML, BBDD, rastreador)
+    - 301 en URLs antiguas, irrelevantes y con errores 404 (+ enviar a SC)
+  - **Semántica**
+    - Marcado de datos estructurados
+    - Limpieza de código y formateado de encabezados (+jerarquía), listas, citas...
+    - Atributo ALT en imágenes
+  - **Velocidad de Carga**
+    - Caché de navegador
+    - Compresión Gzip
+    - Minificar y combinar CSS y JS
+    - Ordenar cargas de JS
+    - Lazyload en imágenes y vídeos
+    - Convertir imágenes en adaptables
+    - Comprimir y redimensionar imágenes
+
+  #### Popularidad
+
+  - Linkbuilding

@@ -1,0 +1,58 @@
+id: problema
+title: El Problema
+subtitle: ¿Cuál es tu caso?
+icon: triangle-exclamation
+more:
+  menu: Problema
+rows:
+- type: columns
+  design:
+    num: 3
+    color: white
+    link: '#solucion'
+    label: ¡La Solución!
+    licon: life-ring
+    inset: true
+    slider: true
+  items:
+  - title: Emprendedor<br>**Abrumado**
+    subtitle: que necesita
+    image: web-nueva.jpg
+    icon: play
+    description: |
+      **Nuevo**<br>Sitio Web
+      {.h4 .underline}
+
+      "No tengo tiempo de aprender de webs"
+      {.subtitle}
+
+      - ¿Quieres ahorrarte historias?
+      - ¿Te importa el diseño y el SEO pero no te lo puedes permitir?
+      - ¿Te dan fechas muy lejanas?
+  - title: Empresa<br>**Desactualizada**
+    subtitle: que necesita
+    image: web-renovar.jpg
+    icon: recycle
+    description: |
+      **Renovar**<br>Sitio Web
+      {.h4 .underline}
+
+      "Quiero actualizar, pero meh"
+      {.subtitle}
+
+      - ¿Te gustaría modernizar tu web?
+      - ¿Quieres mejorar el SEO o posicionamiento orgánico?
+      - ¿Tardan mucho en atenderte?
+  - title: Agencia<br>**Sobrepasada**
+    subtitle: que necesita
+    image: web-externalizar.jpg
+    icon: triangle-person-digging
+    description: |
+      **Externalizar**<br>(Outsourcing)
+      {.h4 .underline}
+
+      "Necesito externalizar o no llego a todo"
+      {.subtitle}
+
+      - ¿Ofreces un servicio integral pero no das a basto con el Diseño Web?
+      - ¿Quieres ofrecer nuestros servicios a tus clientes?

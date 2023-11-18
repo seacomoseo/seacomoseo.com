@@ -1,0 +1,20 @@
+id: domain
+title: Domain
+description: |
+  It is the only thing you really need to pay recurrently, and usually around € 12/year (depending on the extension and registrar).
+
+  You can hire it with any domain registrar, but if you still didn't, my recommendation is [dondominio.com](https://www.dondominio.com) along with [personalized email](https://www.dondominio.com/products/email/).
+
+  #### Access to domain management
+
+  I need user (and/or email) + Administration panel access password.
+
+  If you registered the domain with [dondominio.com](https://www.dondominio.com), you can generate an administrator user to avoid passing your own data: `Domain management ➡️ External access ➡️ Create new user` ➡️ and facilitate the Used name and password (with this I can access myself from [Panel 24/7](https://manage.panel247.com/) and even manage emails).
+
+  #### Personalized email
+
+  With this I mean an email of the type: [example@mydomain.com](mailto:example@mydomain.com)
+
+  It is not a necessity, but does not give a professional image to promote itself with a Gmail or Hotmail account (or any other other than your domain).
+
+  The [mini domain](https://www.dondominio.com/products/email/mini/) option costs only 1 €/year for 5 email accounts. It can be easily configured to manage everything from a gmail account (in addition you avoid the limitation of space) with [this tutorial](https://blog.dondominio.com/configurar-cuenta-de-correo-personalizada-en-gmail/). To be able to hire this option, you must have registered the domain with them; if this is not the case, you can make a migration.

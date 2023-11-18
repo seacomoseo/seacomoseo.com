@@ -1,0 +1,90 @@
+id: precios
+title: Precios
+subtitle: Opciones para todos los gustos
+icon: tags
+rows:
+- type: columns
+  design:
+    num: 3
+    uppercase: true
+    underline: true
+    color: white
+    link: /presupuesto/
+    label: Presupuesto
+    licon: calculator
+    slider: true
+  items:
+  - title: Web Completa
+    subtitle: Tu mejor carta de presentación
+    price: '**Desde** 770 €'
+    link: /presupuesto/#budget_WyIiLDEsMCwwLCI0IiwiMCIsIjEiLDAsMCwxLDAsMCwwLDAsMSwwLDEsMV0=
+    icon: user-astronaut
+    description: |
+      - icon-check Desde 6 secciones
+      - icon-check Diseño efectivo y adaptado
+      - icon-check **Hosting Gratuito** (ahorra ~100€/año)
+      - icon-check Impulso inicial de visibilidad en Google
+      - icon-bolt Máximo 2 semanas de entrega
+
+      icon-star<br>SERVICIO<br>DESTACADO
+      {.offer .uppercase}
+  - title: Web Básica
+    subtitle: Una escueta carta de presentación
+    price: 330 €
+    order: -1
+    link: /presupuesto/#budget_WyIiLDEsMCwwLCIwIiwiMCIsIjEiLDAsMCwxLDAsMCwwLDAsMSwwLDEsMV0=
+    icon: user-helmet-safety
+    description: |
+      - icon-xmark Hasta 3 secciones
+      - icon-check Diseño efectivo y adaptado
+      - icon-check **Hosting Gratuito** (ahorra ~100€/año)
+      - icon-check Impulso inicial de visibilidad en Google
+      - icon-bolt Máximo 2 semanas de entrega
+  - title: Tienda Online
+    subtitle: Web con funcionalidades eCommerce
+    price: '**Desde** 990 €'
+    link: /presupuesto/#budget_WyIiLDEsMCwwLCI0IiwiMCIsIjEiLDEsMSwwLDEsMCwwLDAsMSwwLDEsMV0=
+    icon: cart-shopping
+    description: |
+      - icon-check Mismos pros que "Web Completa"
+      - icon-check Catálogo de productos
+      - icon-check Variaciones, categorías, etiquetas, marcas, filtros...
+      - icon-check Carrito de compra y pasarela de pago
+      - icon-circle-question Registro de usuarios <br> + resto de funcionalidades
+  - title: SEO
+    subtitle: Aparecer en Google Orgánicamente
+    price: '**Desde** 220 € <br> **+** 145 €/mes'
+    link: /presupuesto/#budget_WyIiLDEsMSwwLCI0IiwiMCIsIjEiLDAsMCwwLDAsMSwwLDAsMSwwLDEsMV0=
+    icon: searchengin
+    description: |
+      - icon-circle-info Ideal para **recibir tráfico a largo plazo** con alta o moderada competencia
+      - icon-check Estudio de palabras clave <br> + adaptar contenido
+      - icon-check Diseñar + implementar estrategia
+      - icon-check Linkbuilding
+      <!--
+      - icon-circle-info Nuestro sistema ya incluye un buen impulso inicial de SEO, por lo que con una web creada por...
+        - icon-circle-question **Nosotros:** sin mucha competencia, este servicio no sería necesario
+        - icon-circle-question **Otros:** merece la pena cambiar a nuestro sistema
+      -->
+  - title: SEM
+    subtitle: Publicidad de Pago en Google Ads
+    price: '**Desde** 330 € <br> **+ inversión en Google**'
+    link: /presupuesto/#budget_WyIiLDAsMCwxLCIwIiwiMCIsIiIsMCwwLDAsMCwxLDAsMSwwLDEsMSwwXQ==
+    icon: rocket-launch
+    description: |
+      - icon-circle-info Ideal para **recibir tráfico al instante**
+      - icon-check Estudio de palabras clave <br> + adaptar contenido
+      - icon-check Campaña de publicidad en Google Ads
+  - title: Multi Idioma
+    subtitle: Tu web en diferentes idiomas
+    price: 15% **del total**
+    icon: language
+    description: |
+      - icon-check Por cada idioma adicional al principal
+      - icon-check Opciones de diferentes dominios, subdominios y directorios
+      - icon-check Desarrollado y optimizado para el posicionamiento web (SEO)
+- type: columns
+  items:
+  - description: |
+      [btn-light icon-calculator Presupuesto](/presupuesto/)
+      [btn-light icon-icons Servicios Adicionales](/adicionales/)

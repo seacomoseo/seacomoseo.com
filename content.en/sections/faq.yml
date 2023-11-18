@@ -1,0 +1,75 @@
+id: faq
+title: FAQ
+subtitle: Frequent Ask and Questions
+size: sm
+icon: circle-question
+more:
+  icon_type: bottom
+rows:
+- type: collapsible
+  items:
+  - title: How long will I have the web?
+    description: |
+      Between 2 days and 2 weeks: from the moment he receives __all__ the content and half of the budget payment.
+  - title: What do we need to do it?
+    description: |
+      Everything you need explained in [this article](/en/requirements/).
+  - title: What if we don't like design?
+    description: |
+      You have up to 2 reviews to ask for changes within the budgeted price. If the strange situation was given that you want more (more than 2 were never necessary), you can budge you again without problems.
+  - title: Who is the owner of the web?
+    description: |
+      Who do you want! [The domain contracts it directly](/en/requirements/#domain) (it is very simple), and in terms of the web files, they will be in a gitlab repository to which you will have direct access and to which you can give access to others.
+  - title: Can I personally manage the web?
+    description: |
+      Of course! [Here](/en/cms/) I explain it to you.
+  - title: What happens if I make a mistake and stop working?
+    description: |
+      Due to how the system is designed, it is not common for the website to stop being shown. In general, if you make any mistakes, it will not apply directly, if a report will arrive directly by email.
+
+      But if any problem is happening in that you do not see yourself capable, do not worry, I take care of solving it.
+  - title: Do I have to take care of any administrative management?
+    description: |
+      Practically the only really necessary management is [hire domain](/en/requirements/#domain).
+
+      Optionally also the [personalized email](/en/requirements/#domain).
+
+      Also if the case is given to exceed the [limitation of receiving 100 forms/month](/en/sansoul/#limitations), but I can take care of me if you find it too complicated.
+  - title: When can I contact?
+    description: |
+      Whenever you want! When [contact me](#contact) by WhatsApp, email or form, I will answer you as soon as possible.
+
+      You can also [schedule an online meeting with me](https://calendly.com/lorensansol/seacomoseo "nofollow") When you like.
+
+      The attention is totally personalized and to taste, it can be everything in writing, by audios, by voice call, video call ... as more comfortable you feel!
+  - title: Is it mandatory to hire maintenance?
+    description: |
+      On the contrary! I have focused on developing this system so that you do not depend on me. But if you want me to help you recurrent or punctual, we can reach an agreement.
+
+      Another thing is that you want to announce on Google ADS through my services, there it is necessary to hire the corresponding rate.
+  - title: Do you just have to pay that to appear on Google Ads?
+    description: |
+      No, that is what it costs to do that service, then you decide what you want to invest in Google, which will charge you every month or every time you reach a certain amount, what happens before.
+
+      Example: You can try to start investing € 100 the first month, and depending on the results, increase or decrease the budget.
+  - title: What is the difference between SEM and SEO?
+    description: |
+      Speaking only of Google, the SEM is about appearing in the payment ads (ADS) and the SEO of appearing in the rest of the results.
+
+      Both have their advantages and disadvantages:
+
+      | Features | SEM | SEO |
+      |-|-|-|
+      | After investing, you appear... | icon-check Instant | icon-xmark In months |
+      | By stopping investing, you disappear... | icon-xmark Instant | icon-check Undefined |
+      | Investments and efforts are usually... | icon-check Reasonable | icon-xmark Large |
+      {.compare}
+  - title: Is it better SEM or SEO?
+    description: |
+      In principle it depends on the competition in each one, among many other variables.
+
+      If you simply offer local services, it is likely that combining the SEO OnPage that has already been integrated with sem in investment/results.
+
+      Although I am specialized in SEO, my experience tells me that many entrepreneurs and SMEs despair for the great investment necessary for SEO and how much it takes to offer results.
+
+      Only if you can afford it and you are not in a hurry, SEO is a great option.

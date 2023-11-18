@@ -1,0 +1,22 @@
+id: dominio
+title: Dominio
+description: |
+  Es lo único que realmente necesitas pagar recurrentemente, y suelen rondar los 10 €/año (dependiendo de la extensión y del registrador).
+
+  Puedes contratarlo con cualquier registrador de dominios, pero si todavía no lo hiciste, mi **recomendación** es [Cloudflare Registrar](https://www.cloudflare.com/es-es/products/registrar/) (el más barato con diferencia y el que más beneficios ofrece), excepto si deseas la extensión `.es`, entonces [Dondominio](https://www.dondominio.com) junto con [Correo electrónico personalizado](https://www.dondominio.com/products/email/).
+
+  #### Acceso a la gestión del dominio
+
+  Necesitamos usuario (y/o email) + contraseña de acceso al panel de administración.
+
+  Si registraste el dominio con [dondominio.com](https://www.dondominio.com), puedes generarnos un usuario administrador para evitar pasarme tus propios datos: `Gestión del dominio ➡️ Acceso externo ➡️ Crear nuevo usuario` ➡️ y facilitarnos el nombre y contraseña usados (con esto podremos acceder nosotros mismos desde el [Panel 24/7](https://manage.panel247.com/) e incluso gestionar los correos electrónicos).
+
+  #### Correo electrónico personalizado
+
+  Con ésto nos referimos a un email del tipo: **ejemplo@midominio.com**
+
+  No es una necesidad, pero no da una imagen profesional promocionarse con una cuenta de gmail o hotmail (o cualquier otra que no sea la de tu dominio).
+
+  Cloudflare permite gratis, mediante correos electrónicos personalizados sin límites, recibir y enviar emails en cualquier cuenta de gmail u otro proveedor. [Aquí un tutorial](https://youtu.be/e8qV-oQSNlo).
+
+  La opción [mini de dondominio](https://www.dondominio.com/products/email/mini/) cuesta solamente 1 €/año por 5 cuentas de email. Se puede configurar fácilmente para gestionarlo todo desde una cuenta de Gmail (además así evitas la limitación del espacio) con [éste tutorial](https://blog.dondominio.com/configurar-cuenta-de-correo-personalizada-en-gmail/). Para poder contratar ésta opción, debes tener registrado el dominio con ellos; si no es el caso, puedes realizar una migración.

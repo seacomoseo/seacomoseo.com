@@ -1,0 +1,59 @@
+id: contact
+title: Contact
+subtitle: Ask without obligation!
+button: link
+size: sm
+icon: paper-plane
+more:
+  icon_type: bottom
+rows:
+- type: contact
+  data:
+  - type: phone
+    label: 623 199 599
+    button: light
+  - type: whatsapp
+    label: 623 199 599
+    button: link
+  - type: whatsapp
+    label: 638 711 683
+    button: link
+  - type: mail
+    label: info@seacomoseo.com
+    button: light
+  - type: custom
+    link: https://calendly.com/lorensansol/seacomoseo
+    label: Program Meeting
+    icon: calendar
+    font_alt: true
+    button: light
+  - type: address
+    active: false
+    name: Sea Como SEO 🐙 Diseño de Páginas Web con Posicionamiento en Murcia
+    streetAddress: Beniaján
+    postalCode: 30570
+    addressLocality: Murcia
+    addressRegion: Murcia
+    addressCountry: España
+    coordinates: '{"type":"Point","coordinates":[-1.072414, 37.977543]}'
+  form:
+    fill_inputs: false
+    items:
+    - type: text
+      name: Nombre
+      placeholder: Name
+      required: true
+    - type: email
+      name: Email
+      required: true
+    - type: textarea
+      name: Mensaje
+      placeholder: Message
+      required: true
+  map:
+    active: false
+    link: https://g.page/webmurcia
+    iframe: ''
+    flip_x: false
+    flip_y: false
+    divider: arrow

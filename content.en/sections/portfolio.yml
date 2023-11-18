@@ -1,0 +1,50 @@
+id: portfolio
+title: Portfolio
+subtitle: A small sample of what I do
+icon: clipboard-list
+more:
+  icon_type: bottom
+rows:
+- type: columns
+  design:
+    num: 4
+    ofuscate: true
+    ratio: 3x2
+    slider: true
+  items:
+  - link: https://eli3a.com/
+    label: eli3a.com
+    image: logo-eli3a.com.svg
+  - link: https://bravotraining.es/
+    label: bravotraining.es
+    image: logo-bravotraining.es.svg
+  - link: https://clinicahoradent.com/
+    label: clinicahoradent.com
+    image: logo-clinicahoradent.com.svg
+  - link: https://ciauparte.es/
+    label: ciauparte.es
+    image: logo-ciauparte.es.svg
+  - link: https://entremusgo.com/
+    label: entremusgo.com
+    image: logo-entremusgo.com.svg
+  - link: https://agroecologiamurcia.org/
+    label: agroecologiamurcia.org
+    image: logo-agroecologiamurcia.org.svg
+  - link: https://des-aprende.es/
+    label: des-aprende.es
+    image: logo-des-aprende.es.svg
+  - link: https://www.vivoboxcrossfit.com/
+    label: vivoboxcrossfit.com
+    image: logo-vivoboxcrossfit.com.svg
+  - link: https://www.moverepilatestraining.es/
+    label: moverepilatestraining.es
+    image: logo-moverepilatestraining.es.svg
+  - link: https://clinicamartinezmarcos.com/
+    label: clinicamartinezmarcos.com
+    image: logo-clinicamartinezmarcos.com.svg
+  - link: https://eurolux.es/
+    label: eurolux.es
+    image: logo-eurolux.es.svg
+  - link: https://clinicalopezdelamo.com/
+    label: clinicalopezdelamo.com
+    image: logo-clinicalopezdelamo.com.svg

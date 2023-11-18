@@ -1,0 +1,86 @@
+id: reviews
+title: Reviews
+subtitle: What they say about us
+icon: comment
+more:
+  icon_type: bottom
+rows:
+- type: reviews
+  design:
+    call: There's more here! Leave yours!
+    num: 3
+    color: white
+    slider: true
+  items:
+  - title: Maite Ballesteros
+    subtitle: entremusgo.com
+    image: resena-maite-ballesteros.jpg
+    description: |
+      I lack words and praise towards you Lorenzo. It has been a pleasure working with you.
+
+      A great professional, a close, friendly person, involved to the fullest. One more of my team.
+
+      I am delighted with the result of the newly released web and with your great attention. I recommend one hundred percent! Thanks Lorenzo! Congratulations for your great job!
+  - title: Paco Bravo
+    subtitle: bravotraining.es
+    image: resena-paco-bravo.jpg
+    description: |
+      Incredible the speed and simplicity with which the website has created us, clean, beautiful and with a value for spectacular price.
+
+      I highly recommend it !!!! For the sports field it works great!
+  - title: Rubén Nicolás
+    subtitle: clinicahoradent.com
+    image: resena-ruben-nicolas-alarcon.jpg
+    description: |
+      Very good service, fast, efficient and very professional.
+
+      It shows that it understands a lot of positioning, which in the end is the most important thing if you have a business, and the design of the simple and very functional website.
+
+      I recommend it.
+  - title: Ayelén Bottari
+    subtitle: ayelenbott.com
+    image: resena-ayelen-bottari.jpg
+    description: |
+      Making the web with Loren was great and overcoming, since in his work I found the simplicity and perfection he sought to transmit the brand's values. His way of addressing the development of the web is innovative and aesthetic at the same time; He puts a lot of knowledge to every detail he materializes. It was a 100% satisfactory and well -achieved experience. I recommend it!!
+  - title: Leticia Martínez
+    subtitle: des-aprende.es
+    image: resena-leticia-martinez-pino.jpg
+    description: |
+      Great professional and person, close and friendly.
+
+      Get shape to your idea by creating a personalized and dream website! 100% TRUST.
+
+      Excellent!!!!!
+  - title: Sara Pérez
+    subtitle: orthoclub.es
+    image: resena-sara-perez-garcia.jpg
+    description: |
+      Lorenzo has made a spectacular website! They have spent days since it was published, and I still have a hard time stopping it. Very perfectionist, always leaving everything to my liking, also very attentive (point in favor for those who do not understand much of websites) and without a doubt a great professional. Thank you very much again for your work, Loren!
+  - title: Adela Marín
+    subtitle: moverepilatestraining.es
+    image: resena-adela-marin-marques.jpg
+    description: |
+      Very happy with the work done for my center.
+
+      Loren Attentive, always available and very professional.
+
+      Page with all very clear contents, very visual ... delighted!
+  - title: Andrés López
+    subtitle: clinicalopezdelamo.com
+    image: resena-andres-lopez-del-amo-lorente.jpg
+    description: |
+      Since he designed the clinic's website, web positioning has greatly improved, as well as the volume of patients.
+
+      Very happy and recommended for your business to improve.
+  - title: Manuel Lozano
+    subtitle: malamiadance.com
+    image: resena-manuel-ruiz-lozano.jpg
+    description: |
+      Spectacular the work they do and the attentive and personalized treatment that they give you, they give you a thousand ideas and position your website incredibly well, we have made two web pages, and with the two a scepted work in addition to placing them the first in a short time , we have achieved many new customers and sales thanks to this, I recommend them without hesitation.
+- type: columns
+  items:
+  - description: |
+      There's more here! Leave yours!
+      {.subtitle}
+
+      [btn icon-star Google](https://g.page/webmurcia/review "noindex")

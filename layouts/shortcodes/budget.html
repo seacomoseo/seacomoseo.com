@@ -1,0 +1,231 @@
+<form id="budget" onsubmit="return false">
+  <div class="wrap-name">
+    <h2 class="title-name no-print uppercase">Nombre:</h2>
+    <input type="text" id="name" placeholder="ejemplo.com" class="no-print">
+  </div>
+  <h2 class="title-services uppercase no-print">Servicios:</h2>
+  <!--
+    <label class="contact__form-label">
+      <input type="checkbox" id="spreadsheet" class="contact__form-checkbox">
+      <span>Catálogo o Directorio by SpreadSheet</span>
+    </label>
+    <label class="contact__form-label">
+      <input type="checkbox" id="forum" class="contact__form-checkbox" disabled>
+      <span>Foro</span>
+    </label>
+    <label class="contact__form-label">
+      <input type="checkbox" id="bookings" class="contact__form-checkbox" disabled>
+      <span>Gestión de Reservas</span>
+    </label>
+  -->
+  {{ $checks := `<svg><use xlink:href="/draws.svg#check"></use><use xlink:href="/draws.svg#xmark"></use></svg>` | safeHTML }}
+  {{ $xmark := `<svg class="xmark"><use xlink:href="/draws.svg#xmark"></use></svg>` | safeHTML }}
+  <input type="checkbox" id="web" class="service-check">
+  <label for="web">
+    <strong class="uppercase">WEB</strong>
+    <span class="service-subtitle">(Diseño de Nueva Web o Renovación)</span>
+  </label>
+  <br>
+  <input type="checkbox" id="seo" class="service-check">
+  <label for="seo">
+    <strong class="uppercase">SEO</strong>
+    <span class="service-subtitle">(Aparecer en Google Orgánicamente)</span>
+  </label>
+  <br>
+  <input type="checkbox" id="sem" class="service-check">
+  <label for="sem">
+    <strong class="uppercase">SEM</strong>
+    <span class="service-subtitle">(Publicidad de Pago en Google Ads)</span>
+  </label>
+  <br>
+  <input type="checkbox" id="ecommerce-aux" class="d-none">
+  <table class="compare">
+    <thead>
+      <tr>
+        <th colspan="2">Concepto</th>
+        <th>Incluido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="web">
+        <td colspan="2" id="fnref-1">
+          <strong>Secciones</strong> (número)
+          <sup><a href="#fn-1" class="footnote-ref button button--sm" role="doc-noteref">1</a></sup>
+        </td>
+        <td>
+          <select id="sections">
+            <option value="0">≤ 3</option>
+            <option value="2">≤ 5</option>
+            <!--
+              <option value="3">≤ 8</option>
+            -->
+            <option value="4" selected>≤ 10</option>
+            <option value="5">≤ 20</option>
+            <option value="6">≤ 30</option>
+            <option value="7">≤ 40</option>
+            <option value="8">≤ 50</option>
+            <option value="9">≤ 60</option>
+            <option value="10">≤ 70</option>
+            <option value="11">≤ 80</option>
+            <option value="12">≤ 90</option>
+            <option value="13">≤ 100</option>
+          </select>
+          {{ $xmark }}
+        </td>
+      </tr>
+      <tr class="web seo sem">
+        <td colspan="2" id="fnref-2">
+          <strong>Páginas</strong> (número)
+          <sup><a href="#fn-2" class="footnote-ref button button--sm" role="doc-noteref">2</a></sup>
+        </td>
+        <td>
+          <select id="pages">
+            <option value="0">≤ 10</option>
+            <option value="1">≤ 50</option>
+            <option value="2">≤ 100</option>
+            <option value="3">≤ 500</option>
+            <option value="3">≤ 1.000</option>
+            <option value="4">≤ 2.000</option>
+            <option value="5">≤ 5.000</option>
+            <option value="6">≤ 10.000</option>
+          </select>
+          {{ $xmark }}
+        </td>
+      </tr>
+      <tr class="web">
+        <td colspan="2"><strong>Idiomas</strong> (número)</td>
+        <td>
+          <select id="langs">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          {{ $xmark }}
+        </td>
+      </tr>
+      <tr class="web">
+        <td colspan="2">
+          <label for="ecommerce"><strong>Tienda Online</strong></label>
+        </td>
+        <td><input type="checkbox" id="ecommerce">{{ $xmark }}</td>
+      </tr>
+      <tr class="ecommerce">
+        <td colspan="2">
+          <ul><li><div>
+            <label for="ecommerce-catalogue">Sólo <strong>Catálogo</strong> <br> <i></i> (productos, categorías, <br> <i></i> etiquetas, marcas, <br> <i></i> variaciones, filtros…)</label>
+          </div></li></ul>
+        </td>
+        <td><input type="radio" name="ecommerce-options" id="ecommerce-catalogue" checked>{{ $xmark }}</td>
+      </tr>
+      <tr class="ecommerce">
+        <td colspan="2" id="fnref-3">
+          <ul><li><div>
+            <label for="ecommerce-basic">eCommerce <strong>Básico</strong> <br> <i></i> (… + carrito o cesta <br> <i></i> + pasarela de pago)</label>
+            <sup><a href="#fn-3" class="footnote-ref button button--sm" role="doc-noteref">3</a></sup>
+          </div></li></ul>
+        </td>
+        <td><input type="radio" name="ecommerce-options" id="ecommerce-basic">{{ $xmark }}</td>
+      </tr>
+      <tr class="ecommerce">
+        <td colspan="2" id="fnref-4">
+          <ul><li><div>
+            <label for="ecommerce-full">eCommerce <strong>Completo</strong> <br> <i></i> (… + registro de usuarios <br> <i></i> + resto de funcionalidades)</label>
+            <sup><a href="#fn-4" class="footnote-ref button button--sm" role="doc-noteref">4</a></sup>
+          </div></li></ul>
+        </td>
+        <td><input type="radio" name="ecommerce-options" id="ecommerce-full">{{ $xmark }}</td>
+      </tr>
+      <tr class="web directory">
+        <td colspan="2"><label for="directory"><strong>Directorio</strong> <br> <i></i> (de negocios, inmobiliarias…)</label></td>
+        <td><input type="checkbox" id="directory">{{ $xmark }}</td>
+      </tr>
+      <tr class="web">
+        <td colspan="2"><strong>Blog</strong> (o noticias)</td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr class="web">
+        <td colspan="2"><strong>Diseño</strong> efectivo y adaptado <br> <i></i> (derecho a 2 revisiones y cambios)</td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr class="web">
+        <td colspan="2"><strong>Hosting Gratuito</strong></td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr class="web">
+        <td colspan="2"><strong>Migración de contenidos</strong></td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr class="web seo">
+        <td colspan="2"><strong>Migración SEO</strong></td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr class="web seo">
+        <td colspan="2"><strong>Impulso inicial SEO</strong> <br> <i></i> (optimizaciones técnicas)</td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr class="seo sem">
+        <td colspan="2"><strong>Estudio de palabras clave</strong> <br> <i></i> + adaptar contenido</td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr class="seo">
+        <td colspan="2"><strong>Estrategia SEO avanzada</strong>  <br> <i></i> (diseñar + implementar)</td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr class="seo">
+        <td colspan="2" id="fnref-5">
+          <strong>Linkbuilding</strong> (SEO)
+          <sup><a href="#fn-5" class="footnote-ref button button--sm" role="doc-noteref">5</a></sup>
+        </td>
+        <td><input type="checkbox" id="linkbuilding" checked>{{ $xmark }}</td>
+      </tr>
+      <tr class="sem">
+        <td colspan="2"><strong>Campaña de publicidad</strong> <br> <i></i> en Google Ads (SEM)</td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr>
+        <td colspan="2" id="fnref-6">
+          <strong>Inversión mensual</strong> en Google Ads
+          <sup><a href="#fn-6" class="footnote-ref button button--sm" role="doc-noteref">6</a></sup>
+        </td>
+        <td>{{ $checks }}</td>
+      </tr>
+      <tr class="web">
+        <td rowspan="3" id="fnref-7">
+          <strong>Mantenimiento</strong>
+          <sup><a href="#fn-7" class="footnote-ref button button--sm" role="doc-noteref">7</a></sup>
+        </td>
+        <td id="fnref-7_1">
+          <label for="web-maintenance"><strong class="uppercase">WEB</strong></label>
+        </td>
+        <td><input type="checkbox" id="web-maintenance">{{ $xmark }}</td>
+      </tr>
+      <tr class="seo">
+        <td id="fnref-7_2">
+          <label for="seo-maintenance"><strong class="uppercase">SEO</strong></label>
+        </td>
+        <td><input type="checkbox" id="seo-maintenance" checked>{{ $xmark }}</td>
+      </tr>
+      <tr class="sem">
+        <td id="fnref-7_3">
+          <label for="sem-maintenance"><strong class="uppercase">SEM</strong></label>
+        </td>
+        <td><input type="checkbox" id="sem-maintenance">{{ $xmark }}</td>
+      </tr>
+      <tr>
+        <td colspan="2"><strong>Entrega</strong> (semanas)</td>
+        <td>≤ 2</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 id="result">
+    <b>Precio Total: </b>
+    <b id="result-fixed">0 €</b>
+    <span id="result-monthly-display" class="d-none">
+      +
+      <b id="result-monthly">0 €/mes</b>
+      <em>(> 3 meses)</em>
+    </span>
+  </h2>
+</form>

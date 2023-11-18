@@ -1,0 +1,77 @@
+title: Sea Como SEO 🐙
+description: Diseño de Páginas Web con Posicionamiento
+logo: logo-animation.svg
+legal_name: SEA COMO SEO
+legal_dni: 48498059Y
+legal_email: ''
+legal_location: ''
+country: España
+location_type:
+- Organization
+alternate_name:
+- Sea Como SEO
+- Sea Como SEO ⚡️
+- Sea Como SEO ⚡️🐙
+- Sea Como SEO ⚡️🐙 Diseño de Páginas Web con Posicionamiento en Murcia
+price_range: ''
+google_analytics: G-19K7L961ZF
+google_site_verification: Sb-MUAYWclN8UdYEC0-7YsKPFBAsrAPYNmM-k5QOXak
+google_file_verification: google7467d923cbb3eb4c.html
+disqus: seacomoseo
+cookies_legal: false
+analytics_pagespeed: true
+process_all_images: false
+cms: true
+cms_editorial_workflow: false
+development: false
+custom_code:
+  html_head:
+    code: ''
+    # code: |
+    #   <!-- Event snippet for Website traffic conversion page -->
+    #   <script>
+    #     gtag('config', 'AW-932147358');
+    #     gtag('event', 'conversion', {'send_to': 'AW-932147358/_ExfCIq2o4sDEJ7hvbwD'});
+    #   </script>
+    # code: |
+    #   <!-- Hotjar Tracking Code for seacomoseo.com -->
+    #   {{ if hugo.IsProduction }}
+    #     <script>
+    #         (function(h,o,t,j,a,r){
+    #             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    #             h._hjSettings={hjid:3108761,hjsv:6};
+    #             a=o.getElementsByTagName('head')[0];
+    #             r=o.createElement('script');r.async=1;
+    #             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    #             a.appendChild(r);
+    #         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    #     </script>
+    #   {{ end }}
+    lang: html
+  html_body:
+    # code: |
+    #   <svg class="clip-path-icon" viewBox="0 0 1 1">
+    #     <defs>
+    #       <clipPath id="nut" clipPathUnits="objectBoundingBox">
+    #         <path d="M.048.5A.978.978,0,0,0,.067.75,1.685,1.685,0,0,0,.5,1,1.685,1.685,0,0,0,.933.75a1.676,1.676,0,0,0,0-.5A1.685,1.685,0,0,0,.5,0,1.685,1.685,0,0,0,.067.25.978.978,0,0,0,.048.5Z"/>
+    #       </clipPath>
+    #     </defs>
+    #   </svg>
+    code: ''
+    lang: html
+  css:
+    code: ''
+    lang: css
+  js:
+    code: ''
+    lang: javascript
+social:
+- link: https://instagram.com/seacomoseo/
+- link: https://www.facebook.com/seacomoseo/
+- link: https://g.page/webmurcia
+# - link: https://g.page/r/CfLy0R-q0MtoEAE
+- link: https://www.youtube.com/@seacomoseo
+- link: https://www.linkedin.com/company/sea-como-seo
+- link: https://github.com/seacomoseo
+en:
+  description: Website Design with SEO

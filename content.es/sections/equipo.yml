@@ -1,0 +1,36 @@
+id: equipo
+title: Equipo
+subtitle: Los culpables de tanto flow
+icon: users
+rows:
+- type: columns
+  design:
+    num: 3
+    uppercase: true
+    icon_type: bottom
+    ratio: circle
+    border: main
+    icon: user
+    slider: true
+  items:
+  - title: Loren
+    subtitle: El Técnico
+    description: Diseño Web, Desarrollo y <br> Posicionamiento SEO/SEM
+    link: '#loren'
+    anchor: Diseñador Web y SEO en Murcia
+    image: loren.jpg
+    icon: user-robot
+  - title: Zepo
+    subtitle: El Creativo
+    description: Fotografía, Vídeo, Diseño Gráfico <br> y Redes Sociales
+    link: '#zepo'
+    anchor: Fotógrafo, Vídeo, Diseñador Gráfico y Social Media en Murcia
+    image: zepo.jpg
+    icon: user-astronaut
+  - title: Vaiana
+    subtitle: La Fenicia
+    description: Ventas, Atención al Cliente, <br> Copywriting y Diseño
+    link: '#vaiana'
+    anchor: Diseñadora y Copywriting en Murcia
+    image: vaiana.jpg
+    icon: user-headset

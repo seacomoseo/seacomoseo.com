@@ -1,0 +1,25 @@
+id: team
+title: Team
+subtitle: The culprits of so much flow
+icon: users
+more:
+  icon_type: bottom
+rows:
+- type: columns
+  design:
+    num: 3
+    ratio: circle
+    border: main
+  items:
+  - title: Loren
+    subtitle: Web Design, Development and SEO
+    link: '#loren'
+    image: loren.jpg
+  - title: Zepo
+    subtitle: Photography, Video and Graphic Design
+    link: '#zepo'
+    image: zepo.jpg
+  - title: Vaiana
+    subtitle: Design and Sales
+    link: '#vaiana'
+    image: vaiana.jpg
