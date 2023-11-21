@@ -28,7 +28,7 @@ rows:
     subtitle: Jamstack, el nuevo paradigma
     icon: microchip
     description: |
-      Olvídate de Wordpress. Pocas empresas de marketing y diseño conocen éste nuevo paradigma para desarrollar webs y muchas menos lo usan. ¿Los beneficios? <a class="sign" href="jhfc">Webs increíblemente rápidas, seguras, fáciles de mantener, escalables y con hosting gratis</a>.
+      Olvídate de Wordpress. Pocas empresas de marketing y diseño conocen éste nuevo paradigma para desarrollar webs y muchas menos lo usan. ¿Los beneficios? <a href="jhfc">==icon-sign-circle Webs increíblemente rápidas, seguras, fáciles de mantener, escalables y con hosting gratis==</a>.
   - title: Autogestionable
     subtitle: Para que no dependas de nadie
     icon: gamepad-modern

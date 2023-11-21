@@ -2,6 +2,7 @@ id: solucion
 title: ¡La Solución!
 subtitle: ¡Nosotros te ayudamos!
 icon: life-ring
+color: main-dark
 more:
   menu: Solución
 rows:
@@ -11,7 +12,7 @@ rows:
     align: left
     align_y: center
   items:
-  - image: solucion.svg
+  - image: solucion/sistema-propio.svg
   - description: |
       Olvídate de ~~Wordpress~~. \
       Hemos desarrollado un [sistema propio](#sansoul) enfocado en:

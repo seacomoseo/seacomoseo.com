@@ -15,7 +15,7 @@ rows:
     image: logo-animation.svg
     description: |
       - icon-rocket-launch Hacemos simple y efectiva tu visibilidad en internet
-      - icon-check Con una <strong class="sign">web moderna</strong>, fácil de usar y de encontrar
+      - icon-check Con una ==icon-sign-circle web moderna==, fácil de usar y de encontrar
       - icon-bolt ¡En menos de 2 semanas!
       - icon-xmark ¡O sigue despidiéndote de potenciales clientes!
 
@@ -25,6 +25,6 @@ rows:
       ratio: 3x2
       contain: true
   - span: 3
-    image: https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO&poster=poster-home.jpg
+    image: https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO&poster=loren-presentacion.jpg
     more:
       ratio: 9x16

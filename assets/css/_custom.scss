@@ -34,7 +34,9 @@ button:not(.button--font-alt, .collapse__button),
 // Colors
 
 .section.bg-main {
-  background-image: linear-gradient(var(--deg, 120deg), $link var(--position, 50%), $main var(--position, 50%));
+  > .bg-color {
+    background-image: linear-gradient(var(--deg, 120deg), $link var(--position, 50%), $main var(--position, 50%));
+  }
   &:not(#faq) .section__header .section__icon {
     --base: #{ rgba($white, .8) };
   }
@@ -45,20 +47,6 @@ button:not(.button--font-alt, .collapse__button),
 .menu.bg-alt,
 .section--header.bg-alt {
   --main: #{ rgba($white, .8) };
-}
-
-.sign {
-  {{ partial "functions/svg-to-css" (dict "path" "/assets/media/sign-circle.svg" "Site" .Site) }}
-  // svg {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   fill: none;
-  //   stroke: red;
-  //   stroke-width: calc(100% * -1);
-  // }
 }
 
 // Header
@@ -138,7 +126,7 @@ button:not(.button--font-alt, .collapse__button),
 //     padding: 10em 0;
 //     .bg-figure {
 //       background-image:
-//         url('{{ (resources.Get "/media/bg-valley.svg" | minify).RelPermalink }}'),
+//         url('{{/* (resources.Get "/media/bg-valley.svg" | minify).RelPermalink */}}'),
 //         linear-gradient($bg-ligth-alt, $bg-ligth-alt);
 //       background-position: center;
 //       background-size: cover;

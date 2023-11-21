@@ -9,16 +9,16 @@ rows:
   design:
     num: 3
     color: white
+    ratio: 4x3
     link: '#solucion'
     label: ¡La Solución!
     licon: life-ring
-    inset: true
     slider: true
   items:
   - title: Emprendedor<br>**Abrumado**
     subtitle: que necesita
-    image: web-nueva.jpg
-    icon: play
+    image: problema/nueva-web-emprendedor-abrumado.svg
+    # icon: play
     description: |
       **Nuevo**<br>Sitio Web
       {.h4 .underline}
@@ -31,8 +31,8 @@ rows:
       - ¿Te dan fechas muy lejanas?
   - title: Empresa<br>**Desactualizada**
     subtitle: que necesita
-    image: web-renovar.jpg
-    icon: recycle
+    image: problema/renovar-web-empresa-desactualizada.svg
+    # icon: recycle
     description: |
       **Renovar**<br>Sitio Web
       {.h4 .underline}
@@ -45,8 +45,8 @@ rows:
       - ¿Tardan mucho en atenderte?
   - title: Agencia<br>**Sobrepasada**
     subtitle: que necesita
-    image: web-externalizar.jpg
-    icon: triangle-person-digging
+    image: problema/externalizar-web-agencia-sobrepasada.svg
+    # icon: triangle-person-digging
     description: |
       **Externalizar**<br>(Outsourcing)
       {.h4 .underline}

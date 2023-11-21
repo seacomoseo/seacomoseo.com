@@ -3,7 +3,7 @@ title: Loren
 title_seo: 'Autor: Loren San Sol 【 Sea Como SEO ⚡️ 】'
 slug: loren
 description: Especializado en Maquetación Web y SEO. No soy Diseñador, pero tengo muchos conocimientos y me manejo con soltura con todo lo relacionado. Podría decir lo mismo sobre Desarrollo Web y Experiencia de Usuario (UX).
-image: loren.jpg
+image: equipo/loren.jpg
 toc: false
 draft: false
 noindex: false

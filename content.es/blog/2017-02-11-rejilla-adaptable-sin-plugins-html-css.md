@@ -3,7 +3,7 @@ title: Cómo crear una rejilla adaptable sin plugins, sólo con HTML y CSS
 title_seo: ''
 slug: rejilla-adaptable-sin-plugins-html-css
 description: ''
-image: rejilla-adaptable-sin-plugins-html-css.jpg
+image: blog/rejilla-adaptable-sin-plugins-html-css.jpg
 categories: []
 tags: []
 author: admin
@@ -87,7 +87,7 @@ Para terminar, solamente hay que seleccionar y copiar **todas las celdas con con
 
 Si usáis un editor visual, deberías buscar algún botoncico que te permita escribir directamente en código. En el caso de Wordpress, al escribir un post o página, lo tienes al lado de donde pone `Visual`, donde indica `HTML`.
 
-![](editor-visual-html-wordpress.png)
+![](blog/editor-visual-html-wordpress.png)
 
 **Ojo**: Tras pegar los datos en la zona de HTML de Wordpress, si vuelves al modo visual y otra vez al modo HTML, verás que te lo descuadra un poco, pero el resultado finalmente será el mismo.
 
@@ -129,7 +129,7 @@ Sobra decir que podéis modificar lo que querais.
 
 Si tenéis Wordpress actualizado a la última versión, es tan fácil como copiar y pegar este código en: `Apariencia > Personalizar > CSS adicional`
 
-![css-wordpress](css-wordpress.png)
+![css-wordpress](blog/css-wordpress.png)
 
 Ahí va una demo para que veáis cómo se ve en este mismo sitio web:
 

@@ -10,71 +10,72 @@ rows:
     font_alt: true
     licon: none
     ratio: 3x2
+    gap: 2
     slider: true
   items:
   - link: https://solventie.es/
     label: solventie.es
-    image: logo-solventie.es.svg
+    image: portfolio/solventie.es.svg
   - link: https://purotrajin.com/
     label: purotrajin.com
-    image: logo-purotrajin.com.svg
+    image: portfolio/purotrajin.com.svg
   - link: https://eli3a.com/
     label: eli3a.com
-    image: logo-eli3a.com.svg
+    image: portfolio/eli3a.com.svg
   - link: https://tabanko825.com/
     label: tabanko825.com
-    image: logo-tabanko825.com.svg
+    image: portfolio/tabanko825.com.svg
   - link: https://clinicahoradent.com/
     label: clinicahoradent.com
-    image: logo-clinicahoradent.com.svg
+    image: portfolio/clinicahoradent.com.svg
   - link: https://ciauparte.es/
     label: ciauparte.es
-    image: logo-ciauparte.es.svg
+    image: portfolio/ciauparte.es.svg
   - link: https://bravotraining.es/
     label: bravotraining.es
-    image: logo-bravotraining.es.svg
+    image: portfolio/bravotraining.es.svg
   - link: https://entremusgo.com/
     label: entremusgo.com
-    image: logo-entremusgo.com.svg
+    image: portfolio/entremusgo.com.svg
   - link: https://des-aprende.es/
     label: des-aprende.es
-    image: logo-des-aprende.es.svg
+    image: portfolio/des-aprende.es.svg
   - link: https://crespoymarina.com/
     label: crespoymarina.com
-    image: logo-crespoymarina.com.svg
+    image: portfolio/crespoymarina.com.svg
   - link: https://elcodigodelainfluencia.com/
     label: elcodigodelainfluencia.com
-    image: logo-elcodigodelainfluencia.com.svg
+    image: portfolio/elcodigodelainfluencia.com.svg
   - link: https://sicellsvet.com/
     label: sicellsvet.com
-    image: logo-sicellsvet.com.svg
+    image: portfolio/sicellsvet.com.svg
   - link: https://dobbox.com/
     label: dobbox.com
-    image: logo-dobbox.com.svg
+    image: portfolio/dobbox.com.svg
   - link: https://irenephemeral.com/
     label: irenephemeral.com
-    image: logo-irenephemeral.com.svg
+    image: portfolio/irenephemeral.com.svg
   - link: https://www.vivoboxcrossfit.com/
     label: vivoboxcrossfit.com
-    image: logo-vivoboxcrossfit.com.svg
+    image: portfolio/vivoboxcrossfit.com.svg
   - link: https://www.moverepilatestraining.es/
     label: moverepilatestraining.es
-    image: logo-moverepilatestraining.es.svg
+    image: portfolio/moverepilatestraining.es.svg
   - link: https://clinicamartinezmarcos.com/
     label: clinicamartinezmarcos.com
-    image: logo-clinicamartinezmarcos.com.svg
+    image: portfolio/clinicamartinezmarcos.com.svg
   - link: https://eurolux.es/
     label: eurolux.es
-    image: logo-eurolux.es.svg
+    image: portfolio/eurolux.es.svg
   - link: https://fisioterapiasatorres.com/
     label: fisioterapiasatorres.com
-    image: logo-fisioterapiasatorres.com.svg
+    image: portfolio/fisioterapiasatorres.com.svg
   - link: https://clinicalopezdelamo.com/
     label: clinicalopezdelamo.com
-    image: logo-clinicalopezdelamo.com.svg
+    image: portfolio/clinicalopezdelamo.com.svg
   - link: https://agroecologiamurcia.org/
     label: agroecologiamurcia.org
-    image: logo-agroecologiamurcia.org.svg
+    image: portfolio/agroecologiamurcia.org.svg
   - link: https://murcia.ilovedogwash.com/
     label: murcia.ilovedogwash.com
-    image: logo-murcia.ilovedogwash.com.svg
+    image: portfolio/murcia.ilovedogwash.com.svg

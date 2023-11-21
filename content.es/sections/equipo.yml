@@ -18,19 +18,19 @@ rows:
     description: Diseño Web, Desarrollo y <br> Posicionamiento SEO/SEM
     link: '#loren'
     anchor: Diseñador Web y SEO en Murcia
-    image: loren.jpg
+    image: equipo/loren.jpg
     icon: user-robot
   - title: Zepo
     subtitle: El Creativo
     description: Fotografía, Vídeo, Diseño Gráfico <br> y Redes Sociales
     link: '#zepo'
     anchor: Fotógrafo, Vídeo, Diseñador Gráfico y Social Media en Murcia
-    image: zepo.jpg
+    image: equipo/zepo.jpg
     icon: user-astronaut
   - title: Vaiana
     subtitle: La Fenicia
     description: Ventas, Atención al Cliente, <br> Copywriting y Diseño
     link: '#vaiana'
     anchor: Diseñadora y Copywriting en Murcia
-    image: vaiana.jpg
+    image: equipo/vaiana.jpg
     icon: user-headset

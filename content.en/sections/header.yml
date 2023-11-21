@@ -16,7 +16,7 @@ rows:
     image: logo-animation.svg
     description: |
       - icon-check Your website, easy to find and use
-      - icon-check With a <strong class="sign">modern website</strong>, easy to use and find
+      - icon-check With a ==icon-sign-circle modern website==, easy to use and find
       - icon-bolt In less than 2 weeks
       - icon-xmark Or keep saying goodbye to potential customers!
 
