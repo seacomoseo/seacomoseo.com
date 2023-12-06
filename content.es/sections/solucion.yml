@@ -14,7 +14,7 @@ rows:
   items:
   - image: solucion/sistema-propio.svg
   - description: |
-      Olvídate de ~~Wordpress~~. \
+      Olvídate de ~~Wordpress~~ y de matar moscas a cañonazos. \
       Hemos desarrollado un [sistema propio](#sansoul) enfocado en:
 
       - icon-bullseye-pointer **Diseño Efectivo**

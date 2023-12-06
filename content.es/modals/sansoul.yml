@@ -47,7 +47,7 @@ description: |
 
   Cada vez que se realicen cambios en cualquier archivo de Github:
 
-  - Netlify realiza un despliegue: obtiene todos los archivos del proyecto en Github y los del submódulo, y a continuación contruye el sitio mediante Hugo, ofreciendo el contenido como servidor.
+  - Netlify realiza un despliegue: obtiene todos los archivos del proyecto en Github y los del submódulo, y a continuación construye el sitio mediante Hugo, ofreciendo el contenido como servidor.
   - Se crean copias de seguridad automáticas en un repositorio espejo en Gitlab mediante un flujo de tabajo de Github Actions.
 
 
