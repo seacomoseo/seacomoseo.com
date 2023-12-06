@@ -6,6 +6,7 @@ params:
   git_url: https://gitlab.com/lorensansol/seacomoseo.com
   netlify_name: seacomoseo
   netlify_id: 7c4684ba-3746-4998-bc6f-25f64422eea4
+  hook: NjMwMmI2ZmQxZjZiNGI2YzBhYmJjMDIw
   drive_link: https://drive.google.com/file/d/1-m8mLhwp0Rc4gaKXfhronugmH59N5aSl
   drive_mails: ''
 defaultContentLanguage: es
