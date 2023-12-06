@@ -66,7 +66,7 @@ description: |
   - icon-netlify [Netlify](https://netlify.app/pricing/ "nofollow"):
     - __Banda Ancha:__ 100 GB/mes
     - __Procesamiento:__ 300 minutos/mes ~ 300 cambios/mes<sup>`1`</sup>
-    - __Formularios:__ 100 envíos/mes<sup>`2`</sup>
+    - __Formularios:__ 100 envíos/mes<sup>`2`</sup> y ≤ 8 MB por archivo
   - icon-bolt [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/limits/ "nofollow"):
     - __Banda Ancha:__ icon-infinity
     - __Procesamiento:__ 500 cambios/mes<sup>`3`</sup>
