@@ -92,6 +92,7 @@ button:not(.button--font-alt, .collapse__button),
   }
 }
 #body-inicio #header {
+  overflow: hidden;
   @media (min-width: $screen-xl) {
     .column--item-1 {
       .image {
