@@ -1,172 +1,171 @@
-/* eslint-disable key-spacing */
-window.addEventListener('load', () => {
-  // Budget
-  const budget = document.getElementById('budget')
+// Budget
+const budget = document.getElementById('budget')
 
-  if (budget) {
-    const title = document.getElementById('budget-title')
-    const name = document.getElementById('name')
-    const web = document.getElementById('web')
-    const seo = document.getElementById('seo')
-    const sem = document.getElementById('sem')
-    const sections = document.getElementById('sections')
-    const pages = document.getElementById('pages')
-    const langs = document.getElementById('langs')
-    const ecommerceAux = document.getElementById('ecommerce-aux')
-    const ecommerce = document.getElementById('ecommerce')
-    const ecommerceCatalogue = document.getElementById('ecommerce-catalogue')
-    const ecommerceBasic = document.getElementById('ecommerce-basic')
-    const ecommerceFull = document.getElementById('ecommerce-full')
-    const directory = document.getElementById('directory')
-    const linkbuilding = document.getElementById('linkbuilding')
-    const webMaintenance = document.getElementById('web-maintenance')
-    const seoMaintenance = document.getElementById('seo-maintenance')
-    const semMaintenance = document.getElementById('sem-maintenance')
-    const resultFixed = document.getElementById('result-fixed')
-    const resultMonthly = document.getElementById('result-monthly')
-    const resultMonthlyDisplay = document.getElementById('result-monthly-display')
-    const link = document.getElementById('budget-link')
-    const print = document.getElementById('budget-print')
-    const today = new Date().toLocaleDateString('es', { day: 'numeric', month: 'short', year: 'numeric' })
+if (budget) {
+  const title = document.getElementById('budget-title')
+  const name = document.getElementById('name')
+  const web = document.getElementById('web')
+  const seo = document.getElementById('seo')
+  const sem = document.getElementById('sem')
+  const sections = document.getElementById('sections')
+  const pages = document.getElementById('pages')
+  const langs = document.getElementById('langs')
+  const ecommerceAux = document.getElementById('ecommerce-aux')
+  const ecommerce = document.getElementById('ecommerce')
+  const ecommerceCatalogue = document.getElementById('ecommerce-catalogue')
+  const ecommerceBasic = document.getElementById('ecommerce-basic')
+  const ecommerceFull = document.getElementById('ecommerce-full')
+  const directory = document.getElementById('directory')
+  const linkbuilding = document.getElementById('linkbuilding')
+  const webMaintenance = document.getElementById('web-maintenance')
+  const seoMaintenance = document.getElementById('seo-maintenance')
+  const semMaintenance = document.getElementById('sem-maintenance')
+  const resultFixed = document.getElementById('result-fixed')
+  const resultMonthly = document.getElementById('result-monthly')
+  const resultMonthlyDisplay = document.getElementById('result-monthly-display')
+  const link = document.getElementById('budget-link')
+  const print = document.getElementById('budget-print')
+  const today = new Date().toLocaleDateString('es', { day: 'numeric', month: 'short', year: 'numeric' })
 
-    function calculateBudget () {
-      const sectionsValue = Number(sections.value)
-      const langsValue = Number(langs.value) || 1
-      const pagesValue = Number(pages.value)
-      const prices = {
-        sections: 100 * sectionsValue,
-        langs: 0.15,
-        ecommerce: {
-          catalogue: 100,
-          basic: 200,
-          full: 300
-        },
-        directory: 200,
-        pages: {
-          web:       { base: 300,  add: 100, active: ( web.checked && !seo.checked && !sem.checked) },
-          seo:       { base: 800,  add: 100, active: (!web.checked &&  seo.checked && !sem.checked) },
-          sem:       { base: 300,  add: 100, active: (!web.checked && !seo.checked &&  sem.checked) },
-          webSeo:    { base: 500,  add: 150, active: ( web.checked &&  seo.checked && !sem.checked) },
-          webSem:    { base: 600,  add: 150, active: ( web.checked && !seo.checked &&  sem.checked) },
-          seoSem:    { base: 1000, add: 150, active: (!web.checked &&  seo.checked &&  sem.checked) },
-          webSeoSem: { base: 700,  add: 200, active: ( web.checked &&  seo.checked &&  sem.checked) }
-        },
-        monthly: {
-          web: 30,
-          seo: 30,
-          sem: 30,
-          linkbuilding: 100
-        }
-      }
-      let priceFixed = 0
-      let priceMonthly = 0
-
-      Object.entries(prices.pages).forEach(([k, e]) => {
-        if (e.active) {
-          priceFixed += e.base + pagesValue * e.add
-        }
-      })
-
-      if (web.checked) {
-        priceFixed += prices.sections
-        if (ecommerce.checked) {
-          if (ecommerceCatalogue.checked) { priceFixed += prices.ecommerce.catalogue }
-          if (ecommerceBasic.checked)     { priceFixed += prices.ecommerce.basic }
-          if (ecommerceFull.checked)      { priceFixed += prices.ecommerce.full }
-        }
-        if (directory.checked) { priceFixed += prices.directory }
-      }
-
-      if (seo.checked && linkbuilding.checked) { priceMonthly += prices.monthly.linkbuilding * (pagesValue + 1) }
-
-      if (web.checked && webMaintenance.checked) { priceMonthly += prices.monthly.web * (pagesValue + 1) }
-      if (seo.checked && seoMaintenance.checked) { priceMonthly += prices.monthly.seo * (pagesValue + 1) }
-      if (sem.checked && semMaintenance.checked) { priceMonthly += prices.monthly.sem * (pagesValue + 1) }
-
-      if (web.checked) {
-        const langsPercent = (langsValue - 1) * prices.langs + 1
-        priceFixed *= langsPercent
-        priceMonthly *= langsPercent
-      }
-
-      resultFixed.innerHTML = (priceFixed * 1.1).toLocaleString('de-DE') + ' €'
-      resultMonthly.innerHTML = (priceMonthly * 1.1).toLocaleString('de-DE') + ' €/mes'
-      if (priceMonthly) {
-        resultMonthlyDisplay.classList.remove('d-none')
-      } else {
-        resultMonthlyDisplay.classList.add('d-none')
-      }
-
-      ecommerceAux.checked = ecommerce.checked && web.checked
-    }
-
-    // Link Button
-    link.addEventListener('click', e => {
-      e.preventDefault()
-      const values = [
-        name.value,
-        web.checked ? 1 : 0,
-        seo.checked ? 1 : 0,
-        sem.checked ? 1 : 0,
-        sections.value,
-        pages.value,
-        langs.value,
-        ecommerceAux.checked ? 1 : 0,
-        ecommerce.checked ? 1 : 0,
-        ecommerceCatalogue.checked ? 1 : 0,
-        ecommerceBasic.checked ? 1 : 0,
-        ecommerceFull.checked ? 1 : 0,
-        directory.checked ? 1 : 0,
-        linkbuilding.checked ? 1 : 0,
-        webMaintenance.checked ? 1 : 0,
-        seoMaintenance.checked ? 1 : 0,
-        semMaintenance.checked ? 1 : 0
-      ]
-      const obj = JSON.stringify(values)
-      navigator.clipboard.writeText(window.location.href.split('#')[0] + '#budget_' + btoa(obj))
-    })
-
-    // OnLoad Link
-    if (window.location.hash) {
-      const hash = window.location.hash
-      if (hash.indexOf('budget_') !== -1) {
-        const base64 = atob(hash.split('#budget_')[1])
-        const values = JSON.parse(base64)
-        console.log(values)
-        name.value = values[0]
-        web.checked = values[1]
-        seo.checked = values[2]
-        sem.checked = values[3]
-        sections.value = values[4]
-        pages.value = values[5]
-        langs.value = values[6]
-        ecommerceAux.checked = values[7]
-        ecommerce.checked = values[8]
-        ecommerceCatalogue.checked = values[9]
-        ecommerceBasic.checked = values[10]
-        ecommerceFull.checked = values[11]
-        directory.checked = values[12]
-        linkbuilding.checked = values[13]
-        webMaintenance.checked = values[14]
-        seoMaintenance.checked = values[15]
-        semMaintenance.checked = values[16]
+  function calculateBudget () {
+    const sectionsValue = Number(sections.value)
+    const langsValue = Number(langs.value) || 1
+    const pagesValue = Number(pages.value)
+    const prices = {
+      sections: 100 * sectionsValue,
+      langs: 0.15,
+      ecommerce: {
+        catalogue: 100,
+        basic: 200,
+        full: 300
+      },
+      directory: 200,
+      pages: {
+        web:       { base: 300,  add: 100, active: ( web.checked && !seo.checked && !sem.checked) },
+        seo:       { base: 800,  add: 100, active: (!web.checked &&  seo.checked && !sem.checked) },
+        sem:       { base: 300,  add: 100, active: (!web.checked && !seo.checked &&  sem.checked) },
+        webSeo:    { base: 500,  add: 150, active: ( web.checked &&  seo.checked && !sem.checked) },
+        webSem:    { base: 600,  add: 150, active: ( web.checked && !seo.checked &&  sem.checked) },
+        seoSem:    { base: 1000, add: 150, active: (!web.checked &&  seo.checked &&  sem.checked) },
+        webSeoSem: { base: 700,  add: 200, active: ( web.checked &&  seo.checked &&  sem.checked) }
+      },
+      monthly: {
+        web: 30,
+        seo: 30,
+        sem: 30,
+        linkbuilding: 100
       }
     }
+    let priceFixed = 0
+    let priceMonthly = 0
 
-    // Print Button
-    print.addEventListener('click', e => {
-      e.preventDefault()
-      title.innerHTML = `${name.value || 'ejemplo.com'} · ${today}`
-      window.print()
+    Object.entries(prices.pages).forEach(([k, e]) => {
+      if (e.active) {
+        priceFixed += e.base + pagesValue * e.add
+      }
     })
 
-    // Calculate Budget OnLoad Window and OnChange Budget
-    calculateBudget()
-    budget.addEventListener('change', event => {
-      calculateBudget()
-    })
+    if (web.checked) {
+      priceFixed += prices.sections
+      if (ecommerce.checked) {
+        if (ecommerceCatalogue.checked) { priceFixed += prices.ecommerce.catalogue }
+        if (ecommerceBasic.checked)     { priceFixed += prices.ecommerce.basic }
+        if (ecommerceFull.checked)      { priceFixed += prices.ecommerce.full }
+      }
+      if (directory.checked) { priceFixed += prices.directory }
+    }
+
+    if (seo.checked && linkbuilding.checked) { priceMonthly += prices.monthly.linkbuilding * (pagesValue + 1) }
+
+    if (web.checked && webMaintenance.checked) { priceMonthly += prices.monthly.web * (pagesValue + 1) }
+    if (seo.checked && seoMaintenance.checked) { priceMonthly += prices.monthly.seo * (pagesValue + 1) }
+    if (sem.checked && semMaintenance.checked) { priceMonthly += prices.monthly.sem * (pagesValue + 1) }
+
+    if (web.checked) {
+      const langsPercent = (langsValue - 1) * prices.langs + 1
+      priceFixed *= langsPercent
+      priceMonthly *= langsPercent
+    }
+
+    resultFixed.innerHTML = (priceFixed * 1.1).toLocaleString('de-DE') + ' €'
+    resultMonthly.innerHTML = (priceMonthly * 1.1).toLocaleString('de-DE') + ' €/mes'
+    if (priceMonthly) {
+      resultMonthlyDisplay.classList.remove('d-none')
+    } else {
+      resultMonthlyDisplay.classList.add('d-none')
+    }
+
+    ecommerceAux.checked = ecommerce.checked && web.checked
   }
 
+  // Link Button
+  link.addEventListener('click', e => {
+    e.preventDefault()
+    const values = [
+      name.value,
+      web.checked ? 1 : 0,
+      seo.checked ? 1 : 0,
+      sem.checked ? 1 : 0,
+      sections.value,
+      pages.value,
+      langs.value,
+      ecommerceAux.checked ? 1 : 0,
+      ecommerce.checked ? 1 : 0,
+      ecommerceCatalogue.checked ? 1 : 0,
+      ecommerceBasic.checked ? 1 : 0,
+      ecommerceFull.checked ? 1 : 0,
+      directory.checked ? 1 : 0,
+      linkbuilding.checked ? 1 : 0,
+      webMaintenance.checked ? 1 : 0,
+      seoMaintenance.checked ? 1 : 0,
+      semMaintenance.checked ? 1 : 0
+    ]
+    const obj = JSON.stringify(values)
+    navigator.clipboard.writeText(window.location.href.split('#')[0] + '#budget_' + btoa(obj))
+  })
+
+  // OnLoad Link
+  if (window.location.hash) {
+    const hash = window.location.hash
+    if (hash.indexOf('budget_') !== -1) {
+      const base64 = atob(hash.split('#budget_')[1])
+      const values = JSON.parse(base64)
+      console.log(values)
+      name.value = values[0]
+      web.checked = values[1]
+      seo.checked = values[2]
+      sem.checked = values[3]
+      sections.value = values[4]
+      pages.value = values[5]
+      langs.value = values[6]
+      ecommerceAux.checked = values[7]
+      ecommerce.checked = values[8]
+      ecommerceCatalogue.checked = values[9]
+      ecommerceBasic.checked = values[10]
+      ecommerceFull.checked = values[11]
+      directory.checked = values[12]
+      linkbuilding.checked = values[13]
+      webMaintenance.checked = values[14]
+      seoMaintenance.checked = values[15]
+      semMaintenance.checked = values[16]
+    }
+  }
+
+  // Print Button
+  print.addEventListener('click', e => {
+    e.preventDefault()
+    title.innerHTML = `${name.value || 'ejemplo.com'} · ${today}`
+    window.print()
+  })
+
+  // Calculate Budget OnLoad Window and OnChange Budget
+  calculateBudget()
+  budget.addEventListener('change', event => {
+    calculateBudget()
+  })
+}
+  
+window.addEventListener('load', () => {
   // Requeriments
   const requirementsForm = document.querySelector('#body-requerimientos .contact__form')
 
