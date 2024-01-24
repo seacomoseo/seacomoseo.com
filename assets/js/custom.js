@@ -1,4 +1,5 @@
-window.onload = () => {
+/* eslint-disable key-spacing */
+window.addEventListener('load', () => {
   // Budget
   const budget = document.getElementById('budget')
 
@@ -251,4 +252,4 @@ window.onload = () => {
       })
     })
   }
-}
+})
