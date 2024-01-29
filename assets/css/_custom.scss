@@ -100,18 +100,18 @@ button:not(.button--font-alt, .collapse__button),
       }
     }
   }
-  @mixin show-up($delay) {
-    animation: show-up .5s (3s + $delay * .125s) both;
+  @mixin show-from($delay) {
+    animation: show-from .5s (3s + $delay * .125s) both;
   }
-  // .image__inner {           @include show-up(0); }
-  // .h1 {                        @include show-up(1); }
-  .subtitle {              @include show-up(1); }
-  .li-svg:nth-child(1) {   @include show-up(2); }
-  .li-svg:nth-child(2) {   @include show-up(3); }
-  .li-svg:nth-child(3) {   @include show-up(4); }
-  .li-svg:nth-child(4) {   @include show-up(5); }
-  .buttons {               @include show-up(6); }
-  .column--item-2 .image { @include show-up(1); }
+  // .image__inner {           @include show-from(0); }
+  // .h1 {                        @include show-from(1); }
+  .subtitle {              @include show-from(1); }
+  .li-svg:nth-child(1) {   @include show-from(2); }
+  .li-svg:nth-child(2) {   @include show-from(3); }
+  .li-svg:nth-child(3) {   @include show-from(4); }
+  .li-svg:nth-child(4) {   @include show-from(5); }
+  .buttons {               @include show-from(6); }
+  .column--item-2 .image { @include show-from(1); }
 }
 
 // Sections
