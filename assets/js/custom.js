@@ -164,13 +164,13 @@ if (budget) {
     calculateBudget()
   })
 }
-  
+
 window.addEventListener('load', () => {
   // Requeriments
   const requirementsForm = document.querySelector('#body-requerimientos .contact__form')
 
   if (requirementsForm) {
-    const allItems = document.querySelectorAll('.contact__form-item:not(:nth-child(3),:nth-child(4)),.row:nth-child(2)')
+    const allItems = document.querySelectorAll('.contact__form-item:not(:nth-child(4),:nth-child(5)),.row:nth-child(2)')
     const web = document.querySelector('[value="WEB"]')
     const seo = document.querySelector('[value="SEO"]')
     const sem = document.querySelector('[value="SEM"]')
