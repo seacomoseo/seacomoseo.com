@@ -1,6 +1,6 @@
 ---
 title: Inicio
-title_seo: Sea Como SEO » Diseño de Páginas Web + Posicionamiento
+title_seo: Sea Como SEO ⚡️ Diseño Web y Posicionamiento 🥇 Murcia
 slug: inicio
 description: lll➤ Hacemos simple y efectiva tu visibilidad en internet ☝️ Con una web moderna, fácil de usar y de encontrar ☎️ 623 199 599
 image: logo.png
