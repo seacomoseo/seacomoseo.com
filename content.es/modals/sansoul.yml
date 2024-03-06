@@ -41,7 +41,7 @@ description: |
     - icon-node-js  [BabelJS](https://babeljs.io/ "nofollow"):                    Preprocesador de Javascript / Funcionalidades
   - icon-static-cms [Static CMS](https://www.staticcms.org/ "nofollow"):          Gestor de Contenidos (CMS)
 
-  Hugo nos permite usar temas personalizados mediante submódulos de Git para poder tener todo el desarrollo de éste proyecto que hemos creado separado de cada web y centralizado en un único lugar, por lo que todas las mejoras y opciones de personalización que vayamos añadiendo se podrán actualizar a voluntan y muy fácilmente en cada sitio web.
+  Hugo nos permite usar temas personalizados mediante submódulos de Git para poder tener todo el desarrollo de éste proyecto que hemos creado separado de cada web y centralizado en un único lugar, por lo que todas las mejoras y opciones de personalización que vayamos añadiendo se podrán actualizar a voluntad y muy fácilmente en cada sitio web.
 
   El CMS permite modificar directamente en Github, mediante el gestor de identidades de Netlify, los archivos de texto plano de tipo Markdown, YAML, TOML y JSON que hugo necesita de cada sitio web a modo de base de datos, todo desde un panel de administración fácil de usar para usuarios no técnicos.
 
