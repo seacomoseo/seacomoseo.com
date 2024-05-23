@@ -31,7 +31,7 @@ sections:
   modals:
   - equipo-loren
   - equipo-zepo
-  - equipo-vaiana
+  # - equipo-vaiana
 - file: precios
 - file: proceso
 - file: faq

@@ -27,10 +27,10 @@ rows:
     anchor: Fotógrafo, Vídeo, Diseñador Gráfico y Social Media en Murcia
     image: equipo/zepo.jpg
     icon: user-astronaut
-  - title: Vaiana
-    subtitle: La Fenicia
-    description: Ventas, Atención al Cliente, <br> Copywriting y Diseño
-    link: '#vaiana'
-    anchor: Diseñadora y Copywriting en Murcia
-    image: equipo/vaiana.jpg
-    icon: user-headset
+  # - title: Vaiana
+  #   subtitle: La Fenicia
+  #   description: Ventas, Atención al Cliente, <br> Copywriting y Diseño
+  #   link: '#vaiana'
+  #   anchor: Diseñadora y Copywriting en Murcia
+  #   image: equipo/vaiana.jpg
+  #   icon: user-headset
