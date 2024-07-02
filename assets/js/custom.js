@@ -191,7 +191,7 @@ if (budget) {
       webMaintenance.checked = values[14]
       seoMaintenance.checked = values[15]
       semMaintenance.checked = values[16]
-      bill.checked = values[17] = undefined ? true : values[17]
+      bill.checked = values[17] === undefined ? true : values[17]
     }
   }
 
