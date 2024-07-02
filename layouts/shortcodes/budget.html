@@ -154,7 +154,7 @@
         <td>{{ $checks }}</td>
       </tr>
       <tr class="web">
-        <td colspan="2"><strong>Diseño</strong> efectivo y adaptado <br> <i></i> (derecho a 2 revisiones y cambios)</td>
+        <td colspan="2"><strong>Diseño</strong> efectivo y adaptado <br> <i></i> (derecho a 2 revisiones)</td>
         <td>{{ $checks }}</td>
       </tr>
       <tr class="web">
@@ -225,15 +225,59 @@
         <td colspan="2"><strong>Entrega</strong> (semanas)</td>
         <td>≤ 2</td>
       </tr>
+      <tr class="bill">
+        <td colspan="2"><strong>Factura</strong></td>
+        <td><input type="checkbox" id="bill" checked>{{ $xmark }}</td>
+      </tr>
     </tbody>
   </table>
+  {{/*
   <h2 id="result">
     <b>Precio Total: </b>
     <b><i id="result-fixed">0</i> €</b>
-    <i id="result-monthly-display" class="d-none">
+    <div id="result-monthly-display" class="d-none">
       +
       <b><i id="result-monthly">0</i> €/mes</b>
+      <br>
       <em>(<i id="result-quarterly">0</i> €/trimestre)</em>
-    </i>
+    </div>
   </h2>
+  <hr>
+  */}}
+  
+  <h2 id="result" class="align-center uppercase">Precios</h2>
+
+  <table class="compare">
+    <thead>
+      <tr>
+        <th>Concepto</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="prices-fixed" class="prices">
+        <td>
+          <strong>Total Fijo</strong> <br>
+          (<strong id="result-offer" class="result">0</strong> € de descuento por combinaciones)
+        </td>
+        <td><strong id="result-fixed" class="result">0</strong> €</td>
+      </tr>
+      <tr id="prices-quarterly" class="prices">
+        <td><strong>1º Trimestre</strong> (<strong id="result-monthly" class="result">0</strong> €/mes)</td>
+        <td><strong id="result-quarterly" class="result">0</strong> €</td>
+      </tr>
+      <tr id="prices-subtotal" class="prices">
+        <td><strong>Subtotal</strong> (<strong id="result-bill" class="result">0</strong> € sin factura)</td>
+        <td><strong id="result-subtotal" class="result">0</strong> €</td>
+      </tr>
+      <tr id="prices-iva" class="prices">
+        <td>IVA 21%</td>
+        <td><strong id="result-iva" class="result">0</strong> €</td>
+      </tr>
+      <tr id="prices-total" class="prices">
+        <td><strong>TOTAL</strong></td>
+        <td><strong id="result-total" class="result">0</strong> €</td>
+      </tr>
+    </tbody>
+  </table>
 </form>

@@ -330,6 +330,23 @@ button:not(.button--font-alt, .collapse__button),
       }
     }
   }
+  #web:checked,
+  #seo:checked,
+  #sem:checked {
+    ~ div > table {
+      .bill {
+        use[*|href="/draws.svg#check"],
+        input,
+        select {
+          display: inline-grid;
+        }
+        use[*|href="/draws.svg#xmark"],
+        .xmark {
+          display: none;
+        }
+      }
+    }
+  }
   #ecommerce-aux:not(:checked) ~ div > table {
     .ecommerce {
       display: none;
@@ -382,16 +399,20 @@ button:not(.button--font-alt, .collapse__button),
   }
   table {
     margin-top: 1em;
-    // br {
+    th:first-child,
+    td:first-child {
+      max-width: 100%;
+    }
+    br {
+      display: none;
+    }
+    // br + i {
     //   display: none;
     // }
     select {
       height: unset;
       padding: 0 0.75em 0 0.125em;
       background-position-x: calc(100% - 0.125em);
-    }
-    br + i {
-      display: none;
     }
   }
   #fnref-7 {
@@ -403,11 +424,17 @@ button:not(.button--font-alt, .collapse__button),
   }
 }
 #result {
-  margin-top: 1.5em;
+  margin: .5em 0 0;
 }
-#result-fixed,
-#result-monthly {
+.result {
   color: var(--main);
+}
+.prices td:last-child {
+  text-align: right;
+  min-width: 5.5em;
+}
+#budget ~ p {
+  justify-content: center;
 }
 #budget-link {
   margin-top: 1em;
@@ -527,7 +554,7 @@ button:not(.button--font-alt, .collapse__button),
         display: table-row !important;
       }
       #result {
-        margin-top: 1em;
+        margin: .5em 0 0;
       }
     }
     #notas {

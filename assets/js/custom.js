@@ -20,10 +20,20 @@ if (budget) {
   const webMaintenance = document.getElementById('web-maintenance')
   const seoMaintenance = document.getElementById('seo-maintenance')
   const semMaintenance = document.getElementById('sem-maintenance')
+  const bill = document.getElementById('bill')
   const resultFixed = document.getElementById('result-fixed')
+  const resultOffer = document.getElementById('result-offer')
   const resultMonthly = document.getElementById('result-monthly')
-  const resultMonthlyDisplay = document.getElementById('result-monthly-display')
   const resultQuarterly = document.getElementById('result-quarterly')
+  const resultSubtotal = document.getElementById('result-subtotal')
+  const resultBill = document.getElementById('result-bill')
+  const resultIva = document.getElementById('result-iva')
+  const resultTotal = document.getElementById('result-total')
+  // const pricesFixed = document.getElementById('prices-fixed')
+  // const pricesQuarterly = document.getElementById('prices-quarterly')
+  const pricesSubtotal = document.getElementById('prices-subtotal')
+  const pricesIva = document.getElementById('prices-iva')
+  // const pricesTotal = document.getElementById('prices-total')
   const link = document.getElementById('budget-link')
   const print = document.getElementById('budget-print')
   const today = new Date().toLocaleDateString('es', { day: 'numeric', month: 'short', year: 'numeric' })
@@ -42,32 +52,41 @@ if (budget) {
       // },
       // directory: 200,
       pages: {
-        web:       { base: 300,  add: 100, active: ( web.checked && !seo.checked && !sem.checked) },
-        seo:       { base: 800,  add: 100, active: (!web.checked &&  seo.checked && !sem.checked) },
-        sem:       { base: 300,  add: 100, active: (!web.checked && !seo.checked &&  sem.checked) },
-        webSeo:    { base: 500,  add: 150, active: ( web.checked &&  seo.checked && !sem.checked) },
-        webSem:    { base: 600,  add: 150, active: ( web.checked && !seo.checked &&  sem.checked) },
-        seoSem:    { base: 1000, add: 150, active: (!web.checked &&  seo.checked &&  sem.checked) },
-        webSeoSem: { base: 700,  add: 200, active: ( web.checked &&  seo.checked &&  sem.checked) }
+        web:       { base: 300,  add: 100, active: ( web.checked && !seo.checked && !sem.checked), max: 300,  maxAdd: 100 },
+        seo:       { base: 800,  add: 100, active: (!web.checked &&  seo.checked && !sem.checked), max: 800,  maxAdd: 100 },
+        sem:       { base: 300,  add: 100, active: (!web.checked && !seo.checked &&  sem.checked), max: 300,  maxAdd: 100 },
+        webSeo:    { base: 500,  add: 150, active: ( web.checked &&  seo.checked && !sem.checked), max: 1200, maxAdd: 200 },
+        webSem:    { base: 600,  add: 150, active: ( web.checked && !seo.checked &&  sem.checked), max: 600,  maxAdd: 200 },
+        seoSem:    { base: 1000, add: 150, active: (!web.checked &&  seo.checked &&  sem.checked), max: 1100, maxAdd: 200 },
+        webSeoSem: { base: 700,  add: 200, active: ( web.checked &&  seo.checked &&  sem.checked), max: 1500, maxAdd: 300 }
       },
-      monthly: {
+      linkbuilding: 120,
+      maintenance: {
         web: 30,
         seo: 30,
-        sem: 30,
-        linkbuilding: 120
+        sem: 30
       }
     }
+    const billPercent = bill.checked ? 1.1 : 1
     let priceFixed = 0
+    let priceOffer = 0
     let priceMonthly = 0
+    let priceQuarterly = 0
+    let priceSubtotal = 0
+    let priceBill = 0
+    let priceIva = 0
+    let priceTotal = 0
 
     Object.entries(prices.pages).forEach(([k, e]) => {
       if (e.active) {
         priceFixed += e.base + pagesValue * e.add
+        priceOffer += e.max + pagesValue * e.maxAdd
       }
     })
 
     if (web.checked) {
       priceFixed += prices.sections
+      priceOffer += prices.sections
       // if (ecommerce.checked) {
       //   if (ecommerceCatalogue.checked) { priceFixed += prices.ecommerce.catalogue }
       //   if (ecommerceBasic.checked)     { priceFixed += prices.ecommerce.basic }
@@ -76,27 +95,47 @@ if (budget) {
       // if (directory.checked) { priceFixed += prices.directory }
     }
 
-    if (web.checked && webMaintenance.checked) { priceMonthly += prices.monthly.web * (pagesValue + 1) }
-    if (seo.checked && seoMaintenance.checked) { priceMonthly += prices.monthly.seo * (pagesValue + 1) }
-    if (sem.checked && semMaintenance.checked) { priceMonthly += prices.monthly.sem * (pagesValue + 1) }
+    if (web.checked && webMaintenance.checked) { priceMonthly += prices.maintenance.web * (pagesValue + 1) }
+    if (seo.checked && seoMaintenance.checked) { priceMonthly += prices.maintenance.seo * (pagesValue + 1) }
+    if (sem.checked && semMaintenance.checked) { priceMonthly += prices.maintenance.sem * (pagesValue + 1) }
 
     if (web.checked) {
       const langsPercent = (langsValue - 1) * prices.langs + 1
       priceFixed *= langsPercent
+      priceOffer *= langsPercent
       priceMonthly *= langsPercent
     }
 
-    priceFixed = priceFixed * 1.1
-    priceMonthly = priceMonthly * 1.1
-    if (seo.checked && linkbuilding.checked) { priceMonthly += prices.monthly.linkbuilding * (pagesValue + 1) }
+    priceBill = Math.round(priceFixed + priceMonthly * 3)
+    priceFixed = Math.round(priceFixed * billPercent)
+    priceOffer = Math.round((priceOffer * billPercent) - priceFixed)
+    priceMonthly = Math.round(priceMonthly * billPercent)
+    if (seo.checked && linkbuilding.checked) {
+      priceMonthly += prices.linkbuilding
+      priceSubtotal += prices.linkbuilding * 3
+      priceBill += prices.linkbuilding * 3
+    }
+    priceQuarterly = Math.round(priceMonthly * 3)
+    priceSubtotal = Math.round(priceFixed + priceQuarterly)
+    priceIva = Math.round(priceSubtotal * 0.21)
+    priceTotal = Math.round(priceSubtotal * 1.21)
 
     resultFixed.innerHTML = priceFixed.toLocaleString('de-DE')
+    resultOffer.innerHTML = priceOffer.toLocaleString('de-DE')
     resultMonthly.innerHTML = priceMonthly.toLocaleString('de-DE')
-    resultQuarterly.innerHTML = (priceMonthly * 3).toLocaleString('de-DE')
-    if (priceMonthly) {
-      resultMonthlyDisplay.classList.remove('d-none')
+    resultQuarterly.innerHTML = priceQuarterly.toLocaleString('de-DE')
+
+    if (bill.checked) {
+      pricesSubtotal.classList.remove('d-none')
+      pricesIva.classList.remove('d-none')
+      resultSubtotal.innerHTML = priceSubtotal.toLocaleString('de-DE')
+      resultBill.innerHTML = priceBill.toLocaleString('de-DE')
+      resultIva.innerHTML = priceIva.toLocaleString('de-DE')
+      resultTotal.innerHTML = priceTotal.toLocaleString('de-DE')
     } else {
-      resultMonthlyDisplay.classList.add('d-none')
+      pricesSubtotal.classList.add('d-none')
+      pricesIva.classList.add('d-none')
+      resultTotal.innerHTML = priceSubtotal.toLocaleString('de-DE')
     }
 
     // ecommerceAux.checked = ecommerce.checked && web.checked
@@ -152,6 +191,7 @@ if (budget) {
       webMaintenance.checked = values[14]
       seoMaintenance.checked = values[15]
       semMaintenance.checked = values[16]
+      bill.checked = values[17]
     }
   }
 
