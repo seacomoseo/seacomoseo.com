@@ -348,7 +348,7 @@ button:not(.button--font-alt, .collapse__button),
       }
     }
   }
-  .directory {
+  .ecommerce + .web {
     border-top: 0.125em $white solid;
   }
   .wrap-name {
@@ -373,6 +373,12 @@ button:not(.button--font-alt, .collapse__button),
   }
   sup {
     color: var(--main);
+    font-size: .75em;
+  }
+  .footnote-ref,
+  .footnote-backref {
+    width: 1em;
+    display: inline-grid;
   }
   table {
     margin-top: 1em;

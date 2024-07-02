@@ -37,8 +37,10 @@
     <strong class="uppercase">SEM</strong>
     <span class="service-subtitle">(Publicidad de Pago en Google Ads)</span>
   </label>
+  {{/*  
   <br>
   <input type="checkbox" id="ecommerce-aux" class="d-none">
+    */}}
   <table class="compare">
     <thead>
       <tr>
@@ -48,9 +50,9 @@
     </thead>
     <tbody>
       <tr class="web">
-        <td colspan="2" id="fnref-1">
+        <td colspan="2" id="referencia-secciones">
           <strong>Secciones</strong> (número)
-          <sup><a href="#fn-1" class="footnote-ref button button--sm" role="doc-noteref">1</a></sup>
+          <sup><a href="#nota-secciones" class="footnote-ref button button--sm" role="doc-noteref">1</a></sup>
         </td>
         <td>
           <select id="sections">
@@ -74,9 +76,9 @@
         </td>
       </tr>
       <tr class="web seo sem">
-        <td colspan="2" id="fnref-2">
+        <td colspan="2" id="referencia-paginas">
           <strong>Páginas</strong> (número)
-          <sup><a href="#fn-2" class="footnote-ref button button--sm" role="doc-noteref">2</a></sup>
+          <sup><a href="#nota-paginas" class="footnote-ref button button--sm" role="doc-noteref">2</a></sup>
         </td>
         <td>
           <select id="pages">
@@ -101,10 +103,15 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
           </select>
           {{ $xmark }}
         </td>
       </tr>
+      {{/*        
       <tr class="web">
         <td colspan="2">
           <label for="ecommerce"><strong>Tienda Online</strong></label>
@@ -120,19 +127,19 @@
         <td><input type="radio" name="ecommerce-options" id="ecommerce-catalogue" checked>{{ $xmark }}</td>
       </tr>
       <tr class="ecommerce">
-        <td colspan="2" id="fnref-3">
+        <td colspan="2" id="referencia-ecommerce-basico">
           <ul><li><div>
             <label for="ecommerce-basic">eCommerce <strong>Básico</strong> <br> <i></i> (… + carrito o cesta <br> <i></i> + pasarela de pago)</label>
-            <sup><a href="#fn-3" class="footnote-ref button button--sm" role="doc-noteref">3</a></sup>
+            <sup><a href="#nota-ecommerce-basico" class="footnote-ref button button--sm" role="doc-noteref">3</a></sup>
           </div></li></ul>
         </td>
         <td><input type="radio" name="ecommerce-options" id="ecommerce-basic">{{ $xmark }}</td>
       </tr>
       <tr class="ecommerce">
-        <td colspan="2" id="fnref-4">
+        <td colspan="2" id="referencia-ecommerce-completo">
           <ul><li><div>
             <label for="ecommerce-full">eCommerce <strong>Completo</strong> <br> <i></i> (… + registro de usuarios <br> <i></i> + resto de funcionalidades)</label>
-            <sup><a href="#fn-4" class="footnote-ref button button--sm" role="doc-noteref">4</a></sup>
+            <sup><a href="#nota-ecommerce-completo" class="footnote-ref button button--sm" role="doc-noteref">4</a></sup>
           </div></li></ul>
         </td>
         <td><input type="radio" name="ecommerce-options" id="ecommerce-full">{{ $xmark }}</td>
@@ -141,6 +148,7 @@
         <td colspan="2"><label for="directory"><strong>Directorio</strong> <br> <i></i> (de negocios, inmobiliarias…)</label></td>
         <td><input type="checkbox" id="directory">{{ $xmark }}</td>
       </tr>
+        */}}
       <tr class="web">
         <td colspan="2"><strong>Blog</strong> (o noticias)</td>
         <td>{{ $checks }}</td>
@@ -174,9 +182,9 @@
         <td>{{ $checks }}</td>
       </tr>
       <tr class="seo">
-        <td colspan="2" id="fnref-5">
+        <td colspan="2" id="referencia-linkbuilding">
           <strong>Linkbuilding</strong> (SEO)
-          <sup><a href="#fn-5" class="footnote-ref button button--sm" role="doc-noteref">5</a></sup>
+          <sup><a href="#nota-linkbuilding" class="footnote-ref button button--sm" role="doc-noteref">3</a></sup>
         </td>
         <td><input type="checkbox" id="linkbuilding" checked>{{ $xmark }}</td>
       </tr>
@@ -185,30 +193,30 @@
         <td>{{ $checks }}</td>
       </tr>
       <tr>
-        <td colspan="2" id="fnref-6">
+        <td colspan="2" id="referencia-inversion-google-ads">
           <strong>Inversión mensual</strong> en Google Ads
-          <sup><a href="#fn-6" class="footnote-ref button button--sm" role="doc-noteref">6</a></sup>
+          <sup><a href="#nota-inversion-google-ads" class="footnote-ref button button--sm" role="doc-noteref">4</a></sup>
         </td>
         <td>{{ $checks }}</td>
       </tr>
       <tr class="web">
-        <td rowspan="3" id="fnref-7">
+        <td rowspan="3" id="referencia-mantenimientos">
           <strong>Mantenimiento</strong>
-          <sup><a href="#fn-7" class="footnote-ref button button--sm" role="doc-noteref">7</a></sup>
+          <sup><a href="#nota-mantenimientos" class="footnote-ref button button--sm" role="doc-noteref">5</a></sup>
         </td>
-        <td id="fnref-7_1">
+        <td id="referencia-mantenimiento-web">
           <label for="web-maintenance"><strong class="uppercase">WEB</strong></label>
         </td>
         <td><input type="checkbox" id="web-maintenance">{{ $xmark }}</td>
       </tr>
       <tr class="seo">
-        <td id="fnref-7_2">
+        <td id="referencia-mantenimiento-seo">
           <label for="seo-maintenance"><strong class="uppercase">SEO</strong></label>
         </td>
-        <td><input type="checkbox" id="seo-maintenance" checked>{{ $xmark }}</td>
+        <td><input type="checkbox" id="seo-maintenance">{{ $xmark }}</td>
       </tr>
       <tr class="sem">
-        <td id="fnref-7_3">
+        <td id="referencia-mantenimiento-sem">
           <label for="sem-maintenance"><strong class="uppercase">SEM</strong></label>
         </td>
         <td><input type="checkbox" id="sem-maintenance">{{ $xmark }}</td>
@@ -221,11 +229,11 @@
   </table>
   <h2 id="result">
     <b>Precio Total: </b>
-    <b id="result-fixed">0 €</b>
-    <span id="result-monthly-display" class="d-none">
+    <b><i id="result-fixed">0</i> €</b>
+    <i id="result-monthly-display" class="d-none">
       +
-      <b id="result-monthly">0 €/mes</b>
-      <em>(> 3 meses)</em>
-    </span>
+      <b><i id="result-monthly">0</i> €/mes</b>
+      <em>(<i id="result-quarterly">0</i> €/trimestre)</em>
+    </i>
   </h2>
 </form>

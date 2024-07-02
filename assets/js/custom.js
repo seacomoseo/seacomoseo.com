@@ -10,12 +10,12 @@ if (budget) {
   const sections = document.getElementById('sections')
   const pages = document.getElementById('pages')
   const langs = document.getElementById('langs')
-  const ecommerceAux = document.getElementById('ecommerce-aux')
-  const ecommerce = document.getElementById('ecommerce')
-  const ecommerceCatalogue = document.getElementById('ecommerce-catalogue')
-  const ecommerceBasic = document.getElementById('ecommerce-basic')
-  const ecommerceFull = document.getElementById('ecommerce-full')
-  const directory = document.getElementById('directory')
+  // const ecommerceAux = document.getElementById('ecommerce-aux')
+  // const ecommerce = document.getElementById('ecommerce')
+  // const ecommerceCatalogue = document.getElementById('ecommerce-catalogue')
+  // const ecommerceBasic = document.getElementById('ecommerce-basic')
+  // const ecommerceFull = document.getElementById('ecommerce-full')
+  // const directory = document.getElementById('directory')
   const linkbuilding = document.getElementById('linkbuilding')
   const webMaintenance = document.getElementById('web-maintenance')
   const seoMaintenance = document.getElementById('seo-maintenance')
@@ -23,6 +23,7 @@ if (budget) {
   const resultFixed = document.getElementById('result-fixed')
   const resultMonthly = document.getElementById('result-monthly')
   const resultMonthlyDisplay = document.getElementById('result-monthly-display')
+  const resultQuarterly = document.getElementById('result-quarterly')
   const link = document.getElementById('budget-link')
   const print = document.getElementById('budget-print')
   const today = new Date().toLocaleDateString('es', { day: 'numeric', month: 'short', year: 'numeric' })
@@ -34,12 +35,12 @@ if (budget) {
     const prices = {
       sections: 100 * sectionsValue,
       langs: 0.15,
-      ecommerce: {
-        catalogue: 100,
-        basic: 200,
-        full: 300
-      },
-      directory: 200,
+      // ecommerce: {
+      //   catalogue: 100,
+      //   basic: 200,
+      //   full: 300
+      // },
+      // directory: 200,
       pages: {
         web:       { base: 300,  add: 100, active: ( web.checked && !seo.checked && !sem.checked) },
         seo:       { base: 800,  add: 100, active: (!web.checked &&  seo.checked && !sem.checked) },
@@ -53,7 +54,7 @@ if (budget) {
         web: 30,
         seo: 30,
         sem: 30,
-        linkbuilding: 100
+        linkbuilding: 120
       }
     }
     let priceFixed = 0
@@ -67,15 +68,13 @@ if (budget) {
 
     if (web.checked) {
       priceFixed += prices.sections
-      if (ecommerce.checked) {
-        if (ecommerceCatalogue.checked) { priceFixed += prices.ecommerce.catalogue }
-        if (ecommerceBasic.checked)     { priceFixed += prices.ecommerce.basic }
-        if (ecommerceFull.checked)      { priceFixed += prices.ecommerce.full }
-      }
-      if (directory.checked) { priceFixed += prices.directory }
+      // if (ecommerce.checked) {
+      //   if (ecommerceCatalogue.checked) { priceFixed += prices.ecommerce.catalogue }
+      //   if (ecommerceBasic.checked)     { priceFixed += prices.ecommerce.basic }
+      //   if (ecommerceFull.checked)      { priceFixed += prices.ecommerce.full }
+      // }
+      // if (directory.checked) { priceFixed += prices.directory }
     }
-
-    if (seo.checked && linkbuilding.checked) { priceMonthly += prices.monthly.linkbuilding * (pagesValue + 1) }
 
     if (web.checked && webMaintenance.checked) { priceMonthly += prices.monthly.web * (pagesValue + 1) }
     if (seo.checked && seoMaintenance.checked) { priceMonthly += prices.monthly.seo * (pagesValue + 1) }
@@ -87,15 +86,20 @@ if (budget) {
       priceMonthly *= langsPercent
     }
 
-    resultFixed.innerHTML = (priceFixed * 1.1).toLocaleString('de-DE') + ' €'
-    resultMonthly.innerHTML = (priceMonthly * 1.1).toLocaleString('de-DE') + ' €/mes'
+    priceFixed = priceFixed * 1.1
+    priceMonthly = priceMonthly * 1.1
+    if (seo.checked && linkbuilding.checked) { priceMonthly += prices.monthly.linkbuilding * (pagesValue + 1) }
+
+    resultFixed.innerHTML = priceFixed.toLocaleString('de-DE')
+    resultMonthly.innerHTML = priceMonthly.toLocaleString('de-DE')
+    resultQuarterly.innerHTML = (priceMonthly * 3).toLocaleString('de-DE')
     if (priceMonthly) {
       resultMonthlyDisplay.classList.remove('d-none')
     } else {
       resultMonthlyDisplay.classList.add('d-none')
     }
 
-    ecommerceAux.checked = ecommerce.checked && web.checked
+    // ecommerceAux.checked = ecommerce.checked && web.checked
   }
 
   // Link Button
@@ -109,12 +113,12 @@ if (budget) {
       sections.value,
       pages.value,
       langs.value,
-      ecommerceAux.checked ? 1 : 0,
-      ecommerce.checked ? 1 : 0,
-      ecommerceCatalogue.checked ? 1 : 0,
-      ecommerceBasic.checked ? 1 : 0,
-      ecommerceFull.checked ? 1 : 0,
-      directory.checked ? 1 : 0,
+      /* ecommerceAux.checked ? 1 : */ 0,
+      /* ecommerce.checked ? 1 : */ 0,
+      /* ecommerceCatalogue.checked ? 1 : */ 0,
+      /* ecommerceBasic.checked ? 1 : */ 0,
+      /* ecommerceFull.checked ? 1 : */ 0,
+      /* directory.checked ? 1 : */ 0,
       linkbuilding.checked ? 1 : 0,
       webMaintenance.checked ? 1 : 0,
       seoMaintenance.checked ? 1 : 0,
@@ -138,12 +142,12 @@ if (budget) {
       sections.value = values[4]
       pages.value = values[5]
       langs.value = values[6]
-      ecommerceAux.checked = values[7]
-      ecommerce.checked = values[8]
-      ecommerceCatalogue.checked = values[9]
-      ecommerceBasic.checked = values[10]
-      ecommerceFull.checked = values[11]
-      directory.checked = values[12]
+      // ecommerceAux.checked = values[7]
+      // ecommerce.checked = values[8]
+      // ecommerceCatalogue.checked = values[9]
+      // ecommerceBasic.checked = values[10]
+      // ecommerceFull.checked = values[11]
+      // directory.checked = values[12]
       linkbuilding.checked = values[13]
       webMaintenance.checked = values[14]
       seoMaintenance.checked = values[15]

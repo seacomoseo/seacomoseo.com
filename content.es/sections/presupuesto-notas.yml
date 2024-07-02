@@ -3,23 +3,68 @@ title: Notas
 subtitle: Costes a tener en cuenta y otros detalles
 icon: message-exclamation
 description: |
-  1. <i id="fn-1"></i>**Número de secciones:**
-      Suma total de secciones
-        (incluidas cabeceras, nosotros, equipo, servicios, fotos, contacto y cada ventana modal)
-        de todas las páginas (aunque cada página sea una sola sección en sí misma).
-      Una web normal suele tener 7 - 20.
-    <a href="#fnref-1" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
-  2. <i id="fn-2"></i>**Número de páginas:**
-      Suma total de páginas de servicios, noticias, productos, categorías, etiquetas y marcas en total
-        (sin contar secciones)
-        a realizar, importar o posicionar.
-    <a href="#fnref-2" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
-  3. <i id="fn-3"></i>**eCommerce Básico:**
+  1. <i id="nota-secciones"></i>
+    **Número de secciones:**
+    Suma total de secciones diferentes, aunque estén en la misma página
+      (las secciones que se repiten se cuentan como 1, aunque tengan contenido diferente).
+    Una web normal suele tener entre 7 y 20.
+    <a href="#referencia-secciones" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a> \
+    *Ejemplo:* \
+    ~ Cabecera \
+    ~ Características \
+    ~ Servicios \
+    ~ Nosotros \
+    ~ Equipo \
+    ~ Fotos \
+    ~ Reseñas \
+    ~ Contacto \
+    ~ **Total** = 8
+
+  1. <i id="nota-paginas"></i>
+    **Número de páginas:**
+    Suma total de páginas o URLs' de cualquier tipo.
+    <a href="#referencia-paginas" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a> \
+    *Ejemplo:*
+      | Tipos de Páginas  | Nº |
+      | ----------------- | -- |
+      | Página de Inicio  | 1  |
+      | Páginas legales   | 3  |
+      | Artículos de blog | 5  |
+      | Productos         | 53 |
+      | Categorías        | 5  |
+      | Marcas            | 7  |
+      | Otras páginas     | 4  |
+      | **TOTAL**         | 78 |
+
+  1. <i id="nota-linkbuilding"></i>
+    **Linkbuilding:**
+    Es necesario (al menos durante varios meses) si tienes competencia y quieres resultados,
+      pero es opcional y también puedes buscar otro proveedor.
+    <a href="#referencia-linkbuilding" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  1. <i id="nota-inversion-google-ads"></i>
+    **Inversión en Google Ads:**
+    Es necesario realizar una inversión directamente en Google.
+    Según competencia, solemos recomendar entre 100 y 300 €/mes los 3 primeros meses y,
+      tras ver resultados, decidir si cambiar la cantidad.
+    <a href="#referencia-inversion-google-ads" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  1. <i id="nota-mantenimientos"></i>
+    **Mantenimientos:**
+    Opcionales, pero recomendados si tienes una web o campaña SEM muy cambiantes.
+    <a href="#referencia-mantenimientos" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  <!--
+
+  1. <i id="nota-ecommerce-basico"></i>
+    **eCommerce Básico:**
     La pasarela de pago sería mediante [Stripe](https://stripe.com/es "nofollow"),
       sin más que sus bajas comisiones por cada transacción:
         1,4 % + 0,25 € para tarjetas Europeas; 2,9 % + 0,25 € para tarjetas internacionales.
-    <a href="#fnref-3" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
-  4. <i id="fn-4"></i>**eCommerce Completo:**
+    <a href="#referencia-ecommerce-basico" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  1. <i id="nota-ecommerce-completo"></i>
+    **eCommerce Completo:**
     Requiere de plataforma externa de "headless eCommerce" a elegir
       ([Snipcart](https://snipcart.com/ "nofollow"),
       [Commerce Beta](https://static.tools/commerce/ "nofollow"),
@@ -32,26 +77,16 @@ description: |
       algunas añaden 1-2% a las transacciones
       (además de las comisiones de las pasarelas de pago)
       con un mínimo de 10 $/mes.
-    <a href="#fnref-4" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
-  5. <i id="fn-5"></i>**Linkbuilding:**
-    Es necesario si tienes competencia y quieres resultados,
-      pero puedes buscar otro proveedor.
-    <a href="#fnref-5" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
-  6. <i id="fn-6"></i>**Inversión en Google Ads:**
-    Es necesario realizar una inversión directamente en Google.
-    Según competencia, solemos recomendar entre 100 y 300 €/mes los 3 primeros meses y,
-      a partir de ahí, decidir si mantener la cantidad, cambiarlo o incluso parar la campaña.
-    <a href="#fnref-6" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
-  7. <i id="fn-7"></i>**Mantenimientos:**
-    Opcionales, pero recomendados si tienes una web o campaña SEM muy cambiantes.
-    <a href="#fnref-7" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+    <a href="#referencia-ecommerce-completo" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
 
-  <!--
-  5. <i id="fn-5"></i>**Plataforma de Formación (LMS):**
+  1. <i id="nota-lms"></i>
+    **Plataforma de Formación (LMS):**
     Se puede usar una plataforma externa con sus tarifas y condiciones,
       o te podemos instalar alguna ([Moodle](https://moodle.org/?lang=es "nofollow") por ejemplo)
       en un servidor a elegir
       (entre 50 y 150 €/año según calidad y velocidad deseada).
     El servidor/hosting gratuito que usamos no es compatible.
-    <a href="#fnref-5" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+    <a href="#referencia-lms" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
   -->
+
