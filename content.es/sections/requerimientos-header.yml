@@ -122,9 +122,13 @@ rows:
       name: Gestor de Contenidos (CMS)
       options:
       - option: Wordpress
+        value: CMS ➡️ Wordpress
       - option: Prestashop
+        value: CMS ➡️ Prestashop
       - option: Otros
+        value: CMS ➡️ Otros
       - option: A medida
+        value: CMS ➡️ A medida
     - type: text
       name: Antigüedad
       hint: '**Ejemplos:** 3 años; 2 meses; nueva…'
