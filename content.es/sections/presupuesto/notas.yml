@@ -6,19 +6,19 @@ description: |
   1. <i id="nota-secciones"></i>
     **Número de secciones:**
     Suma total de secciones diferentes, aunque estén en la misma página
-      (las secciones que se repiten se cuentan como 1, aunque tengan contenido diferente).
-    Una web normal suele tener entre 7 y 20.
+      (las secciones que se repiten se cuentan como 1, aunque tengan contenido diferente; cada ventana modal cuenta como 1/2 sección).
+    Una web sencilla suele tener entre 7 y 20.
     <a href="#referencia-secciones" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a> \
     *Ejemplo:* \
-    ~ Cabecera \
-    ~ Características \
-    ~ Servicios \
-    ~ Nosotros \
-    ~ Equipo \
-    ~ Fotos \
-    ~ Reseñas \
-    ~ Contacto \
-    ~ **Total** = 8
+    icon-1 Cabecera \
+    icon-2 Características \
+    icon-3 Servicios (+4 modales) \
+    icon-4 Nosotros \
+    icon-5 Equipo \
+    icon-6 Fotos \
+    icon-7 Reseñas \
+    icon-8 Contacto \
+    icon-sigma **Total** = 8 + 4/2 = 10
 
   1. <i id="nota-paginas"></i>
     **Número de páginas:**
@@ -26,7 +26,7 @@ description: |
     <a href="#referencia-paginas" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a> \
     *Ejemplo:*
       | Tipos de Páginas  | Nº |
-      | ----------------- | -- |
+      | ----------------- | -: |
       | Página de Inicio  | 1  |
       | Páginas legales   | 3  |
       | Artículos de blog | 5  |
