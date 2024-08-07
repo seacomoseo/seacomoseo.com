@@ -12,9 +12,9 @@ general:
   color: light
   size: sm
 sections:
-- file: requerimientos-header
+- file: requerimientos/_header
   modals:
-  - requerimientos-dominio
-  - requerimientos-perfil-empresa-google
-- file: requerimientos-end
+  - requerimientos/dominio
+  - requerimientos/perfil-empresa-google
+- file: requerimientos/end
 ---

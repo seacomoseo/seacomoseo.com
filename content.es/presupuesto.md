@@ -23,8 +23,8 @@ alternate:
   flip_x: false
   flip_y: false
 sections:
-- file: presupuesto-header
-- file: presupuesto-notas
-- file: presupuesto-etica
-- file: presupuesto-trabajos
+- file: presupuesto/_header
+- file: presupuesto/notas
+- file: presupuesto/etica
+- file: presupuesto/trabajos
 ---

@@ -24,10 +24,10 @@ alternate:
   flip_x: false
   flip_y: false
 sections:
-- file: adicionales-header
-- file: adicionales-foto-video
-- file: adicionales-diseno-grafico
-- file: adicionales-redes-sociales
-- file: adicionales-personalizado
-# - file: contacto
+- file: adicionales/_header
+- file: adicionales/foto-video
+- file: adicionales/diseno-grafico
+- file: adicionales/redes-sociales
+- file: adicionales/personalizado
+# - file: _inicio/contacto
 ---

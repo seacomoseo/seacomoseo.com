@@ -215,9 +215,9 @@ window.addEventListener('load', () => {
 
   if (requirementsForm) {
     const allItems = document.querySelectorAll('.contact__form-item:not(:nth-child(4),:nth-child(5)),.row:nth-child(2)')
-    const web = document.querySelector('[value="WEB"]')
-    const seo = document.querySelector('[value="SEO"]')
-    const sem = document.querySelector('[value="SEM"]')
+    const web = document.querySelector('[name="Servicios ➡️ WEB"]')
+    const seo = document.querySelector('[name="Servicios ➡️ SEO"]')
+    const sem = document.querySelector('[name="Servicios ➡️ SEM"]')
     const webRenew = document.querySelector('[value="Renovar Web"]').parentElement
     // web
     const webRenewItem = webRenew.parentElement
@@ -249,7 +249,7 @@ window.addEventListener('load', () => {
     // seo and sem
     const searchEngin = document.evaluate('//h3[text()="Posicionamiento Web (SEO/SEM)"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.parentElement
     const budget = document.querySelector('[placeholder="Presupuesto Mensual"]').parentElement
-    const objectives = document.querySelector('[value="Tráfico"]').parentElement.parentElement
+    const objectives = document.querySelector('[name^="Objetivos"][name$="fico"]').parentElement.parentElement
     const expectations = document.querySelector('[placeholder="Expectativas"]').parentElement
     const seoSemItems = [
       searchEngin,
@@ -258,7 +258,7 @@ window.addEventListener('load', () => {
       expectations
     ]
     // other
-    const cms = document.querySelector('[value="Wordpress"]').parentElement.parentElement.parentElement
+    const cms = document.querySelector('[name="CMS ➡️ Wordpress"]').parentElement.parentElement.parentElement
     const antique = document.querySelector('[placeholder="Antigüedad"]').parentElement
     const webRenewItems = [
       cms,
@@ -289,7 +289,7 @@ window.addEventListener('load', () => {
     }
 
     requirementsVisibility()
-    document.querySelectorAll('[value="WEB"],[value="SEO"],[value="SEM"],[name="entry.693706772"').forEach(e => {
+    document.querySelectorAll('[name="Servicios ➡️ WEB"],[name="Servicios ➡️ SEO"],[name="Servicios ➡️ SEM"],[name="entry.693706772"').forEach(e => {
       e.addEventListener('change', event => {
         requirementsVisibility()
       })

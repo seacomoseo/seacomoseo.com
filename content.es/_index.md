@@ -20,22 +20,22 @@ alternate:
   flip_x: true
   flip_y: true
 sections:
-- file: header
-- file: frase
-- file: problema
-- file: solucion
+- file: _inicio/_header
+- file: _inicio/frase
+- file: _inicio/problema
+- file: _inicio/solucion
   modals:
   - sansoul
-- file: caracteristicas
-- file: equipo
+- file: _inicio/caracteristicas
+- file: _inicio/equipo
   modals:
-  - equipo-loren
-  - equipo-zepo
-  # - equipo-vaiana
-- file: precios
-- file: proceso
-- file: faq
-- file: portfolio
-- file: resenas
-- file: contacto
+  - equipo/loren
+  - equipo/zepo
+  # - equipo/vaiana
+- file: _inicio/precios
+- file: _inicio/proceso
+- file: _inicio/faq
+- file: _inicio/portfolio
+- file: _inicio/resenas
+- file: _inicio/contacto
 ---
