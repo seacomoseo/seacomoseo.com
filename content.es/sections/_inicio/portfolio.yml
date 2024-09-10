@@ -19,6 +19,10 @@ rows:
   - link: https://purotrajin.com/
     label: purotrajin.com
     image: portfolio/purotrajin.com.svg
+  - link: https://academiamanuruiz.es/
+    label: academiamanuruiz.es
+    image: portfolio/academiamanuruiz.es.svg
+    ofuscate: false
   - link: https://eli3a.com/
     label: eli3a.com
     image: portfolio/eli3a.com.svg

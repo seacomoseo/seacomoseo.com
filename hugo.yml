@@ -3,7 +3,7 @@ Paginate: 12
 buildFuture: false
 theme: [sansoul]
 params:
-  git_url: https://gitlab.com/lorensansol/seacomoseo.com
+  git_url: https://github.com/seacomoseo/seacomoseo.com
   netlify_name: seacomoseo
   netlify_id: 7c4684ba-3746-4998-bc6f-25f64422eea4
   hook: NjMwMmI2ZmQxZjZiNGI2YzBhYmJjMDIw

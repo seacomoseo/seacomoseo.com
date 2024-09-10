@@ -17,10 +17,10 @@ rows:
   - title: Web Completa
     subtitle: Tu mejor carta de presentación
     price: '**Desde** 770 €'
-    link: /presupuesto/#budget_WyIiLDEsMCwwLCI0IiwiMCIsIjEiLDAsMCwxLDAsMCwwLDAsMSwwLDEsMV0=
+    link: /presupuesto/#budget_WyIiLDEsMCwwLCI0IiwiMCIsIjEiLDAsMCwwLDAsMCwwLDAsMCwwLDFd
     icon: user-astronaut
     description: |
-      - icon-check Desde 6 secciones
+      - icon-check Hasta 10 secciones
       - icon-check Diseño efectivo y adaptado
       - icon-check **Hosting Gratuito** (ahorra ~100€/año)
       - icon-check Impulso inicial de visibilidad en Google
@@ -28,18 +28,18 @@ rows:
 
       icon-star<br>SERVICIO<br>DESTACADO
       {.offer .uppercase}
-  - title: Web Básica
-    subtitle: Una escueta carta de presentación
-    price: 330 €
-    order: -1
-    link: /presupuesto/#budget_WyIiLDEsMCwwLCIwIiwiMCIsIjEiLDAsMCwxLDAsMCwwLDAsMSwwLDEsMV0=
-    icon: user-helmet-safety
-    description: |
-      - icon-xmark Hasta 3 secciones
-      - icon-check Diseño efectivo y adaptado
-      - icon-check **Hosting Gratuito** (ahorra ~100€/año)
-      - icon-check Impulso inicial de visibilidad en Google
-      - icon-bolt Máximo 2 semanas de entrega
+  # - title: Web Básica
+  #   subtitle: Una escueta carta de presentación
+  #   price: 330 €
+  #   order: -1
+  #   link: /presupuesto/#budget_WyIiLDEsMCwwLCIwIiwiMCIsIjEiLDAsMCwxLDAsMCwwLDAsMSwwLDEsMV0=
+  #   icon: user-helmet-safety
+  #   description: |
+  #     - icon-xmark Hasta 3 secciones
+  #     - icon-check Diseño efectivo y adaptado
+  #     - icon-check **Hosting Gratuito** (ahorra ~100€/año)
+  #     - icon-check Impulso inicial de visibilidad en Google
+  #     - icon-bolt Máximo 2 semanas de entrega
   # - title: Tienda Online
   #   subtitle: Web con funcionalidades eCommerce
   #   price: '**Desde** 990 €'
