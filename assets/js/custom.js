@@ -53,11 +53,11 @@ if (budget) {
       // directory: 200,
       pages: {
         web:       { base: 300,  add: 100, active: ( web.checked && !seo.checked && !sem.checked), max: 300,  maxAdd: 100 },
-        seo:       { base: 800,  add: 100, active: (!web.checked &&  seo.checked && !sem.checked), max: 800,  maxAdd: 100 },
+        seo:       { base: 1000, add: 100, active: (!web.checked &&  seo.checked && !sem.checked), max: 1000, maxAdd: 100 },
         sem:       { base: 300,  add: 100, active: (!web.checked && !seo.checked &&  sem.checked), max: 300,  maxAdd: 100 },
         webSeo:    { base: 500,  add: 150, active: ( web.checked &&  seo.checked && !sem.checked), max: 1200, maxAdd: 200 },
         webSem:    { base: 600,  add: 150, active: ( web.checked && !seo.checked &&  sem.checked), max: 600,  maxAdd: 200 },
-        seoSem:    { base: 1000, add: 150, active: (!web.checked &&  seo.checked &&  sem.checked), max: 1100, maxAdd: 200 },
+        seoSem:    { base: 1200, add: 150, active: (!web.checked &&  seo.checked &&  sem.checked), max: 1300, maxAdd: 200 },
         webSeoSem: { base: 700,  add: 200, active: ( web.checked &&  seo.checked &&  sem.checked), max: 1500, maxAdd: 300 }
       },
       linkbuilding: 120,

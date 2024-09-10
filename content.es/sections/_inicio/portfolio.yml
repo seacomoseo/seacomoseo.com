@@ -50,6 +50,37 @@ rows:
   - link: https://elcodigodelainfluencia.com/
     label: elcodigodelainfluencia.com
     image: portfolio/elcodigodelainfluencia.com.svg
+
+  - link: https://mamakuna.es/
+    label: mamakuna.es
+    image: portfolio/mamakuna.es.svg
+  - link: https://yaizadancestudios.com/
+    label: yaizadancestudios.com
+    image: portfolio/yaizadancestudios.com.svg
+  - link: https://conmaslimon.com/
+    label: conmaslimon.com
+    image: portfolio/conmaslimon.com.svg
+  - link: https://elputocarnicero.com/
+    label: elputocarnicero.com
+    image: portfolio/elputocarnicero.com.svg
+  - link: https://tubrujula.es/
+    label: tubrujula.es
+    image: portfolio/tubrujula.es.svg
+  - link: https://technimur.es/
+    label: technimur.es
+    image: portfolio/technimur.es.svg
+  - link: https://backtoroots.es/
+    label: backtoroots.es
+    image: portfolio/backtoroots.es.svg
+  - link: https://lagrantribunomada.com/
+    label: lagrantribunomada.com
+    image: portfolio/lagrantribunomada.com.svg
+  - link: https://physiolab.es/
+    label: physiolab.es
+    image: portfolio/physiolab.es.svg
+  - link: https://sante.komun.org/
+    label: sante.komun.org
+    image: portfolio/sante.komun.org.svg
   - link: https://sicellsvet.com/
     label: sicellsvet.com
     image: portfolio/sicellsvet.com.svg
@@ -83,3 +114,12 @@ rows:
   - link: https://murcia.ilovedogwash.com/
     label: murcia.ilovedogwash.com
     image: portfolio/murcia.ilovedogwash.com.svg
+  - link: https://jurismurabogados.es/
+    label: jurismurabogados.es
+    image: portfolio/jurismurabogados.es.svg
+  - link: https://laerotecadeeva.es/
+    label: laerotecadeeva.es
+    image: portfolio/laerotecadeeva.es.svg
+  - link: https://theblackdotmicro.com/
+    label: theblackdotmicro.com
+    image: portfolio/theblackdotmicro.com.svg
