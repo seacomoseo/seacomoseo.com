@@ -8,6 +8,7 @@ rows:
     num: 3
     color: white
     slider: true
+    hide_bullets: true
   items:
 
   - title: Maite B.

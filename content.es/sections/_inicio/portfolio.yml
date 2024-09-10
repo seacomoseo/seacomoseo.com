@@ -12,6 +12,7 @@ rows:
     ratio: 3x2
     gap: 2
     slider: true
+    hide_bullets: true
   items:
   - link: https://solventie.es/
     label: solventie.es
