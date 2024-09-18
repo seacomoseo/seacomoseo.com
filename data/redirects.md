@@ -15,3 +15,4 @@ https://seacomoseo.com/sansoul/ https://seacomoseo.com/#sansoul
 /instrucciones/ /mapa/
 /qr /
 /contacto.vcf /seacomoseo.vcf
+/file.ext /
