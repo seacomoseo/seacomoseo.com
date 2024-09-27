@@ -31,15 +31,16 @@ description: |
 
   #### Tecnologías Jamstack que usamos
 
-  - icon-git-alt    [Git](https://git-scm.com/ "nofollow"):                       Sistema de Control de Versiones
-  - icon-github     [Github](https://github.com/ "nofollow"):                     Git y Almacenamiento Online + Automatización de Copias de Seguridad
-  - icon-gitlab     [Gitlab](https://gitlab.org "nofollow"):                      Almacenamiento paralelo para copias de seguridad
-  - icon-netlify    [Netlify](https://www.netlify.com/ "nofollow"):               Servidor de despliegue, Recepción de Formularios y Gestor de Identidad de Usuarios
-  - icon-bolt       [Cloudflare Pages](https://pages.cloudflare.com/ "nofollow"): Alternativa de Servidor de despliegue
-  - icon-hugo       [Hugo](https://gohugo.io/ "nofollow"):                        Generador de Sitios Estáticos (SSG) ([más info](https://es.wikipedia.org/wiki/Hugo_(software) "nofollow"))
-    - icon-sass     [SASS](https://sass-lang.com/ "nofollow") + icon-css3-alt [PostCSS](https://postcss.org/ "nofollow") ( [PurgeCSS](https://purgecss.com/ "nofollow") + [Autoprefixer](https://autoprefixer.github.io/ "nofollow") +[CSSnano](https://cssnano.co/ "nofollow")): Preprocesadores de CSS / Estilos
-    - icon-node-js  [BabelJS](https://babeljs.io/ "nofollow"):                    Preprocesador de Javascript / Funcionalidades
-  - icon-static-cms [Static CMS](https://www.staticcms.org/ "nofollow"):          Gestor de Contenidos (CMS)
+  - icon-git-alt            [Git](https://git-scm.com/ "nofollow"):                                    Sistema de Control de Versiones
+  - icon-github             [Github](https://github.com/ "nofollow"):                                  Git y Almacenamiento Online + Automatización de Copias de Seguridad
+  - icon-gitlab             [Gitlab](https://gitlab.org "nofollow"):                                   Almacenamiento paralelo para copias de seguridad
+  - icon-netlify            [Netlify](https://www.netlify.com/ "nofollow"):                            Servidor de despliegue, Recepción de Formularios y Gestor de Identidad de Usuarios
+  - icon-bolt               [Cloudflare Pages](https://pages.cloudflare.com/ "nofollow"):              Alternativa de Servidor de despliegue
+  - icon-google-apps-script [Google App Script](https://developers.google.com/apps-script "nofollow"): Alternativa de Recepción de Formularios en Hojas de Google Drive
+  - icon-hugo               [Hugo](https://gohugo.io/ "nofollow"):                                     Generador de Sitios Estáticos (SSG) ([más info](https://es.wikipedia.org/wiki/Hugo_(software) "nofollow"))
+    - icon-sass             [SASS](https://sass-lang.com/ "nofollow") + icon-css3-alt [PostCSS](https://postcss.org/ "nofollow") ( [PurgeCSS](https://purgecss.com/ "nofollow") + [Autoprefixer](https://autoprefixer.github.io/ "nofollow") +[CSSnano](https://cssnano.co/ "nofollow")): Preprocesadores de CSS / Estilos
+    - icon-esbuild          [esbuild](https://esbuild.github.io/ "nofollow"):                          Preprocesador de Javascript / Funcionalidades
+  - icon-static-cms         [Static CMS](https://www.staticcms.org/ "nofollow"):                       Gestor de Contenidos (CMS)
 
   Hugo nos permite usar temas personalizados mediante submódulos de Git para poder tener todo el desarrollo de éste proyecto que hemos creado separado de cada web y centralizado en un único lugar, por lo que todas las mejoras y opciones de personalización que vayamos añadiendo se podrán actualizar a voluntad y muy fácilmente en cada sitio web.
 
