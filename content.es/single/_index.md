@@ -80,7 +80,7 @@ address:
   pc: 30570
   locality: Murcia
   region: Murcia
-  country: España
+  country: ES
   geo: '{"type":"Point","coordinates":[-1.072414, 37.977543]}'
   link: https://g.page/webmurcia
 areas:
