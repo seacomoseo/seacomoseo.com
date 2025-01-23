@@ -1,11 +1,8 @@
 ---
-title: Plantilla para Facilitar Interlinking o Enlazado Interno Piramidal
-title_seo: ''
 slug: plantilla-interlinking-enlazado-interno
-description: ''
+title: Plantilla para Facilitar Interlinking o Enlazado Interno Piramidal
+summary: ''
 image: https://youtu.be/ROCV-BaLxkI
-categories: []
-tags: []
 author: admin
 toc: false
 draft: false
@@ -13,6 +10,8 @@ noindex: false
 date: 2017-09-05
 lastmod: 2017-09-05
 translationKey: interllinking-template
+seo: ''
+description: ''
 ---
 Disculpad la ligera desincronización en algunos tramos del vídeo con el audio (¡Es mi primer vídeo, no hagáis demasiada sangre! 😝).
 

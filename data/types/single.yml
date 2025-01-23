@@ -1,0 +1,15 @@
+title: Únicas
+order: 0
+base: single
+template:
+  callnow:
+    show: items
+    es:
+    - type: whatsapp
+      label: 623 199 599
+      button: main
+  section:
+  - uppercase: true
+    parallax: fix
+  modal:
+    uppercase: true

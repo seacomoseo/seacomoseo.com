@@ -1,0 +1,140 @@
+title: Todas
+template:
+  toc: true
+  background:
+    color: light
+  menu:
+    logo: true
+    logo_align: left
+    sticky: none
+    transparent: true
+    color: white
+    size: sm
+    es:
+      image: base/logo-alt.svg
+      items:
+      - link: /
+        label: Inicio
+        icon: house
+      - link: /#problema
+        label: Problema
+        icon: triangle-exclamation
+      - link: /#solucion
+        label: Solución
+        icon: life-ring
+        items:
+        - link: /#sansoul
+          label: SanSoul
+          icon: fire-flame-curved
+      - link: /#caracteristicas
+        label: Características
+        icon: circle-check
+      - link: /#equipo
+        label: Equipo
+        icon: users
+        items:
+        - link: /#loren
+          label: Loren
+          icon: user-robot
+        - link: /#zepo
+          label: Zepo
+          icon: user-astronaut
+      - link: /#precios
+        label: Precios
+        icon: tags
+      # - link: /#proceso
+      #   label: Proceso
+      #   icon: shoe-prints
+      - link: /#faq
+        label: FAQ
+        icon: circle-question
+      - link: /#portfolio
+        label: Portfolio
+        icon: clipboard-list
+      - link: /#resenas
+        label: Reseñas
+        icon: comment
+      - link: /#contacto
+        label: Contacto
+        icon: paper-plane
+        button: link
+      - icon: plus
+        label: Más
+        items:
+        - link: /adicionales/
+          label: Servicios Adicionales
+          icon: icons
+        - link: /mapa/
+          label: Orientación
+          icon: compass
+        - link: /presupuesto/
+          label: Presupuesto
+          icon: calculator
+        - link: /requerimientos/
+          label: Requerimientos
+          icon: list-check
+        - link: /entrega/
+          label: Entrega
+          icon: circle-check
+        - link: /cms/
+          label: Gestor de Contenidos
+          icon: pen-to-square
+        - link: /resto/
+          label: Resto de Instrucciones
+          icon: list-ol
+        - link: /blog/
+          label: Blog
+          icon: blog
+    en:
+      items:
+      - icon: plus
+        label: Más
+        items:
+        - link: /map/
+          label: Orientation
+          icon: compass
+        - link: /requirements/
+          label: Requirements
+          icon: list-check
+        - link: /delivery/
+          label: Delivery
+          icon: circle-check
+        - link: /cms/
+          label: Content Manager
+          icon: pen-to-square
+        - link: /rest/
+          label: Rest of Instructions
+          icon: list-ol
+        - link: /sansoul/
+          label: SanSoul System
+          icon: circle-info
+  callnow:
+    show: hide
+  section:
+  - size: sm
+  modal: {}
+  sections:
+  - file: base/_header
+  - file: base/toc
+  - file: base/content
+  - file: base/address
+  - file: base/author
+  - file: base/social
+  - file: base/comments
+  - file: base/children
+  - file: base/share
+  - file: base/related
+  list:
+    columns: 3
+    color: white
+    decline: true
+    inset: true
+    ratio: 16/9
+    icon: hide
+    align: left
+    button: hide
+    tags:
+    - type: date
+    - type: address
+  related:
+    slider: true

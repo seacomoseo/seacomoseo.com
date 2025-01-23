@@ -1,0 +1,84 @@
+icons:
+  type: regular
+  sharp: false
+  emojis: ''
+  emojis_default: false
+  play: youtube-iframe
+  up:
+  down:
+  left:
+  right:
+fonts:
+  google: false
+  base:
+    family: Outfit
+    weight: 300
+    bold: 0
+    italic: false
+    line-height: 1.25
+  cursive:
+    family: Passion One # Caveat
+    weight: 400
+    bold: 0
+    italic: false
+    line-height: 1.25
+    size: 1
+    top: 0
+  title:
+    family: Outfit # Brandon
+    weight: 700 # 900
+    bold: 0
+    italic: false
+    line-height: 1.25
+    size: 1
+    top: 0
+  blockquote_cursive: true
+colors:
+  main:
+    color: '#5fceb3'
+    light: ''
+    dark: ''
+    contrast: none
+  alt:
+    color: '#2f826d'
+    light: ''
+    dark: ''
+    contrast: text
+  link:
+    color: '#fca326'
+    light: '#fceede' # 82
+    dark: ''
+    contrast: none
+  base:
+    white: '#fff'
+    light: '#eee'
+    grey: '#767676'
+    dark: '#212121'
+    black: '#000'
+rounded:
+  radius: 1.25
+  chamfer: false
+buttons:
+  sides_round: true
+  dot_circle: true
+  deep: true
+  outline: false
+  font_main:
+    type: title
+    bold: false
+    uppercase: true
+  font_alt:
+    type: base
+    bold: false
+    uppercase: false
+inputs:
+  fill: false
+  labels_out: false
+shadow:
+  left: 0
+  top: 0.15
+  blur: 0.15
+  color: black
+  alpha: 0.75
+performance:
+  show: false

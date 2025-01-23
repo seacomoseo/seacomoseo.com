@@ -1,0 +1,80 @@
+@page {
+  size: auto;
+  size: A4;
+  size: ISOA4;
+  size: ISO A4;
+  margin: 0;
+  // counter-increment: page;
+  // content: counter(page) ' / ' counter(pages);
+}
+.print {
+  display: none;
+}
+.no-print {
+  display: inherit;
+}
+@media print {
+  #body-presupuesto {
+    font-size: 12px;
+    .print {
+      display: inherit;
+    }
+    .no-print,
+    .menu__toggle,
+    .callnow,
+    .up,
+    .section--footer,
+    .box__icon--bottom,
+    .service-check,
+    .service-check + label,
+    .service-check + label + br {
+      display: none;
+    }
+    .logo__link {
+      position: absolute;
+      top: 10mm;
+      left: 15mm;
+    }
+    .section,
+    & {
+      --text: #282525;
+      --bg-hex: #fff;
+      --pt-divider: 0em;
+      --pb-divider: 0em;
+      --divider-mask-image: none;
+    }
+    .section {
+      padding: 15mm 15mm 10mm;
+      page-break-inside: avoid;
+      position: relative;
+      filter: none;
+    }
+    #header {
+      --pt: 0em;
+    }
+    .container {
+      page-break-inside: avoid;
+    }
+    #result {
+      text-align: center;
+    }
+    #etica-profesional,
+    #trabajos-posicionamiento {
+      .content {
+        h2, h3, h4, h5, h6 {
+          margin-top: 0;
+          margin-bottom: .125em;
+        }
+        ul {
+          margin-bottom: .5em;
+        }
+        li ul {
+          margin-bottom: .125em;
+        }
+        li > div {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+name: Footer
+divider: arrow-side-round
+flip_x: true
+content: |
+  - icon:copyright      {{< internal-link index >}}
+  - icon:scale-balanced {{< internal-link legal >}}
+  - icon:shield-keyhole {{< internal-link privacy >}}
+  - icon:cookie-bite    {{< internal-link cookies >}}
+  {.list-inline}

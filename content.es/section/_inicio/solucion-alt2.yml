@@ -1,0 +1,54 @@
+name: Solucion Alt2
+id: solucion
+title: ¡La Solución!
+subtitle: ¡Nosotros te ayudamos!
+icon: life-ring
+content: |
+  Combinando todos nuestros años de experiencia en maquetación, posicionamiento y optimización de procedimientos para diseñar páginas web, hemos desarrollado y perfeccionado un [sistema propio](#sansoul) durante meses con los siguientes criterios:
+align: center
+menu_label: Solución
+boxes:
+- box:
+    underline: true
+    uppercase: true
+    columns: 4
+  boxes:
+  - title: Diseño Moderno
+    subtitle: Atractivo y fácil de usar
+    icon: laptop-mobile
+    content: |
+      Para que la experiencia de los usuarios no sea frustrante, si no agradable en diseño y usabilidad tanto en móbiles como escritorios, proyectándoles esa sensación y así la asocien a tu negocio con facilidad.
+      Comprueba el portfolio y juzga tú mismo.
+  - title: Visibilidad
+    subtitle: Posicionamiento Web (SEO/SEM)
+    icon: magnifying-glass
+    content: |
+      Optimizaremos tu página web para que puedas aparecer en los resultados de búsqueda de Google a largo plazo y así atraer a más clientes potenciales. Opcionalmente te podemos crear una campaña de anuncios para aparecer al instante.
+  - title: Tecnologías
+    subtitle: Jamstack, el nuevo paradigma
+    icon: microchip
+    content: |
+      Olvídate de Wordpress. Pocas empresas de marketing y diseño conocen éste nuevo paradigma para desarrollar webs y muchas menos lo usan. ¿Los beneficios? <a href="jhfc">==icon:sign-circle Webs increíblemente rápidas, seguras, fáciles de mantener, escalables y con hosting gratis==</a>.
+  - title: Autogestionable
+    subtitle: Para que no dependas de nadie
+    icon: gamepad-modern
+    content: |
+      Incluimos un panel de administración simple de usar para cambiar tus contenidos (aunque puedes contar con nosotros para ello). No sabes la cantidad de clientes que nos llegan por que, tras gastarse el dinero, no pueden cambiar nada.
+- box:
+    underline: true
+    uppercase: true
+  boxes:
+  - title: Resumen
+    subtitle: Queremos
+    link: '#caracteristicas'
+    label: Características
+    icon: heart
+    content: |
+      icon:rocket **Impulsar** tu negocio y
+
+      icon:piggy-bank **Ahorrarte** <!-- icon:clock --> tiempo, <!-- icon:piggy-bank --> dinero y <!--  icon:heart-pulse --> preocupaciones
+
+      ¿Te parece muy loco? ¡Pues sigue leyendo y flipa! 🤩
+      {.subtitle}
+    licon: circle-check
+    icon_type: bottom

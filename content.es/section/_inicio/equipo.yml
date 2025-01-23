@@ -1,0 +1,28 @@
+name: Equipo
+id: equipo
+title: Equipo
+subtitle: Los culpables de tanto flow
+icon: users
+box:
+  uppercase: true
+  icon_type: bottom
+  border: main
+  icon: user
+  slider: true
+  columns: 3
+  circle: true
+boxes:
+- title: Loren
+  subtitle: El Técnico
+  content: Diseño Web, Desarrollo y <br> Posicionamiento SEO/SEM
+  link: '#loren'
+  anchor: Diseñador Web y SEO en Murcia
+  image: equipo/loren.jpg
+  icon: user-robot
+- title: Zepo
+  subtitle: El Creativo
+  content: Fotografía, Vídeo, Diseño Gráfico <br> y Redes Sociales
+  link: '#zepo'
+  anchor: Fotógrafo, Vídeo, Diseñador Gráfico y Social Media en Murcia
+  image: equipo/zepo.jpg
+  icon: user-astronaut

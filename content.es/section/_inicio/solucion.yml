@@ -1,0 +1,26 @@
+name: Solucion
+id: solucion
+title: ¡La Solución!
+subtitle: ¡Nosotros te ayudamos!
+icon: life-ring
+color: main-dark
+menu_label: Solución
+box:
+  align: left
+  align_y: center
+  columns: 2
+boxes:
+- image: solucion/sistema-propio.svg
+- content: |
+    Olvídate de ~~Wordpress~~ y de matar moscas a cañonazos. \
+    Hemos desarrollado un [sistema propio](#sansoul) enfocado en:
+
+    - icon:bullseye-pointer **Diseño Efectivo**
+    - icon:magnifying-glass **SEO / Visibilidad**
+    - icon:rocket-launch **Aumentar tus Ventas**
+    - icon:piggy-bank **Ahorrarte Tiempo, Dinero y Preocupaciones**
+
+    ¿Te parece muy loco? ¡Pues sigue leyendo y flipa! 🤩
+    {.subtitle}
+
+    [btn icon:circle-check Características](#caracteristicas)

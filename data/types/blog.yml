@@ -1,0 +1,7 @@
+name: Blog
+base: article
+order: 3
+comments: true
+related: true
+es:
+  permalinks: ''

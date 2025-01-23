@@ -1,0 +1,36 @@
+name: Foto Video
+id: foto-video
+title: Fotografía y Vídeo
+subtitle: Precios
+icon: aperture
+box:
+  uppercase: true
+  underline: true
+  color: white
+  link: /#contacto
+  label: Contacto
+  licon: paper-plane
+  slider: true
+  columns: 4
+boxes:
+- title: Sesión
+  price: '**Desde** 45 €'
+  icon: clock
+  content: |
+    - icon:check 1 hora de toma de imagenes/vídeos
+- title: Fotografías
+  price: '**Desde** 100 €'
+  icon: images
+  content: |
+    - icon:check Edición y retoque de alta calidad de 20-30 fotografías
+- title: Vídeo
+  price: '**Desde** 110 €'
+  icon: film
+  content: |
+    - icon:check Edición de video de 1 minuto para Web y/o RRSS
+    - icon:plus Minuto adicional de duración + 85 €
+- title: Reels / TikTok
+  price: '**Desde** 110 €'
+  icon: clapperboard-play
+  content: |
+    - icon:check Edición de vídeos cortos para redes sociales

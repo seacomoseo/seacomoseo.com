@@ -1,0 +1,30 @@
+name: Solucion alt
+id: solucion
+title: ¡La Solución!
+subtitle: ¡Nosotros te ayudamos!
+icon: life-ring
+align: center
+menu_label: Solución
+box:
+  align: left
+  align_y: center
+  columns: 2
+boxes:
+- order: 1
+  image: sitio-web-desarrollo.svg
+- order: 2
+  content: |
+    Usamos un conjunto de tecnologías y estilo de desarrollar webs llamado Jamstack.
+
+    > ¿Jamstack? ¿Y eso en qué me beneficia?
+
+    Olvídate de Wordpress. Pocas empresas de marketing y diseño conocen éste nuevo paradigma para desarrollar webs y muchas menos lo usan. ¿Los beneficios? **Webs increíblemente rápidas, seguras, fáciles de mantener, escalables y con hosting gratis**.
+- order: 4
+  image: solucion.svg
+- order: 3
+  link: '#caracteristicas'
+  label: Características
+  content: |
+    Combinando esto con todos nuestros años de experiencia en maquetación, posicionamiento y optimización de procedimientos para diseñar páginas web, **hemos desarrollado** y perfeccionado durante meses un [sistema propio](#sansoul) con las siguientes características:
+  align_max: right
+  licon: circle-check

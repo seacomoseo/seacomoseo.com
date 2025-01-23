@@ -18,8 +18,8 @@
       <span>Gestión de Reservas</span>
     </label>
   -->
-  {{ $checks := `<svg><use xlink:href="/draws.svg#check"></use><use xlink:href="/draws.svg#xmark"></use></svg>` | safeHTML }}
-  {{ $xmark := `<svg class="xmark"><use xlink:href="/draws.svg#xmark"></use></svg>` | safeHTML }}
+  {{ $checks := print `<svg><use href="/draws.` site.Params.timestamp `.svg#check"></use><use href="/draws.` site.Params.timestamp `.svg#xmark"></use></svg>` | safeHTML }}
+  {{ $xmark  := print `<svg class="xmark"><use href="/draws.` site.Params.timestamp `.svg#xmark"></use></svg>` | safeHTML }}
   <input type="checkbox" id="web" class="service-check">
   <label for="web">
     <strong class="uppercase">WEB</strong>
@@ -41,227 +41,231 @@
   <br>
   <input type="checkbox" id="ecommerce-aux" class="d-none">
     */}}
-  <table class="compare">
-    <thead>
-      <tr>
-        <th colspan="2">Concepto</th>
-        <th>Incluido</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="web">
-        <td colspan="2" id="referencia-secciones">
-          <strong>Secciones</strong> (número)
-          <sup><a href="#nota-secciones" class="footnote-ref button button--sm" role="doc-noteref">1</a></sup>
-        </td>
-        <td>
-          <select id="sections">
-            <!--
-              <option value="0">≤ 3</option>
-              <option value="2">≤ 5</option>
-              <option value="3">≤ 8</option>
-            -->
-            <option value="4" selected>≤ 10</option>
-            <option value="5">≤ 20</option>
-            <option value="6">≤ 30</option>
-            <option value="7">≤ 40</option>
-            <option value="8">≤ 50</option>
-            <option value="9">≤ 60</option>
-            <option value="10">≤ 70</option>
-            <option value="11">≤ 80</option>
-            <option value="12">≤ 90</option>
-            <option value="13">≤ 100</option>
-          </select>
-          {{ $xmark }}
-        </td>
-      </tr>
-      <tr class="web seo sem">
-        <td colspan="2" id="referencia-paginas">
-          <strong>Páginas</strong> (número)
-          <sup><a href="#nota-paginas" class="footnote-ref button button--sm" role="doc-noteref">2</a></sup>
-        </td>
-        <td>
-          <select id="pages">
-            <option value="0">≤ 10</option>
-            <option value="1">≤ 50</option>
-            <option value="2">≤ 100</option>
-            <option value="3">≤ 500</option>
-            <option value="3">≤ 1.000</option>
-            <option value="4">≤ 2.000</option>
-            <option value="5">≤ 5.000</option>
-            <option value="6">≤ 10.000</option>
-          </select>
-          {{ $xmark }}
-        </td>
-      </tr>
-      <tr class="web">
-        <td colspan="2"><strong>Idiomas</strong> (número)</td>
-        <td>
-          <select id="langs">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-          </select>
-          {{ $xmark }}
-        </td>
-      </tr>
-      {{/*        
-      <tr class="web">
-        <td colspan="2">
-          <label for="ecommerce"><strong>Tienda Online</strong></label>
-        </td>
-        <td><input type="checkbox" id="ecommerce">{{ $xmark }}</td>
-      </tr>
-      <tr class="ecommerce">
-        <td colspan="2">
-          <ul><li><div>
-            <label for="ecommerce-catalogue">Sólo <strong>Catálogo</strong> <br> <i></i> (productos, categorías, <br> <i></i> etiquetas, marcas, <br> <i></i> variaciones, filtros…)</label>
-          </div></li></ul>
-        </td>
-        <td><input type="radio" name="ecommerce-options" id="ecommerce-catalogue" checked>{{ $xmark }}</td>
-      </tr>
-      <tr class="ecommerce">
-        <td colspan="2" id="referencia-ecommerce-basico">
-          <ul><li><div>
-            <label for="ecommerce-basic">eCommerce <strong>Básico</strong> <br> <i></i> (… + carrito o cesta <br> <i></i> + pasarela de pago)</label>
-            <sup><a href="#nota-ecommerce-basico" class="footnote-ref button button--sm" role="doc-noteref">3</a></sup>
-          </div></li></ul>
-        </td>
-        <td><input type="radio" name="ecommerce-options" id="ecommerce-basic">{{ $xmark }}</td>
-      </tr>
-      <tr class="ecommerce">
-        <td colspan="2" id="referencia-ecommerce-completo">
-          <ul><li><div>
-            <label for="ecommerce-full">eCommerce <strong>Completo</strong> <br> <i></i> (… + registro de usuarios <br> <i></i> + resto de funcionalidades)</label>
-            <sup><a href="#nota-ecommerce-completo" class="footnote-ref button button--sm" role="doc-noteref">4</a></sup>
-          </div></li></ul>
-        </td>
-        <td><input type="radio" name="ecommerce-options" id="ecommerce-full">{{ $xmark }}</td>
-      </tr>
-      <tr class="web directory">
-        <td colspan="2"><label for="directory"><strong>Directorio</strong> <br> <i></i> (de negocios, inmobiliarias…)</label></td>
-        <td><input type="checkbox" id="directory">{{ $xmark }}</td>
-      </tr>
-        */}}
-      <tr class="web">
-        <td colspan="2"><strong>Blog</strong> (o noticias)</td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr class="web">
-        <td colspan="2"><strong>Diseño</strong> efectivo y adaptado <br> <i></i> (derecho a 2 revisiones)</td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr class="web">
-        <td colspan="2"><strong>Hosting Gratuito</strong></td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr class="web">
-        <td colspan="2"><strong>Migración de contenidos</strong></td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr class="web seo">
-        <td colspan="2"><strong>Migración SEO</strong></td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr class="web seo">
-        <td colspan="2"><strong>Impulso inicial SEO</strong> <br> <i></i> (optimizaciones técnicas)</td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr class="seo sem">
-        <td colspan="2"><strong>Estudio de palabras clave</strong> <br> <i></i> + adaptar contenido</td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr class="seo">
-        <td colspan="2"><strong>Estrategia SEO avanzada</strong>  <br> <i></i> (diseñar + implementar)</td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr class="seo">
-        <td colspan="2" id="referencia-linkbuilding">
-          <strong>Linkbuilding</strong> (SEO)
-          <sup><a href="#nota-linkbuilding" class="footnote-ref button button--sm" role="doc-noteref">3</a></sup>
-        </td>
-        <td><input type="checkbox" id="linkbuilding" checked>{{ $xmark }}</td>
-      </tr>
-      <tr class="sem">
-        <td colspan="2"><strong>Campaña de publicidad</strong> <br> <i></i> en Google Ads (SEM)</td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr>
-        <td colspan="2" id="referencia-inversion-google-ads">
-          <strong>Inversión mensual</strong> en Google Ads
-          <sup><a href="#nota-inversion-google-ads" class="footnote-ref button button--sm" role="doc-noteref">4</a></sup>
-        </td>
-        <td>{{ $checks }}</td>
-      </tr>
-      <tr class="web">
-        <td rowspan="3" id="referencia-mantenimientos">
-          <strong>Mantenimiento</strong>
-          <sup><a href="#nota-mantenimientos" class="footnote-ref button button--sm" role="doc-noteref">5</a></sup>
-        </td>
-        <td id="referencia-mantenimiento-web">
-          <label for="web-maintenance"><strong class="uppercase">WEB</strong></label>
-        </td>
-        <td><input type="checkbox" id="web-maintenance">{{ $xmark }}</td>
-      </tr>
-      <tr class="seo">
-        <td id="referencia-mantenimiento-seo">
-          <label for="seo-maintenance"><strong class="uppercase">SEO</strong></label>
-        </td>
-        <td><input type="checkbox" id="seo-maintenance">{{ $xmark }}</td>
-      </tr>
-      <tr class="sem">
-        <td id="referencia-mantenimiento-sem">
-          <label for="sem-maintenance"><strong class="uppercase">SEM</strong></label>
-        </td>
-        <td><input type="checkbox" id="sem-maintenance">{{ $xmark }}</td>
-      </tr>
-      <tr>
-        <td colspan="2"><strong>Entrega</strong> (semanas)</td>
-        <td>≤ 2</td>
-      </tr>
-      <tr class="bill">
-        <td colspan="2"><strong>Factura</strong></td>
-        <td><input type="checkbox" id="bill" checked>{{ $xmark }}</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-inner">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Concepto</th>
+          <th>Incluido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="web">
+          <td colspan="2" id="referencia-secciones">
+            <strong>Secciones</strong> (número)
+            <sup><a href="#nota-secciones" class="footnote-ref button button--sm" role="doc-noteref">1</a></sup>
+          </td>
+          <td>
+            <select id="sections">
+              <!--
+                <option value="0">≤ 3</option>
+                <option value="2">≤ 5</option>
+                <option value="3">≤ 8</option>
+              -->
+              <option value="4" selected>≤ 10</option>
+              <option value="5">≤ 20</option>
+              <option value="6">≤ 30</option>
+              <option value="7">≤ 40</option>
+              <option value="8">≤ 50</option>
+              <option value="9">≤ 60</option>
+              <option value="10">≤ 70</option>
+              <option value="11">≤ 80</option>
+              <option value="12">≤ 90</option>
+              <option value="13">≤ 100</option>
+            </select>
+            {{ $xmark }}
+          </td>
+        </tr>
+        <tr class="web seo sem">
+          <td colspan="2" id="referencia-paginas">
+            <strong>Páginas</strong> (número)
+            <sup><a href="#nota-paginas" class="footnote-ref button button--sm" role="doc-noteref">2</a></sup>
+          </td>
+          <td>
+            <select id="pages">
+              <option value="0">≤ 10</option>
+              <option value="1">≤ 50</option>
+              <option value="2">≤ 100</option>
+              <option value="3">≤ 500</option>
+              <option value="3">≤ 1.000</option>
+              <option value="4">≤ 2.000</option>
+              <option value="5">≤ 5.000</option>
+              <option value="6">≤ 10.000</option>
+            </select>
+            {{ $xmark }}
+          </td>
+        </tr>
+        <tr class="web">
+          <td colspan="2"><strong>Idiomas</strong> (número)</td>
+          <td>
+            <select id="langs">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            {{ $xmark }}
+          </td>
+        </tr>
+        {{/*        
+        <tr class="web">
+          <td colspan="2">
+            <label for="ecommerce"><strong>Tienda Online</strong></label>
+          </td>
+          <td><input type="checkbox" id="ecommerce">{{ $xmark }}</td>
+        </tr>
+        <tr class="ecommerce">
+          <td colspan="2">
+            <ul><li><div>
+              <label for="ecommerce-catalogue">Sólo <strong>Catálogo</strong> <br> <i></i> (productos, categorías, <br> <i></i> etiquetas, marcas, <br> <i></i> variaciones, filtros…)</label>
+            </div></li></ul>
+          </td>
+          <td><input type="radio" name="ecommerce-options" id="ecommerce-catalogue" checked>{{ $xmark }}</td>
+        </tr>
+        <tr class="ecommerce">
+          <td colspan="2" id="referencia-ecommerce-basico">
+            <ul><li><div>
+              <label for="ecommerce-basic">eCommerce <strong>Básico</strong> <br> <i></i> (… + carrito o cesta <br> <i></i> + pasarela de pago)</label>
+              <sup><a href="#nota-ecommerce-basico" class="footnote-ref button button--sm" role="doc-noteref">3</a></sup>
+            </div></li></ul>
+          </td>
+          <td><input type="radio" name="ecommerce-options" id="ecommerce-basic">{{ $xmark }}</td>
+        </tr>
+        <tr class="ecommerce">
+          <td colspan="2" id="referencia-ecommerce-completo">
+            <ul><li><div>
+              <label for="ecommerce-full">eCommerce <strong>Completo</strong> <br> <i></i> (… + registro de usuarios <br> <i></i> + resto de funcionalidades)</label>
+              <sup><a href="#nota-ecommerce-completo" class="footnote-ref button button--sm" role="doc-noteref">4</a></sup>
+            </div></li></ul>
+          </td>
+          <td><input type="radio" name="ecommerce-options" id="ecommerce-full">{{ $xmark }}</td>
+        </tr>
+        <tr class="web directory">
+          <td colspan="2"><label for="directory"><strong>Directorio</strong> <br> <i></i> (de negocios, inmobiliarias…)</label></td>
+          <td><input type="checkbox" id="directory">{{ $xmark }}</td>
+        </tr>
+          */}}
+        <tr class="web">
+          <td colspan="2"><strong>Blog</strong> (o noticias)</td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr class="web">
+          <td colspan="2"><strong>Diseño</strong> efectivo y adaptado <br> <i></i> (2 revisiones)</td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr class="web">
+          <td colspan="2"><strong>Hosting Gratuito</strong></td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr class="web">
+          <td colspan="2"><strong>Migración de contenidos</strong></td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr class="web seo">
+          <td colspan="2"><strong>Migración SEO</strong></td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr class="web seo">
+          <td colspan="2"><strong>Impulso inicial SEO</strong> <br> <i></i> (optimizaciones técnicas)</td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr class="seo sem">
+          <td colspan="2"><strong>Estudio de palabras clave</strong> <!-- <br> <i></i> + adaptar contenido --></td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr class="seo">
+          <td colspan="2"><strong>Estrategia SEO avanzada</strong> <!-- <br> <i></i> (diseñar + implementar) --></td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr class="seo">
+          <td colspan="2" id="referencia-linkbuilding">
+            <strong>Linkbuilding</strong> (SEO)
+            <sup><a href="#nota-linkbuilding" class="footnote-ref button button--sm" role="doc-noteref">3</a></sup>
+          </td>
+          <td><input type="checkbox" id="linkbuilding" checked>{{ $xmark }}</td>
+        </tr>
+        <tr class="sem">
+          <td colspan="2"><strong>Campaña de publicidad</strong> <br> <i></i> en Google Ads (SEM)</td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr>
+          <td colspan="2" id="referencia-inversion-google-ads">
+            <strong>Inversión mensual</strong> en Google Ads
+            <sup><a href="#nota-inversion-google-ads" class="footnote-ref button button--sm" role="doc-noteref">4</a></sup>
+          </td>
+          <td>{{ $checks }}</td>
+        </tr>
+        <tr class="web">
+          <td rowspan="3" id="referencia-mantenimientos">
+            <strong>Mantenimiento</strong>
+            <sup><a href="#nota-mantenimientos" class="footnote-ref button button--sm" role="doc-noteref">5</a></sup>
+          </td>
+          <td id="referencia-mantenimiento-web">
+            <label for="web-maintenance"><strong class="uppercase">WEB</strong></label>
+          </td>
+          <td><input type="checkbox" id="web-maintenance">{{ $xmark }}</td>
+        </tr>
+        <tr class="seo">
+          <td id="referencia-mantenimiento-seo">
+            <label for="seo-maintenance"><strong class="uppercase">SEO</strong></label>
+          </td>
+          <td><input type="checkbox" id="seo-maintenance">{{ $xmark }}</td>
+        </tr>
+        <tr class="sem">
+          <td id="referencia-mantenimiento-sem">
+            <label for="sem-maintenance"><strong class="uppercase">SEM</strong></label>
+          </td>
+          <td><input type="checkbox" id="sem-maintenance">{{ $xmark }}</td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Entrega</strong> (semanas)</td>
+          <td>≤ 2</td>
+        </tr>
+        <tr class="bill">
+          <td colspan="2"><strong>Factura (15%)</strong></td>
+          <td><input type="checkbox" id="bill" checked>{{ $xmark }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   
-  <h2 id="result" class="align-center uppercase">Precios</h2>
+  <h2 id="result" class="uppercase">Precios</h2>
 
-  <table class="compare">
-    <thead>
-      <tr>
-        <th>Concepto</th>
-        <th>Precio</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr id="prices-fixed" class="prices">
-        <td><strong>Total Fijo</strong> <br> <i></i> (<strong id="result-offer" class="result">0</strong> € de descuento por combinaciones)</td>
-        <td><strong id="result-fixed" class="result">0</strong> €</td>
-      </tr>
-      <tr id="prices-quarterly" class="prices">
-        <td><strong>1º Trimestre</strong> (<strong id="result-monthly" class="result">0</strong> €/mes)</td>
-        <td><strong id="result-quarterly" class="result">0</strong> €</td>
-      </tr>
-      <tr id="prices-subtotal" class="prices">
-        <td><strong>Subtotal</strong> (<strong id="result-bill" class="result">0</strong> € sin factura)</td>
-        <td><strong id="result-subtotal" class="result">0</strong> €</td>
-      </tr>
-      <tr id="prices-iva" class="prices">
-        <td>IVA 21%</td>
-        <td><strong id="result-iva" class="result">0</strong> €</td>
-      </tr>
-      <tr id="prices-total" class="prices">
-        <td><strong>TOTAL</strong></td>
-        <td><strong id="result-total" class="result">0</strong> €</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-inner">
+    <table>
+      <thead>
+        <tr>
+          <th>Concepto</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="prices-fixed" class="prices">
+          <td><strong>Total Fijo</strong> <br> <i></i> (<strong id="result-offer" class="result">0</strong> € de descuento por combinaciones)</td>
+          <td><strong id="result-fixed" class="result">0</strong> €</td>
+        </tr>
+        <tr id="prices-quarterly" class="prices">
+          <td><strong>1º Trimestre</strong> (<strong id="result-monthly" class="result">0</strong> €/mes)</td>
+          <td><strong id="result-quarterly" class="result">0</strong> €</td>
+        </tr>
+        <tr id="prices-subtotal" class="prices">
+          <td><strong>Subtotal</strong> (<strong id="result-bill" class="result">0</strong> € sin factura)</td>
+          <td><strong id="result-subtotal" class="result">0</strong> €</td>
+        </tr>
+        <tr id="prices-iva" class="prices">
+          <td>IVA 21%</td>
+          <td><strong id="result-iva" class="result">0</strong> €</td>
+        </tr>
+        <tr id="prices-total" class="prices">
+          <td><strong>TOTAL</strong></td>
+          <td><strong id="result-total" class="result">0</strong> €</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </form>

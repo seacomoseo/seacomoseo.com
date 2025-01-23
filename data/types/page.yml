@@ -1,0 +1,8 @@
+title: Páginas
+order: 0
+related: false
+template:
+  sections:
+  - file: base/_header
+  - file: base/toc
+  - file: base/content

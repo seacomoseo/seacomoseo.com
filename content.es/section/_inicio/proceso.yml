@@ -1,0 +1,39 @@
+name: Proceso
+id: proceso
+title: Proceso
+subtitle: Ejemplo de proceso paso a paso
+icon: shoe-prints
+step:
+  uppercase: true
+  underline: true
+steps:
+- title: Contacto, presupuesto y acuerdo
+  subtitle: ¡Cuéntanos, te asesoraremos con gusto!
+  icon: handshake
+  content: |
+    Tras contactar, entender tus necesidades y asesorarte, te ofrecemos presupuesto con un precio razonable acorde a los servicios que te sugerimos y un tiempo estimado de ejecución. ¿Hay trato? ¡Pasamos al siguiente punto!
+- title: Contenido
+  subtitle: Una vez cerrado el acuerdo...
+  icon: file-invoice
+  content: |
+    Debes reunir y facilitarnos toda la información necesaria para poder comenzar con el proyecto. Todo lo necesario nos lo puedes proporcionar [aquí](/requerimientos/). Es tu futura web, así que no escatimes en darnos facilidades, ¡pues serán las tuyas!
+- title: Ejecución
+  subtitle: ¡Entregas en menos de 2 semanas!
+  icon: clock-rotate-left
+  content: |
+    Una vez recibido todo el contenido y el pago por adelantado de la mitad de lo presupuestado, comenzamos a construir tu sitio web. ¡Será rápido!
+- title: Revisiones
+  subtitle: Dispones de 2 revisiones...
+  icon: check-double
+  content: |
+    Por si quieres que cambiemos algo. Lo importante es que te quedes satisfecho con el resultado.
+- title: ¡Sitio Web terminado!
+  subtitle: Voilà! C'est fini!
+  icon: star
+  content: |
+    ¡Puedes mostrar tu sitio web al mundo! 🥳
+- title: Mantenimientos
+  subtitle: Si quieres más...
+  icon: rotate
+  content: |
+    Opcionalmente podemos gestionar mantenimientos de cambios recurrentes en tus contenidos, campañas de anuncios en Google Ads (SEM) y SEO avanzado.

@@ -1,0 +1,9 @@
+name: Frase
+size: fluid
+hanchor: Visibilidad en internet
+box:
+  align: center
+  columns: 1
+boxes:
+- content: |
+    > Si te importa tu prestigio o tu visibilidad en internet, te interesa continuar...

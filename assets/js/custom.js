@@ -60,14 +60,14 @@ if (budget) {
         seoSem:    { base: 1200, add: 150, active: (!web.checked &&  seo.checked &&  sem.checked), max: 1300, maxAdd: 200 },
         webSeoSem: { base: 700,  add: 200, active: ( web.checked &&  seo.checked &&  sem.checked), max: 1500, maxAdd: 300 }
       },
-      linkbuilding: 120,
+      linkbuilding: 160,
       maintenance: {
         web: 30,
         seo: 30,
         sem: 30
       }
     }
-    const billPercent = bill.checked ? 1.1 : 1
+    const billPercent = bill.checked ? 1.15 : 1
     let priceFixed = 0
     let priceOffer = 0
     let priceMonthly = 0
@@ -208,91 +208,3 @@ if (budget) {
     calculateBudget()
   })
 }
-
-window.addEventListener('load', () => {
-  // Requeriments
-  const requirementsForm = document.querySelector('#body-requerimientos .contact__form')
-
-  if (requirementsForm) {
-    const allItems = document.querySelectorAll('.contact__form-item:not(:nth-child(4),:nth-child(5)),.row:nth-child(2)')
-    const web = document.querySelector('[name="Servicios ➡️ WEB"]')
-    const seo = document.querySelector('[name="Servicios ➡️ SEO"]')
-    const sem = document.querySelector('[name="Servicios ➡️ SEM"]')
-    const webRenew = document.querySelector('[value="Renovar Web"]').parentElement
-    // web
-    const webRenewItem = webRenew.parentElement
-    const domainAccess = document.evaluate('//h3[text()="Acceso a la gestión del dominio"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.parentElement
-    const domainCompany = document.querySelector('[placeholder="Empresa de contratación"]').parentElement
-    const domainUser = document.querySelector('[placeholder="Email y/o Usuario de acceso"]').parentElement
-    const domainPassword = document.querySelector('[placeholder="Contraseña"]').parentElement
-    const inputsContactForm = document.querySelector('[placeholder="Campos de formulario deseados"]').parentElement
-    const contents = document.evaluate('//h3[text()="Contenidos"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.parentElement
-    const slogan = document.querySelector('[placeholder="Eslogan o breve descripción"]').parentElement
-    const features = document.querySelector('[placeholder="Ventajas/Características"]').parentElement
-    const sections = document.querySelector('[placeholder="Secciones deseadas"]').parentElement
-    const contentsDescription = document.querySelector('.textos').parentElement.parentElement
-    const execution = document.querySelector('.columns').parentElement
-    const webItems = [
-      webRenewItem,
-      domainAccess,
-      domainCompany,
-      domainUser,
-      domainPassword,
-      inputsContactForm,
-      contents,
-      slogan,
-      features,
-      sections,
-      contentsDescription,
-      execution
-    ]
-    // seo and sem
-    const searchEngin = document.evaluate('//h3[text()="Posicionamiento Web (SEO/SEM)"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.parentElement
-    const budget = document.querySelector('[placeholder="Presupuesto Mensual"]').parentElement
-    const objectives = document.querySelector('[name^="Objetivos"][name$="fico"]').parentElement.parentElement
-    const expectations = document.querySelector('[placeholder="Expectativas"]').parentElement
-    const seoSemItems = [
-      searchEngin,
-      budget,
-      objectives,
-      expectations
-    ]
-    // other
-    const cms = document.querySelector('[name="CMS ➡️ Wordpress"]').parentElement.parentElement.parentElement
-    const antique = document.querySelector('[placeholder="Antigüedad"]').parentElement
-    const webRenewItems = [
-      cms,
-      antique
-    ]
-
-    function requirementsVisibility () {
-      if (!web.checked && !seo.checked && !sem.checked) {
-        allItems.forEach(e => { e.style.display = 'none' })
-      } else {
-        allItems.forEach(e => { e.style = null })
-        if (web.checked) {
-          webItems.forEach(e => { e.style = null })
-          if (webRenew.value === 'Renovar Web') {
-            webRenewItems.forEach(e => { e.style = null })
-          } else {
-            webRenewItems.forEach(e => { e.style.display = 'none' })
-          }
-        } else {
-          webItems.forEach(e => { e.style.display = 'none' })
-        }
-        if (seo.checked || sem.checked) {
-          seoSemItems.forEach(e => { e.style = null })
-        } else {
-          seoSemItems.forEach(e => { e.style.display = 'none' })
-        }
-      }
-    }
-
-    requirementsVisibility()
-    document.querySelectorAll('[name="Servicios ➡️ WEB"],[name="Servicios ➡️ SEO"],[name="Servicios ➡️ SEM"],[name="entry.693706772"').forEach(e => {
-      e.addEventListener('change', event => {
-        requirementsVisibility()
-      })
-    })
-  }
-})

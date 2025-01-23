@@ -1,0 +1,165 @@
+name: Resenas
+id: resenas
+title: Reseñas
+subtitle: Lo que dicen de nosotros
+icon: comment
+boxes:
+- review:
+    color: white
+    slider: true
+    columns: 3
+    bullets: hide
+  reviews:
+  - title: Maite B.
+    subtitle: entremusgo.com
+    image: clientes/maite-ballesteros.jpg
+    content: |
+      Me faltan palabras y elogios hacia tí Lorenzo. Ha sido un placer trabajar contigo.
+
+      Un gran profesional, una persona cercana, amable, involucrada al máximo. Uno más de mí equipo.
+
+      Estoy encantada con el resultado de la web recién estrenada y con tu gran atención. ¡Lo recomiendo cien por cien! ¡Gracias Lorenzo! ¡Enhorabuena por tu gran  trabajo !
+  - title: Paco B.
+    subtitle: bravotraining.es
+    image: clientes/paco-bravo.jpg
+    content: |
+      Increíble la rapidez y sencillez con la que nos ha creado la página web, limpia , bonita y con una relación calidad precio espectacular.
+
+      Lo recomiendo enormemente!!!! Para el ámbito deportivo funciona genial!
+  - title: Rubén N.
+    subtitle: clinicahoradent.com
+    image: clientes/ruben-nicolas-alarcon.jpg
+    content: |
+      Muy buen servicio, rápido, eficiente y muy profesional.
+
+      Se nota que entiende mucho de posicionamiento, que al final es lo más importante si tienes un negocio, y el diseño de la web sencillo y muy funcional.
+
+      Lo recomiendo.
+  - title: Ayelén B.
+    subtitle: ayelenbott.com
+    image: clientes/ayelen-bottari.jpg
+    content: |
+      Hacer la web con Loren fue genial y superador, ya que en su trabajo encontré  la simpleza y perfección  que buscaba para transmitir los valores de la marca. Su modo de abordar el desarrollo de la web es innovador y estético a la vez; le pone mucho conocimiento a cada detalle que materializa. Fue una experiencia 100% satisfactoria y bien lograda. Lo recomiendo!!
+  - title: Leticia Martínez
+    subtitle: des-aprende.es
+    image: clientes/leticia-martinez-pino.jpg
+    content: |
+      Grandísimo profesional y persona, cercana y amable.
+
+      Consigue dar forma a tu idea creando una web personalizada y de ensueño! DE CONFIANZA 100%
+
+      Excelente!!!!!
+  - title: Sara P.
+    subtitle: orthoclub.es
+    image: clientes/sara-perez-garcia.jpg
+    content: |
+      ¡Lorenzo me ha hecho una página web espectacular! Han pasado ya días desde que se publicó, y aún me cuesta dejar de mirarla. Muy perfeccionista, siempre dejando todo a mi gusto, también muy atento (punto a favor para los que no entendemos mucho de webs) y sin duda un gran profesional. Muchas gracias de nuevo por tu trabajo, Loren!
+  - title: Adela Marín
+    subtitle: moverepilatestraining.es
+    image: clientes/adela-marin-marques.jpg
+    content: |
+      Muy contenta con el trabajo realizado para mi centro.
+
+      Loren atento, siempre disponible y muy profesional.
+
+      Página con todos los contenidos muy claros, muy visual... encantada!
+  - title: Andrés L.
+    subtitle: clinicalopezdelamo.com
+    image: clientes/andres-lopez-del-amo-lorente.jpg
+    content: |
+      Desde que nos diseñó la página web de la clínica, el posicionamiento web a mejorado muchisimo, así como el volumen de pacientes.
+
+      Muy contento y recomendable para que vuestro negocio mejore.
+  - title: Manuel R.
+    subtitle: academiamanuruiz.es
+    image: clientes/manuel-ruiz-lozano.jpg
+    content: |
+      Espectacular el trabajo que hacen y el trato atento y personalizado que te dan, te aportan mil ideas y posicionan tu web increíblemente bien, a nosotros nos han hecho dos páginas web, y con las dos un trabajo escelente además de colocarlas las primeras en poco tiempo, hemos conseguido muchos clientes nuevos y ventas gracias a esto, los recomiendo sin dudarlo.
+  - title: Juanjo D.
+    subtitle: crealogic.es
+    image: clientes/juanjo-diaz.jpg
+    content: |
+      Trabajar con el equipo de SeaComoSEO es genial.
+
+      Rápidos, eficientes, profesionales y con un trato verdaderamente excepcional.
+
+      ¡Como siempre, un placer!
+  - title: Afree L.
+    subtitle: mamakuna.es
+    image: clientes/afree-live.jpg
+    content: |
+      Recomiendo 100% si quieres que tu negocio florezca.
+
+      Gracias gracias gracias por tu calidad humana y tu gran profesionalidad, eres maravilloso Loren.
+  - title: María S.
+    subtitle: conmaslimon.com
+    image: clientes/maria-sanchez.jpg
+    content: |
+      Contacté con Loren para que me ayudase a crear mi web desde cero ¡¡y no puedo estar mas contenta con el trabajo!!
+
+      Un servicio de 10, rápido, efectivo y siempre ayudando para entender tanto el funcionamiento como la gestión y el proceso.
+
+      ¡Sin duda repetiré para el posicionamiento de mi empresa!
+  - title: Esperanza G.
+    subtitle: purotrajin.com
+    image: clientes/esperanza-gomez-espin.jpg
+    content: |
+      Recientemente me acaban de diseñar mi primera página web y no puedo estar más contenta, por rapidez, eficiencia, por lo detallistas y profesionales que son.
+
+      Han sabido captar y plasmar mi idea y mi esencia a la perfección en mi página.
+
+      ¡¡¡Un 10 al equipo!!!
+  - title: David H.
+    subtitle: vivoboxcrossfit.com
+    image: clientes/david-hernandez-vina.jpg
+    content: |
+      Desde hace años se encargan de la gestión de nuestra web y no podemos estar más contentos, siempre con un trato ejemplar, calidez en sus creaciones, siempre actualizando recursos y trato personal del 10.
+
+      Es sin duda alguna 100% recomendable y seguiremos trabajando con el por muchos años más.
+  - title: Jose F.
+    subtitle: detierraypaja.com
+    image: clientes/jose-fernando-sanchez-rosauro.jpg
+    content: |
+      Loren trabaja de maravilla las paginas web, una atención muy personalizada.
+
+      Estamos muy contentos con el resultado final y el feedback que hemos creado a través de este proyecto.
+
+      Un millón de gracias.
+  - title: Tatiana P.
+    subtitle: eli3a.com
+    image: clientes/tatiana-petrivna.jpg
+    content: |
+      Sois muy profesionales, un trato maravilloso, habéis acertado 100% con lo que queríamos.
+
+      Hemos quedado encantados con vuestro trabajo
+  - title: Gisela S.
+    subtitle: ciauparte.es
+    image: clientes/gisela-segatti.jpg
+    content: |
+      La página ha quedado muy linda, práctica, fácil de ver y muy completa.
+
+      Lo recomiendo 100%
+  - title: Andrea M.
+    subtitle: saudacepiercing.com
+    image: clientes/andrea-marin.jpg
+    content: |
+      ¡Servicio impecable y personalizado!
+
+      Estoy muy contenta con el resultado y el asesoramiento, muy recomendable (:
+  - title: San G.
+    subtitle: perfumeriamaria.com
+    image: clientes/san-gn.jpg
+    content: |
+      Aunque no llegamos a trabajar juntos, me hizo un estudio rápido de los problemas que tiene mi web, la honestidad con la que me habló es algo a destacar pues he tenido vende humos que me prometieron todo y lo único que hicieron fue mentir.
+
+      Por ello dejo esta reseña.
+
+      Este señor es honesto 100% y se nota que controla su trabajo a la perfección.
+
+      Obviamente esa calidad tiene su precio que no está nada mal.
+- boxes:
+  - content: |
+      ¡Aquí hay más! ¡Deja la tuya!
+      {.subtitle}
+
+      [btn icon:star Google](https://g.page/webmurcia/review "noindex")
