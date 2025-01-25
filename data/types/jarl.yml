@@ -1,0 +1,15 @@
+title: jarl!
+order: 5
+base: brand
+hint: valeee
+icon: star
+template:
+  modal:
+    view: ''
+  list:
+    view: ''
+  related:
+    view: ''
+es:
+  slug: ''
+  title: ''
