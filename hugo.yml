@@ -2,10 +2,10 @@ baseURL: https://seacomoseo.com
 buildFuture: false
 theme: [sansoul]
 params:
-  git_url: https://github.com/seacomoseo/seacomoseo.com
+  domain: seacomoseo.com
   name: seacomoseo
   netlify_id: 7c4684ba-3746-4998-bc6f-25f64422eea4
   netlify_hook: NjMwMmI2ZmQxZjZiNGI2YzBhYmJjMDIw
-  cloudflare_hook: 
+  cloudflare_id: OGVhNjBjNmNhMjc2YjJiMzY5ZWZlZmIxZWVjOGU1NDU=
   drive_link: https://drive.google.com/file/d/1-m8mLhwp0Rc4gaKXfhronugmH59N5aSl
   drive_mails: ''
