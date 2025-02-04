@@ -8,10 +8,10 @@
 /wp-content/themes/genesis-sample/landing-molona/media/* /media/:splat
 
 # lang
-https://en.seacomoseo.com/* https://seacomoseo.com/:splat 302!
+https://en.seacomoseo.com/* https://seacomoseo.com/:splat
 
 # new
-https://seacomoseo.com/sansoul/ https://seacomoseo.com/#sansoul
+/sansoul/ /#sansoul
 /instrucciones/ /mapa/
 /qr /
 /contacto.vcf /seacomoseo.vcf
