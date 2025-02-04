@@ -11,6 +11,9 @@
 /qr /
 /contacto.vcf /seacomoseo.vcf
 /file.ext /
+/en/file.ext /
+/servicios /
+/inicio/ /
 
 # SPLATS
 
@@ -19,4 +22,4 @@
 /wp-content/themes/genesis-sample/landing-molona/media/* /media/:splat
 
 # lang
-https://en.seacomoseo.com/* https://seacomoseo.com/:splat
+# https://en.seacomoseo.com/* https://seacomoseo.com/:splat
