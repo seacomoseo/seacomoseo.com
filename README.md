@@ -1,3 +1,3 @@
 # seacomoseo.com
 
-[![seacomoseo.com](/assets/media/logo.png)](https://seacomoseo.com/)
+[![seacomoseo.com](/assets/media/base/logo.svg)](https://seacomoseo.com/)
