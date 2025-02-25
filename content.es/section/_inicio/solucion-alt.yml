@@ -8,7 +8,7 @@ menu_label: Solución
 box:
   align: left
   align_y: center
-  columns: 2
+  cols: 2
 boxes:
 - order: 1
   image: sitio-web-desarrollo.svg

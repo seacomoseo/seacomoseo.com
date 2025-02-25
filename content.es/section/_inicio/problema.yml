@@ -11,7 +11,7 @@ box:
   label: ¡La Solución!
   licon: life-ring
   slider: true
-  columns: 3
+  cols: 3
 boxes:
 - title: Emprendedor<br>**Abrumado**
   subtitle: que necesita

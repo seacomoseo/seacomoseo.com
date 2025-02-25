@@ -10,7 +10,7 @@ boxes:
 - box:
     icon_type: side
     align: left
-    columns: 2
+    cols: 2
   boxes:
   - title: NO contactes si
     icon: xmark

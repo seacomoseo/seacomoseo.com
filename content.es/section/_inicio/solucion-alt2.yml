@@ -11,7 +11,7 @@ boxes:
 - box:
     underline: true
     uppercase: true
-    columns: 4
+    cols: 4
   boxes:
   - title: Diseño Moderno
     subtitle: Atractivo y fácil de usar

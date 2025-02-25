@@ -9,7 +9,7 @@ box:
   border: main
   icon: user
   slider: true
-  columns: 3
+  cols: 3
   circle: true
 boxes:
 - title: Loren

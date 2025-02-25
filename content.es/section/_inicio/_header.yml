@@ -6,7 +6,7 @@ pt: 2
 size: md
 box:
   align_y: top
-  columns: 8
+  cols: 8
 boxes:
 - subtitle: Diseño de Páginas Web con Posicionamiento
   span: 4

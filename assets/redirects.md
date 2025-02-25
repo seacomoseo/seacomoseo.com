@@ -23,3 +23,7 @@
 
 # lang
 # https://en.seacomoseo.com/* https://seacomoseo.com/:splat
+
+# 2025-02-25
+
+/aut/loren/ /autor/loren/

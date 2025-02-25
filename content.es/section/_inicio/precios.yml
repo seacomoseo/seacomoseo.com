@@ -12,7 +12,7 @@ boxes:
     label: Presupuesto
     licon: calculator
     slider: true
-    columns: 3
+    cols: 3
   boxes:
   - title: Web Completa
     subtitle: Tu mejor carta de presentación

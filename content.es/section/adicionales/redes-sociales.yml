@@ -11,7 +11,7 @@ box:
   label: Contacto
   licon: paper-plane
   slider: true
-  columns: 4
+  cols: 4
 boxes:
 - title: Plan Anual
   price: '**Desde** 260 €'

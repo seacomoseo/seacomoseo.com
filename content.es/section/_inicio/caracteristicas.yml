@@ -7,7 +7,7 @@ box:
   uppercase: true
   color: white
   slider: true
-  columns: 3
+  cols: 3
 boxes:
 - title: CALIDAD
   subtitle: Tu web destacará por ser...

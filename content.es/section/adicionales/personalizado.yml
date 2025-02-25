@@ -11,7 +11,7 @@ box:
   label: Contacto
   licon: paper-plane
   slider: true
-  columns: 3
+  cols: 3
 boxes:
 - title: Paquetes
   price: '**Pregúntanos**'
