@@ -39,9 +39,9 @@
     & {
       --text: #282525;
       --bg-hex: #fff;
-      --pt-divider: 0em;
-      --pb-divider: 0em;
-      --divider-mask-image: none;
+      --pt-div: 0em;
+      --pb-div: 0em;
+      --div-mask-image: none;
     }
     .section {
       padding: 15mm 15mm 10mm;
@@ -60,7 +60,7 @@
     }
     #etica-profesional,
     #trabajos-posicionamiento {
-      .content {
+      .md {
         h2, h3, h4, h5, h6 {
           margin-top: 0;
           margin-bottom: .125em;

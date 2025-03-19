@@ -9,7 +9,7 @@ toc: false
 draft: false
 noindex: false
 translationKey: loren
-seo: 'Autor: Loren San Sol 【 Sea Como SEO ⚡️ 】'
+seo: Loren San Sol 【 Sea Como SEO ⚡️ 】
 description: Especializado en Maquetación Web y SEO. Me manejo con soltura con todo lo relacionado Diseño, Desarrollo Web y Experiencia de Usuario (UX).
 ---
 ¡Hola!
@@ -32,5 +32,5 @@ Y bueno, fuera del mundillo web, las otras cosas a las que más dedico mi tiempo
 
 ¡Nos vemos!
 
-[btn icon:paper-plane Contacto](/#contacto)
-[btn icon:code Servicios](/)
+[[:paper-plane: Contacto]](/#contacto)
+[[:code: Servicios]](/)

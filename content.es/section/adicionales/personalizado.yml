@@ -9,12 +9,12 @@ box:
   color: main-light
   link: /#contacto
   label: Contacto
-  licon: paper-plane
+  pin: paper-plane
   slider: true
   cols: 3
 boxes:
 - title: Paquetes
   price: '**Pregúntanos**'
   icon: puzzle
-  content: |
-    - icon:check Descuentos por combinaciones personalizadas de servicios
+  md: |
+    - :check: Descuentos por combinaciones personalizadas de servicios

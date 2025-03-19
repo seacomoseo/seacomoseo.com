@@ -5,5 +5,5 @@ box:
   align: center
   cols: 1
 boxes:
-- content: |
+- md: |
     > Si te importa tu prestigio o tu visibilidad en internet, te interesa continuar...

@@ -17,10 +17,10 @@
 //   font-variant: small-caps;
 // }
 .uppercase,
-button:not(.button--font-alt, .collapse__button),
-.button:not(.button--font-alt, .collapse__button),
+button:not(.button--swap, .collapse__button),
+.button:not(.button--swap, .collapse__button),
 #body-requerimientos .form__title,
-#body-requerimientos .form__content h4,
+#body-requerimientos .form__md h4,
 .comments__title,
 .social__title,
 .related h2 {
@@ -35,7 +35,7 @@ button:not(.button--font-alt, .collapse__button),
 
 .section.bg-main {
   > .bg-color {
-    background-image: linear-gradient(var(--deg, 120deg), $link var(--position, 50%), $main var(--position, 50%));
+    background-image: linear-gradient(var(--deg, 120deg), $cta var(--position, 50%), $main var(--position, 50%));
   }
   &:not(#faq) .container > .box__icon--bottom {
     --base: #{ rgba($white, .8) };
@@ -63,7 +63,7 @@ button:not(.button--font-alt, .collapse__button),
         height: 2000%;
         top: -950%;
         left: -950%;
-        background-image: linear-gradient(120deg, $link 50%, $main 50%);
+        background-image: linear-gradient(120deg, $cta 50%, $main 50%);
         // transition: transform .3s;
         @keyframes rotate-header {
           50% {
@@ -93,7 +93,7 @@ button:not(.button--font-alt, .collapse__button),
 }
 #body-home #header {
   overflow: hidden;
-  @media (min-width: $screen-xl) {
+  @media (min-width: $viewport-xl) {
     .box--1 {
       .image {
         animation: logo-in .75s 2.75s both;
@@ -106,10 +106,10 @@ button:not(.button--font-alt, .collapse__button),
   // .image__inner {        @include show-from(0); }
   // .h1 {                  @include show-from(1); }
   .subtitle {            @include show-from(1); }
-  .li-svg:nth-child(1) { @include show-from(2); }
-  .li-svg:nth-child(2) { @include show-from(3); }
-  .li-svg:nth-child(3) { @include show-from(4); }
-  .li-svg:nth-child(4) { @include show-from(5); }
+  .li-icon:nth-child(1) { @include show-from(2); }
+  .li-icon:nth-child(2) { @include show-from(3); }
+  .li-icon:nth-child(3) { @include show-from(4); }
+  .li-icon:nth-child(4) { @include show-from(5); }
   .buttons {             @include show-from(6); }
   .box--2 .image {       @include show-from(1); }
 }
@@ -117,7 +117,7 @@ button:not(.button--font-alt, .collapse__button),
 // Sections
 
 // #body-home {
-//   main .divider:not(#contacto + .divider) {
+//   main .div:not(#contacto + .div) {
 //     display: none;
 //   }
 //   section {
@@ -145,7 +145,7 @@ button:not(.button--font-alt, .collapse__button),
       color: $main;
     }
   }
-  .box .content {
+  .box .md {
     margin-top: -.5em;
   }
 }
@@ -157,13 +157,13 @@ button:not(.button--font-alt, .collapse__button),
   .box {
     padding-top: 2em;
     padding-bottom: 2em;
-    .content {
+    .md {
       padding-top: 1em;
     }
   }
   .slider__arrows {
-    --link: var(--light);
-    --link-text: var(--light-text);
+    --cta: var(--light);
+    --cta-text: var(--light-text);
   }
 }
 
@@ -182,7 +182,7 @@ button:not(.button--font-alt, .collapse__button),
       left: 0;
       border-radius: 50%;
       z-index: -1;
-      background-image: linear-gradient(120deg, $link 50%, $main 50%);
+      background-image: linear-gradient(120deg, $cta 50%, $main 50%);
       @keyframes spin {
         100% {
           transform: rotate(360deg);
@@ -258,7 +258,7 @@ button:not(.button--font-alt, .collapse__button),
   //   color: var(--subtitle);
   // }
 }
-@media (min-width: $screen-xl) {
+@media (min-width: $viewport-md) {
   #contact,
   #contacto {
     .boxes {

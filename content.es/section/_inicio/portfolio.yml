@@ -7,8 +7,7 @@ box:
   cols: 4
   gap: 2
   ratio: 3/2
-  licon: none
-  font_alt: true
+  swap: true
   ofuscate: true
   slider: true
   bullets: hide

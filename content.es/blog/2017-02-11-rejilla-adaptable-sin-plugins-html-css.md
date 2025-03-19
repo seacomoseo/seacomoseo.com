@@ -14,7 +14,7 @@ seo: ''
 description: ''
 ---
 
-¡Hola! Con todo el tema este del [#RETOTSA](https://www.youtube.com/watch?v=FXqwMT6bcdw "nofollow") [[2]](https://www.youtube.com/watch?v=2A8XYbPXfo0 "nofollow") estamos unos cuantos aprendiendo un montón a base de dudas y respuestas en el grupo de Telegram, y entre muchas de las dudas surge el tema de crear la rejilla de productos o categorías para los __TSA-commerce__.
+¡Hola! Con todo el tema este del [#RETOTSA](https://www.youtube.com/watch?v=FXqwMT6bcdw "[nofollow]") ^[[2](https://www.youtube.com/watch?v=2A8XYbPXfo0 "[nofollow]")]^ estamos unos cuantos aprendiendo un montón a base de dudas y respuestas en el grupo de Telegram, y entre muchas de las dudas surge el tema de crear la rejilla de productos o categorías para los __TSA-commerce__.
 
 Me han preguntado varias veces con qué plugin lo hago yo, ¡pero no uso plugins y ni siquiera wordpress!
 
@@ -71,7 +71,7 @@ a esa misma hoja de cálculo le puedes añadir una columna más con unas formuli
 
 En el siguiente enlace podéis ver y copiar una **plantilla de Spreadsheets** (el Excel de Google) en vuestra cuenta de Google Drive y editarla a vuestro gusto:
 
-[btn Plantilla Spreadsheets](https://docs.google.com/spreadsheets/d/1fuPoC3BZ7Tt97j3FcQN7piUu1keMPWl8XC6EUTrIEck "nofollow")
+[[Plantilla Spreadsheets]](https://docs.google.com/spreadsheets/d/1fuPoC3BZ7Tt97j3FcQN7piUu1keMPWl8XC6EUTrIEck "[nofollow]")
 
 Modificar esas fórmulas (las que hay en las celdas amarillentas) es bastante simple y fácil de entender si manejas un poco de HTML, ya que lo único que hago es concatenar códigos a modo de textos (los que hay entre comillas dobles) con los valores de cada columna mediante el símbolo `&`.
 
@@ -132,6 +132,6 @@ Si tenéis Wordpress actualizado a la última versión, es tan fácil como copia
 
 Ahí va una demo para que veáis cómo se ve en este mismo sitio web:
 
-[btn Demo](/ejemplo-rejilla/)
+[[Demo]](/ejemplo-rejilla/)
 
 ¡Un saludo!

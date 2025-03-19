@@ -8,7 +8,7 @@ subtitle: |
 size: xs
 boxes:
 - align: left
-  content: |
+  md: |
     Te puedes orientar calculando tú mismo un presupuesto, pero te lo podemos ajustar todo posible si nos [contactas](/#contacto).
     {.no-print}
 
@@ -20,8 +20,8 @@ boxes:
 
     {{< budget >}}
 
-    <button id="budget-link" class="button no-print" style="--copied: '{{< i18n copied >}}'">icon:link Copiar Enlace<i></i></button>
-    <button id="budget-print" class="button main no-print">icon:print Imprimir</button>
+    <button id="budget-link" class="button no-print" style="--copied: '{{< i18n copied >}}'">:link: Copiar Enlace<i></i></button>
+    <button id="budget-print" class="button main no-print">:print: Imprimir</button>
 
-    <a class="button alt no-print" href="/#contacto">icon:paper-plane Contacto</a>
-    <a class="button light no-print" href="/">icon:house <i data-more="Inicio"><i>Sea Como SEO 🐙 Diseño de Páginas Web con Posicionamiento</i></i></a>
+    <a class="button alt no-print" href="/#contacto">:paper-plane: Contacto</a>
+    <a class="button light no-print" href="/">:house: <i data-more="Inicio"><i>Sea Como SEO 🐙 Diseño de Páginas Web con Posicionamiento</i></i></a>

@@ -9,14 +9,14 @@ box:
   ratio: 4/3
   link: '#solucion'
   label: ¡La Solución!
-  licon: life-ring
+  pin: life-ring
   slider: true
   cols: 3
 boxes:
 - title: Emprendedor<br>**Abrumado**
   subtitle: que necesita
   image: problema/nueva-web-emprendedor-abrumado.svg
-  content: |
+  md: |
     **Nuevo**<br>Sitio Web
     {.h4 .underline}
 
@@ -29,7 +29,7 @@ boxes:
 - title: Empresa<br>**Desactualizada**
   subtitle: que necesita
   image: problema/renovar-web-empresa-desactualizada.svg
-  content: |
+  md: |
     **Renovar**<br>Sitio Web
     {.h4 .underline}
 
@@ -42,7 +42,7 @@ boxes:
 - title: Agencia<br>**Sobrepasada**
   subtitle: que necesita
   image: problema/externalizar-web-agencia-sobrepasada.svg
-  content: |
+  md: |
     **Externalizar**<br>(Outsourcing)
     {.h4 .underline}
 

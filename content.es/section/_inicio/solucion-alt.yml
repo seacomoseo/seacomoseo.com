@@ -13,7 +13,7 @@ boxes:
 - order: 1
   image: sitio-web-desarrollo.svg
 - order: 2
-  content: |
+  md: |
     Usamos un conjunto de tecnologías y estilo de desarrollar webs llamado Jamstack.
 
     > ¿Jamstack? ¿Y eso en qué me beneficia?
@@ -24,7 +24,7 @@ boxes:
 - order: 3
   link: '#caracteristicas'
   label: Características
-  content: |
+  md: |
     Combinando esto con todos nuestros años de experiencia en maquetación, posicionamiento y optimización de procedimientos para diseñar páginas web, **hemos desarrollado** y perfeccionado durante meses un [sistema propio](#sansoul) con las siguientes características:
-  align_max: right
-  licon: circle-check
+  align_vl: right
+  pin: circle-check

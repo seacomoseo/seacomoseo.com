@@ -1,7 +1,7 @@
 name: Dominio
 id: dominio
 title: Dominio
-content: |
+md: |
   Es lo único que realmente necesitas pagar recurrentemente, y suelen rondar los 10 €/año (dependiendo de la extensión y del registrador).
 
   Puedes contratarlo con cualquier registrador de dominios, pero si todavía no lo hiciste, mi **recomendación** es [Cloudflare Registrar](https://www.cloudflare.com/es-es/products/registrar/) (el más barato con diferencia y el que más beneficios ofrece), excepto si deseas la extensión `.es`, entonces [Dondominio](https://www.dondominio.com) junto con [Correo electrónico personalizado](https://www.dondominio.com/products/email/).

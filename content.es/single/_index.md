@@ -8,39 +8,40 @@ translationKey: home
 seo: Sea Como SEO ⚡️ Diseño Web y Posicionamiento 🥇 Murcia
 description: lll➤ Hacemos simple y efectiva tu visibilidad en internet ☝️ Con una web moderna, fácil de usar y de encontrar ☎️ 623 199 599
 
-menu:
-  logo: false
-  sticky: auto
-  size: xl
-modal:
-  border: true
-  circle: true
-  align: center
-  size: xs
-section:
-- color: main
-  divider: arrow-side-round
-- color: white
-  flip_x: true
-  flip_y: true
-sections:
-- file: _inicio/_header
-- file: _inicio/frase
-- file: _inicio/problema
-- file: _inicio/solucion
-  modals:
-  - file: sansoul
-- file: _inicio/caracteristicas
-- file: _inicio/equipo
-  modals:
-  - file: equipo/loren
-  - file: equipo/zepo
-- file: _inicio/precios
-- file: _inicio/proceso
-- file: _inicio/faq
-- file: _inicio/portfolio
-- file: _inicio/resenas
-- file: _inicio/contacto
+tpl:
+  menu:
+    logo: false
+    sticky: auto
+    size: xl
+  modal:
+    border: true
+    circle: true
+    align: center
+    size: xs
+  section:
+  - color: main
+    div: arrow-side-round
+  - color: white
+    div_x: true
+    div_y: true
+  sections:
+  - file: _inicio/_header
+  - file: _inicio/frase
+  - file: _inicio/problema
+  - file: _inicio/solucion
+    modals:
+    - file: sansoul
+  - file: _inicio/caracteristicas
+  - file: _inicio/equipo
+    modals:
+    - file: equipo/loren
+    - file: equipo/zepo
+  - file: _inicio/precios
+  - file: _inicio/proceso
+  - file: _inicio/faq
+  - file: _inicio/portfolio
+  - file: _inicio/resenas
+  - file: _inicio/contacto
 
 base: organization
 types:

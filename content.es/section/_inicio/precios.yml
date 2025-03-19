@@ -10,7 +10,7 @@ boxes:
     color: white
     link: /presupuesto/
     label: Presupuesto
-    licon: calculator
+    pin: calculator
     slider: true
     cols: 3
   boxes:
@@ -19,49 +19,49 @@ boxes:
     price: '**Desde** 805 €'
     link: /presupuesto/#budget_WyIiLDEsMCwwLCI0IiwiMCIsIjEiLDAsMCwwLDAsMCwwLDAsMCwwLDFd
     icon: user-astronaut
-    content: |
-      - icon:check Hasta 10 secciones
-      - icon:check Diseño efectivo y adaptado
-      - icon:check **Hosting Gratuito** (ahorra ~100€/año)
-      - icon:check Impulso inicial de visibilidad en Google
-      - icon:bolt Máximo 2 semanas de entrega
+    md: |
+      - :check: Hasta 10 secciones
+      - :check: Diseño efectivo y adaptado
+      - :check: **Hosting Gratuito** (ahorra ~100€/año)
+      - :check: Impulso inicial de visibilidad en Google
+      - :bolt: Máximo 2 semanas de entrega
 
-      icon:star<br>SERVICIO<br>DESTACADO
+      :star:<br>SERVICIO<br>DESTACADO
       {.offer .uppercase}
   - title: SEO
     subtitle: Aparecer en Google Orgánicamente
     price: '**Desde** 230 € <br> **+** 160 €/mes'
     link: /presupuesto/#budget_WyIiLDEsMSwwLCI0IiwiMCIsIjEiLDAsMCwwLDAsMCwwLDEsMCwwLDFd
     icon: searchengin
-    content: |
-      - icon:circle-info Ideal para **recibir tráfico a largo plazo** con alta o moderada competencia
-      - icon:check Estudio de KW + adaptar contenido
-      - icon:check Diseñar + implementar estrategia
-      - icon:check Linkbuilding
-      - icon:asterisk Precio solo sobre nuestro sistema web
+    md: |
+      - :circle-info: Ideal para **recibir tráfico a largo plazo** con alta o moderada competencia
+      - :check: Estudio de KW + adaptar contenido
+      - :check: Diseñar + implementar estrategia
+      - :check: Linkbuilding
+      - :asterisk: Precio solo sobre nuestro sistema web
       <!--
-      - icon:circle-info Nuestro sistema ya incluye un buen impulso inicial de SEO, por lo que con una web creada por...
-        - icon:circle-question **Nosotros:** sin mucha competencia, este servicio no sería necesario
-        - icon:circle-question **Otros:** merece la pena cambiar a nuestro sistema
+      - :circle-info: Nuestro sistema ya incluye un buen impulso inicial de SEO, por lo que con una web creada por...
+        - :circle-question: **Nosotros:** sin mucha competencia, este servicio no sería necesario
+        - :circle-question: **Otros:** merece la pena cambiar a nuestro sistema
       -->
   - title: SEM
     subtitle: Publicidad de Pago en Google Ads
     price: '**Desde** 345 € <br> **+ inversión en Google**'
     link: /presupuesto/#budget_WyIiLDAsMCwxLCIwIiwiMCIsIiIsMCwwLDAsMCwxLDAsMSwwLDEsMSwwXQ==
     icon: rocket-launch
-    content: |
-      - icon:circle-info Ideal para **recibir tráfico al instante**
-      - icon:check Estudio de palabras clave <br> + adaptar contenido
-      - icon:check Campaña de publicidad en Google Ads
+    md: |
+      - :circle-info: Ideal para **recibir tráfico al instante**
+      - :check: Estudio de palabras clave <br> + adaptar contenido
+      - :check: Campaña de publicidad en Google Ads
   - title: Multi Idioma
     subtitle: Tu web en diferentes idiomas
     price: 15% **del total**
     icon: language
-    content: |
-      - icon:check Por cada idioma adicional al principal
-      - icon:check Opciones de diferentes dominios, subdominios y directorios
-      - icon:check Desarrollado y optimizado para el posicionamiento web (SEO)
+    md: |
+      - :check: Por cada idioma adicional al principal
+      - :check: Opciones de diferentes dominios, subdominios y directorios
+      - :check: Desarrollado y optimizado para el posicionamiento web (SEO)
 - boxes:
-  - content: |
-      [btn-light icon:calculator Presupuesto](/presupuesto/)
-      [btn-light icon:icons Servicios Adicionales](/adicionales/)
+  - md: |
+      [[:calculator: Presupuesto]](/presupuesto/ "[light]")
+      [[:icons: Servicios Adicionales]](/adicionales/ "[light]")

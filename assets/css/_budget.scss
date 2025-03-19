@@ -184,7 +184,7 @@
     @if $chamfer {
       @if $radius > 1 or $buttons-rounded {
         --radius: 0em;
-        --radius-padding: 1em;
+        --radius-pd: 1em;
       }
     } @else {
       filter: drop-shadow($shadow);

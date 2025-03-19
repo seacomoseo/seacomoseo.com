@@ -18,8 +18,8 @@
       <span>Gestión de Reservas</span>
     </label>
   -->
-  {{ $checks := print `<svg><use href="/draws.` site.Params.timestamp `.svg#check"></use><use href="/draws.` site.Params.timestamp `.svg#xmark"></use></svg>` | safeHTML }}
-  {{ $xmark  := print `<svg class="xmark"><use href="/draws.` site.Params.timestamp `.svg#xmark"></use></svg>` | safeHTML }}
+  {{ $checks := print `<svg class="icon"><use href="/draws.` site.Params.timestamp `.svg#check"></use><use href="/draws.` site.Params.timestamp `.svg#xmark"></use></svg>` | safeHTML }}
+  {{ $xmark  := print `<svg class="icon xmark"><use href="/draws.` site.Params.timestamp `.svg#xmark"></use></svg>` | safeHTML }}
   <input type="checkbox" id="web" class="service-check">
   <label for="web">
     <strong class="uppercase">WEB</strong>

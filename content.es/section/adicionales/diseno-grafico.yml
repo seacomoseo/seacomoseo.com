@@ -9,27 +9,27 @@ box:
   color: main-light
   link: /#contacto
   label: Contacto
-  licon: paper-plane
+  pin: paper-plane
   slider: true
   cols: 4
 boxes:
 - title: Logo
-  price: '**Desde** 225 €'
+  price: '**Desde** 325 €'
   icon: stars
-  content: |
-    - icon:check Diseño de logotipo corporativo
+  md: |
+    - :check: Diseño de logotipo corporativo
 - title: Branding
-  price: '**Desde** 430 €'
+  price: '**Desde** 480 €'
   icon: book-sparkles
-  content: |
-    - icon:check Creación de marca, logo y manual
+  md: |
+    - :check: Creación de marca, logo y manual
 - title: Tarjetas
   price: '**Desde** 100 €'
   icon: address-card
-  content: |
-    - icon:check Diseño de tarjetas de presentación
+  md: |
+    - :check: Diseño de tarjetas de presentación
 - title: Carteles
   price: '**Desde** 35 €'
   icon: file-image
-  content: |
-    - icon:check Diseño de carteles para publicidad y eventos
+  md: |
+    - :check: Diseño de carteles para publicidad y eventos

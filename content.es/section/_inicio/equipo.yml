@@ -14,14 +14,14 @@ box:
 boxes:
 - title: Loren
   subtitle: El Técnico
-  content: Diseño Web, Desarrollo y <br> Posicionamiento SEO/SEM
+  md: Diseño Web, Desarrollo y <br> Posicionamiento SEO/SEM
   link: '#loren'
   anchor: Diseñador Web y SEO en Murcia
   image: equipo/loren.jpg
   icon: user-robot
 - title: Zepo
   subtitle: El Creativo
-  content: Fotografía, Vídeo, Diseño Gráfico <br> y Redes Sociales
+  md: Fotografía, Vídeo, Diseño Gráfico <br> y Redes Sociales
   link: '#zepo'
   anchor: Fotógrafo, Vídeo, Diseñador Gráfico y Social Media en Murcia
   image: equipo/zepo.jpg

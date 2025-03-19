@@ -4,7 +4,7 @@ title: Zepo
 subtitle: El Creativo
 image: equipo/zepo.jpg
 icon: user-astronaut
-content: |
+md: |
   **Fotografía, Vídeo, Diseño Gráfico <br> y Redes Sociales**
 
   Murciano del 93, Fotógrafo y Diseñador Gráfico.
@@ -13,5 +13,5 @@ content: |
 
   Puedes saber más sobre mí y ver mis trabajos en mis redes sociales:
 
-  [btn icon:instagram Instagram](https://www.instagram.com/zepic.photo/ "nofollow")
-  [btn icon:facebook-f Facebook](https://www.facebook.com/zepic.photo/ "nofollow")
+  [[:instagram: Instagram]](https://www.instagram.com/zepic.photo/ "[nofollow]")
+  [[:facebook-f: Facebook]](https://www.facebook.com/zepic.photo/ "[nofollow]")

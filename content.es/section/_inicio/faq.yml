@@ -9,63 +9,63 @@ accordion:
   button: alt
 accordions:
 - title: ¿En cuánto tiempo tendré la web?
-  content: |
+  md: |
     Entre 2 días y 2 semanas: desde el momento en que recibamos __todo__ el contenido y la mitad del pago del presupuesto.
 - title: ¿Qué necesitamos para hacerlo?
-  content: |
+  md: |
     Todo lo necesario lo explicamos en [esta página](/requerimientos/).
 - title: ¿Y si no nos gusta el diseño?
-  content: |
+  md: |
     Tienes hasta 2 revisiones para pedirnos cambios dentro del precio presupuestado. Si se diera la extraña situación de que quieras más (nunca fueron necesarias más de 2), se te pueden presupuestar nuevamente sin problemas.
 - title: ¿Quién es el dueño de la web?
-  content: |
+  md: |
     ¡Quien tú quieras! [El dominio lo contratas tú mismo directamente](/requerimientos/#dominio) (es muy sencillo), y en cuanto a los archivos de la web, estarán en un repositorio de Gitlab al que tendrás acceso directo y al que podrás dar acceso a otras personas.
 - title: ¿Puedo gestionar personalmente la web?
-  content: |
+  md: |
     ¡Por supuesto! [Aquí](/cms/) te lo explico.
 - title: ¿Qué ocurre si cometo un error y deja de funcionar?
-  content: |
+  md: |
     Debido a cómo está diseñado el sistema, no es común que el sitio web deje de mostrarse. Por lo general, si cometes algún error, no se aplicará directamente.
 
     Pero si sucediese cualquier problema en que no te veas capaz, no te preocupes, nos encargamos de solucionarlo.
 - title: ¿Tengo que ocuparme de alguna gestión administrativa?
-  content: |
+  md: |
     Prácticamente la única gestión realmente necesaria es [contratar el dominio](/requerimientos/#dominio).
 
     Opcionalmente también el [correo electrónico personalizado](/requerimientos/#dominio).
 
     También si se diese el caso de sobrepasar la [limitación de recibir 100 formularios/mes](/#sansoul), pero puedo encargarme yo si te resulta demasiado complicado.
 - title: ¿Cuándo puedo contactar?
-  content: |
+  md: |
     ¡Cuando tú quieras! Al [contactarme](#contacto) por WhatsApp, email o formulario, te responderemos lo antes posible.
 
-    También puedes [programar una reunión online](https://calendly.com/lorensansol/seacomoseo "nofollow") cuando gustes.
+    También puedes [programar una reunión online](https://calendly.com/lorensansol/seacomoseo "[nofollow]") cuando gustes.
 
     La atención es totalmente personalizada, puede ser todo por escrito, por audios, por llamada de voz, videollamada... ¡Como más cómodo te sientas!
 - title: ¿Es obligatorio contratar un mantenimiento?
-  content: |
+  md: |
     ¡Al contrario! Nos hemos enfocado en desarrollar este sistema para que no dependas de nosotros. Pero si quieres que te ayudemos de forma recurrente o puntual, podemos llegar a un acuerdo.
 
     Otra cosa es que quieras anunciarte en Google Ads mediante nuestros servicios, ahí sí que es necesario contratarnos la tarifa correspondiente.
 - title: ¿Solamente hay que pagar eso por aparecer en Google Ads?
-  content: |
+  md: |
     No, eso es lo que cuesta que te realicemos ese servicio, luego tú decides lo que quieras invertir en Google, el cual te cobrará cada mes o cada vez que llegues a cierta cantidad, lo que suceda antes.
 
     Ejemplo: Puedes probar a empezar invirtiendo 100 € el primer mes, y según sean los resultados, aumentar o disminuir el presupuesto.
 - title: ¿Qué diferencia hay entre SEM y SEO?
-  content: |
+  md: |
     Hablando únicamente de Google, el SEM se trata de aparecer en los anuncios de pago (Ads) y el SEO de aparecer en el resto de resultados.
 
     Ambos tienen sus ventajas e inconvenientes:
 
     | Característica | SEM | SEO |
     |-|-|-|
-    | Tras invertir, apareces... | icon:check Instantáneo | icon:xmark En meses |
-    | Al dejar de invertir, desapareces... | icon:xmark Instantáneo | icon:check Indefinido |
-    | Las inversiones y esfuerzos suelen ser... | icon:check Razonables | icon:xmark Grandes |
+    | Tras invertir, apareces... | :check: Instantáneo | :xmark: En meses |
+    | Al dejar de invertir, desapareces... | :xmark: Instantáneo | :check: Indefinido |
+    | Las inversiones y esfuerzos suelen ser... | :check: Razonables | :xmark: Grandes |
     {.compare}
 - title: ¿Es mejor SEM o SEO?
-  content: |
+  md: |
     En principio depende de la competencia en cada uno, entre muchas otras variables.
 
     Si simplemente vas a ofertar servicios locales (y sobre todo si no tienes mucha competencia), es probable que combinando el SEO OnPage que ya lleva integrado este sistema con SEM sea suficiente en relación inversión/resultados.

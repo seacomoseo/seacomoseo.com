@@ -6,7 +6,7 @@ box:
   uppercase: true
   underline: true
   cols: 4
-  cols_min: 2
+  cols_vs: 2
 boxes:
 - title: Foto y Vídeo
   subtitle: Grabación y Edición

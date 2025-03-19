@@ -1,7 +1,7 @@
 title: Únicas
 order: 0
 base: single
-template:
+tpl:
   callnow:
     show: items
     es:
@@ -9,7 +9,8 @@ template:
       label: 623 199 599
       button: main
   section:
-  - uppercase: true
+  - size: lg
+    uppercase: true
     parallax: fix
   modal:
     uppercase: true

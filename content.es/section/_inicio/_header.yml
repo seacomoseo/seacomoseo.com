@@ -9,18 +9,18 @@ box:
   cols: 8
 boxes:
 - subtitle: Diseño de Páginas Web con Posicionamiento
-  span: 4
+  fit: 4
   image: base/logo-animation.svg
-  content: |
-    - icon:rocket-launch Hacemos simple y efectiva tu visibilidad en internet
-    - icon:check Con una ==icon:sign-circle web moderna==, fácil de usar y de encontrar
-    - icon:bolt ¡En menos de 2 semanas!
-    - icon:xmark ¡O sigue despidiéndote de potenciales clientes!
+  md: |
+    - :rocket-launch: Hacemos simple y efectiva tu visibilidad en internet
+    - :check: Con una ==:sign-circle: web moderna==, fácil de usar y de encontrar
+    - :bolt: ¡En menos de 2 semanas!
+    - :xmark: ¡O sigue despidiéndote de potenciales clientes!
 
-    [btn-light icon:plus Más](#more)
-    [btn-light icon:play Video](https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO "nofollow")
+    [[:plus: Más]](#more "[light]")
+    [[:play: Video]](https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO "[nofollow light]")
   ratio: 3/2
   contain: true
-- span: 3
+- fit: 3
   image: https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO&poster=loren-presentacion.jpg
   ratio: 9/16

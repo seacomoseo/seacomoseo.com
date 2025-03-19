@@ -4,8 +4,8 @@ title: Contacto
 subtitle: Seamos claros
 size: sm
 icon: paper-plane
-flip_x: true
-menu_button: link
+div_x: true
+menu_button: cta
 boxes:
 - box:
     icon_type: side
@@ -14,25 +14,25 @@ boxes:
   boxes:
   - title: NO contactes si
     icon: xmark
-    content: |
-      - icon:xmark Quieres una App
-      - icon:xmark Quieres una web principalmente con WordPress, Prestashop u otro CMS
-      - icon:xmark Esperas que nos encarguemos de: Email Marketing, Funnels, desarrollo de producto...
-      - icon:xmark Buscas empleo
-    align_max: right
+    md: |
+      - :xmark: Quieres una App
+      - :xmark: Quieres una web principalmente con <br> WordPress, Prestashop u otro CMS
+      - :xmark: Esperas que nos encarguemos de: <br> Email Marketing, Funnels, <br> desarrollo de producto...
+      - :xmark: Buscas empleo
+    align_vl: right
   - title: Contáctanos si
     icon: check
-    content: |
-      - icon:check Quieres una web visible y de calidad
-      - icon:check Quieres buen precio y rapidez
-      - icon:check Quieres olvidarte de pagar hosting
-      - icon:check Quieres modernizar una web
-      - icon:check Quieres subcontratarnos
-      - icon:check Estás harto de WordPress
+    md: |
+      - :check: Quieres una web visible y de calidad
+      - :check: Quieres buen precio y rapidez
+      - :check: Quieres olvidarte de pagar hosting
+      - :check: Quieres modernizar una web
+      - :check: Quieres subcontratarnos
+      - :check: Estás harto de WordPress
 - contact:
   - type: phone
     label: 623 199 599
-    button: link
+    button: cta
   - type: whatsapp
     label: 623 199 599
     button: main
@@ -43,14 +43,14 @@ boxes:
     link: /seacomoseo.vcf
     label: Guardar en Agenda
     icon: address-card
-    font_alt: true
+    swap: true
     ofuscate: true
     button: dark
   - type: custom
     link: https://calendly.com/lorensansol/seacomoseo
     label: Programar Reunión
     icon: calendar
-    font_alt: true
+    swap: true
     ofuscate: true
     ga4: true
     button: light

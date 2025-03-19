@@ -12,69 +12,69 @@ boxes:
 - title: CALIDAD
   subtitle: Tu web destacará por ser...
   icon: crown
-  content: |
-    #### icon:magnifying-glass Fácil de Encontrar
+  md: |
+    #### :magnifying-glass: Fácil de Encontrar
 
     Somos especialistas en optimizar webs para que aparezcan en Google (SEO). ¡Verás un buen impulso inicial de visibilidad!
 
-    #### icon:gamepad-modern Fácil de Usar
+    #### :gamepad-modern: Fácil de Usar
 
     Para que los usuarios puedan encontrar en tu web lo que buscan cómoda y rápidamente y quieran volver.
 
-    #### icon:sunglasses Diseño Atractivo
+    #### :sunglasses: Diseño Atractivo
 
     Para proyectar una sensación agradable y los usuarios la asocien a tu negocio. Comprueba el [portfolio](#portfolio) y juzga tú mismo.
   icon_type: bottom
 - title: AHORRO
   subtitle: De mucho tiempo y dinero
   icon: piggy-bank
-  content: |
-    #### icon:gauge-max Rapidez
+  md: |
+    #### :gauge-max: Rapidez
 
     Tu sitio web quedará listo en menos de 2 semanas desde que nos facilitas todo el contenido y la mitad del presupuesto.
 
-    #### icon:cloud-check Hosting Gratuito
+    #### :cloud-check: Hosting Gratuito
 
-    Alojamos tu sitio web mediante servicios freemium de alta calidad ([Netlify](https://www.netlify.com/ "nofollow")), ahorrándote una media 100 €/año.
+    Alojamos tu sitio web mediante servicios freemium de alta calidad ([Netlify](https://www.netlify.com/ "[nofollow]")), ahorrándote una media 100 €/año.
 
-    #### icon:tags Precios Asequibles
+    #### :tags: Precios Asequibles
 
     Los precios son increibles para la calidad de los servicios. Tenemos en cuenta a emprendedores como nosotros.
   icon_type: bottom
 - title: TRANQUILIDAD
   subtitle: ¡No requieres mantenimiento!
   icon: heart-pulse
-  content: |
-    #### icon:wrench Actualizaciones
+  md: |
+    #### :wrench: Actualizaciones
 
     No es necesario actualizar recurrentemente el sistema, ni sus temas ni plugins, como pasa con WordPress.
 
-    #### icon:shield-check Seguridad
+    #### :shield-check: Seguridad
 
     No usamos bases de datos, así que no hay posibilidad de hackeos. No necesitas plugins ni configuraciones de seguridad.
 
-    #### icon:pen-to-square Autogestionable
+    #### :pen-to-square: Autogestionable
 
     Incluimos un administrador simple de usar y no dependerás de nadie para cambiar tu web (aunque podemos ayudarte).
   icon_type: bottom
 - title: EMPATÍA
   subtitle: Te lo ponemos fácil
   icon: heart
-  content: |
-    #### icon:hand-peace Simplicidad
+  md: |
+    #### :hand-peace: Simplicidad
 
     Te compartimos un documento con todos los datos de acceso a todo lo relativo a tu web (contraseñas, emails, plataformas...).
 
-    #### icon:hand-holding-heart Honestidad
+    #### :hand-holding-heart: Honestidad
 
     Nuestra prioridad es que todos salgamos ganando, por lo que si somos conscientes de que algo no te interesa, te lo diremos.
 
-    #### icon:people-arrows-left-right Adaptabilidad
+    #### :people-arrows-left-right: Adaptabilidad
 
     Nos adaptamos a las necesidades y soluciones con gusto; por ejemplo, te atendemos por teléfono, video, chat...
 
     <!--
-    #### icon:hand-peace Simplicidad
+    #### :hand-peace: Simplicidad
 
     Hacemos un gran esfuerzo por simplificar procesos y facilitar o evitar cualquier cosa que te pueda saturar o preocupar.
     -->

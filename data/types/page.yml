@@ -1,7 +1,7 @@
 title: Páginas
 order: 0
 related: false
-template:
+tpl:
   sections:
   - file: base/_header
   - file: base/toc

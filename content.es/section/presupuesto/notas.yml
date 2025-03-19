@@ -4,7 +4,7 @@ title: Notas
 subtitle: Costes a tener en cuenta y otros detalles
 icon: message-exclamation
 size: xs
-content: |
+md: |
   1. <i id="nota-secciones"></i>
     **Número de secciones:**
     Suma total de secciones diferentes, aunque estén en la misma página
@@ -12,15 +12,15 @@ content: |
     Una web sencilla suele tener entre 7 y 20.
     <a href="#referencia-secciones" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a> \
     *Ejemplo:* \
-    icon:1 Cabecera \
-    icon:2 Características \
-    icon:3 Servicios (+4 modales) \
-    icon:4 Nosotros \
-    icon:5 Equipo \
-    icon:6 Fotos \
-    icon:7 Reseñas \
-    icon:8 Contacto \
-    icon:sigma **Total** = 8 + 4/2 = 10
+    :1: Cabecera \
+    :2: Características \
+    :3: Servicios (+4 modales) \
+    :4: Nosotros \
+    :5: Equipo \
+    :6: Fotos \
+    :7: Reseñas \
+    :8: Contacto \
+    :sigma: **Total** = 8 + 4/2 = 10
 
   1. <i id="nota-paginas"></i>
     **Número de páginas:**
@@ -60,7 +60,7 @@ content: |
 
   1. <i id="nota-ecommerce-basico"></i>
     **eCommerce Básico:**
-    La pasarela de pago sería mediante [Stripe](https://stripe.com/es "nofollow"),
+    La pasarela de pago sería mediante [Stripe](https://stripe.com/es "[nofollow]"),
       sin más que sus bajas comisiones por cada transacción:
         1,4 % + 0,25 € para tarjetas Europeas; 2,9 % + 0,25 € para tarjetas internacionales.
     <a href="#referencia-ecommerce-basico" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
@@ -68,12 +68,12 @@ content: |
   1. <i id="nota-ecommerce-completo"></i>
     **eCommerce Completo:**
     Requiere de plataforma externa de "headless eCommerce" a elegir
-      ([Snipcart](https://snipcart.com/ "nofollow"),
-      [Commerce Beta](https://static.tools/commerce/ "nofollow"),
-      [Commerce Layer](https://commercelayer.io/ "nofollow"),
-      [Foxy IO](https://www.foxy.io/ "nofollow"),
-      [LogiCommerce](https://www.logicommerce.com/es/ "nofollow"),
-      [Shopify](https://www.shopify.com/ "nofollow")...),
+      ([Snipcart](https://snipcart.com/ "[nofollow]"),
+      [Commerce Beta](https://static.tools/commerce/ "[nofollow]"),
+      [Commerce Layer](https://commercelayer.io/ "[nofollow]"),
+      [Foxy IO](https://www.foxy.io/ "[nofollow]"),
+      [LogiCommerce](https://www.logicommerce.com/es/ "[nofollow]"),
+      [Shopify](https://www.shopify.com/ "[nofollow]")...),
     con sus tarifas y condiciones.
     Éstas varían mucho según la plataforma,
       algunas añaden 1-2% a las transacciones
@@ -84,7 +84,7 @@ content: |
   1. <i id="nota-lms"></i>
     **Plataforma de Formación (LMS):**
     Se puede usar una plataforma externa con sus tarifas y condiciones,
-      o te podemos instalar alguna ([Moodle](https://moodle.org/?lang=es "nofollow") por ejemplo)
+      o te podemos instalar alguna ([Moodle](https://moodle.org/?lang=es "[nofollow]") por ejemplo)
       en un servidor a elegir
       (entre 50 y 150 €/año según calidad y velocidad deseada).
     El servidor/hosting gratuito que usamos no es compatible.

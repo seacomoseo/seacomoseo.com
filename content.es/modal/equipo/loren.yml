@@ -4,7 +4,7 @@ title: Loren
 subtitle: El Técnico
 image: equipo/loren.jpg
 icon: user-robot
-content: |
+md: |
   **Diseño Web, Desarrollo y <br> Posicionamiento SEO/SEM**
 
   Soy el que ha montado todo este tinglado.
@@ -15,4 +15,4 @@ content: |
 
   Podría decir lo mismo sobre Desarrollo Web y Experiencia de Usuario (UX).
 
-  [btn icon:plus Más](/autor/loren/ "Loren San Sol")
+  [[:plus: Más]](/autor/loren/ "Loren San Sol")
