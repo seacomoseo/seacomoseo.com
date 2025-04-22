@@ -2,6 +2,7 @@
 slug: inicio
 title: Inicio
 image: base/logo.png
+summary: Diseño de Páginas Web con Posicionamiento
 draft: false
 noindex: false
 translationKey: home
@@ -44,73 +45,74 @@ tpl:
   - file: _inicio/contacto
 
 base: organization
-types:
-- LocalBusiness
-- Organization
-names:
-- Sea Como SEO ⚡️🐙
-- Sea Como SEO
-- Sea Como SEO ⚡️
-- Sea Como SEO 🐙
-- Sea Como SEO ⚡️🐙 Diseño de Páginas Web con Posicionamiento en Murcia
-- Sea Como SEO ⚡️🐙 Diseño de Páginas Web + Posicionamiento en Murcia
-- Sea Como SEO » Diseño de Páginas Web + Posicionamiento en Murcia
-summary: Diseño de Páginas Web con Posicionamiento
-legal: SEA COMO SEO
-nif: 48498059Y
-email: info@seacomoseo.com
-logo: base/logo.svg
-images:
-- loren-presentacion.jpg
-- fondo.jpg
-- base/logo-alt.svg
-- base/logo-horizontal-bg.svg
-social:
-- https://instagram.com/seacomoseo/
-- https://www.facebook.com/seacomoseo/
-- https://g.page/webmurcia
-- https://www.youtube.com/@seacomoseo
-- https://www.linkedin.com/company/sea-como-seo
-- https://github.com/seacomoseo
-phones:
-- +34 623 199 599
-- +34 638 711 683
-address:
-  name: Sea Como SEO ⚡️🐙
-  street: Beniaján
-  pc: 30570
-  locality: Murcia
-  region: Murcia
-  country: ES
-  geo: '{"type":"Point","coordinates":[-1.072414, 37.977543]}'
-  link: https://g.page/webmurcia
-areas:
-- Murcia
-- España
-- Internacional
-- Online
-schedule:
-- days:
-  - monday
-  - tuesday
-  - wednesday
-  - thursday
-  - friday
-  hours:
-  - open: 9:00
-    close: 21:00
-prices: €
-services:
-- title: Sitio Web Completo
-  description: Tu mejor carta de presentación
-  price: 805
-  area: Online
-- title: SEO
-  description: Aparecer en Google Orgánicamente
-  price: 230
-  area: Online
-- title: SEM
-  description: Publicidad de Pago en Google Ads
-  price: 345
-  area: Online
+organization:
+  types:
+  - LocalBusiness
+  - Organization
+  names:
+  - Sea Como SEO ⚡️🐙
+  - Sea Como SEO
+  - Sea Como SEO ⚡️
+  - Sea Como SEO 🐙
+  - Sea Como SEO ⚡️🐙 Diseño de Páginas Web con Posicionamiento en Murcia
+  - Sea Como SEO ⚡️🐙 Diseño de Páginas Web + Posicionamiento en Murcia
+  - Sea Como SEO » Diseño de Páginas Web + Posicionamiento en Murcia
+  description: ''
+  legal: SEA COMO SEO
+  nif: 48498059Y
+  email: info@seacomoseo.com
+  logo: base/logo.svg
+  images:
+  - loren-presentacion.jpg
+  - fondo.jpg
+  - base/logo-alt.svg
+  - base/logo-horizontal-bg.svg
+  social:
+  - https://instagram.com/seacomoseo/
+  - https://www.facebook.com/seacomoseo/
+  - https://g.page/webmurcia
+  - https://www.youtube.com/@seacomoseo
+  - https://www.linkedin.com/company/sea-como-seo
+  - https://github.com/seacomoseo
+  phones:
+  - +34 623 199 599
+  - +34 638 711 683
+  address:
+    name: Sea Como SEO ⚡️🐙
+    street: Beniaján
+    pc: 30570
+    locality: Murcia
+    region: Murcia
+    country: ES
+    geo: '{"type":"Point","coordinates":[-1.072414, 37.977543]}'
+    link: https://g.page/webmurcia
+  areas:
+  - Murcia
+  - España
+  - Internacional
+  - Online
+  schedule:
+  - days:
+    - monday
+    - tuesday
+    - wednesday
+    - thursday
+    - friday
+    hours:
+    - open: 9:00
+      close: 21:00
+  prices: €
+  services:
+  - title: Sitio Web Completo
+    description: Tu mejor carta de presentación
+    price: 805
+    area: Online
+  - title: SEO
+    description: Aparecer en Google Orgánicamente
+    price: 230
+    area: Online
+  - title: SEM
+    description: Publicidad de Pago en Google Ads
+    price: 345
+    area: Online
 ---
