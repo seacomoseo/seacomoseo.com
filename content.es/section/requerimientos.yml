@@ -42,10 +42,12 @@ boxes:
     - option: SEM
       value: SEM
 
-  - type: select
-    name: Web Nueva
+  - type: radio
+    name: Sitio Web
+    x: true
     options:
-    - option: Renovar Web
+    - option: Nuevo
+    - option: Renovar
     show_if: WEB
   - type: h3
     label: Acceso a la gestión del dominio
