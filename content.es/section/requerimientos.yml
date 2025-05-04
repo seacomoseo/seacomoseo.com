@@ -24,6 +24,7 @@ box:
 boxes:
 - form:
     fill: true
+    email: info@seacomoseo.com
   inputs:
 
   - type: h3
