@@ -14,6 +14,7 @@
 // Colors
 
 .section.bg-main {
+  --subtitle: var(--title);
   > .bg-color {
     background-image: linear-gradient(var(--deg, 120deg), $cta var(--position, 50%), $main var(--position, 50%));
   }
@@ -32,6 +33,7 @@
 // Header
 
 #body-home #header {
+  --subtitle: var(--title);
   .box--1 {
     .image {
       position: relative;
@@ -85,13 +87,13 @@
   }
   // .image__inner {        @include show-from(0); }
   // .h1 {                  @include show-from(1); }
-  .subtitle {            @include show-from(1); }
+  .subtitle {             @include show-from(1); }
   .li-icon:nth-child(1) { @include show-from(2); }
   .li-icon:nth-child(2) { @include show-from(3); }
   .li-icon:nth-child(3) { @include show-from(4); }
   .li-icon:nth-child(4) { @include show-from(5); }
-  .buttons {             @include show-from(6); }
-  .box--2 .image {       @include show-from(1); }
+  .buttons {              @include show-from(6); }
+  .box--2 .image {        @include show-from(1); }
 }
 
 // Sections
@@ -143,7 +145,7 @@
   }
   .slider__arrows {
     --cta: var(--light);
-    --cta-text: var(--light-text);
+    --cta-in: var(--light-in);
   }
 }
 

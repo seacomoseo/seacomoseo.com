@@ -20,8 +20,8 @@ boxes:
 
     {{< budget >}}
 
-    <button id="budget-link" class="button no-print" style="--copied: '{{< i18n copied >}}'">:link: Copiar Enlace<i></i></button>
-    <button id="budget-print" class="button main no-print">:print: Imprimir</button>
+    <button id="budget-link" class="button no-print" style="--copied: '{{< i18n copied >}}'">:link: <i>Copiar Enlace</i><i class="copy"></i></button>
+    <button id="budget-print" class="button main no-print">:print: <i>Imprimir</i></button>
 
-    <a class="button alt no-print" href="/#contacto">:paper-plane: Contacto</a>
+    <a class="button alt no-print" href="/#contacto">:paper-plane: <i>Contacto</i></a>
     <a class="button light no-print" href="/">:house: <i data-more="Inicio"><i>Sea Como SEO 🐙 Diseño de Páginas Web con Posicionamiento</i></i></a>

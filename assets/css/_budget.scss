@@ -166,10 +166,10 @@
 }
 #budget-link {
   margin-top: 1em;
-  i {
+  .copy {
     display: none;
   }
-  &:focus i {
+  &:focus .copy {
     &:before {
       content: var(--copied);
     }

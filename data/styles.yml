@@ -37,17 +37,26 @@ colors:
     color: '#5fceb3'
     light: ''
     dark: ''
-    contrast: none
+    contrast:
+      fill: false
+      in: false
+      text: false
   alt:
     color: '#2f826d'
     light: ''
     dark: ''
-    contrast: text
+    contrast:
+      fill: false
+      in: true
+      text: true
   cta:
     color: '#fca326'
     light: '#fceede' # 82
     dark: ''
-    contrast: none
+    contrast:
+      fill: false
+      in: false
+      text: false
   base:
     white: '#fff'
     light: '#eee'
