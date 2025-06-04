@@ -8,14 +8,15 @@ icons:
   left:
   right:
 fonts:
-  google: false
   base:
+    google: false
     family: Outfit
     weight: 300
     bold: 0
     italic: false
     line_height: 1.25
   cursive:
+    google: false
     family: Passion One # Caveat
     weight: 400
     bold: 0
@@ -24,6 +25,7 @@ fonts:
     size: 1
     top: 0
   title:
+    google: false
     family: Outfit # Brandon
     weight: 700 # 900
     bold: 0
