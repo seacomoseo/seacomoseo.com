@@ -117,20 +117,24 @@
 //   }
 // }
 
-#problem,
 #problema {
-  --deg: 140deg;
-  --position: 45%;
+  // --deg: 140deg;
+  // --position: 45%;
   .box__title,
   .h4 {
     strong {
-      color: $main;
+      // color: $main-dark;
+      color: var(--main);
     }
   }
   .box .md {
     margin-top: -.5em;
   }
 }
+// #solucion {
+//   --deg: 115deg;
+//   --position: 49.5%;
+// }
 
 #features,
 #caracteristicas {
@@ -149,10 +153,11 @@
   }
 }
 
-#equipo,
-#loren,
-#zepo,
-#vaiana {
+// #equipo,
+// #loren,
+// #zepo,
+// #vaiana,
+#sobre-mi {
   .image--border {
     background-color: transparent;
     &:before {
@@ -174,14 +179,14 @@
     }
   }
 }
-#equipo {
-  .box--2 {
-    --delay: 2s;
-  }
-  .box--3 {
-    --delay: 4s;
-  }
-}
+// #equipo {
+//   .box--2 {
+//     --delay: 2s;
+//   }
+//   .box--3 {
+//     --delay: 4s;
+//   }
+// }
 #portfolio {
   .container--lg {
     padding-top: fluid-size(32px, 54px);
@@ -249,10 +254,12 @@
         transform-origin: center;
       }
       .box--1 {
-        transform: perspective(20em) rotateY(10deg);
-      }
-      .box--2 {
-        transform: perspective(20em) rotateY(-10deg);
+        .box--1 {
+          transform: perspective(20em) rotateY(10deg);
+        }
+        .box--2 {
+          transform: perspective(20em) rotateY(-10deg);
+        }
       }
     }
   }

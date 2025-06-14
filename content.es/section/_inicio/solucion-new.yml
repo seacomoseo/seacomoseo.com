@@ -1,0 +1,38 @@
+name: Solucion
+id: solucion
+title: La Solución
+subtitle: ¡Yo te ayudo!
+md: |
+  Olvídate de ~~Wordpress~~ y de matar moscas a cañonazos. \
+  He desarrollado un [sistema propio](#sansoul) enfocado en:
+icon: life-ring
+color: alt
+menu_label: Solución
+box:
+  gap: 2
+boxes:
+
+- box:
+    cols: 4
+    underline: true
+    uppercase: true
+  boxes:
+  - icon: crown
+    title: Calidad
+    md: Soy especialista en optimizar webs para que aparezcan en Google, sean fáciles de usar y bonitas
+  - icon: piggy-bank
+    title: Ahorro
+    md: Tu sitio tendrá una calidad/precio brutal y estará alojado gratis (ahorrándote una media 100 €/año)
+  - icon: heart-pulse
+    title: Tranquilidad
+    md: No necesitas mantenimiento constante ni plugins de seguridad, ni dependerás de mi para cambios
+  - icon: heart
+    title: Empatía
+    md: Te diré si algo no te interesa, te comparto todas las credenciales y te acompaño en cada paso
+
+- fit: 4
+  md: |
+    ¿Te parece muy loco? ¡Pues sigue leyendo y flipa! 🤩
+    {.subtitle}
+
+    [[:circle-check: Características]](#caracteristicas)

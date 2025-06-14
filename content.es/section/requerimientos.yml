@@ -4,7 +4,7 @@ title: Requerimientos
 subtitle: La información que necesitamos por tu parte
 icon: list-check
 md: |
-  A continuación incluimos un formulario para que lo rellenes y le des a "enviar".
+  A continuación incluyo un formulario para que lo rellenes y le des a "enviar".
 
   Si tienes dudas sobre algún campo, déjalo en blanco e indícalo en las notas del final.
 
@@ -99,7 +99,7 @@ boxes:
     label: Nombre Perfil de Empresa de Google
     hint: |
       **Ejemplo:** TABICA - Papelería Técnica Regional \
-      **Debes darnos acceso** con [estas instrucciones](#perfil-empresa-google)
+      **Debes darme acceso** con [estas instrucciones](#perfil-empresa-google)
     show_if: WEB||SEO||SEM
   - type: textarea
     name: Redes Sociales
@@ -343,14 +343,14 @@ boxes:
       - Contacto
     show_if: WEB
   - type: md
-    name: |
+    md: |
       #### Textos
       {.textos}
-      Todos los textos de las secciones y/o de cualquier contenido deseado, al igual que cualquier detalle, nos lo puedes enviar a [nuestro email o WhatssApp](/#contacto "[nofollow]").
+      Todos los textos de las secciones y/o de cualquier contenido deseado, al igual que cualquier detalle, me lo puedes enviar a [mi email o WhatssApp](/#contacto "[nofollow]").
       #### Logo, Fotos y Vídeos
-      - Puedes adjuntárnoslos a `info@seacomoseo.com` mediante [Wetransfer](https://wetransfer.com/) o a [nuestro WhatssApp](/#contacto "[nofollow]") como `documento`, no como `galería` (para que no pierdan resolución).
-      - Si no tienes o no son de calidad, te ofrecemos [servicio profesional de fotografía, vídeo y diseño gráfico](/adicionales/).
-      - El **Logo** es **MUY IMPORTANTE** que, si es posible, nos lo facilites en un formato vectorizado (`PDF`, `AI`, `SVG`...), ya que se notará mucho en la calidad.
+      - Puedes adjuntármelo a `info@seacomoseo.com` mediante [Wetransfer](https://wetransfer.com/) o a [mi WhatssApp](/#contacto "[nofollow]") como `documento`, no como `galería` (para que no pierdan resolución).
+      - Si no tienes o no son de calidad, te ofrezco [servicio profesional de fotografía, vídeo y diseño gráfico](/adicionales/).
+      - El **Logo** es **MUY IMPORTANTE** que, si es posible, me lo facilites en un formato vectorizado (`PDF`, `AI`, `SVG`...), ya que se notará mucho en la calidad.
     show_if: WEB
   - type: textarea
     name: Notas
@@ -358,13 +358,13 @@ boxes:
     show_if: WEB||SEO||SEM
 - title: Ejecución y Entrega
   md: |
-    - **Nos pondremos a trabajar una vez recibida TODA la información y el 50% del precio acordado**. De no ser así, las horas de trabajo crecen mucho y tendríamos que aumentar el precio del servicio; cosa que podríamos hacer sin problemas si lo prefieres.
-    - Antes de **2 semanas** haremos una primera entrega con **derecho a 2 revisiones y cambios** (los cuales no implican añadir mucho más contenido, y de ser así, habría que aumentar el presupuesto).
-    - **Una vez entreguemos el sitio web terminado**, mira la siguiente página:
+    - **Me pondré a trabajar una vez recibida TODA la información y el 50% del precio acordado**. De no ser así, las horas de trabajo crecen mucho y tendría que aumentar el precio del servicio; cosa que podría hacer sin problemas si lo prefieres.
+    - Antes de **2 semanas** haré una primera entrega con **derecho a 2 revisiones y cambios** (los cuales no implican añadir mucho más contenido, y de ser así, habría que aumentar el presupuesto).
+    - **Una vez entregue el sitio web terminado**, mira la siguiente página:
 
     [[:circle-check: Entrega]](/entrega/)
   align: left
 - md: |
     ---
-    Eso es todo, cualquier duda [nos contactas](/#contacto).
+    Eso es todo, cualquier duda [me contactas](/#contacto).
   align: center

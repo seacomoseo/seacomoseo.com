@@ -12,16 +12,16 @@ menu_label: SanSoul
 boxes:
 - align: left
   md: |
-    Combinando todos nuestros años de experiencia en maquetación, posicionamiento y estandarización de procedimientos, hemos desarrollado y perfeccionado durante meses nuestro propio sistema (que hemos llamado [SanSoul](#sansoul)) mediante los siguientes criterios:
+    Combinando todos mis años de experiencia en maquetación, posicionamiento y estandarización de procedimientos, he desarrollado y perfeccionado durante meses mi propio sistema (que he llamado [SanSoul](#sansoul)) mediante los siguientes criterios:
 
-    - :bullseye-pointer: **Diseño Efectivo:** Le damos importancia a que las páginas web luzcan atractivas y sean fáciles de usar para que la experiencia de los usuarios no sea frustrante, si no agradable en diseño y usabilidad, proyectándoles esa sensación y así la asocien a tu negocio con facilidad. Comprueba el portfolio y juzga tú mismo.
+    - :bullseye-pointer: **Diseño Efectivo:** Le doy importancia a que las páginas web luzcan atractivas y sean fáciles de usar para que la experiencia de los usuarios no sea frustrante, si no agradable en diseño y usabilidad, proyectándoles esa sensación y así la asocien a tu negocio con facilidad. Comprueba el portfolio y juzga tú mismo.
     - :magnifying-glass: **Visibilidad en Google:** Es el buscador que todo el mundo usa y puedes aparecer para las consultas que tengan una clara intención de encontrar lo que ofreces. Se consigue mediante **Posicionamiento Web** con 2 formas de aparecer…
         - :searchengin: **Naturalmente con SEO:** Es ideal para **aparecer a largo plazo**, pues, dependiendo de la competencia, los esfuerzos que se realicen se verán reflejados con el paso de los meses. Básicamente se trabaja haciendo que tu sitio web sea mejor que los demás de cara a Google en…
-            - **Calidad técnica:** Velocidad de carga, facilidad de uso, facilidad para darle a entender a Google lo que es cada elemento y cómo interpretarlo… **Nuestro sistema ya incorpora toda esto de serie** (lo llamamos *"impulso inicial de visibilidad en Google"*), las siguientes necesariamente pasan por un esfuerzo adicional que se contrata opcionalmente.
+            - **Calidad técnica:** Velocidad de carga, facilidad de uso, facilidad para darle a entender a Google lo que es cada elemento y cómo interpretarlo… **Mi sistema ya incorpora toda esto de serie** (lo llamo *"impulso inicial de visibilidad en Google"*), las siguientes necesariamente pasan por un esfuerzo adicional que se contrata opcionalmente.
             - **Calidad de contenido:** Para responder a la intención de búsqueda de los usuarios con el contenido; se facilita mediante una estrategia y un estudio de palabras clave.
             - **Popularidad:** Se mide con Linkbuilding, y esto es encargarse de que hayan referencias o “hablen de ti” desde otras webs con enlaces hacia la tuya.
         - :rocket-launch: **Pagando con SEM:** Este servicio opcional es ideal para **aparecer al instante** en las primeras posiciones y, por lo general, una campaña de anuncios en Google Ads tiene un buen retorno de la inversión.
-    - :bolt: **Rapidez de Entrega:** Nos hemos concentrado en optimizar una buena estandarización de procedimientos, lo que nos permite trabajar increiblemente rápido tanto para desarrollar como para mantener sitios web. Esto se traduce en que podemos ofrecer **entregas con un máximo de 2 semanas** y realizar cambios tan rápidos como te atendamos.
+    - :bolt: **Rapidez de Entrega:** Me he concentrado en optimizar una buena estandarización de procedimientos, lo que me permite trabajar increiblemente rápido tanto para desarrollar como para mantener sitios web. Esto se traduce en que puedo ofrecer **entregas con un máximo de 2 semanas** y realizar cambios tan rápidos como te atienda.
     - :microchip: **Tecnología:** Para tener un sitio web, básicamente se necesita…
         - **Dominio y Hosting:** Se deben contratar mediante cualquier proveedor, cada uno con su propia reputación, calidad y tarifas.
         - **Tecnologías:** Son el conjunto de herramientas que te facilitan el desarrollo y la gestión de sitios web. La más popular con diferencia es Wordpress. **PERO** existe un **nuevo paradigma** llamado **Jamstack** usado para desarrollar tecnologías web, y como es algo bastante técnico y en auge, pocas empresas de marketing y diseño lo conocen y muchas menos lo usan. Resumiéndolo mucho…
@@ -36,7 +36,7 @@ boxes:
       [[:circle-check: Características]](#caracteristicas)
 
 
-    #### Tecnologías Jamstack que usamos
+    #### Tecnologías Jamstack que uso
 
     - :git-alt:            [Git](https://git-scm.com/ "[nofollow]"):                                    Sistema de Control de Versiones
     - :github:             [Github](https://github.com/ "[nofollow]"):                                  Git y Almacenamiento Online + Automatización de Copias de Seguridad
@@ -49,13 +49,13 @@ boxes:
       - :esbuild:          [esbuild](https://esbuild.github.io/ "[nofollow]"):                          Preprocesador de Javascript / Funcionalidades
     - :static-cms:         [Static CMS](https://www.staticcms.org/ "[nofollow]"):                       Gestor de Contenidos (CMS)
 
-    Hugo nos permite usar temas personalizados mediante submódulos de Git para poder tener todo el desarrollo de éste proyecto que hemos creado separado de cada web y centralizado en un único lugar, por lo que todas las mejoras y opciones de personalización que vayamos añadiendo se podrán actualizar a voluntad y muy fácilmente en cada sitio web.
+    Hugo permite usar temas personalizados mediante submódulos de Git para poder tener todo el desarrollo de éste proyecto que hemos creado separado de cada web y centralizado en un único lugar, por lo que todas las mejoras y opciones de personalización que vaya añadiendo se podrán actualizar a voluntad y muy fácilmente en cada sitio web.
 
     El CMS permite modificar directamente en Github, mediante el gestor de identidades de Netlify, los archivos de texto plano de tipo Markdown, YAML, TOML y JSON que hugo necesita de cada sitio web a modo de base de datos, todo desde un panel de administración fácil de usar para usuarios no técnicos.
 
     Cada vez que se realicen cambios en cualquier archivo de Github:
 
-    - Netlify realiza un despliegue: obtiene todos los archivos del proyecto en Github y los del submódulo, y a continuación construye el sitio mediante Hugo, ofreciendo el contenido como servidor.
+    - El servidor realiza un despliegue: obtiene todos los archivos del proyecto en Github y los del submódulo, y a continuación construye el sitio mediante Hugo, ofreciendo el contenido preprocesado.
     - Se crean copias de seguridad automáticas en un repositorio espejo en Gitlab mediante un flujo de tabajo de Github Actions.
 
 
@@ -81,5 +81,5 @@ boxes:
       - __Archivo Máximo:__ 25 MB
 
     1. Netlify tarda en procesar cada sitio entre 20 segundos y 1 minuto tras cada cambio, lo que se traduce en un rango de 300-900 cambios/mes
-    2. Los formularios por defecto los procesa de Netlify sin tener que configurar nada, pero también está prevista la posibilidad de usar [cualquier servicio externo](/resto/#otros) (con las limitaciones que definan) o incluso el [hack de Google Forms](/resto/#google-forms) (para no tener ninguna limitación)
+    2. Los formularios por defecto los procesa de Netlify sin tener que configurar nada, pero también está prevista la posibilidad de usar [cualquier servicio externo](/resto/#otros) (con las limitaciones que definan), un desarrollo propio con Google Apps Script o incluso el [hack de Google Forms](/resto/#google-forms) (para no tener ninguna limitación)
     3. Cada cambio/despliege tarda ~ 15 segundos más que Netlify

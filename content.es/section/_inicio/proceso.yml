@@ -4,36 +4,53 @@ title: Proceso
 subtitle: Ejemplo de proceso paso a paso
 icon: shoe-prints
 step:
-  uppercase: true
   underline: true
+  icon_size: 2
 steps:
-- title: Contacto, presupuesto y acuerdo
-  subtitle: ¡Cuéntanos, te asesoraremos con gusto!
-  icon: handshake
-  md: |
-    Tras contactar, entender tus necesidades y asesorarte, te ofrecemos presupuesto con un precio razonable acorde a los servicios que te sugerimos y un tiempo estimado de ejecución. ¿Hay trato? ¡Pasamos al siguiente punto!
-- title: Contenido
-  subtitle: Una vez cerrado el acuerdo...
-  icon: file-invoice
-  md: |
-    Debes reunir y facilitarnos toda la información necesaria para poder comenzar con el proyecto. Todo lo necesario nos lo puedes proporcionar [aquí](/requerimientos/). Es tu futura web, así que no escatimes en darnos facilidades, ¡pues serán las tuyas!
-- title: Ejecución
-  subtitle: ¡Entregas en menos de 2 semanas!
-  icon: clock-rotate-left
-  md: |
-    Una vez recibido todo el contenido y el pago por adelantado de la mitad de lo presupuestado, comenzamos a construir tu sitio web. ¡Será rápido!
-- title: Revisiones
-  subtitle: Dispones de 2 revisiones...
-  icon: check-double
-  md: |
-    Por si quieres que cambiemos algo. Lo importante es que te quedes satisfecho con el resultado.
-- title: ¡Sitio Web terminado!
-  subtitle: Voilà! C'est fini!
-  icon: star
-  md: |
-    ¡Puedes mostrar tu sitio web al mundo! 🥳
-- title: Mantenimientos
-  subtitle: Si quieres más...
-  icon: rotate
-  md: |
-    Opcionalmente podemos gestionar mantenimientos de cambios recurrentes en tus contenidos, campañas de anuncios en Google Ads (SEM) y SEO avanzado.
+- icon: handshake
+  title: Contacto y diagnóstico
+  md: Cuéntame tu proyecto y te asesoraré sin compromiso
+- icon: file-invoice
+  title: Contenido
+  md: Reúne y facilítame textos e imágenes
+- icon: clock-rotate-left
+  title: Ejecución
+  md: Construyo tu web y te la muestro en menos de dos semanas
+- icon: check-double
+  title: Revisiones
+  md: Tienes dos rondas de ajustes incluidas
+- icon: star
+  title: Lanzamiento
+  md: Publico tu sitio y te entrego todas las credenciales
+- icon: rotate
+  title: Mantenimiento opcional
+  md: Puedo gestionar SEO continuo, SEM y cambios recurrentes
+
+# step:
+#   uppercase: true
+#   underline: true
+# steps:
+# - title: Contacto, presupuesto y acuerdo
+#   subtitle: ¡Cuéntanos, te asesoraré con gusto!
+#   icon: handshake
+#   md: Tras contactar, entender tus necesidades y asesorarte, te ofrezco presupuesto con un precio razonable acorde a los servicios que te sugiero y un tiempo estimado de ejecución. ¿Hay trato? ¡Pasamos al siguiente punto!
+# - title: Contenido
+#   subtitle: Una vez cerrado el acuerdo...
+#   icon: file-invoice
+#   md: Debes reunir y facilitarme toda la información necesaria para poder comenzar con el proyecto. Todo lo necesario me lo puedes proporcionar [aquí](/requerimientos/). Es tu futura web, así que no escatimes en darme facilidades, ¡pues serán las tuyas!
+# - title: Ejecución
+#   subtitle: ¡Entregas en menos de 2 semanas!
+#   icon: clock-rotate-left
+#   md: Una vez recibido todo el contenido y el pago por adelantado de la mitad de lo presupuestado, comienzo a construir tu sitio web. ¡Será rápido!
+# - title: Revisiones
+#   subtitle: Dispones de 2 revisiones...
+#   icon: check-double
+#   md: Por si quieres que cambie algo. Lo importante es que te quedes satisfecho con el resultado.
+# - title: ¡Sitio Web terminado!
+#   subtitle: Voilà! C'est fini!
+#   icon: star
+#   md: ¡Puedes mostrar tu sitio web al mundo! 🥳
+# - title: Mantenimientos
+#   subtitle: Si quieres más...
+#   icon: rotate
+#   md: Opcionalmente puedo gestionar mantenimientos de cambios recurrentes en tus contenidos, campañas de anuncios en Google Ads (SEM) y SEO avanzado.

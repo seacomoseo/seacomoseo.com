@@ -13,47 +13,53 @@ tpl:
     es:
       image: base/logo-alt.svg
       items:
-      - link: /
+      - link: /#
         label: Inicio
         icon: house
-      - link: /#problema
-        label: Problema
-        icon: triangle-exclamation
-      - link: /#solucion
-        label: Solución
-        icon: life-ring
-        items:
-        - link: /#sansoul
-          label: SanSoul
-          icon: fire-flame-curved
+      # - link: /#problema
+      #   label: Problema
+      #   icon: triangle-exclamation
+      # - link: /#solucion
+      #   label: Solución
+      #   icon: life-ring
+      #   items:
+      #   - link: /#sansoul
+      #     label: SanSoul
+      #     icon: fire-flame-curved
       - link: /#caracteristicas
         label: Características
         icon: circle-check
-      - link: /#equipo
-        label: Equipo
-        icon: users
-        items:
-        - link: /#loren
-          label: Loren
-          icon: user-robot
-        - link: /#zepo
-          label: Zepo
-          icon: user-astronaut
-      - link: /#precios
-        label: Precios
-        icon: tags
-      # - link: /#proceso
-      #   label: Proceso
-      #   icon: shoe-prints
-      - link: /#faq
-        label: FAQ
-        icon: circle-question
       - link: /#portfolio
         label: Portfolio
         icon: clipboard-list
       - link: /#resenas
         label: Reseñas
         icon: comment
+      - link: /#sobre-mi
+        label: Sobre mí
+        icon: user-robot
+      # - link: /#colaboradores
+      #   label: Colaboradores
+      #   icon: handshake-simple
+      # - link: /#equipo
+      #   label: Equipo
+      #   icon: users
+      #   items:
+      #   - link: /#loren
+      #     label: Loren
+      #     icon: user-robot
+      #   - link: /#zepo
+      #     label: Zepo
+      #     icon: user-astronaut
+      - link: /#precios
+        label: Precios
+        icon: tags
+      - link: /#proceso
+        label: Proceso
+        icon: shoe-prints
+      - link: /#faq
+        label: FAQ
+        icon: circle-question
       - link: /#contacto
         label: Contacto
         icon: paper-plane

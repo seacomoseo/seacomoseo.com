@@ -1,7 +1,7 @@
 name: Resenas
 id: resenas
 title: Reseñas
-subtitle: Lo que dicen de nosotros
+subtitle: Lo que dicen de mi
 icon: comment
 boxes:
 - review:

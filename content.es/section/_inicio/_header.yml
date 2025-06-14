@@ -12,13 +12,13 @@ boxes:
   fit: 4
   image: base/logo-animation.svg
   md: |
-    - :rocket-launch: Hacemos simple y efectiva tu visibilidad en internet
+    - :rocket-launch: Hago simple y efectiva tu visibilidad en internet
     - :check: Con una ==:sign-circle: web moderna==, fácil de usar y de encontrar
     - :bolt: ¡En menos de 2 semanas!
     - :xmark: ¡O sigue despidiéndote de potenciales clientes!
 
-    [[:plus: Más]](#more "[light]")
-    [[:play: Video]](https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO "[nofollow light]")
+    [[:plus: Ver más]](#more "[light]")
+  # [[:play: Video]](https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO "[nofollow light]")
   ratio: 3/2
   contain: true
 - fit: 3

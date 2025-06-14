@@ -6,6 +6,8 @@ size: sm
 icon: paper-plane
 div_x: true
 menu_button: cta
+box:
+  gap: 1
 boxes:
 - box:
     icon_type: side
@@ -20,7 +22,7 @@ boxes:
       - :xmark: Esperas que nos encarguemos de: <br> Email Marketing, Funnels, <br> desarrollo de producto...
       - :xmark: Buscas empleo
     align_vl: right
-  - title: Contáctanos si
+  - title: Contáctame si
     icon: check
     md: |
       - :check: Quieres una web visible y de calidad
@@ -29,6 +31,7 @@ boxes:
       - :check: Quieres modernizar una web
       - :check: Quieres subcontratarnos
       - :check: Estás harto de WordPress
+- title: ¿List@ para despegar?
 - contact:
   - type: phone
     label: 623 199 599
@@ -48,7 +51,7 @@ boxes:
     button: dark
   - type: custom
     link: https://calendly.com/lorensansol/seacomoseo
-    label: Programar Reunión
+    label: Agendar llamada de 15 min # Programar Reunión
     icon: calendar
     swap: true
     ofuscate: true

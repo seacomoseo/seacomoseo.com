@@ -1,7 +1,7 @@
 name: Solucion
 id: solucion
-title: ¡La Solución!
-subtitle: ¡Nosotros te ayudamos!
+title: La Solución
+subtitle: ¡Yo te ayudo!
 icon: life-ring
 color: main-dark
 menu_label: Solución
@@ -13,7 +13,7 @@ boxes:
 - image: solucion/sistema-propio.svg
 - md: |
     Olvídate de ~~Wordpress~~ y de matar moscas a cañonazos. \
-    Hemos desarrollado un [sistema propio](#sansoul) enfocado en:
+    He desarrollado un [sistema propio](#sansoul) enfocado en:
 
     - :bullseye-pointer: **Diseño Efectivo**
     - :magnifying-glass: **SEO / Visibilidad**

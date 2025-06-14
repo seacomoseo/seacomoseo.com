@@ -7,7 +7,7 @@ draft: false
 noindex: false
 translationKey: home
 seo: Sea Como SEO ⚡️ Diseño Web y Posicionamiento 🥇 Murcia
-description: lll➤ Hacemos simple y efectiva tu visibilidad en internet ☝️ Con una web moderna, fácil de usar y de encontrar ☎️ 623 199 599
+description: lll➤ Hago simple y efectiva tu visibilidad en internet ☝️ Con una web moderna, fácil de usar y de encontrar ☎️ 623 199 599
 
 tpl:
   menu:
@@ -27,21 +27,19 @@ tpl:
     div_y: true
   sections:
   - file: _inicio/_header
-  - file: _inicio/frase
   - file: _inicio/problema
-  - file: _inicio/solucion
+  - file: _inicio/solucion-new
     modals:
+    - file: caracteristicas
     - file: sansoul
-  - file: _inicio/caracteristicas
-  - file: _inicio/equipo
-    modals:
-    - file: equipo/loren
-    - file: equipo/zepo
+  - file: _inicio/portfolio
+  - file: _inicio/resenas
+  - file: _inicio/sobre-mi
+  - file: _inicio/hr
+  - file: _inicio/colaboradores
   - file: _inicio/precios
   - file: _inicio/proceso
   - file: _inicio/faq
-  - file: _inicio/portfolio
-  - file: _inicio/resenas
   - file: _inicio/contacto
 
 base: organization
@@ -68,7 +66,7 @@ organization:
   - base/logo-alt.svg
   - base/logo-horizontal-bg.svg
   social:
-  - https://instagram.com/seacomoseo/
+  - https://www.instagram.com/seacomoseo/
   - https://www.facebook.com/seacomoseo/
   - https://g.page/webmurcia
   - https://www.youtube.com/@seacomoseo

@@ -1,0 +1,30 @@
+name: Sobre mí
+id: sobre-mi
+title: Sobre mí
+subtitle: Diseño Web, Desarrollo y Posicionamiento SEO/SEM
+icon: user-robot
+size: md
+box:
+  cols: 2
+  gap: 4
+  underline: true
+  align_vl: right
+  align_y: center
+  border: main
+  circle: true
+boxes:
+- image: equipo/loren.jpg
+  order: 2
+- title: Loren
+  md: |
+    Soy el que ha montado todo este tinglado.
+
+    Especializado en Maquetación Web y SEO.
+
+    No soy Diseñador gráfico, pero tengo muchos conocimientos y me manejo con soltura con todo lo relacionado.
+
+    Podría decir lo mismo sobre Desarrollo Web y Experiencia de Usuario (UX).
+
+    Me apasiona crear herramientas útiles y usar Inteligencia Artificial para ser más productivo.
+
+    [[:plus: Más sobre mí]](/autor/loren/ "Loren San Sol")

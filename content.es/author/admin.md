@@ -3,8 +3,34 @@ slug: loren
 title: Loren
 summary: Especializado en Maquetación Web y SEO. No soy Diseñador, pero tengo muchos conocimientos y me manejo con soltura con todo lo relacionado. Podría decir lo mismo sobre Desarrollo Web y Experiencia de Usuario (UX).
 image: equipo/loren.jpg
-job: Diseño Web, Desarrollo y Posicionamiento SEO/SEM
-social: []
+
+alts:
+- Lorenzo Sánchez
+- Loren San Sol
+job:
+- Diseño Web
+- Desarrollo Web
+- SEO (Posicionamiento Web)
+- SEM
+social:
+- https://www.instagram.com/lorensansol/
+- https://www.facebook.com/lorensansol/
+- https://www.linkedin.com/in/lorenzo-sanchez/
+- https://github.com/lorensansol
+creds:
+- name: Posicionamiento Web
+  category: Curso
+  org: FORMACARM
+- name: Prevención de Riesgos Laborales
+  category: Máster
+  org: UMH
+- name: Certificado de Aptitud Pedagógica (CAP)
+  category: Curso
+  org: UMU
+- name: Arquitectura Técnica
+  category: Grado
+  org: UCAM
+
 toc: false
 draft: false
 noindex: false
@@ -27,6 +53,8 @@ Con el tiempo he ido aprendiendo muchísimo y, aunque **me especialicé en el SE
 No soy diseñador gráfico, pero tengo muchos conocimientos y me manejo con soltura con todo lo relacionado. Podría decir lo mismo sobre desarrollo web y experiencia de usuario (UX).
 
 Considero que mi potencial está en la adaptabilidad y en combinar la tecnología con la creatividad.
+
+Me apasiona crear herramientas útiles y usar Inteligencia Artificial para ser más productivo.
 
 Y bueno, fuera del mundillo web, las otras cosas a las que más dedico mi tiempo actualmente son bailes latinos, calistenia, viajar (me considero trashumante digital), ver vídeos sobre ciencia y tecnología, socializar y crecimiento personal. Aunque he tenido tantas aficiones e intereses, ¡que raro sería si tú y yo no coincidimos en alguna!
 

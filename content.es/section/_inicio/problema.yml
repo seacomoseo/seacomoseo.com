@@ -5,49 +5,68 @@ subtitle: ¿Cuál es tu caso?
 icon: triangle-exclamation
 menu_label: Problema
 box:
-  color: white
+  # color: cta
   ratio: 4/3
+  underline: true
   link: '#solucion'
-  label: ¡La Solución!
+  label: La Solución
   pin: life-ring
   slider: true
   cols: 3
 boxes:
+
 - title: Emprendedor<br>**Abrumado**
-  subtitle: que necesita
+  subtitle: “Quiero hacer una web, pero no tengo tiempo”
   image: problema/nueva-web-emprendedor-abrumado.svg
-  md: |
-    **Nuevo**<br>Sitio Web
-    {.h4 .underline}
+  md: Yo me encargo de todo y te la entrego impecable para que la vean tus clientes
 
-    "No tengo tiempo de aprender de webs"
-    {.subtitle}
-
-    - ¿Quieres ahorrarte historias?
-    - ¿Te importa el diseño y el SEO pero no te lo puedes permitir?
-    - ¿Te dan fechas muy lejanas?
 - title: Empresa<br>**Desactualizada**
-  subtitle: que necesita
+  subtitle: “Mi web se ha quedado anticuada…”
   image: problema/renovar-web-empresa-desactualizada.svg
-  md: |
-    **Renovar**<br>Sitio Web
-    {.h4 .underline}
+  md: Renuevo tu sitio, mejoro el SEO y la UX y lo dejo funcionando en menos de dos semanas
 
-    "Quiero actualizar, pero meh"
-    {.subtitle}
-
-    - ¿Te gustaría modernizar tu web?
-    - ¿Quieres mejorar el SEO o posicionamiento orgánico?
-    - ¿Tardan mucho en atenderte?
 - title: Agencia<br>**Sobrepasada**
-  subtitle: que necesita
+  subtitle: “Necesito externalizar el diseño web”
   image: problema/externalizar-web-agencia-sobrepasada.svg
-  md: |
-    **Externalizar**<br>(Outsourcing)
-    {.h4 .underline}
+  md: Puedo ser tu socio técnico de confianza y mantener tu cartera de clientes feliz
 
-    "Necesito externalizar o no llego a todo"
-    {.subtitle}
+# - title: Emprendedor<br>**Abrumado**
+#   subtitle: que necesita
+#   image: problema/nueva-web-emprendedor-abrumado.svg
+#   md: |
+#     **Nuevo**<br>Sitio Web
+#     {.h4 .underline}
 
-    - ¿Ofreces un servicio integral pero no das a basto con el Diseño Web?
-    - ¿Quieres ofrecer nuestros servicios a tus clientes?
+#     "No tengo tiempo de aprender de webs"
+#     {.subtitle}
+
+#     - ¿Quieres ahorrarte historias?
+#     - ¿Te importa el diseño y el SEO pero no te lo puedes permitir?
+#     - ¿Te dan fechas muy lejanas?
+
+# - title: Empresa<br>**Desactualizada**
+#   subtitle: que necesita
+#   image: problema/renovar-web-empresa-desactualizada.svg
+#   md: |
+#     **Renovar**<br>Sitio Web
+#     {.h4 .underline}
+
+#     "Quiero actualizar, pero meh"
+#     {.subtitle}
+
+#     - ¿Te gustaría modernizar tu web?
+#     - ¿Quieres mejorar el SEO o posicionamiento orgánico?
+#     - ¿Tardan mucho en atenderte?
+
+# - title: Agencia<br>**Sobrepasada**
+#   subtitle: que necesita
+#   image: problema/externalizar-web-agencia-sobrepasada.svg
+#   md: |
+#     **Externalizar**<br>(Outsourcing)
+#     {.h4 .underline}
+
+#     "Necesito externalizar o no llego a todo"
+#     {.subtitle}
+
+#     - ¿Ofreces un servicio integral pero no das a basto con el Diseño Web?
+#     - ¿Quieres ofrecer nuestros servicios a tus clientes?
