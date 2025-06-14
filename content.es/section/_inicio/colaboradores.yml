@@ -2,6 +2,7 @@ name: Colaboradores
 id: colaboradores
 title: Colaboradores
 subtitle: Mi red de profesionales de confianza
+md: Trabajamos juntos cuando tu proyecto lo necesita
 icon: handshake-simple
 size: md
 box:

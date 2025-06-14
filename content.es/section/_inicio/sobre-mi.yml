@@ -16,6 +16,7 @@ boxes:
 - image: equipo/loren.jpg
   order: 2
 - title: Loren
+  subtitle: +10 años optimizando webs
   md: |
     Soy el que ha montado todo este tinglado.
 

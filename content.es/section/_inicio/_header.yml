@@ -17,7 +17,8 @@ boxes:
     - :bolt: ¡En menos de 2 semanas!
     - :xmark: ¡O sigue despidiéndote de potenciales clientes!
 
-    [[:plus: Ver más]](#more "[light]")
+    [[:paper-plane: Reserva tu llamada]](#contacto "[light]")
+  # [[:plus: Ver más]](#more "[light]")
   # [[:play: Video]](https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO "[nofollow light]")
   ratio: 3/2
   contain: true
