@@ -22,12 +22,19 @@
     --base: #{ rgba($white, .8) };
   }
 }
+.price {
+  color: #{ rgba($alt, .5) };
+}
 .price strong {
   color: var(--text);
 }
 .menu.bg-alt,
-.section--header.bg-alt {
+.section--header.bg-alt,
+#solucion {
   --main: #{ rgba($white, .8) };
+}
+#solucion {
+  --cta-text: #{ rgba($alt, .8) };
 }
 
 // Header
@@ -124,17 +131,18 @@
   .h4 {
     strong {
       // color: $main-dark;
-      color: var(--main);
+      // color: var(--main);
+      opacity: .5;
     }
   }
   .box .md {
     margin-top: -.5em;
   }
 }
-// #solucion {
-//   --deg: 115deg;
-//   --position: 49.5%;
-// }
+#solucion {
+  --deg: 90deg;
+  // --position: 45%;
+}
 
 #features,
 #caracteristicas {
@@ -187,6 +195,11 @@
 //     --delay: 4s;
 //   }
 // }
+#colaboradores {
+  .box--go {
+    --box-hover-image-transform: none;
+  }
+}
 #portfolio {
   .container--lg {
     padding-top: fluid-size(32px, 54px);
@@ -195,6 +208,9 @@
   .box__button {
     font-size: .8em;
     margin-bottom: .25em;
+  }
+  .slider__arrows {
+    margin-top: 2em;
   }
 }
 #prices,

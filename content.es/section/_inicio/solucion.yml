@@ -2,25 +2,40 @@ name: Solucion
 id: solucion
 title: La Solución
 subtitle: ¡Yo te ayudo!
+md: |
+  Olvídate de ~~Wordpress~~ y de matar moscas a cañonazos. \
+  He desarrollado un [sistema propio](#sansoul) enfocado en:
 icon: life-ring
-color: main-dark
+# color: alt
 menu_label: Solución
 box:
-  align: left
-  align_y: center
-  cols: 2
+  gap: 2
 boxes:
-- image: solucion/sistema-propio.svg
-- md: |
-    Olvídate de ~~Wordpress~~ y de matar moscas a cañonazos. \
-    He desarrollado un [sistema propio](#sansoul) enfocado en:
 
-    - :bullseye-pointer: **Diseño Efectivo**
-    - :magnifying-glass: **SEO / Visibilidad**
-    - :rocket-launch: **Aumentar tus Ventas**
-    - :piggy-bank: **Ahorrarte Tiempo, Dinero y Preocupaciones**
+- box:
+    cols: 5
+    underline: true
+    # uppercase: true
+  boxes:
+  - icon: crown
+    title: Calidad
+    md: Soy especialista en optimizar webs para que aparezcan en Google, sean fáciles de usar y bonitas
+  - icon: gauge-max
+    title: Rapidez
+    md: Tu sitio web quedará listo en menos de 2 semanas y cargará en menos de 1 segundo
+  - icon: piggy-bank
+    title: Ahorro
+    md: Tu sitio tendrá una calidad/precio brutal y estará alojado gratis (ahorrándote ~ 100 €/año)
+  - icon: heart-pulse
+    title: Tranquilidad
+    md: No necesitas mantenimiento constante ni plugins de seguridad, ni dependerás de mi para cambios
+  - icon: heart
+    title: Empatía
+    md: Te diré si algo no te interesa, te comparto todas las credenciales y te acompaño en cada paso
 
+- fit: 4
+  md: |
     ¿Te parece muy loco? ¡Pues sigue leyendo y flipa! 🤩
     {.subtitle}
 
-    [[:circle-check: Características]](#caracteristicas)
+    [[:circle-check: Características]](#caracteristicas "[light]")

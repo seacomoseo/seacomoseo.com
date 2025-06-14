@@ -28,15 +28,13 @@ tpl:
   sections:
   - file: _inicio/_header
   - file: _inicio/problema
-  - file: _inicio/solucion-new
+  - file: _inicio/solucion
     modals:
     - file: caracteristicas
     - file: sansoul
   - file: _inicio/portfolio
   - file: _inicio/resenas
   - file: _inicio/sobre-mi
-  - file: _inicio/hr
-  - file: _inicio/colaboradores
   - file: _inicio/precios
   - file: _inicio/proceso
   - file: _inicio/faq

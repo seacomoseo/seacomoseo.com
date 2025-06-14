@@ -221,7 +221,7 @@
     animation: 0.7s 3s both shadow-float-pre, 6s ease-in-out 5s infinite both shadow-float;
   }
 </style>
-  <g opacity="0">
+  <g class="svg-src" opacity="0">
     <g id="logo-wrap">
       <g id="logo" stroke-linejoin="round" stroke-width="28">
         <g id="float">

@@ -11,7 +11,7 @@ box:
   link: '#solucion'
   label: La Solución
   pin: life-ring
-  slider: true
+  # slider: true
   cols: 3
 boxes:
 

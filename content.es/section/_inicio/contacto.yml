@@ -44,14 +44,14 @@ boxes:
     button: alt
   - type: custom
     link: /seacomoseo.vcf
-    label: Guardar en Agenda
+    label: Guardar contacto
     icon: address-card
     swap: true
     ofuscate: true
-    button: dark
+    button: light
   - type: custom
     link: https://calendly.com/lorensansol/seacomoseo
-    label: Agendar llamada de 15 min # Programar Reunión
+    label: Agendar llamada # Programar Reunión
     icon: calendar
     swap: true
     ofuscate: true
