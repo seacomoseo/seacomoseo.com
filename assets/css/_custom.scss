@@ -22,9 +22,7 @@
     --base: #{ rgba($white, .8) };
   }
 }
-.price {
-  color: #{ rgba($alt, .5) };
-}
+.price,
 .price strong {
   color: var(--text);
 }
