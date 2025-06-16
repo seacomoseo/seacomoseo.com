@@ -58,12 +58,12 @@ boxes:
   - link: https://www.instagram.com/zepic.photo/
     # link: https://zepic.es/
     image: colaboradores/zepic.es.svg
-    md: Fotografía, video y diseño gráfico
+    md: Foto, Vídeo y Diseño Gráfico
     ratio: 8
   - link: https://www.instagram.com/conmaslimon/
     # link: https://conmaslimon.com/
     image: colaboradores/conmaslimon.com.svg
-    md: Especializada en Social Media
+    md: Especialista en Social Media
     ratio: 6
   - link: https://www.delefant.com/
     image: colaboradores/delefant.com.svg

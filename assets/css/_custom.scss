@@ -205,6 +205,10 @@ body {
   .box--go {
     --box-hover-image-transform: none;
   }
+  .image {
+    aspect-ratio: 6 / 1;
+    height: calc(100cqw / 6);
+  }
 }
 #portfolio {
   .container--lg {
