@@ -154,6 +154,7 @@
 
 
   /* FLOAT */
+  /*
   @keyframes float {
     0%,
     100% {
@@ -175,6 +176,7 @@
       transform: scaleY(0.9);
     }
   }
+  */
 
   /* ICON */
   @keyframes icon {
@@ -187,19 +189,23 @@
   }
   #icon {
     animation:
-      icon 5s both,
-      6s ease-in-out 5s infinite both float-extend;
+      icon 5s both
+      /*,
+      6s ease-in-out 5s infinite both float-extend
+      */
+      ;
   }
   /*
   #text {
     animation: 6s ease-in-out 5s infinite both float-extend;
   }
-  */
   #float {
     animation: 6s ease-in-out 5s infinite both float;
   }
+  */
 
   /* SHADOW */
+  /*
   @keyframes shadow-float-pre {
     0% {
       transform: scale(0);
@@ -220,6 +226,7 @@
   #logo-shadow {
     animation: 0.7s 3s both shadow-float-pre, 6s ease-in-out 5s infinite both shadow-float;
   }
+  */
 </style>
   <g class="svg-src" opacity="0">
     <g id="logo-wrap">
@@ -261,9 +268,11 @@
     <use href="#logo-wrap"/>
   </mask>
   <use id="stroke-logo" href="#logo" mask="url(#mask)" stroke="var(--text, #fff)"/>
+  <!--
   <radialGradient id="gradient-shadow">
     <stop stop-color="black" offset="0%" stop-opacity=".2" />
     <stop offset="100%" stop-opacity="0" />
   </radialGradient>
   <ellipse id="logo-shadow" cx="256" cy="502" rx="256" ry="10" fill="url(#gradient-shadow)" />
+  -->
 </svg>
