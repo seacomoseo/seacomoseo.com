@@ -22,6 +22,7 @@ boxes:
   # [[:play: Video]](https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO "[nofollow light]")
   ratio: 3/2
   contain: true
+  id: logo-animation
 - fit: 3
   image: https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO&poster=loren-presentacion.jpg
   ratio: 9/16
