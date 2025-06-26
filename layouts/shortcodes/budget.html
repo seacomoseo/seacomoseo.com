@@ -1,9 +1,9 @@
 <form id="budget" onsubmit="return false">
   <div class="wrap-name">
-    <h2 class="title-name no-print uppercase">Nombre:</h2>
+    <h2 class="title-name no-print caps">Nombre:</h2>
     <input type="text" id="name" placeholder="ejemplo.com" class="no-print">
   </div>
-  <h2 class="title-services uppercase no-print">Servicios:</h2>
+  <h2 class="title-services caps no-print">Servicios:</h2>
   <!--
     <label class="contact__form-label">
       <input type="checkbox" id="spreadsheet" class="contact__form-checkbox">
@@ -22,19 +22,19 @@
   {{ $xmark  := print `<svg class="icon xmark"><use href="/draws.` site.Params.timestamp `.svg#xmark"></use></svg>` | safeHTML }}
   <input type="checkbox" id="web" class="service-check">
   <label for="web">
-    <strong class="uppercase">WEB</strong>
+    <strong class="caps">WEB</strong>
     <span class="service-subtitle">(Diseño de Nueva Web o Renovación)</span>
   </label>
   <br>
   <input type="checkbox" id="seo" class="service-check">
   <label for="seo">
-    <strong class="uppercase">SEO</strong>
+    <strong class="caps">SEO</strong>
     <span class="service-subtitle">(Aparecer en Google Orgánicamente)</span>
   </label>
   <br>
   <input type="checkbox" id="sem" class="service-check">
   <label for="sem">
-    <strong class="uppercase">SEM</strong>
+    <strong class="caps">SEM</strong>
     <span class="service-subtitle">(Publicidad de Pago en Google Ads)</span>
   </label>
   {{/*  
@@ -206,19 +206,19 @@
             <sup><a href="#nota-mantenimientos" class="footnote-ref button button--sm" role="doc-noteref">5</a></sup>
           </td>
           <td id="referencia-mantenimiento-web">
-            <label for="web-maintenance"><strong class="uppercase">WEB</strong></label>
+            <label for="web-maintenance"><strong class="caps">WEB</strong></label>
           </td>
           <td><input type="checkbox" id="web-maintenance">{{ $xmark }}</td>
         </tr>
         <tr class="seo">
           <td id="referencia-mantenimiento-seo">
-            <label for="seo-maintenance"><strong class="uppercase">SEO</strong></label>
+            <label for="seo-maintenance"><strong class="caps">SEO</strong></label>
           </td>
           <td><input type="checkbox" id="seo-maintenance">{{ $xmark }}</td>
         </tr>
         <tr class="sem">
           <td id="referencia-mantenimiento-sem">
-            <label for="sem-maintenance"><strong class="uppercase">SEM</strong></label>
+            <label for="sem-maintenance"><strong class="caps">SEM</strong></label>
           </td>
           <td><input type="checkbox" id="sem-maintenance">{{ $xmark }}</td>
         </tr>
@@ -234,7 +234,7 @@
     </table>
   </div>
   
-  <h2 id="result" class="uppercase">Precios</h2>
+  <h2 id="result" class="caps">Precios</h2>
 
   <div class="table-inner">
     <table>

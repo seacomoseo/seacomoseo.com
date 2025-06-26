@@ -4,8 +4,8 @@ title: Redes Sociales
 subtitle: Precios
 icon: share-nodes
 box:
-  uppercase: true
-  underline: true
+  caps: true
+  line: true
   color: white
   link: /#contacto
   label: Contacto

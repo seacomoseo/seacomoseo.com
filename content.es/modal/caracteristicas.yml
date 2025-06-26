@@ -5,7 +5,7 @@ subtitle: Simplifico y hago efectiva tu visibilidad en internet
 icon: circle-check
 size: xl
 box:
-  uppercase: true
+  caps: true
   color: white
   cols: 4
 boxes:

@@ -4,7 +4,7 @@ title: Proceso
 subtitle: Ejemplo de proceso paso a paso
 icon: shoe-prints
 step:
-  underline: true
+  line: true
   icon_size: 2
 steps:
 - icon: handshake
@@ -27,8 +27,8 @@ steps:
   md: Puedo gestionar SEO continuo, SEM y cambios recurrentes
 
 # step:
-#   uppercase: true
-#   underline: true
+#   caps: true
+#   line: true
 # steps:
 # - title: Contacto, presupuesto y acuerdo
 #   subtitle: ¡Cuéntanos, te asesoraré con gusto!

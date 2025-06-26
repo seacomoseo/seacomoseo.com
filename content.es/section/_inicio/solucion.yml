@@ -14,8 +14,8 @@ boxes:
 
 - box:
     cols: 5
-    underline: true
-    # uppercase: true
+    line: true
+    # caps: true
   boxes:
   - icon: crown
     title: Calidad

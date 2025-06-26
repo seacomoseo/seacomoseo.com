@@ -8,7 +8,7 @@ boxes:
     color: white
     slider: true
     cols: 3
-    bullets: hide
+    pips: hide
   reviews:
   - title: Maite B.
     subtitle: entremusgo.com

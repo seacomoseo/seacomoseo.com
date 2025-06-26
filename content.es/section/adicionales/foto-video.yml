@@ -4,8 +4,8 @@ title: Fotografía y Vídeo
 subtitle: Precios
 icon: aperture
 box:
-  uppercase: true
-  underline: true
+  caps: true
+  line: true
   color: white
   link: /#contacto
   label: Contacto

@@ -12,7 +12,7 @@ job:
 - Desarrollo Web
 - SEO (Posicionamiento Web)
 - SEM
-social:
+as:
 - https://www.instagram.com/lorensansol/
 - https://www.facebook.com/lorensansol/
 - https://www.linkedin.com/in/lorenzo-sanchez/

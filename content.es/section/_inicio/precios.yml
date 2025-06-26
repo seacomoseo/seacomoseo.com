@@ -5,8 +5,8 @@ subtitle: Opciones para todos los gustos
 icon: tags
 boxes:
 - box:
-    uppercase: true
-    underline: true
+    caps: true
+    line: true
     color: white
     link: /presupuesto/
     label: Presupuesto
@@ -27,7 +27,7 @@ boxes:
       - :bolt: Máximo 2 semanas de entrega
 
       :star:<br>POPULAR
-      {.offer .uppercase}
+      {.offer .caps}
   - title: SEO
     subtitle: Aparecer en Google Orgánicamente
     price: '**Desde** 230 € <br> **+** 160 €/mes'

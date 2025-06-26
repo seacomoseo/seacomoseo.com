@@ -20,7 +20,7 @@ md: |
   -->
 box:
   gap_ny: 5
-  uppercase: true
+  caps: true
 boxes:
 - form:
     fill: true

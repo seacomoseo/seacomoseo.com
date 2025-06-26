@@ -4,8 +4,8 @@ title: Personalizado
 subtitle: Descuentos por Combinaciones
 icon: puzzle-piece
 box:
-  uppercase: true
-  underline: true
+  caps: true
+  line: true
   color: main-light
   link: /#contacto
   label: Contacto

@@ -47,14 +47,14 @@ boxes:
     label: Guardar contacto
     icon: address-card
     swap: true
-    ofuscate: true
+    lock: true
     button: light
   - type: custom
     link: https://calendly.com/lorensansol/seacomoseo
     label: Agendar llamada # Programar Reunión
     icon: calendar
     swap: true
-    ofuscate: true
+    lock: true
     ga4: true
     button: light
   form:

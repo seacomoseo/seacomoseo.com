@@ -3,8 +3,8 @@ title: Servicios Adicionales
 icon: seacomoseo
 hanchor: Fotografía, Vídeo, Diseño Gráfico y Redes Sociales
 box:
-  uppercase: true
-  underline: true
+  caps: true
+  line: true
   cols: 4
   cols_vs: 2
 boxes:

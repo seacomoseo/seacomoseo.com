@@ -4,7 +4,7 @@ title: Equipo
 subtitle: Los culpables de tanto flow
 icon: users
 box:
-  uppercase: true
+  caps: true
   icon_type: bottom
   border: main
   icon: user

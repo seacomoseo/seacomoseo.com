@@ -7,8 +7,8 @@ author: admin
 toc: false
 draft: false
 noindex: false
-date: 2017-09-05
-lastmod: 2017-09-05
+date: 2017-09-05 00:00:00
+lastmod: 2017-09-05 00:00:00
 translationKey: interllinking-template
 seo: ''
 description: ''

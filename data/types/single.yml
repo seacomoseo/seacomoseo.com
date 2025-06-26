@@ -10,7 +10,7 @@ tpl:
       button: main
   section:
   - size: lg
-    uppercase: true
+    caps: true
     parallax: fix
   modal:
-    uppercase: true
+    caps: true

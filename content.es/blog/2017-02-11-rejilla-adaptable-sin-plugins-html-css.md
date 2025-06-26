@@ -7,8 +7,8 @@ author: admin
 toc: true
 draft: false
 noindex: false
-date: 2017-02-11
-lastmod: 2021-11-30
+date: 2017-02-11 00:00:00
+lastmod: 2021-11-30 00:00:00
 translationKey: responsive-grid-without-plugins-html-css
 seo: ''
 description: ''

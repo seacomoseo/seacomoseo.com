@@ -7,7 +7,7 @@ menu_label: Problema
 box:
   # color: cta
   ratio: 4/3
-  underline: true
+  line: true
   link: '#solucion'
   label: La Solución
   pin: life-ring
@@ -35,7 +35,7 @@ boxes:
 #   image: problema/nueva-web-emprendedor-abrumado.svg
 #   md: |
 #     **Nuevo**<br>Sitio Web
-#     {.h4 .underline}
+#     {.h4 .line}
 
 #     "No tengo tiempo de aprender de webs"
 #     {.subtitle}
@@ -49,7 +49,7 @@ boxes:
 #   image: problema/renovar-web-empresa-desactualizada.svg
 #   md: |
 #     **Renovar**<br>Sitio Web
-#     {.h4 .underline}
+#     {.h4 .line}
 
 #     "Quiero actualizar, pero meh"
 #     {.subtitle}
@@ -63,7 +63,7 @@ boxes:
 #   image: problema/externalizar-web-agencia-sobrepasada.svg
 #   md: |
 #     **Externalizar**<br>(Outsourcing)
-#     {.h4 .underline}
+#     {.h4 .line}
 
 #     "Necesito externalizar o no llego a todo"
 #     {.subtitle}

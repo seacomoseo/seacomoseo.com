@@ -12,7 +12,7 @@ boxes:
     cols: 2
     gap: 4
     gap_vs: 1
-    underline: true
+    line: true
     align_vl: right
     align_y: center
     border: main
@@ -40,7 +40,7 @@ boxes:
   subtitle: Mi red de profesionales de confianza
   # md: Trabajamos juntos cuando tu proyecto lo necesita
   hs: 2
-  uppercase: true
+  caps: true
   icon: handshake-simple
   icon_type: bottom
   box:
@@ -48,7 +48,7 @@ boxes:
     cols_vs: 2
     gap_vs: 1
     contain: true
-    ofuscate: true
+    lock: true
     gray: true
     md_sm: true
     button: hide

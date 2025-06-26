@@ -8,9 +8,9 @@ box:
   gap: 2
   ratio: 3/2
   swap: true
-  ofuscate: true
+  lock: true
   slider: true
-  bullets: hide
+  pips: hide
   hide_shadow: true
 boxes:
 - link: https://solventie.es/

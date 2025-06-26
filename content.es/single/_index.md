@@ -40,8 +40,8 @@ tpl:
   - file: _inicio/faq
   - file: _inicio/contacto
 
-base: organization
-organization:
+base: org
+org:
   types:
   - LocalBusiness
   - Organization
@@ -63,7 +63,7 @@ organization:
   - fondo.jpg
   - base/logo-alt.svg
   - base/logo-horizontal-bg.svg
-  social:
+  as:
   - https://www.instagram.com/seacomoseo/
   - https://www.facebook.com/seacomoseo/
   - https://g.page/webmurcia
