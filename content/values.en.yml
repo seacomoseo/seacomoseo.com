@@ -1,0 +1,24 @@
+title: Global Values
+menu:
+  items:
+  - icon: plus
+    label: Más
+    items:
+    - link: /map/
+      label: Orientation
+      icon: compass
+    - link: /requirements/
+      label: Requirements
+      icon: list-check
+    - link: /delivery/
+      label: Delivery
+      icon: circle-check
+    - link: /cms/
+      label: Content Manager
+      icon: pen-to-square
+    - link: /rest/
+      label: Rest of Instructions
+      icon: list-ol
+    - link: /sansoul/
+      label: SanSoul System
+      icon: circle-info

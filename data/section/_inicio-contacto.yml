@@ -1,0 +1,77 @@
+name: Inicio ➡️ Contacto
+id: contacto
+title: Contacto
+subtitle: Seamos claros
+size: sm
+icon: paper-plane
+div_x: true
+menu_button: cta
+box:
+  gap: 1
+boxes:
+- box:
+    icon_type: side
+    align: left
+    cols: 2
+  boxes:
+  - title: NO contactes si
+    icon: xmark
+    md: |
+      - :xmark: Quieres una App
+      - :xmark: Quieres una web principalmente con <br> WordPress, Prestashop u otro CMS
+      - :xmark: Esperas que nos encarguemos de: <br> Email Marketing, Funnels, <br> desarrollo de producto...
+      - :xmark: Buscas empleo
+    align_vl: right
+  - title: Contáctame si
+    icon: check
+    md: |
+      - :check: Quieres una web visible y de calidad
+      - :check: Quieres buen precio y rapidez
+      - :check: Quieres olvidarte de pagar hosting
+      - :check: Quieres modernizar una web
+      - :check: Quieres subcontratarnos
+      - :check: Estás harto de WordPress
+- title: ¿List@ para despegar?
+- contact:
+  - type: phone
+    label: 623 199 599
+    button: cta
+  - type: whatsapp
+    label: 623 199 599
+    button: main
+  - type: mail
+    label: info@seacomoseo.com
+    button: alt
+  - type: custom
+    link: /seacomoseo.vcf
+    label: Guardar contacto
+    icon: address-card
+    swap: true
+    lock: true
+    button: light
+  - type: custom
+    link: https://calendly.com/lorensansol/seacomoseo
+    label: Agendar llamada
+    icon: calendar
+    swap: true
+    lock: true
+    ga4: true
+    button: light
+  form:
+    email: info@seacomoseo.com
+  inputs:
+  - type: text
+    name: Nombre
+    icon: user
+    required: true
+  - type: email
+    name: Email
+    icon: envelope
+    required: true
+  - type: tel
+    name: Teléfono
+    icon: phone
+  - type: textarea
+    name: Mensaje
+    icon: message
+    required: true

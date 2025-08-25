@@ -1,6 +1,6 @@
 title: Autor
 base: author
-order: 2
+weight: 2
 tax_of:
 - name: blog
   schema: author

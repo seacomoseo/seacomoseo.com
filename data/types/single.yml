@@ -1,16 +1,9 @@
 title: Únicas
-order: 0
+weight: 0
 base: single
 tpl:
-  callnow:
-    show: items
-    es:
-    - type: whatsapp
-      label: 623 199 599
-      button: main
+  callnow: auto
   section:
   - size: lg
     caps: true
     parallax: fix
-  modal:
-    caps: true

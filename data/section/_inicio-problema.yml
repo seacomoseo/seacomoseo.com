@@ -1,0 +1,26 @@
+name: Inicio ➡️ Problema
+id: problema
+title: El Problema
+subtitle: ¿Cuál es tu caso?
+icon: triangle-exclamation
+menu_label: Problema
+box:
+  ratio: 4/3
+  line: true
+  link: '#solucion'
+  label: La Solución
+  pin: life-ring
+  cols: 3
+boxes:
+- title: Emprendedor<br>**Abrumado**
+  subtitle: “Quiero hacer una web, pero no tengo tiempo”
+  image: problema/nueva-web-emprendedor-abrumado.svg
+  md: Yo me encargo de todo y te la entrego impecable para que la vean tus clientes
+- title: Empresa<br>**Desactualizada**
+  subtitle: “Mi web se ha quedado anticuada…”
+  image: problema/renovar-web-empresa-desactualizada.svg
+  md: Renuevo tu sitio, mejoro el SEO y la UX y lo dejo funcionando en menos de dos semanas
+- title: Agencia<br>**Sobrepasada**
+  subtitle: “Necesito externalizar el diseño web”
+  image: problema/externalizar-web-agencia-sobrepasada.svg
+  md: Puedo ser tu socio técnico de confianza y mantener tu cartera de clientes feliz

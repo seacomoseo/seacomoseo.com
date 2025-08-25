@@ -1,0 +1,35 @@
+name: Adicionales ➡️ Diseno Gráfico
+id: diseno-grafico
+title: Diseño Gráfico
+subtitle: Precios
+icon: pen-nib
+box:
+  caps: true
+  line: true
+  color: main-light
+  link: /#contacto
+  label: Contacto
+  pin: paper-plane
+  slider: true
+  cols: 4
+boxes:
+- title: Logo
+  price: '**Desde** 325 €'
+  icon: stars
+  md: |
+    - :check: Diseño de logotipo corporativo
+- title: Branding
+  price: '**Desde** 480 €'
+  icon: book-sparkles
+  md: |
+    - :check: Creación de marca, logo y manual
+- title: Tarjetas
+  price: '**Desde** 100 €'
+  icon: address-card
+  md: |
+    - :check: Diseño de tarjetas de presentación
+- title: Carteles
+  price: '**Desde** 35 €'
+  icon: file-image
+  md: |
+    - :check: Diseño de carteles para publicidad y eventos

@@ -1,0 +1,44 @@
+title: Valores Globales
+menu:
+  image: base/logo-alt.svg
+  items:
+  - icon: plus
+    label: Más
+    items:
+    - link: /adicionales/
+      label: Servicios Adicionales
+      icon: icons
+    - link: /mapa/
+      label: Orientación
+      icon: compass
+    - link: /presupuesto/
+      label: Presupuesto
+      icon: calculator
+    - link: /requerimientos/
+      label: Requerimientos
+      icon: list-check
+    - link: /entrega/
+      label: Entrega
+      icon: circle-check
+    - link: /cms/
+      label: Gestor de Contenidos
+      icon: pen-to-square
+    - link: /resto/
+      label: Resto de Instrucciones
+      icon: list-ol
+    - link: /blog/
+      label: Blog
+      icon: blog
+callnows:
+- type: whatsapp
+  label: 623 199 599
+  button: main
+footer:
+  div: arrow-side-round
+  div_x: true
+  md: |
+    - :copyright:      {{< internal-link index >}}
+    - :scale-balanced: {{< internal-link legal >}}
+    - :shield-keyhole: {{< internal-link privacy >}}
+    - :cookie-bite:    {{< internal-link cookies >}}
+    {.list-inline}

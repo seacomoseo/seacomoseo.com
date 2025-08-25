@@ -1,0 +1,93 @@
+name: Presupuesto ➡️ Notas
+id: notas
+title: Notas
+subtitle: Costes a tener en cuenta y otros detalles
+icon: message-exclamation
+size: xs
+md: |
+  1. <i id="nota-secciones"></i>
+    **Número de secciones:**
+    Suma total de secciones diferentes, aunque estén en la misma página
+      (las secciones que se repiten se cuentan como 1, aunque tengan contenido diferente; cada ventana modal cuenta como 1/2 sección).
+    Una web sencilla suele tener entre 7 y 20.
+    <a href="#referencia-secciones" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a> \
+    *Ejemplo:* \
+    :1: Cabecera \
+    :2: Características \
+    :3: Servicios (+4 modales) \
+    :4: Nosotros \
+    :5: Equipo \
+    :6: Fotos \
+    :7: Reseñas \
+    :8: Contacto \
+    :sigma: **Total** = 8 + 4/2 = 10
+
+  1. <i id="nota-paginas"></i>
+    **Número de páginas:**
+    Suma total de páginas o URLs' de cualquier tipo.
+    <a href="#referencia-paginas" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a> \
+    *Ejemplo:*
+      | Tipos de Páginas  | Nº |
+      | ----------------- | -: |
+      | Página de Inicio  | 1  |
+      | Páginas legales   | 3  |
+      | Artículos de blog | 5  |
+      | Productos         | 53 |
+      | Categorías        | 5  |
+      | Marcas            | 7  |
+      | Otras páginas     | 4  |
+      | **TOTAL**         | 78 |
+
+  1. <i id="nota-linkbuilding"></i>
+    **Linkbuilding:**
+    Es necesario (al menos durante varios meses) si tienes competencia y quieres resultados,
+      pero es opcional y también puedes buscar otro proveedor.
+    <a href="#referencia-linkbuilding" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  1. <i id="nota-inversion-google-ads"></i>
+    **Inversión en Google Ads:**
+    Es necesario realizar una inversión directamente en Google.
+    Según competencia, suelo recomendar un mínimo de 100 €/mes los 3 primeros meses y,
+      tras ver resultados, decidir si cambiar la cantidad.
+    <a href="#referencia-inversion-google-ads" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  1. <i id="nota-mantenimientos"></i>
+    **Mantenimientos:**
+    Opcionales, pero recomendados si tienes una web o campaña SEM muy cambiantes.
+    <a href="#referencia-mantenimientos" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  <!--
+
+  1. <i id="nota-ecommerce-basico"></i>
+    **eCommerce Básico:**
+    La pasarela de pago sería mediante [Stripe](https://stripe.com/es "[nofollow]"),
+      sin más que sus bajas comisiones por cada transacción:
+        1,4 % + 0,25 € para tarjetas Europeas; 2,9 % + 0,25 € para tarjetas internacionales.
+    <a href="#referencia-ecommerce-basico" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  1. <i id="nota-ecommerce-completo"></i>
+    **eCommerce Completo:**
+    Requiere de plataforma externa de "headless eCommerce" a elegir
+      ([Snipcart](https://snipcart.com/ "[nofollow]"),
+      [Commerce Beta](https://static.tools/commerce/ "[nofollow]"),
+      [Commerce Layer](https://commercelayer.io/ "[nofollow]"),
+      [Foxy IO](https://www.foxy.io/ "[nofollow]"),
+      [LogiCommerce](https://www.logicommerce.com/es/ "[nofollow]"),
+      [Shopify](https://www.shopify.com/ "[nofollow]")...),
+    con sus tarifas y condiciones.
+    Éstas varían mucho según la plataforma,
+      algunas añaden 1-2% a las transacciones
+      (además de las comisiones de las pasarelas de pago)
+      con un mínimo de 10 $/mes.
+    <a href="#referencia-ecommerce-completo" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  1. <i id="nota-lms"></i>
+    **Plataforma de Formación (LMS):**
+    Se puede usar una plataforma externa con sus tarifas y condiciones,
+      o te puedo instalar alguna ([Moodle](https://moodle.org/?lang=es "[nofollow]") por ejemplo)
+      en un servidor a elegir
+      (entre 50 y 150 €/año según calidad y velocidad deseada).
+    El servidor/hosting gratuito que usamos no es compatible.
+    <a href="#referencia-lms" class="footnote-backref button button--sm no-print" role="doc-backlink">↩︎</a>
+
+  -->

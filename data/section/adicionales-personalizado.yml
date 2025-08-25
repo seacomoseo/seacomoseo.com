@@ -1,0 +1,20 @@
+name: Adicionales ➡️ Personalizado
+id: personalizado
+title: Personalizado
+subtitle: Descuentos por Combinaciones
+icon: puzzle-piece
+box:
+  caps: true
+  line: true
+  color: main-light
+  link: /#contacto
+  label: Contacto
+  pin: paper-plane
+  slider: true
+  cols: 3
+boxes:
+- title: Paquetes
+  price: '**Pregúntanos**'
+  icon: puzzle
+  md: |
+    - :check: Descuentos por combinaciones personalizadas de servicios

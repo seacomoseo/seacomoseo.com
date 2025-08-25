@@ -1,0 +1,228 @@
+name: Inicio ➡️ Solución
+id: solucion
+title: La Solución
+subtitle: ¡Yo te ayudo!
+md: |
+  Olvídate de ~~Wordpress~~ y de matar moscas a cañonazos. \
+  He desarrollado un [sistema propio](#sansoul) enfocado en:
+icon: life-ring
+# color: alt
+menu_label: Solución
+
+
+box:
+  gap: 2
+boxes:
+
+- box:
+    cols: 5
+    line: true
+    # caps: true
+  boxes:
+  - icon: crown
+    title: Calidad
+    md: Soy especialista en optimizar webs para que aparezcan en Google, sean fáciles de usar y bonitas
+  - icon: gauge-max
+    title: Rapidez
+    md: Tu sitio web quedará listo en menos de 2 semanas y cargará en menos de 1 segundo
+  - icon: piggy-bank
+    title: Ahorro
+    md: Tu sitio tendrá una calidad/precio brutal y estará alojado gratis (ahorrándote ~ 100 €/año)
+  - icon: heart-pulse
+    title: Tranquilidad
+    md: No necesitas mantenimiento constante ni plugins de seguridad, ni dependerás de mi para cambios
+  - icon: heart
+    title: Empatía
+    md: Te diré si algo no te interesa, te comparto todas las credenciales y te acompaño en cada paso
+
+- fit: 4
+  md: |
+    ¿Te parece muy loco? ¡Pues sigue leyendo y flipa! 🤩
+    {.subtitle}
+
+    [[:circle-check: Características]](#caracteristicas "[light]")
+
+
+modal:
+  caps: true
+  # color: white
+modals:
+
+- id: caracteristicas
+  title: Características
+  subtitle: Simplifico y hago efectiva tu visibilidad en internet
+  icon: circle-check
+  size: xl
+  box:
+    caps: true
+    color: white
+    cols: 4
+  boxes:
+  - title: CALIDAD
+    subtitle: Tu web destacará por ser...
+    icon: crown
+    md: |
+      ##### :magnifying-glass: Fácil de Encontrar
+      {.h4}
+
+      Soy especialista en optimizar webs para que aparezcan en Google (SEO). ¡Verás un buen impulso inicial de visibilidad!
+
+      ##### :gamepad-modern: Fácil de Usar
+      {.h4}
+
+      Para que los usuarios puedan encontrar en tu web lo que buscan cómoda y rápidamente y quieran volver.
+
+      ##### :sunglasses: Diseño Atractivo
+      {.h4}
+
+      Para proyectar una sensación agradable y los usuarios la asocien a tu negocio. Comprueba el [portfolio](#portfolio) y juzga tú mismo.
+    icon_type: bottom
+  - title: AHORRO
+    subtitle: De mucho tiempo y dinero
+    icon: piggy-bank
+    md: |
+      ##### :gauge-max: Rapidez
+      {.h4}
+
+      Tu sitio web quedará listo en menos de 2 semanas desde que nos facilitas todo el contenido y la mitad del presupuesto.
+
+      ##### :cloud-check: Hosting Gratuito
+      {.h4}
+
+      Alojamos tu sitio web mediante servicios freemium de alta calidad ([Netlify](https://www.netlify.com/ "[nofollow]")), ahorrándote una media 100 €/año.
+
+      ##### :tags: Precios Asequibles
+      {.h4}
+
+      Los precios son increibles para la calidad de los servicios. Tengo totalmente en cuenta a emprendedores como yo.
+    icon_type: bottom
+  - title: TRANQUILIDAD
+    subtitle: ¡No requieres mantenimiento!
+    icon: heart-pulse
+    md: |
+      ##### :wrench: Actualizaciones
+      {.h4}
+
+      No es necesario actualizar recurrentemente el sistema, ni sus temas ni plugins, como pasa con WordPress.
+
+      ##### :shield-check: Seguridad
+      {.h4}
+
+      No uso bases de datos, así que no hay posibilidad de hackeos. No necesitas plugins ni configuraciones de seguridad.
+
+      ##### :pen-to-square: Autogestionable
+      {.h4}
+
+      Incluyo un administrador simple de usar y no dependerás de nadie para cambiar tu web (aunque puedo ayudarte encantado).
+    icon_type: bottom
+  - title: EMPATÍA
+    subtitle: Te lo pongo fácil
+    icon: heart
+    md: |
+      ##### :hand-peace: Simplicidad
+      {.h4}
+
+      Te comparto un documento con todos los datos de acceso a todo lo relativo a tu web (contraseñas, emails, plataformas...).
+
+      ##### :hand-holding-heart: Honestidad
+      {.h4}
+
+      Mi prioridad es que todos salgamos ganando, por lo que si soy conscientes de que algo no te interesa, te lo diré sin reparo.
+
+      ##### :people-arrows: Adaptabilidad
+      {.h4}
+
+      Me adapto a las necesidades y soluciones con gusto; por ejemplo, te atiendo por teléfono, videollamada, chat...
+
+      <!--
+      ##### :hand-peace: Simplicidad
+      {.h4}
+
+      Hago un gran esfuerzo por simplificar procesos y facilitar o evitar cualquier cosa que te pueda saturar o preocupar.
+      -->
+    icon_type: bottom
+
+- id: sansoul
+  title: Sistema SanSoul
+  subtitle: Máxima eficacia con mínimas preocupaciones
+  icon: fire-flame-curved
+  image: solucion/sansoul.svg
+  ratio: 2/1
+  circle: false
+  border: ''
+  size: sm
+  menu_label: SanSoul
+  boxes:
+  - align: left
+    md: |
+      Combinando todos mis años de experiencia en maquetación, posicionamiento y estandarización de procedimientos, he desarrollado y perfeccionado durante meses mi propio sistema (que he llamado [SanSoul](#sansoul)) mediante los siguientes criterios:
+
+      - :bullseye-pointer: **Diseño Efectivo:** Le doy importancia a que las páginas web luzcan atractivas y sean fáciles de usar para que la experiencia de los usuarios no sea frustrante, si no agradable en diseño y usabilidad, proyectándoles esa sensación y así la asocien a tu negocio con facilidad. Comprueba el portfolio y juzga tú mismo.
+      - :magnifying-glass: **Visibilidad en Google:** Es el buscador que todo el mundo usa y puedes aparecer para las consultas que tengan una clara intención de encontrar lo que ofreces. Se consigue mediante **Posicionamiento Web** con 2 formas de aparecer…
+          - :searchengin: **Naturalmente con SEO:** Es ideal para **aparecer a largo plazo**, pues, dependiendo de la competencia, los esfuerzos que se realicen se verán reflejados con el paso de los meses. Básicamente se trabaja haciendo que tu sitio web sea mejor que los demás de cara a Google en…
+              - **Calidad técnica:** Velocidad de carga, facilidad de uso, facilidad para darle a entender a Google lo que es cada elemento y cómo interpretarlo… **Mi sistema ya incorpora toda esto de serie** (lo llamo *"impulso inicial de visibilidad en Google"*), las siguientes necesariamente pasan por un esfuerzo adicional que se contrata opcionalmente.
+              - **Calidad de contenido:** Para responder a la intención de búsqueda de los usuarios con el contenido; se facilita mediante una estrategia y un estudio de palabras clave.
+              - **Popularidad:** Se mide con Linkbuilding, y esto es encargarse de que hayan referencias o “hablen de ti” desde otras webs con enlaces hacia la tuya.
+          - :rocket-launch: **Pagando con SEM:** Este servicio opcional es ideal para **aparecer al instante** en las primeras posiciones y, por lo general, una campaña de anuncios en Google Ads tiene un buen retorno de la inversión.
+      - :bolt: **Rapidez de Entrega:** Me he concentrado en optimizar una buena estandarización de procedimientos, lo que me permite trabajar increiblemente rápido tanto para desarrollar como para mantener sitios web. Esto se traduce en que puedo ofrecer **entregas con un máximo de 2 semanas** y realizar cambios tan rápidos como te atienda.
+      - :microchip: **Tecnología:** Para tener un sitio web, básicamente se necesita…
+          - **Dominio y Hosting:** Se deben contratar mediante cualquier proveedor, cada uno con su propia reputación, calidad y tarifas.
+          - **Tecnologías:** Son el conjunto de herramientas que te facilitan el desarrollo y la gestión de sitios web. La más popular con diferencia es Wordpress. **PERO** existe un **nuevo paradigma** llamado **Jamstack** usado para desarrollar tecnologías web, y como es algo bastante técnico y en auge, pocas empresas de marketing y diseño lo conocen y muchas menos lo usan. Resumiéndolo mucho…
+              - Los sitios web son estáticos, y por lo tanto **increíblemente rápidos** (esto beneficia la experiencia de usuario y el SEO).
+              - No requieren bases de datos, por lo que son más **seguros, fáciles de mantener y escalables**.
+              - Las empresas de **hosting** que ofrecen planes **gratuitos de calidad** (como [Netlify](https://www.netlify.com/ "[nofollow]"), [Vercel](https://vercel.com/ "[nofollow]") y [Cloudflare Pages](https://pages.cloudflare.com/ "[nofollow]")) solamente pueden ser usados con estas tecnologías y las limitaciones dan de sobra para la gran mayoría de sitios web.
+              - ¡Es como tener un pastel delicioso sin tener que preocuparte por las calorías!
+
+        ¿Te parece muy loco? ¡Pues sigue leyendo todas las características que ofrecemos y flipa! 🤩
+        {.subtitle}
+
+        [[:circle-check: Características]](#caracteristicas)
+
+
+      #### Tecnologías Jamstack que uso
+
+      - :git-alt:            [Git](https://git-scm.com/ "[nofollow]"):                                    Sistema de Control de Versiones
+      - :github:             [Github](https://github.com/ "[nofollow]"):                                  Git y Almacenamiento Online + Automatización de Copias de Seguridad
+      - :gitlab:             [Gitlab](https://gitlab.org "[nofollow]"):                                   Almacenamiento paralelo para copias de seguridad
+      - :netlify:            [Netlify](https://www.netlify.com/ "[nofollow]"):                            Servidor de despliegue, Recepción de Formularios y Gestor de Identidad de Usuarios
+      - :bolt:               [Cloudflare Pages](https://pages.cloudflare.com/ "[nofollow]"):              Alternativa de Servidor de despliegue
+      - :google-apps-script: [Google App Script](https://developers.google.com/apps-script "[nofollow]"): Alternativa de Recepción de Formularios en Hojas de Google Drive
+      - :hugo:               [Hugo](https://gohugo.io/ "[nofollow]"):                                     Generador de Sitios Estáticos (SSG) ([más info](https://es.wikipedia.org/wiki/Hugo_(software) "[nofollow]"))
+        - :sass:             [SASS](https://sass-lang.com/ "[nofollow]") + :css3-alt: [PostCSS](https://postcss.org/ "[nofollow]") ( [PurgeCSS](https://purgecss.com/ "[nofollow]") + [Autoprefixer](https://autoprefixer.github.io/ "[nofollow]") +[CSSnano](https://cssnano.co/ "[nofollow]")): Preprocesadores de CSS / Estilos
+        - :esbuild:          [esbuild](https://esbuild.github.io/ "[nofollow]"):                          Preprocesador de Javascript / Funcionalidades
+      - :static-cms:         [Static CMS](https://www.staticcms.org/ "[nofollow]"):                       Gestor de Contenidos (CMS)
+
+      Hugo permite usar temas personalizados mediante submódulos de Git para poder tener todo el desarrollo de éste proyecto que hemos creado separado de cada web y centralizado en un único lugar, por lo que todas las mejoras y opciones de personalización que vaya añadiendo se podrán actualizar a voluntad y muy fácilmente en cada sitio web.
+
+      El CMS permite modificar directamente en Github, mediante el gestor de identidades de Netlify, los archivos de texto plano de tipo Markdown, YAML, TOML y JSON que hugo necesita de cada sitio web a modo de base de datos, todo desde un panel de administración fácil de usar para usuarios no técnicos.
+
+      Cada vez que se realicen cambios en cualquier archivo de Github:
+
+      - El servidor realiza un despliegue: obtiene todos los archivos del proyecto en Github y los del submódulo, y a continuación construye el sitio mediante Hugo, ofreciendo el contenido preprocesado.
+      - Se crean copias de seguridad automáticas en un repositorio espejo en Gitlab mediante un flujo de tabajo de Github Actions.
+
+
+      ##### Limitaciones
+
+      De planes gratuitos:
+
+      - :github: [Github](https://github.com/pricing/ "[nofollow]"):
+        - __Almacenamiento:__ 100 GB
+        - __Transferencia:__ :infinity:
+        - __Archivo Máximo:__ 100 MB
+      - :gitlab: [Gitlab](https://about.gitlab.com/pricing/ "[nofollow]"):
+        - __Almacenamiento:__ 5 GB
+        - __Transferencia:__ 10 GB
+        - __Archivo Máximo:__ :infinity:
+      - :netlify: [Netlify](https://netlify.app/pricing/ "[nofollow]"):
+        - __Banda Ancha:__ 100 GB/mes
+        - __Procesamiento:__ 300 minutos/mes ~ 300 cambios/mes<sup>`1`</sup>
+        - __Formularios:__ 100 envíos/mes<sup>`2`</sup> y 8 MB por archivo
+      - :bolt: [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/limits/ "[nofollow]"):
+        - __Banda Ancha:__ :infinity:
+        - __Procesamiento:__ 500 cambios/mes<sup>`3`</sup>
+        - __Archivo Máximo:__ 25 MB
+
+      1. Netlify tarda en procesar cada sitio entre 20 segundos y 1 minuto tras cada cambio, lo que se traduce en un rango de 300-900 cambios/mes
+      2. Los formularios por defecto los procesa de Netlify sin tener que configurar nada, pero también está prevista la posibilidad de usar [cualquier servicio externo](/resto/#otros) (con las limitaciones que definan), un desarrollo propio con Google Apps Script o incluso el [hack de Google Forms](/resto/#google-forms) (para no tener ninguna limitación)
+      3. Cada cambio/despliege tarda ~ 15 segundos más que Netlify

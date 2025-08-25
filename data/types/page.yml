@@ -1,8 +1,8 @@
 title: Páginas
-order: 100
+weight: 100
 related: false
 tpl:
   sections:
-  - file: base/_header
-  - file: base/toc
-  - file: base/content
+  - file: base-_header
+  - file: base-toc
+  - file: base-content
