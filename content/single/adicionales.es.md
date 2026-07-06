@@ -23,4 +23,3 @@ tpl:
   - file: adicionales-redes-sociales
   - file: adicionales-personalizado
 ---
-

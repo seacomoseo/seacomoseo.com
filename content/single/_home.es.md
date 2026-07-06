@@ -53,7 +53,7 @@ org:
   as:
   - https://www.instagram.com/seacomoseo/
   - https://www.facebook.com/seacomoseo/
-  - https://g.page/webmurcia
+  - https://g.page/r/CfLy0R-q0MtoEBM/review
   - https://www.youtube.com/@seacomoseo
   - https://www.linkedin.com/company/sea-como-seo
   - https://github.com/seacomoseo
@@ -68,7 +68,7 @@ org:
     region: Murcia
     country: ES
     geo: '{"type":"Point","coordinates":[-1.072414, 37.977543]}'
-    link: https://g.page/webmurcia
+    link: https://g.page/r/CfLy0R-q0MtoEBM/review
   areas:
   - Murcia
   - España
@@ -99,4 +99,3 @@ org:
     price: 345
     area: Online
 ---
-

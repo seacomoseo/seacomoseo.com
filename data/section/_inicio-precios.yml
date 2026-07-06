@@ -18,7 +18,7 @@ boxes:
     subtitle: Tu mejor carta de presentación
     price: '**Desde** 805 €'
     link: /presupuesto/#budget_WyIiLDEsMCwwLCI0IiwiMCIsIjEiLDAsMCwwLDAsMCwwLDAsMCwwLDFd
-    icon: user-astronaut
+    icon: rocket-launch
     md: |
       - :check: Hasta 10 secciones
       - :check: Diseño efectivo y adaptado
@@ -48,7 +48,7 @@ boxes:
     subtitle: Publicidad de Pago en Google Ads
     price: '**Desde** 345 € <br> **+ inversión en Google**'
     link: /presupuesto/#budget_WyIiLDAsMCwxLCIwIiwiMCIsIiIsMCwwLDAsMCwxLDAsMSwwLDEsMSwwXQ==
-    icon: rocket-launch
+    icon: web_traffic
     md: |
       - :circle-info: Ideal para **recibir tráfico al instante**
       - :check: Estudio de palabras clave <br> + adaptar contenido
