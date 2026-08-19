@@ -175,7 +175,7 @@ modals:
       - ::brand:github::           [Github](https://github.com/ "[nofollow]"):                                  Git y Almacenamiento Online + Automatización de Copias de Seguridad
       - ::brand:gitlab::           [Gitlab](https://gitlab.org "[nofollow]"):                                   Almacenamiento paralelo para copias de seguridad
       - ::brand:netlify::          [Netlify](https://www.netlify.com/ "[nofollow]"):                            Servidor de despliegue, Recepción de Formularios y Gestor de Identidad de Usuarios
-      - ::bolt::                   [Cloudflare Pages](https://pages.cloudflare.com/ "[nofollow]"):              Alternativa de Servidor de despliegue
+      - ::brand:cloudflarepages::  [Cloudflare Pages](https://pages.cloudflare.com/ "[nofollow]"):              Alternativa de Servidor de despliegue
       - ::brand:googleappsscript:: [Google App Script](https://developers.google.com/apps-script "[nofollow]"): Alternativa de Recepción de Formularios en Hojas de Google Drive
       - ::brand:hugo::             [Hugo](https://gohugo.io/ "[nofollow]"):                                     Generador de Sitios Estáticos (SSG) ([más info](https://es.wikipedia.org/wiki/Hugo_(software) "[nofollow]"))
         - ::brand:sass::           [SASS](https://sass-lang.com/ "[nofollow]") + ::brand:css3-alt:: [PostCSS](https://postcss.org/ "[nofollow]") ( [PurgeCSS](https://purgecss.com/ "[nofollow]") + [Autoprefixer](https://autoprefixer.github.io/ "[nofollow]") +[CSSnano](https://cssnano.co/ "[nofollow]")): Preprocesadores de CSS / Estilos
@@ -208,7 +208,7 @@ modals:
         - __Banda Ancha:__ 100 GB/mes
         - __Procesamiento:__ 300 minutos/mes ~ 300 cambios/mes<sup>`1`</sup>
         - __Formularios:__ 100 envíos/mes<sup>`2`</sup> y 8 MB por archivo
-      - ::bolt:: [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/limits/ "[nofollow]"):
+      - ::brand:cloudflarepages:: [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/limits/ "[nofollow]"):
         - __Banda Ancha:__ ::all_inclusive::
         - __Procesamiento:__ 500 cambios/mes<sup>`3`</sup>
         - __Archivo Máximo:__ 25 MB
