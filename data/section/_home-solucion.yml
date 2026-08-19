@@ -133,13 +133,13 @@ modals:
       -->
     icon_pos: sub
 - id: sansoul
+  color: white
   title: Sistema SanSoul
   sub: Máxima eficacia con mínimas preocupaciones
-  icon: svg:fire-flame-curved
+  icon: local_fire_department
   img: /u/solucion/sansoul.svg
   ratio: 2/1
   disc: false
-  border: ''
   size: sm
   menu_label: SanSoul
   boxes:
@@ -171,16 +171,16 @@ modals:
 
       #### Tecnologías Jamstack que uso
 
-      - ::brand:git-alt::            [Git](https://git-scm.com/ "[nofollow]"):                                    Sistema de Control de Versiones
-      - ::brand:github::             [Github](https://github.com/ "[nofollow]"):                                  Git y Almacenamiento Online + Automatización de Copias de Seguridad
-      - ::brand:gitlab::             [Gitlab](https://gitlab.org "[nofollow]"):                                   Almacenamiento paralelo para copias de seguridad
-      - ::brand:netlify::            [Netlify](https://www.netlify.com/ "[nofollow]"):                            Servidor de despliegue, Recepción de Formularios y Gestor de Identidad de Usuarios
-      - ::bolt::               [Cloudflare Pages](https://pages.cloudflare.com/ "[nofollow]"):              Alternativa de Servidor de despliegue
+      - ::brand:git-alt::          [Git](https://git-scm.com/ "[nofollow]"):                                    Sistema de Control de Versiones
+      - ::brand:github::           [Github](https://github.com/ "[nofollow]"):                                  Git y Almacenamiento Online + Automatización de Copias de Seguridad
+      - ::brand:gitlab::           [Gitlab](https://gitlab.org "[nofollow]"):                                   Almacenamiento paralelo para copias de seguridad
+      - ::brand:netlify::          [Netlify](https://www.netlify.com/ "[nofollow]"):                            Servidor de despliegue, Recepción de Formularios y Gestor de Identidad de Usuarios
+      - ::bolt::                   [Cloudflare Pages](https://pages.cloudflare.com/ "[nofollow]"):              Alternativa de Servidor de despliegue
       - ::brand:googleappsscript:: [Google App Script](https://developers.google.com/apps-script "[nofollow]"): Alternativa de Recepción de Formularios en Hojas de Google Drive
-      - ::brand:hugo::               [Hugo](https://gohugo.io/ "[nofollow]"):                                     Generador de Sitios Estáticos (SSG) ([más info](https://es.wikipedia.org/wiki/Hugo_(software) "[nofollow]"))
-        - ::brand:sass::             [SASS](https://sass-lang.com/ "[nofollow]") + ::brand:css3-alt:: [PostCSS](https://postcss.org/ "[nofollow]") ( [PurgeCSS](https://purgecss.com/ "[nofollow]") + [Autoprefixer](https://autoprefixer.github.io/ "[nofollow]") +[CSSnano](https://cssnano.co/ "[nofollow]")): Preprocesadores de CSS / Estilos
-        - ::brand:esbuild::          [esbuild](https://esbuild.github.io/ "[nofollow]"):                          Preprocesador de Javascript / Funcionalidades
-      - ::brand:static-cms::         [Static CMS](https://www.staticcms.org/ "[nofollow]"):                       Gestor de Contenidos (CMS)
+      - ::brand:hugo::             [Hugo](https://gohugo.io/ "[nofollow]"):                                     Generador de Sitios Estáticos (SSG) ([más info](https://es.wikipedia.org/wiki/Hugo_(software) "[nofollow]"))
+        - ::brand:sass::           [SASS](https://sass-lang.com/ "[nofollow]") + ::brand:css3-alt:: [PostCSS](https://postcss.org/ "[nofollow]") ( [PurgeCSS](https://purgecss.com/ "[nofollow]") + [Autoprefixer](https://autoprefixer.github.io/ "[nofollow]") +[CSSnano](https://cssnano.co/ "[nofollow]")): Preprocesadores de CSS / Estilos
+        - ::brand:esbuild::        [esbuild](https://esbuild.github.io/ "[nofollow]"):                          Preprocesador de Javascript / Funcionalidades
+      - ::brand:sveltia-cms::      [Sveltia CMS](https://sveltiacms.app/ "[nofollow]"):                         Gestor de Contenidos (CMS)
 
       Hugo permite usar temas personalizados mediante submódulos de Git para poder tener todo el desarrollo de éste proyecto que hemos creado separado de cada web y centralizado en un único lugar, por lo que todas las mejoras y opciones de personalización que vaya añadiendo se podrán actualizar a voluntad y muy fácilmente en cada sitio web.
 
