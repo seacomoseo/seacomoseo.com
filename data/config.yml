@@ -1,10 +1,4 @@
-langs:
-- lang: es
-  title: Sea Como SEO ⚡️🐙
-  description: Diseño de Páginas Web con Posicionamiento
-  google_analytics: G-19K7L961ZF
-  google_site_verification: Sb-MUAYWclN8UdYEC0-7YsKPFBAsrAPYNmM-k5QOXak
-  google_file_verification: google7467d923cbb3eb4c.html
-  disqus: seacomoseo
-# - lang: en
-#   description: Website Design with SEO
+ga4: G-19K7L961ZF
+g_site_verify: Sb-MUAYWclN8UdYEC0-7YsKPFBAsrAPYNmM-k5QOXak
+g_file_verify: google7467d923cbb3eb4c.html
+disqus: seacomoseo

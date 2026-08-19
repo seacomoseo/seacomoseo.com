@@ -1,0 +1,43 @@
+menu:
+  img: /u/base/logo-alt.svg
+  items:
+  - icon: add
+    label: Más
+    items:
+    - url: /adicionales/
+      label: Servicios Adicionales
+      icon: emoji_symbols
+    - url: /mapa/
+      label: Orientación
+      icon: explore
+    - url: /presupuesto/
+      label: Presupuesto
+      icon: calculate
+    - url: /requerimientos/
+      label: Requerimientos
+      icon: checklist
+    - url: /entrega/
+      label: Entrega
+      icon: check_circle
+    - url: /cms/
+      label: Gestor de Contenidos
+      icon: edit_square
+    - url: /resto/
+      label: Resto de Instrucciones
+      icon: format_list_numbered
+    - url: /blog/
+      label: Blog
+      icon: rss_feed
+callnows:
+- type: whatsapp
+  label: 623 199 599
+  btn: main
+footer:
+  div: arrow-side-round
+  div_x: true
+  md: |
+    - ::copyright::      {{< internal-link index >}}
+    - ::balance:: {{< internal-link legal >}}
+    - ::encrypted:: {{< internal-link privacy >}}
+    - ::cookie::    {{< internal-link cookies >}}
+    {.list-inline}

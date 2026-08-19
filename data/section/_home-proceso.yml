@@ -1,0 +1,28 @@
+name: Inicio ➡️ Proceso
+id: proceso
+boxes:
+- title: Proceso
+  sub: Ejemplo de proceso paso a paso
+  icon: footprint
+  step:
+    line: true
+    icon_size: 2
+  steps:
+  - icon: handshake
+    title: Contacto y diagnóstico
+    md: Cuéntame tu proyecto y te asesoraré sin compromiso
+  - icon: home_storage
+    title: Contenido
+    md: Reúne y facilítame textos e imágenes
+  - icon: history
+    title: Ejecución
+    md: Construyo tu web y te la muestro en menos de dos semanas
+  - icon: done_all
+    title: Revisiones
+    md: Tienes dos rondas de ajustes incluidas
+  - icon: star
+    title: Lanzamiento
+    md: Publico tu sitio y te entrego todas las credenciales
+  - icon: sync
+    title: Mantenimiento opcional
+    md: Puedo gestionar SEO continuo, SEM y cambios recurrentes

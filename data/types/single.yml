@@ -5,5 +5,6 @@ tpl:
   callnow: auto
   section:
   - size: lg
-    caps: true
-    parallax: fix
+    scroll: fix
+    box:
+      caps: true

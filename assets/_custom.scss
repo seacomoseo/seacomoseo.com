@@ -1,0 +1,313 @@
+@use 'css/variables' as *;
+@use 'css/mixins' as *;
+@use 'hugo:vars' as *;
+@use '_budget' as *;
+@use '_budget-print' as *;
+
+// Clip-path Circles/Diamond like Hexagons
+
+// *, :before, :after {
+//   // --diamond: url(#nut);
+//   --diamond: polygon(50% 0%, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%, 50% 0%);
+// }
+// .clip-path-icon {
+//   display: block;
+//   width: 0;
+//   height: 0;
+// }
+
+// Fix animation clip
+body {
+  max-width: 100vw;
+}
+#logo-animation img {
+  overflow: hidden;
+}
+
+
+// Colors
+
+.section.bg-main {
+  --sub: var(--title);
+  > .bg-color {
+    background-image: linear-gradient(var(--deg, 120deg), $cta var(--position, 50%), $main var(--position, 50%));
+  }
+  &:not(#faq) .container > .box__icon--sub {
+    --base: #{ rgba($white, .8) };
+  }
+}
+.price,
+.price strong {
+  color: var(--text);
+}
+.menu.bg-alt,
+.section--hero.bg-alt,
+#solucion {
+  --main: #{ rgba($white, .8) };
+}
+#solucion {
+  --cta-text: #{ rgba($alt, .8) };
+}
+
+// Hero
+
+#body-home #hero {
+  --sub: var(--title);
+  .box--1 {
+    .img {
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 2000%;
+        height: 2000%;
+        top: -950%;
+        left: -950%;
+        background-image: linear-gradient(120deg, $cta 50%, $main 50%);
+        // transition: transform .3s;
+        @keyframes rotate-hero {
+          50% {
+            transform: rotate(-60deg);
+          }
+        }
+        animation: rotate-hero 24s 5s infinite;
+        z-index: -1;
+      }
+    }
+    z-index: 0;
+  }
+  .box--2 {
+    z-index: 1;
+  }
+  .sub {
+    font-size: 1.5em;
+  }
+}
+
+
+// Hero animations
+@keyframes logo-in {
+  0% {
+    transform: translate(9.8em, 4em) scale(2);
+  }
+}
+#body-home #hero {
+  overflow: hidden;
+  @media (min-width: $viewport-xl) {
+    .box--1 {
+      .img {
+        animation: logo-in .75s 2.75s both;
+      }
+    }
+  }
+  @mixin show-from($delay) {
+    animation: show-from .5s (3s + $delay * .125s) both;
+  }
+  // .img__in {        @include show-from(0); }
+  // .h1 {                  @include show-from(1); }
+  .sub {             @include show-from(1); }
+  .li-icon:nth-child(1) { @include show-from(2); }
+  .li-icon:nth-child(2) { @include show-from(3); }
+  .li-icon:nth-child(3) { @include show-from(4); }
+  .li-icon:nth-child(4) { @include show-from(5); }
+  .btns {              @include show-from(6); }
+  .box--2 .img {        @include show-from(1); }
+}
+
+// Sections
+
+// #body-home {
+//   main .div:not(#contacto + .div) {
+//     display: none;
+//   }
+//   section {
+//     padding: 0;
+//   }
+//   section.bg-white {
+//     padding: 10em 0;
+//     .bg-fig {
+//       background-image:
+//         url('{{/* (resources.Get "/u/bg-valley.svg" | minify).RelPermalink */}}'),
+//         linear-gradient($bg-ligth-alt, $bg-ligth-alt);
+//       background-position: center;
+//       background-size: cover;
+//     }
+//   }
+// }
+
+#problema {
+  // --deg: 140deg;
+  // --position: 45%;
+  .box__title,
+  .h4 {
+    strong {
+      // color: $main-dark;
+      // color: var(--main);
+      opacity: .5;
+    }
+  }
+  .box .md {
+    margin-top: -.5em;
+  }
+}
+#solucion {
+  --deg: 90deg;
+  // --position: 45%;
+}
+
+#features,
+#caracteristicas {
+  --deg: 75deg;
+  --position: 60%;
+  .box {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    .md {
+      padding-top: 1em;
+    }
+  }
+  .slider__arrows {
+    --cta: var(--light);
+    --cta-in: var(--light-in);
+  }
+}
+
+// #equipo,
+// #loren,
+// #zepo,
+// #vaiana,
+#sobre-mi {
+  .img--border {
+    background-color: transparent;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      z-index: -1;
+      background-image: linear-gradient(120deg, $cta 50%, $main 50%);
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      animation: spin 20s var(--delay, 0s) linear infinite;
+    }
+  }
+}
+// #equipo {
+//   .box--2 {
+//     --delay: 2s;
+//   }
+//   .box--3 {
+//     --delay: 4s;
+//   }
+// }
+#colaboradores {
+  .box--go {
+    --box-hover-image-transform: none;
+  }
+  .img {
+    aspect-ratio: 6 / 1;
+    height: calc(100cqw / 6);
+  }
+}
+#portfolio {
+  .container--lg {
+    padding-top: fluid-size(32px, 54px);
+    padding-bottom: fluid-size(32px, 54px);
+  }
+  .box__btn {
+    font-size: .8em;
+    margin-bottom: .25em;
+  }
+  .slider__arrows {
+    margin-top: 2em;
+  }
+}
+#prices,
+#precios {
+  --deg: 100deg;
+  --position: 45%;
+  .box--1 {
+    overflow: hidden;
+    border-radius: var(--radius-top);
+  }
+  .offer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    background-color: var(--alt);
+    color: white;
+    font-weight: 700;
+    padding: .5em 1.5em 0.15em;
+    transform: translateX(42.5%) rotate(45deg);
+    svg {
+      color: inherit;
+    }
+  }
+}
+.price strong {
+  @extend s !optional;
+}
+/* purgecss start ignore */
+#process,
+#proceso {
+  .step:last-child .step__icon {
+    animation: spin 10s linear infinite;
+    transform-origin: center;
+  }
+}
+/* purgecss end ignore */
+#faq {
+  --deg: 60deg;
+}
+#resenas {
+  --deg: 160deg;
+  --position: 45%;
+  // .reviews__item-sub {
+  //   @include font-cursive;
+  //   font-size: 1.25em;
+  //   color: var(--sub);
+  // }
+}
+@media (min-width: $viewport-md) {
+  #contact,
+  #contacto {
+    .boxes {
+      margin-bottom: 1em;
+      .box {
+        transform-origin: center;
+      }
+      .box--1 {
+        .box--1 {
+          transform: perspective(20em) rotateY(10deg);
+        }
+        .box--2 {
+          transform: perspective(20em) rotateY(-10deg);
+        }
+      }
+    }
+  }
+}
+
+
+// Compare
+
+.compare {
+  .icon:has(> use[href="#{$draws-base}#xmark"]) {
+    --main: red;
+  }
+  .icon:has(> use[href="#{$draws-base}#check"]) {
+    --main: green;
+  }
+}
+
+
+// Presupuesto

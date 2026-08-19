@@ -6,7 +6,7 @@ tpl:
     logo: true
     logo_align: left
     sticky: none
-    transparent: true
+    clear: true
     color: white
     size: sm
     auto: home
@@ -14,7 +14,7 @@ tpl:
   section:
   - size: sm
   sections:
-  - file: base-_header
+  - file: base-_hero
   - file: base-toc
   - file: base-content
   - file: base-address
@@ -23,7 +23,7 @@ tpl:
   - file: base-comments
   - file: base-children
   - file: base-share
-  - file: base-related
+  - file: base-rel
   list:
     cols: 3
     color: white
@@ -32,9 +32,9 @@ tpl:
     ratio: 16/9
     icon: hide
     align: left
-    button: hide
+    btn: hide
     tags:
     - type: date
     - type: address
-  related:
+  rel:
     slider: true

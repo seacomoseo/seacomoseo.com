@@ -1,0 +1,71 @@
+name: Inicio ➡️ Sobre mí
+id: sobre-mi
+size: md
+boxes:
+- title: Sobre mí
+  sub: Diseño Web, Desarrollo y Posicionamiento SEO/SEM
+  icon: smart_toy
+  box:
+    gap_vs: 5
+  boxes:
+  - box:
+      cols: 2
+      gap: 4
+      gap_vs: 1
+      line: true
+      align_vl: right
+      align_y: center
+      border: main
+      disc: true
+    boxes:
+    - img: /u/equipo/loren.jpg
+      order: 2
+    - title: Loren
+      sub: +10 años optimizando webs
+      md: |
+        Soy el que ha montado todo este tinglado.
+
+        Especializado en Maquetación Web y SEO.
+
+        No soy Diseñador gráfico, pero tengo muchos conocimientos y me manejo con soltura con todo lo relacionado.
+
+        Podría decir lo mismo sobre Desarrollo Web y Experiencia de Usuario (UX).
+
+        Me apasiona crear herramientas útiles y usar Inteligencia Artificial para ser más productivo.
+
+        [[::add:: Más sobre mí]](/autor/loren/ "Loren San Sol")
+  - id: colaboradores
+    title: Colaboradores
+    sub: Mi red de profesionales de confianza
+    hs: 2
+    caps: true
+    icon: handshake
+    icon_pos: sub
+    box:
+      cols: 4
+      cols_vs: 2
+      gap_vs: 1
+      contain: true
+      lock: true
+      gray: true
+      md_sm: true
+      btn: hide
+      hide_shadow: true
+      align_y: center
+    boxes:
+    - url: https://www.instagram.com/zepic.photo/
+      img: /u/colaboradores/zepic.es.svg
+      md: Foto, Vídeo y Diseño Gráfico
+      ratio: 8
+    - url: https://www.instagram.com/conmaslimon/
+      img: /u/colaboradores/conmaslimon.com.svg
+      md: Especialista en Social Media
+      ratio: 6
+    - url: https://www.delefant.com/
+      img: /u/colaboradores/delefant.com.svg
+      md: Agencia de Marketing Digital
+      ratio: 7
+    - url: https://crealogic.es/
+      img: /u/colaboradores/crealogic.es.svg
+      md: Agencia de Marketing Digital
+      ratio: 7

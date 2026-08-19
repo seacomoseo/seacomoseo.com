@@ -1,7 +1,8 @@
 ---
 title: Ejemplo de rejilla adaptable sólo con HTML y CSS
 slug: ejemplo-rejilla
-noindex: true
+seo:
+  noindex: true
 ---
 
 <style type="text/css">

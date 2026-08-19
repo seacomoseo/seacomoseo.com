@@ -1,7 +1,7 @@
 ---
 slug: plantilla-interlinking-enlazado-interno
 title: Plantilla para Facilitar Interlinking o Enlazado Interno Piramidal
-image: https://youtu.be/ROCV-BaLxkI
+img: https://youtu.be/ROCV-BaLxkI
 author: admin
 date: 2017-09-05 00:00:00
 ---

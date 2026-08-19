@@ -1,0 +1,26 @@
+name: Presupuesto ➡️ Hero
+size: xs
+boxes:
+- title: Presupuesto
+  icon: calculate
+  sub: |
+    <span class="no-print">Genéralo automáticamente tu mismo según tus necesidades</span>
+    <span id="budget-title" class="print"></span>
+- align: left
+  md: |
+    Te puedes orientar calculando tú mismo un presupuesto, pero te lo puedo ajustar todo posible si me [contactas](/#contacto).
+    {.no-print}
+
+    **Hay descuentos al combinar servicios.**
+    {.no-print}
+
+    Ten en cuenta que el precio de **SEO sin WEB** implica trabajarlo en un sistema diferente al mío y aumenta mucho el coste de presupuesto. Esto implica que sea muy probable que te compense que renueve tu WEB si quieres SEO.
+    {.no-print}
+
+    {{< budget >}}
+
+    <button id="budget-link" class="btn no-print" style="--copied: '{{< i18n copied >}}'">::link:: <b>Copiar Enlace</b><b class="copy"></b></button>
+    <button id="budget-print" class="btn main no-print">::print:: <b>Imprimir</b></button>
+
+    <a class="btn alt no-print" href="/#contacto">::send:: <b>Contacto</b></a>
+    <a class="btn light no-print" href="/">::home:: <b data-more="Inicio"><b>Sea Como SEO 🐙 Diseño de Páginas Web con Posicionamiento</b></b></a>

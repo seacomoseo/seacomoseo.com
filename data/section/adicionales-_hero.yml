@@ -1,0 +1,27 @@
+name: Adicionales ➡️ Hero
+boxes:
+- title: Servicios Adicionales
+  icon: brand:seacomoseo
+  hanchor: Fotografía, Vídeo, Diseño Gráfico y Redes Sociales
+  box:
+    caps: true
+    line: true
+    cols: 4
+    cols_vs: 2
+  boxes:
+  - title: Foto y Vídeo
+    sub: Grabación y Edición
+    url: '#foto-video'
+    icon: photo_camera
+  - title: Diseño Gráfico
+    sub: Imagen Corporativa, Carteles...
+    url: '#diseno-grafico'
+    icon: stylus_fountain_pen
+  - title: Redes Sociales
+    sub: Gestión y Creación de Contenidos
+    url: '#redes-sociales'
+    icon: share
+  - title: Personalizado
+    sub: Descuentos por Combinaciones
+    url: '#personalizado'
+    icon: widgets

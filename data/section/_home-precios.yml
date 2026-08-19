@@ -1,0 +1,67 @@
+name: Inicio ➡️ Precios
+id: precios
+boxes:
+- title: Precios
+  sub: Opciones para todos los gustos
+  icon: sell
+- box:
+    caps: true
+    line: true
+    color: white
+    url: /presupuesto/
+    label: Presupuesto
+    pin: calculate
+    slider: true
+    cols: 3
+  boxes:
+  - title: Web Completa
+    sub: Tu mejor carta de presentación
+    price: '**Desde** 910 €'
+    url: /presupuesto/#budget_WyIiLDEsMCwwLCI0IiwiMCIsIjEiLDAsMCwwLDAsMCwwLDAsMCwwLDFd
+    icon: rocket_launch
+    md: |
+      - ::check:: Hasta 10 secciones
+      - ::check:: Diseño efectivo y adaptado
+      - ::check:: **Hosting Gratuito** (ahorra ~100€/año)
+      - ::check:: Impulso inicial de visibilidad en Google
+      - ::bolt:: Máximo 2 semanas de entrega
+
+      ::star::<br>POPULAR
+      {.offer .caps}
+  - title: SEO
+    sub: Aparecer en Google Orgánicamente
+    price: '**Desde** 260 € <br> **+** 160 €/mes'
+    url: /presupuesto/#budget_WyIiLDEsMSwwLCI0IiwiMCIsIjEiLDAsMCwwLDAsMCwwLDEsMCwwLDFd
+    icon: search_check_2
+    md: |
+      - ::info:: Ideal para **recibir tráfico a largo plazo** con alta o moderada competencia
+      - ::check:: Estudio de KW + adaptar contenido
+      - ::check:: Diseñar + implementar estrategia
+      - ::check:: Linkbuilding
+      - ::asterisk:: Precio solo sobre nuestro sistema web
+      <!--
+      - ::info:: Nuestro sistema ya incluye un buen impulso inicial de SEO, por lo que con una web creada por...
+        - ::help_outline:: **Nosotros:** sin mucha competencia, este servicio no sería necesario
+        - ::help_outline:: **Otros:** merece la pena cambiar a nuestro sistema
+      -->
+  - title: SEM
+    sub: Publicidad de Pago en Google Ads
+    price: '**Desde** 390 € <br> **+ inversión en Google**'
+    url: /presupuesto/#budget_WyIiLDAsMCwxLCIiLCIwIiwiIiwwLDAsMCwwLDAsMCwxLDAsMSwwXQ==
+    icon: web_traffic
+    md: |
+      - ::info:: Ideal para **recibir tráfico al instante**
+      - ::check:: Estudio de palabras clave <br> + adaptar contenido
+      - ::check:: Campaña de publicidad en Google Ads
+  - title: Multi Idioma
+    sub: Tu web en diferentes idiomas
+    price: 15% **del total**
+    icon: g_translate
+    md: |
+      - ::check:: Por cada idioma adicional al principal
+      - ::check:: Opciones de diferentes dominios, subdominios y directorios
+      - ::check:: Desarrollado y optimizado para el posicionamiento web (SEO)
+- boxes:
+  - md: |
+      [[::calculate:: Presupuesto]](/presupuesto/ "[light]")
+      [[::emoji_symbols:: Servicios Adicionales]](/adicionales/ "[light]")

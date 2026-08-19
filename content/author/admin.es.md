@@ -1,8 +1,8 @@
 ---
 slug: loren
 title: Loren
-summary: Especializado en Maquetación Web y SEO. No soy Diseñador, pero tengo muchos conocimientos y me manejo con soltura con todo lo relacionado. Podría decir lo mismo sobre Desarrollo Web y Experiencia de Usuario (UX).
-image: equipo/loren.jpg
+sum: Especializado en Maquetación Web y SEO. No soy Diseñador, pero tengo muchos conocimientos y me manejo con soltura con todo lo relacionado. Podría decir lo mismo sobre Desarrollo Web y Experiencia de Usuario (UX).
+img: /u/equipo/loren.jpg
 
 alts:
 - Lorenzo Sánchez
@@ -30,9 +30,9 @@ creds:
 - name: Arquitectura Técnica
   category: Grado
   org: UCAM
-
-seo: Loren San Sol 【 Sea Como SEO ⚡️ 】
-description: Especializado en Maquetación Web y SEO. Me manejo con soltura con todo lo relacionado Diseño, Desarrollo Web y Experiencia de Usuario (UX).
+seo:
+  title: Loren San Sol 【 Sea Como SEO ⚡️ 】
+  desc: Especializado en Maquetación Web y SEO. Me manejo con soltura con todo lo relacionado Diseño, Desarrollo Web y Experiencia de Usuario (UX).
 ---
 ¡Hola!
 
@@ -56,5 +56,5 @@ Y bueno, fuera del mundillo web, las otras cosas a las que más dedico mi tiempo
 
 ¡Nos vemos!
 
-[[:paper-plane: Contacto]](/#contacto)
-[[:code: Servicios]](/)
+[[::send:: Contacto]](/#contacto)
+[[::code:: Servicios]](/)

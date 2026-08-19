@@ -1,9 +1,10 @@
 ---
 slug: presupuesto
 title: Presupuesto
-image: base/logo.png
-seo: ▷ Presupuesto Página Web, SEO y SEM
-description: lll➤ Genera un presupuesto WEB, SEO y SEM tú mismo 🐙 rápidamente según tus necesidades... ☝ ¡Hay descuentos al combinar servicios!
+img: /u/base/logo.png
+seo:
+  title: ▷ Presupuesto Página Web, SEO y SEM
+  desc: lll➤ Genera un presupuesto WEB, SEO y SEM tú mismo 🐙 rápidamente según tus necesidades... ☝ ¡Hay descuentos al combinar servicios!
 tpl:
   menu:
     logo_align: center
@@ -18,7 +19,7 @@ tpl:
     div_x: false
     div_y: false
   sections:
-  - file: presupuesto-_header
+  - file: presupuesto-_hero
   - file: presupuesto-notas
   - file: presupuesto-etica
   - file: presupuesto-trabajos

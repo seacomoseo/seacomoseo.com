@@ -1,0 +1,27 @@
+name: Inicio ➡️ Hero
+color: alt
+pt: 2
+size: md
+boxes:
+- hanchor: Sea Como SEO ⚡️🐙 Diseño de Páginas Web con Posicionamiento en Murcia
+  box:
+    align_y: top
+    cols: 8
+  boxes:
+  - sub: Diseño de Páginas Web con Posicionamiento
+    fit: 4
+    img: /u/base/logo-animation.svg
+    md: |
+      - ::rocket_launch:: Hago simple y efectiva tu visibilidad en internet
+      - ::check:: Con una ==::svg:sign-circle:: web moderna==, fácil de usar y de encontrar
+      - ::bolt:: ¡En menos de 2 semanas!
+      - ::close:: ¡O sigue despidiéndote de potenciales clientes!
+
+      [[::send:: Reserva tu llamada]](#contacto "[light]")
+    ratio: 3/2
+    contain: true
+    id: logo-animation
+  - fit: 3
+    img: /u/loren-presentacion.jpg
+    vid: https://www.youtube.com/watch?v=FXOZoWmHTNo&list=PLQ7f2o5LluRG8fprwtnHGvDfuyuYePSxs&ab_channel=SeaComoSEO
+    ratio: 9/16

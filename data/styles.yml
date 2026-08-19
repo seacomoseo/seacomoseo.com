@@ -1,8 +1,11 @@
 icons:
-  type: regular
-  sharp: false
-  emojis: false
-  play: youtube-iframe
+  fill: false
+  weight: 400
+  grade: 0
+  optical: 24
+  style: outlined
+  def:
+    play: svg:youtube-iframe
   up:
   down:
   left:
@@ -23,7 +26,6 @@ fonts:
     italic: false
     line_height: 1.25
     size: 1
-    top: 0
   title:
     google: false
     family: Outfit # Brandon
@@ -32,14 +34,13 @@ fonts:
     italic: false
     line_height: 1.25
     size: 1
-    top: 0
   blockquote_cursive: true
 colors:
   main:
     color: '#5fceb3'
     light: ''
     dark: ''
-    contrast:
+    turn:
       fill: false
       in: false
       text: false
@@ -47,7 +48,7 @@ colors:
     color: '#2f826d'
     light: ''
     dark: ''
-    contrast:
+    turn:
       fill: false
       in: true
       text: true
@@ -55,7 +56,7 @@ colors:
     color: '#fca326'
     light: '#fceede' # 82
     dark: ''
-    contrast:
+    turn:
       fill: false
       in: false
       text: false
@@ -68,9 +69,9 @@ colors:
 rounded:
   radius: 1.25
   chamfer: false
-buttons:
-  sides_round: true
-  dot_circle: true
+btns:
+  pill: true
+  disc: true
   deep: true
   outline: false
   font:

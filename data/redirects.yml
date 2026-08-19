@@ -1,0 +1,29 @@
+# old
+- { from: /diseno-paginas-web , to: / }
+- { from: /presentacion , to: /loren/ }
+- { from: /wp-content/uploads/loren-san-sol-scs.jpg , to: /u/loren-mascara.jpg }
+- { from: /wp-content/uploads/loren-san-sol.jpg , to: /u/loren.jpg }
+- { from: /wp-content/uploads/disenador-fotografo.jpg , to: /u/zepo.jpg }
+
+# new
+- { from: /sansoul/ , to: /#sansoul }
+- { from: /instrucciones/ , to: /mapa/ }
+- { from: /qr , to: / }
+- { from: /contacto.vcf , to: /seacomoseo.vcf }
+- { from: /file.ext , to: / }
+- { from: /en/file.ext , to: / }
+- { from: /servicios , to: / }
+- { from: /inicio/ , to: / }
+
+# SPLATS
+
+# old
+- { from: /wp-content/uploads/* , to: /u/:splat }
+- { from: /wp-content/themes/genesis-sample/landing-molona/media/* , to: /u/:splat }
+
+# lang
+# https://en.seacomoseo.com/* https://seacomoseo.com/:splat
+
+# 2025-02-25
+
+- { from: /aut/loren/ , to: /autor/loren/ }
