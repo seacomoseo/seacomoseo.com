@@ -41,7 +41,7 @@ boxes:
   - url: https://bravotraining.es/
     label: bravotraining.es
     img: /u/portfolio/bravotraining.es.svg
-  - url: https://entremusgo.com/
+  - url: https://entremusgo.netlify.app/
     label: entremusgo.com
     img: /u/portfolio/entremusgo.com.svg
   - url: https://des-aprende.es/
@@ -98,7 +98,7 @@ boxes:
   - url: https://www.moverepilatestraining.es/
     label: moverepilatestraining.es
     img: /u/portfolio/moverepilatestraining.es.svg
-  - url: https://clinicamartinezmarcos.com/
+  - url: https://martinezmarcos.netlify.app/
     label: clinicamartinezmarcos.com
     img: /u/portfolio/clinicamartinezmarcos.com.svg
   - url: https://eurolux.es/
