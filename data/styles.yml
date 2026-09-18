@@ -6,10 +6,6 @@ icons:
   style: outlined
   def:
     play: svg:youtube-iframe
-  up:
-  down:
-  left:
-  right:
 fonts:
   base:
     google: false
@@ -83,7 +79,7 @@ btns:
     bold: false
     caps: false
 inputs:
-  fill: false
+  fill: true
   labels_out: false
 shadow:
   left: 0

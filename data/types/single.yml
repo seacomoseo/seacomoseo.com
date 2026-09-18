@@ -1,10 +1,10 @@
 title: Páginas Únicas
-weight: 0
 base: single
+weight: 0
 tpl:
   callnow: auto
   section:
-  - size: lg
-    scroll: fix
+  - scroll: fix
+    size: lg
     box:
       caps: true

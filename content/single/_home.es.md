@@ -89,14 +89,14 @@ org:
   services:
   - title: Sitio Web Completo
     desc: Tu mejor carta de presentación
-    price: 805
+    price: 910
     area: Online
   - title: SEO
     desc: Aparecer en Google Orgánicamente
-    price: 230
+    price: 260
     area: Online
   - title: SEM
     desc: Publicidad de Pago en Google Ads
-    price: 345
+    price: 390
     area: Online
 ---
