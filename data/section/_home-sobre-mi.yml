@@ -56,16 +56,16 @@ boxes:
     - url: https://www.instagram.com/zepic.photo/
       img: /u/colaboradores/zepic.es.svg
       md: Foto, Vídeo y Diseño Gráfico
-      ratio: 8
+      ratio: 8/1
     - url: https://www.instagram.com/conmaslimon/
       img: /u/colaboradores/conmaslimon.com.svg
       md: Especialista en Social Media
-      ratio: 6
+      ratio: 6/1
     - url: https://www.delefant.com/
       img: /u/colaboradores/delefant.com.svg
       md: Agencia de Marketing Digital
-      ratio: 7
+      ratio: 7/1
     - url: https://crealogic.es/
       img: /u/colaboradores/crealogic.es.svg
       md: Agencia de Marketing Digital
-      ratio: 7
+      ratio: 7/1

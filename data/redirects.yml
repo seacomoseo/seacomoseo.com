@@ -9,7 +9,8 @@
 - { from: /sansoul/ , to: /#sansoul }
 - { from: /instrucciones/ , to: /mapa/ }
 - { from: /qr , to: / }
-- { from: /contacto.vcf , to: /seacomoseo.vcf }
+- { from: /contacto.vcf , to: /u/seacomoseo.vcf }
+- { from: /seacomoseo.vcf , to: /u/seacomoseo.vcf }
 - { from: /file.ext , to: / }
 - { from: /en/file.ext , to: / }
 - { from: /servicios , to: / }

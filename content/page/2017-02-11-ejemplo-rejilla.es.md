@@ -1,6 +1,6 @@
 ---
-title: Ejemplo de rejilla adaptable sólo con HTML y CSS
 slug: ejemplo-rejilla
+title: Ejemplo de rejilla adaptable sólo con HTML y CSS
 seo:
   noindex: true
 ---

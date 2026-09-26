@@ -38,6 +38,7 @@ org:
   - Sea Como SEO
   - Sea Como SEO ⚡️
   - Sea Como SEO 🐙
+  - Sea Como SEO ⚡️🐙 Diseño de Páginas Web en Murcia
   - Sea Como SEO ⚡️🐙 Diseño de Páginas Web con Posicionamiento en Murcia
   - Sea Como SEO ⚡️🐙 Diseño de Páginas Web + Posicionamiento en Murcia
   - Sea Como SEO » Diseño de Páginas Web + Posicionamiento en Murcia
@@ -62,9 +63,9 @@ org:
   - +34 623 199 599
   - +34 638 711 683
   address:
-  - name: Sea Como SEO ⚡️🐙
+  - name: Sea Como SEO ⚡️🐙 Diseño de Páginas Web en Murcia
     street: Beniaján
-    pc: 30570
+    pc: '30570'
     locality: Murcia
     region: Murcia
     country: ES
