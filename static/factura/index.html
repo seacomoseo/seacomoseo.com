@@ -95,6 +95,8 @@
     .items td { border-bottom: 1px solid var(--line); vertical-align: top; padding: 12px 7px; font-size: 10px; }
     .items td:not(:first-child) { white-space: nowrap; width: 1%; }
     .items td:not(:first-child) .field { text-align: right; margin-left: auto; }
+    .items .item-title { font-size: 11px; font-weight: 700; }
+    .items .item-title:not(:placeholder-shown) + .item-description { margin-top: 4px; }
     .items .item-description { min-height: 20px; min-width: 120px; font-size: 10.5px; }
     .items .item-value { width: auto; min-width: 3ch; font-size: 10px; font-variant-numeric: tabular-nums; }
     .amount-content { text-align: right; white-space: nowrap; }
@@ -136,6 +138,8 @@
       .items thead { display: table-header-group; }
       .items tr { break-inside: avoid; page-break-inside: avoid; }
       .items td { padding: 7px; }
+      .items .item-title:placeholder-shown { display: none; }
+      .items .item-description:placeholder-shown { display: none; }
       .items .item-description { min-height: 0; }
       .totals { break-inside: avoid; page-break-inside: avoid; }
       .fiscal-note.empty-print { display: none; }
@@ -295,7 +299,7 @@
         <tbody id="concepts">
           <!-- Puedes copiar este <tr> para añadir conceptos directamente al HTML. -->
           <tr class="concept-row">
-            <td class="col-description"><textarea class="field item-description" data-col="descripcion" rows="1" placeholder="Descripción del concepto" aria-label="Descripción">Servicio de ejemplo</textarea><div class="row-actions screen-only" role="group" aria-label="Ordenar o editar concepto"><button class="row-action" type="button" data-action="add-below" title="Añadir concepto debajo" aria-label="Añadir concepto debajo">+</button><button class="row-action danger" type="button" data-action="remove" title="Eliminar concepto" aria-label="Eliminar concepto">−</button><button class="row-action" type="button" data-action="up" title="Subir concepto" aria-label="Subir concepto">↑</button><button class="row-action" type="button" data-action="down" title="Bajar concepto" aria-label="Bajar concepto">↓</button></div></td>
+            <td class="col-description"><textarea class="field item-title" data-col="titulo" rows="1" placeholder="Título del concepto (opcional)" aria-label="Título del concepto"></textarea><textarea class="field item-description" data-col="descripcion" rows="1" placeholder="Descripción del concepto" aria-label="Descripción">Servicio de ejemplo</textarea><div class="row-actions screen-only" role="group" aria-label="Ordenar o editar concepto"><button class="row-action" type="button" data-action="add-below" title="Añadir concepto debajo" aria-label="Añadir concepto debajo">+</button><button class="row-action danger" type="button" data-action="remove" title="Eliminar concepto" aria-label="Eliminar concepto">−</button><button class="row-action" type="button" data-action="up" title="Subir concepto" aria-label="Subir concepto">↑</button><button class="row-action" type="button" data-action="down" title="Bajar concepto" aria-label="Bajar concepto">↓</button></div></td>
             <td class="col-quantity"><input class="field item-value" data-col="cantidad" inputmode="decimal" aria-label="Cantidad" value="1"></td>
             <td class="col-unit"><input class="field item-value" data-col="unidad" aria-label="Unidad" value="serv."></td>
             <td class="col-price"><input class="field item-value" data-col="precio" inputmode="decimal" aria-label="Precio unitario" value="600"></td>
@@ -326,7 +330,7 @@
 
   <template id="concept-template">
     <tr class="concept-row">
-      <td class="col-description"><textarea class="field item-description" data-col="descripcion" rows="1" placeholder="Descripción del concepto" aria-label="Descripción"></textarea><div class="row-actions screen-only" role="group" aria-label="Ordenar o editar concepto"><button class="row-action" type="button" data-action="add-below" title="Añadir concepto debajo" aria-label="Añadir concepto debajo">+</button><button class="row-action danger" type="button" data-action="remove" title="Eliminar concepto" aria-label="Eliminar concepto">−</button><button class="row-action" type="button" data-action="up" title="Subir concepto" aria-label="Subir concepto">↑</button><button class="row-action" type="button" data-action="down" title="Bajar concepto" aria-label="Bajar concepto">↓</button></div></td>
+      <td class="col-description"><textarea class="field item-title" data-col="titulo" rows="1" placeholder="Título del concepto (opcional)" aria-label="Título del concepto"></textarea><textarea class="field item-description" data-col="descripcion" rows="1" placeholder="Descripción del concepto" aria-label="Descripción"></textarea><div class="row-actions screen-only" role="group" aria-label="Ordenar o editar concepto"><button class="row-action" type="button" data-action="add-below" title="Añadir concepto debajo" aria-label="Añadir concepto debajo">+</button><button class="row-action danger" type="button" data-action="remove" title="Eliminar concepto" aria-label="Eliminar concepto">−</button><button class="row-action" type="button" data-action="up" title="Subir concepto" aria-label="Subir concepto">↑</button><button class="row-action" type="button" data-action="down" title="Bajar concepto" aria-label="Bajar concepto">↓</button></div></td>
       <td class="col-quantity"><input class="field item-value" data-col="cantidad" inputmode="decimal" aria-label="Cantidad" value="1"></td>
       <td class="col-unit"><input class="field item-value" data-col="unidad" aria-label="Unidad" value="ud."></td>
       <td class="col-price"><input class="field item-value" data-col="precio" inputmode="decimal" aria-label="Precio unitario" value="0"></td>
@@ -441,6 +445,7 @@
 
       function getConcepto (row) {
         return {
+          titulo: cell(row, 'titulo').value,
           descripcion: cell(row, 'descripcion').value,
           cantidad: toNumber(cell(row, 'cantidad').value),
           unidad: cell(row, 'unidad').value,
@@ -512,6 +517,7 @@
 
       function setConcepto (row, item = {}) {
         const values = {
+          titulo: item.titulo ?? '',
           descripcion: item.descripcion ?? '',
           cantidad: item.cantidad ?? 1,
           unidad: item.unidad ?? 'ud.',
@@ -522,6 +528,7 @@
           cell(row, name).value = String(value)
           fitItemInput(cell(row, name))
         })
+        fitTextarea(cell(row, 'titulo'))
         fitTextarea(cell(row, 'descripcion'))
       }
 
@@ -793,7 +800,7 @@
             factura: { numero: '', fecha: '', fechaOperacion: '', notaFiscal: '' },
             impuestos: { modoIVA: 'global', ivaGlobal: '21', irpf: '0' },
             tema: { color: '#386d77', logo: null },
-            conceptos: [{ descripcion: '', cantidad: 1, unidad: 'ud.', precio: 0, iva: 21 }]
+            conceptos: [{ titulo: '', descripcion: '', cantidad: 1, unidad: 'ud.', precio: 0, iva: 21 }]
           })
           hydrating = false
           touched = false
@@ -934,6 +941,8 @@
           .items td{padding:12px 7px;border-bottom:1px solid var(--line);vertical-align:top;font-size:10px}
           .items td:not(:first-child){width:1%;white-space:nowrap}
           .items td:not(:first-child) .field{text-align:right;margin-left:auto}
+          .items .item-title{font-size:11px;font-weight:700}
+          .items .item-title+.item-description{margin-top:4px}
           .items .item-description{min-width:120px;font-size:10.5px}
           .items .item-value{font-size:10px;font-variant-numeric:tabular-nums}
           .amount-content{text-align:right;white-space:nowrap}
@@ -1129,8 +1138,14 @@
             cantidad: String(item.cantidad), unidad: String(item.unidad), precio: money.format(item.precio),
             iva: `${rate} %`, importe: format(priceCents), importeIVA: format(priceCents + taxCents)
           }
-          const descLines = wrap(item.descripcion || '', specs[0][2] - 12, 9.2)
-          if (!descLines.length) descLines.push('')
+          const titleLines = String(item.titulo || '').trim() ? wrap(item.titulo, specs[0][2] - 12, 9.6, true) : []
+          const descLines = String(item.descripcion || '').trim() ? wrap(item.descripcion, specs[0][2] - 12, 9.2) : []
+          const contentLines = [
+            ...titleLines.map(text => ({ text, size: 9.6, bold: true, height: 12 })),
+            ...(titleLines.length && descLines.length ? [{ text: '', height: 4 }] : []),
+            ...descLines.map(text => ({ text, size: 9.2, bold: false, height: 12 }))
+          ]
+          if (!contentLines.length) contentLines.push({ text: '', height: 12 })
           let lineIndex = 0
           do {
             if (y > pageHeight - 105) {
@@ -1138,14 +1153,18 @@
               tableHeader()
             }
             const availableLines = Math.max(1, Math.floor((pageHeight - 99 - y - 12) / 12))
-            const portion = descLines.slice(lineIndex, lineIndex + availableLines)
-            const rowHeight = Math.max(25, portion.length * 12 + 12)
+            const portion = contentLines.slice(lineIndex, lineIndex + availableLines)
+            const rowHeight = Math.max(25, portion.reduce((sum, line) => sum + line.height, 0) + 12)
             if (y + rowHeight > pageHeight - 70) {
               newPage(true)
               tableHeader()
               continue
             }
-            portion.forEach((line, index) => drawText(line, margin + 5, y + 7 + index * 12, 9.2))
+            let textOffset = 0
+            portion.forEach(line => {
+              drawText(line.text, margin + 5, y + 7 + textOffset, line.size || 9.2, line.bold)
+              textOffset += line.height
+            })
             if (lineIndex === 0) {
               let x = margin + specs[0][2]
               specs.slice(1).forEach(([key, label, width]) => {
@@ -1156,7 +1175,7 @@
             y += rowHeight
             drawLine(margin, y, pageWidth - margin, y)
             lineIndex += portion.length
-          } while (lineIndex < descLines.length)
+          } while (lineIndex < contentLines.length)
         }
 
         const vat = Array.from(groupedTax.values()).reduce((sum, value) => sum + value, 0)
