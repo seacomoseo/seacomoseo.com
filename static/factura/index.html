@@ -1,0 +1,1439 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Plantilla de factura A4</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18283b;
+      --muted: #65758a;
+      --line: #dfe5ed;
+      --accent: #386d77;
+      --paper: #fff;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: #edf1f5; }
+    button, input, textarea { font: inherit; }
+    button { cursor: pointer; }
+    .toolbar { max-width: 210mm; margin: 16px auto; padding: 15px 18px; border: 1px solid var(--line); border-radius: 10px; background: white; box-shadow: 0 2px 10px #18283b0b; }
+    .toolbar-main { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+    .toolbar-brand { display: flex; align-items: center; gap: 8px; margin-right: auto; }
+    .toolbar-title { font-size: 13px; font-weight: 700; }
+    .toolbar-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+    .toolbar-actions #forget { font-size: 11px; font-weight: 400; }
+    .info-help { position: relative; }
+    .info-trigger { display: grid; place-items: center; width: 21px; height: 21px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--muted); }
+    .info-trigger:hover { color: var(--accent); background: #edf3f5; }
+    .info-trigger:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .info-trigger svg { width: 17px; height: 17px; }
+    .info-popover { display: none; position: absolute; z-index: 10; top: calc(100% + 10px); left: 0; width: min(325px, calc(100vw - 36px)); padding: 12px 16px; border: 1px solid var(--line); border-radius: 8px; background: white; box-shadow: 0 8px 26px #192b4826; font-size: 11px; font-weight: 400; line-height: 1.5; color: var(--ink); }
+    .info-popover ul { margin: 0; padding-left: 15px; }
+    .info-popover li + li { margin-top: 7px; }
+    .info-help.is-open .info-popover { display: block; }
+    @media (hover: hover) { .info-help:hover .info-popover { display: block; } }
+    .button { border: 1px solid #becbd5; border-radius: 6px; padding: 9px 12px; background: #fff; font-size: 12px; font-weight: 700; color: var(--ink); }
+    .button.primary { background: var(--accent); color: var(--accent-text, white); border-color: var(--accent); }
+    .button:hover { filter: brightness(.94); }
+    .settings { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; margin-top: 13px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+    .settings label { display: flex; align-items: center; gap: 7px; }
+    .settings input, .settings select { padding: 6px; border: 1px solid #cbd5e1; border-radius: 5px; color: var(--ink); background: white; }
+    .settings input[type="text"] { width: 60px; text-align: right; }
+    .settings input[type="checkbox"] { width: 16px; height: 16px; padding: 0; accent-color: var(--accent); }
+    .settings input[type="color"] { width: 37px; height: 30px; padding: 2px; cursor: pointer; }
+    .settings input[type="file"] { display: none; }
+    .settings .button { display: inline-flex; align-items: center; }
+    .settings .button[hidden], .settings input[hidden] { display: none; }
+    .settings label[hidden] { display: none; }
+    .settings .settings-group { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+    .logo-status { font-size: 11px; color: var(--muted); }
+    .cache-status { font-size: 11px; color: var(--muted); }
+    .cache-status { margin: 10px 0 0; }
+
+    .paper { display: flex; flex-direction: column; width: 210mm; min-height: 297mm; margin: 0 auto 26px; padding: 18mm 17mm 20mm; background: var(--paper); box-shadow: 0 8px 24px #192b4818; }
+    .head { margin-bottom: 30px; }
+    .head-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; min-height: 74px; padding-bottom: 20px; margin-bottom: 23px; border-bottom: 1px solid var(--line); }
+    .head-info { display: flex; flex-direction: row; justify-content: space-between; align-items: start; gap: 22px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .issuer, .recipient, .invoice-dates { min-width: 0; }
+    .issuer { grid-column: 1; grid-row: 1; }
+    .recipient { grid-column: 2; grid-row: 1; }
+    .invoice-dates { order: 3; }
+    .issuer-content { min-width: 0; }
+    .issuer-logo { max-width: 160px; max-height: 74px; flex: 0 1 auto; }
+    .issuer-logo img, .issuer-logo svg { display: block; width: auto; max-width: 160px; height: auto; max-height: 74px; object-fit: contain; }
+    .invoice-heading { text-align: right; min-width: 0; margin-left: auto; }
+    .invoice-heading h1 { margin: 0 0 7px; font-size: 28px; letter-spacing: .4px; }
+    .caption { display: block; margin: 0 0 9px; color: var(--accent); text-transform: uppercase; letter-spacing: .7px; font-weight: 700; font-size: 9px; }
+    .address-block { display: grid; gap: 4px; }
+    .date-grid { width: max-content; max-width: 100%; margin-left: auto; border-collapse: collapse; font-size: 10px; }
+    .date-label { padding: 0 7px 8px 0; color: var(--muted); font-size: 9px; font-weight: 400; text-align: left; white-space: nowrap; vertical-align: middle; }
+    .date-cell { position: relative; padding: 0 0 8px; text-align: right; vertical-align: middle; }
+    .date-row:last-child .date-label, .date-row:last-child .date-cell { padding-bottom: 0; }
+    .date-cell .date-value { width: 13ch; max-width: none; padding: 2px 0; font-size: 10px; text-align: right; }
+    .date-today { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; padding: 0; border: 1px solid var(--line); border-radius: 5px; background: white; color: var(--accent); }
+    .date-today svg { display: block; flex: 0 0 auto; width: 13px; height: 13px; }
+    .date-today:hover { background: #eef5f7; }
+
+    .field { display: block; width: 100%; min-width: 0; border: 1px solid transparent; border-radius: 3px; padding: 2px 1px; margin: 0; background: transparent; color: var(--ink); resize: none; overflow: hidden; overflow-wrap: anywhere; line-height: 1.45; }
+    .field:hover, .field:focus { border-color: #8fb5bc; background: #f7fafb; outline: none; }
+    .field::placeholder { color: #9aa7b5; opacity: 1; }
+    .field.name { font-size: 13px; font-weight: 700; }
+    .field.info { font-size: 10.5px; color: #536277; }
+    .field.number { text-align: right; font-weight: 700; font-size: 11px; color: var(--accent); }
+    .field.date { display: inline-block; font-weight: 700; font-size: 11px; }
+    .field.address { white-space: pre-wrap; }
+
+    .items { width: 100%; border-collapse: collapse; table-layout: auto; }
+    .items:not(.is-individual) .individual-only { display: none; }
+    .items th { padding: 10px 7px; border-bottom: 2px solid var(--ink); color: var(--ink); font-size: 9px; text-align: right; font-weight: 700; white-space: nowrap; }
+    .items th:first-child, .items td:first-child { text-align: left; }
+    .items th:first-child, .items td:first-child { width: 100%; }
+    .items td { border-bottom: 1px solid var(--line); vertical-align: top; padding: 12px 7px; font-size: 10px; }
+    .items td:not(:first-child) { white-space: nowrap; width: 1%; }
+    .items td:not(:first-child) .field { text-align: right; margin-left: auto; }
+    .items .item-description { min-height: 20px; min-width: 120px; font-size: 10.5px; }
+    .items .item-value { width: auto; min-width: 3ch; font-size: 10px; font-variant-numeric: tabular-nums; }
+    .amount-content { text-align: right; white-space: nowrap; }
+    .amount-value { font-weight: 700; font-variant-numeric: tabular-nums; }
+    .items-wrap { position: relative; width: calc(100% + 43px); margin-left: -43px; padding-left: 43px; }
+    .items .col-description { position: relative; }
+    .row-actions { position: absolute; top: 7px; left: -39px; z-index: 1; display: grid; grid-template-columns: repeat(2, 18px); gap: 2px; }
+    .row-action { display: inline-grid; place-items: center; width: 18px; height: 18px; padding: 1px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; color: #526477; }
+    .row-action svg { display: block; width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .row-action:hover:not(:disabled) { background: #eaf3f4; border-color: var(--accent); color: var(--ink); }
+    .row-action:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .row-action:disabled { opacity: .3; cursor: default; }
+    .row-action.danger:hover { color: #a04444; border-color: #a04444; background: #fff3f3; }
+
+    .summary { display: flex; justify-content: flex-end; margin-top: 22px; margin-bottom: 28px; }
+    .totals { width: min(100%, 310px); border: 1px solid var(--line); border-radius: 7px; padding: 10px 15px; break-inside: avoid; page-break-inside: avoid; }
+    .total-line { display: flex; justify-content: space-between; gap: 20px; padding: 8px 0; font-size: 11px; font-variant-numeric: tabular-nums; }
+    .total-line span:first-child { color: var(--muted); }
+    .grand-total { border-top: 1px solid var(--line); margin-top: 4px; padding-top: 13px; font-weight: 700; font-size: 15px; }
+    .grand-total.no-divider, .payable.no-divider { border-top: 0; }
+    .grand-total span:first-child { color: var(--ink); }
+    .grand-total span:last-child { color: var(--accent); }
+    .payable { border-top: 1px solid var(--line); margin-top: 3px; padding-top: 14px; font-weight: 700; font-size: 15px; }
+    .payable span:last-child { color: var(--accent); }
+    .empty-note { font-size: 10px; color: var(--muted); margin-top: 8px; }
+    .fiscal-note { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); }
+    .fiscal-note .field { font-size: 10.5px; color: var(--muted); }
+
+    @page { size: A4; margin: 14mm 14mm 15mm; }
+    @media print {
+      html, body { width: auto; margin: 0; padding: 0; background: white !important; }
+      body { font-size: 10px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .toolbar, .row-actions, .screen-only { display: none !important; }
+      .paper { width: auto; min-height: 265mm; margin: 0; padding: 0; box-shadow: none; }
+      .field, .field:hover, .field:focus { border: 0 !important; background: none !important; outline: 0; padding: 0; }
+      .field::placeholder { color: #8491a0; }
+      .head { break-inside: avoid; page-break-inside: avoid; }
+      .items-wrap { width: 100%; margin: 0; padding: 0; }
+      .items thead { display: table-header-group; }
+      .items tr { break-inside: avoid; page-break-inside: avoid; }
+      .items td { padding: 7px; }
+      .items .item-description { min-height: 0; }
+      .totals { break-inside: avoid; page-break-inside: avoid; }
+      .fiscal-note.empty-print { display: none; }
+      .field.empty-print { display: none; }
+      textarea { overflow: visible !important; }
+    }
+    @media screen and (max-width: 820px) {
+      .paper { width: 100%; min-height: 0; margin-bottom: 0; padding: 22px 16px 36px; }
+      .toolbar { border-radius: 0; margin: 0 0 16px; max-width: none; }
+      .items { min-width: 560px; }
+      .items.is-individual { min-width: 700px; }
+      .items-wrap { overflow-x: auto; }
+    }
+    @media screen and (max-width: 600px) {
+      .head-top { flex-direction: column; align-items: stretch; gap: 20px; }
+      .head-info { flex-direction: column; }
+      .invoice-heading { width: 100%; }
+      .invoice-dates { margin-left: auto; order: 0; }
+      .issuer { grid-column: 1; grid-row: 2; }
+      .recipient { grid-column: 1; grid-row: 3; }
+      .items-wrap { overflow: visible; min-width: 0; width: 100%; margin: 0; padding: 0 0 0 26px; }
+      .items, .items.is-individual, .items tbody { display: block; width: 100%; min-width: 0; }
+      .items thead { display: none; }
+      .items .concept-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; width: 100%; margin-bottom: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; }
+      .items td, .items td:first-child, .items td:not(:first-child) { display: block; width: auto; min-width: 0; padding: 0; border: 0; white-space: normal; }
+      .items td::before { display: block; margin-bottom: 4px; color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: .3px; }
+      .items .col-description { grid-column: 1 / -1; }
+      .row-actions { grid-template-columns: 18px; left: -35px; top: 9px; }
+      .items .col-description::before { content: 'CONCEPTO'; }
+      .items .col-quantity::before { content: 'UDS.'; }
+      .items .col-unit::before { content: 'UNIDAD'; }
+      .items .col-price::before { content: 'PRECIO'; }
+      .items .col-tax::before { content: 'IVA %'; }
+      .items .col-amount::before { content: 'IMPORTE'; }
+      .items .col-gross::before { content: 'CON IVA'; }
+      .items .col-amount, .items .col-gross { padding-top: 9px !important; border-top: 1px solid var(--line) !important; }
+      .items:not(.is-individual) .col-amount { grid-column: 1 / -1; }
+      .items .item-description { min-width: 0; }
+      .items .item-value { max-width: 100%; }
+      .items td:not(:first-child) .field { margin-left: 0; text-align: left; }
+      .amount-content { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <aside class="toolbar" aria-label="Herramientas de edición">
+    <div class="toolbar-main">
+      <div class="toolbar-brand">
+        <div class="info-help" id="info-help">
+          <button class="info-trigger" id="info-trigger" type="button" aria-expanded="false" aria-controls="info-popover" aria-label="Información sobre la plantilla" title="Información"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 10.5v6m0-10h.01"/></svg></button>
+          <div class="info-popover" id="info-popover" role="tooltip">
+            <ul>
+              <li>Los cambios se guardan automáticamente en este navegador.</li>
+              <li><strong>Descargar PDF:</strong> factura final en A4.</li>
+              <li><strong>Descargar HTML:</strong> factura final, sin controles de edición.</li>
+              <li><strong>Descargar Plantilla:</strong> copia editable con todos los datos actuales.</li>
+              <li><strong>Borrar datos:</strong> vacía la factura y elimina el guardado local.</li>
+            </ul>
+          </div>
+        </div>
+        <span class="toolbar-title">Plantilla de factura</span>
+      </div>
+      <div class="toolbar-actions" aria-label="Acciones de factura">
+        <button class="button" type="button" id="print">Descargar PDF</button>
+        <button class="button primary" type="button" id="export-html">Descargar HTML</button>
+        <button class="button" type="button" id="save-template">Descargar Plantilla</button>
+        <button class="button" type="button" id="forget">Borrar datos</button>
+      </div>
+    </div>
+    <div class="settings">
+      <div class="settings-group">
+        <label id="global-iva-setting">IVA general (%) <input data-field="impuestos.ivaGlobal" type="text" inputmode="decimal" value="21" aria-label="IVA general porcentual"></label>
+        <label><input id="iva-individual" type="checkbox">IVA distinto por concepto</label>
+      </div>
+      <div class="settings-group">
+        <label for="irpf-select">IRPF</label>
+        <select id="irpf-select" aria-label="Tipo de retención IRPF">
+          <option value="0" selected>Sin retención (0 %)</option>
+          <option value="15">Profesional general (15 %)</option>
+          <option value="7">Profesional reducido (7 %)</option>
+          <option value="custom">Personalizado…</option>
+        </select>
+        <input data-field="impuestos.irpf" id="irpf-custom" aria-label="Porcentaje de IRPF personalizado" type="text" inputmode="decimal" value="0" hidden>
+      </div>
+      <label>Color principal <input id="accent-picker" type="color" value="#386d77" aria-label="Elegir color principal"></label>
+      <div class="settings-group">
+        <label for="logo-file" id="add-logo" class="button">Añadir logo</label>
+        <input type="file" id="logo-file" accept="image/png,image/jpeg,image/webp,image/gif,image/avif,image/svg+xml,.svg">
+        <button class="button" type="button" id="remove-logo" hidden>Quitar logo</button>
+        <span class="logo-status" id="logo-status" role="alert" hidden></span>
+      </div>
+    </div>
+    <p class="cache-status" id="cache-status" role="alert" hidden></p>
+  </aside>
+
+  <main class="paper">
+    <header class="head">
+      <div class="head-top">
+        <div id="logo-host" class="issuer-logo" hidden></div>
+        <section class="invoice-heading" aria-label="Número de factura">
+          <h1>FACTURA</h1>
+          <input class="field number" data-field="factura.numero" value="" placeholder="N.º de factura" aria-label="Número de factura">
+        </section>
+      </div>
+      <div class="head-info">
+      <section class="invoice-dates" aria-label="Fechas de factura">
+        <table class="date-grid">
+          <tbody>
+            <tr class="date-row">
+              <th class="date-label" scope="row">Fecha de emisión</th>
+              <td class="date-cell">
+                <input class="field date date-value" data-field="factura.fecha" value="" placeholder="DD/MM/AAAA" aria-label="Fecha de emisión">
+                <button class="date-today screen-only" type="button" data-today="factura.fecha" aria-label="Poner fecha de hoy en emisión" title="Fecha de hoy"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 2v4m10-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm5 11 2 2 4-4"/></svg></button>
+              </td>
+            </tr>
+            <tr class="date-row">
+              <th class="date-label" scope="row">Fecha de operación</th>
+              <td class="date-cell">
+                <input class="field date date-value" data-field="factura.fechaOperacion" value="" placeholder="DD/MM/AAAA" aria-label="Fecha de operación">
+                <button class="date-today screen-only" type="button" data-today="factura.fechaOperacion" aria-label="Poner fecha de hoy en operación" title="Fecha de hoy"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 2v4m10-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm5 11 2 2 4-4"/></svg></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="issuer" aria-label="Emisor">
+        <span class="caption">Emisor</span>
+        <div class="issuer-content">
+          <div class="address-block">
+            <textarea class="field name" data-field="emisor.nombre" rows="1" placeholder="Nombre o razón social del emisor" aria-label="Razón social del emisor"></textarea>
+            <input class="field info" data-field="emisor.nif" value="" placeholder="NIF / CIF" aria-label="NIF del emisor">
+            <textarea class="field info address" data-field="emisor.direccion" rows="2" placeholder="Domicilio del emisor" aria-label="Domicilio del emisor"></textarea>
+            <input class="field info" data-field="emisor.email" type="email" value="" placeholder="Email (opcional)" aria-label="Email del emisor">
+          </div>
+        </div>
+      </section>
+      <section class="recipient" aria-label="Destinatario">
+        <span class="caption">Facturar a</span>
+        <div class="address-block">
+          <textarea class="field name" data-field="receptor.nombre" rows="1" placeholder="Nombre o razón social del cliente" aria-label="Razón social del cliente"></textarea>
+          <input class="field info" data-field="receptor.nif" value="" placeholder="NIF / CIF / VAT ID" aria-label="Identificador fiscal del cliente">
+          <textarea class="field info address" data-field="receptor.direccion" rows="2" placeholder="Domicilio del cliente" aria-label="Domicilio del cliente"></textarea>
+          <input class="field info" data-field="receptor.pais" value="" placeholder="País (opcional si es España)" aria-label="País del cliente">
+          <input class="field info" data-field="receptor.email" type="email" value="" placeholder="Email (opcional)" aria-label="Email del cliente">
+        </div>
+      </section>
+      </div>
+    </header>
+
+    <section aria-label="Detalle de conceptos" class="items-wrap">
+      <table class="items" id="items-table">
+        <thead>
+          <tr>
+            <th scope="col">CONCEPTO</th><th scope="col">UDS.</th><th scope="col">UNIDAD</th><th scope="col">PRECIO</th><th class="individual-only" scope="col">IVA %</th><th scope="col">IMPORTE</th><th class="individual-only" scope="col">CON IVA</th>
+          </tr>
+        </thead>
+        <tbody id="concepts">
+          <!-- Puedes copiar este <tr> para añadir conceptos directamente al HTML. -->
+          <tr class="concept-row">
+            <td class="col-description"><textarea class="field item-description" data-col="descripcion" rows="1" placeholder="Descripción del concepto" aria-label="Descripción">Servicio de ejemplo</textarea><div class="row-actions screen-only" role="group" aria-label="Ordenar o editar concepto"><button class="row-action" type="button" data-action="add-below" title="Añadir concepto debajo" aria-label="Añadir concepto debajo">+</button><button class="row-action danger" type="button" data-action="remove" title="Eliminar concepto" aria-label="Eliminar concepto">−</button><button class="row-action" type="button" data-action="up" title="Subir concepto" aria-label="Subir concepto">↑</button><button class="row-action" type="button" data-action="down" title="Bajar concepto" aria-label="Bajar concepto">↓</button></div></td>
+            <td class="col-quantity"><input class="field item-value" data-col="cantidad" inputmode="decimal" aria-label="Cantidad" value="1"></td>
+            <td class="col-unit"><input class="field item-value" data-col="unidad" aria-label="Unidad" value="serv."></td>
+            <td class="col-price"><input class="field item-value" data-col="precio" inputmode="decimal" aria-label="Precio unitario" value="600"></td>
+            <td class="col-tax individual-only"><input class="field item-value" data-col="iva" inputmode="decimal" aria-label="IVA porcentual" value="21"></td>
+            <td class="col-amount"><div class="amount-content"><output class="amount-value" data-col="importe">600,00 €</output></div></td>
+            <td class="col-gross individual-only"><output class="amount-value" data-col="importeIVA">726,00 €</output></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="summary" aria-label="Totales">
+      <div class="totals">
+        <div class="total-line" id="base-row"><span>Base imponible</span><output id="base">600,00 €</output></div>
+        <div id="taxes"><div class="total-line"><span>IVA (21 %)</span><span>126,00 €</span></div></div>
+        <div class="total-line grand-total"><span id="total-invoice-label">TOTAL</span><output id="total-invoice">726,00 €</output></div>
+        <div id="withholding" hidden>
+          <div class="total-line"><span id="withholding-label">Retención IRPF (15 %)</span><output id="withholding-value">−90,00 €</output></div>
+          <div class="total-line payable"><span>Total a pagar</span><output id="payable">636,00 €</output></div>
+        </div>
+      </div>
+    </section>
+    <section class="fiscal-note" aria-label="Nota fiscal opcional">
+      <span class="caption">Nota fiscal <span class="screen-only">(opcional)</span></span>
+      <textarea class="field" data-field="factura.notaFiscal" rows="2" placeholder="Ej.: operación no sujeta al IVA español por reglas de localización; inversión del sujeto pasivo cuando proceda." aria-label="Nota fiscal"></textarea>
+    </section>
+  </main>
+
+  <template id="concept-template">
+    <tr class="concept-row">
+      <td class="col-description"><textarea class="field item-description" data-col="descripcion" rows="1" placeholder="Descripción del concepto" aria-label="Descripción"></textarea><div class="row-actions screen-only" role="group" aria-label="Ordenar o editar concepto"><button class="row-action" type="button" data-action="add-below" title="Añadir concepto debajo" aria-label="Añadir concepto debajo">+</button><button class="row-action danger" type="button" data-action="remove" title="Eliminar concepto" aria-label="Eliminar concepto">−</button><button class="row-action" type="button" data-action="up" title="Subir concepto" aria-label="Subir concepto">↑</button><button class="row-action" type="button" data-action="down" title="Bajar concepto" aria-label="Bajar concepto">↓</button></div></td>
+      <td class="col-quantity"><input class="field item-value" data-col="cantidad" inputmode="decimal" aria-label="Cantidad" value="1"></td>
+      <td class="col-unit"><input class="field item-value" data-col="unidad" aria-label="Unidad" value="ud."></td>
+      <td class="col-price"><input class="field item-value" data-col="precio" inputmode="decimal" aria-label="Precio unitario" value="0"></td>
+      <td class="col-tax individual-only"><input class="field item-value" data-col="iva" inputmode="decimal" aria-label="IVA porcentual" value="21"></td>
+      <td class="col-amount"><div class="amount-content"><output class="amount-value" data-col="importe">0,00 €</output></div></td>
+      <td class="col-gross individual-only"><output class="amount-value" data-col="importeIVA">0,00 €</output></td>
+    </tr>
+  </template>
+
+  <script>
+    (() => {
+      'use strict'
+
+      const money = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR' })
+      const concepts = document.getElementById('concepts')
+      const fields = Array.from(document.querySelectorAll('[data-field]'))
+      const template = document.getElementById('concept-template')
+      const irpfSelect = document.getElementById('irpf-select')
+      const irpfCustom = document.getElementById('irpf-custom')
+      const accentPicker = document.getElementById('accent-picker')
+      const logoHost = document.getElementById('logo-host')
+      const logoFile = document.getElementById('logo-file')
+      const addLogoLabel = document.getElementById('add-logo')
+      const removeLogoButton = document.getElementById('remove-logo')
+      const logoStatus = document.getElementById('logo-status')
+      const fiscalNote = document.querySelector('.fiscal-note')
+      const ivaIndividual = document.getElementById('iva-individual')
+      const globalIvaSetting = document.getElementById('global-iva-setting')
+      const itemsTable = document.getElementById('items-table')
+      const cacheStatus = document.getElementById('cache-status')
+      const infoHelp = document.getElementById('info-help')
+      const infoTrigger = document.getElementById('info-trigger')
+      const STORAGE_KEY = 'plantilla-factura-a4-ultima-v1'
+      let saveTimer
+      let hydrating = false
+      let touched = false
+      let storageAvailable = false
+      function reportIssue (message) {
+        cacheStatus.textContent = message
+        cacheStatus.hidden = !message
+      }
+
+      try {
+        window.localStorage.setItem(`${STORAGE_KEY}:test`, '1')
+        window.localStorage.removeItem(`${STORAGE_KEY}:test`)
+        storageAvailable = true
+      } catch {
+        reportIssue('Memoria local no disponible: usa Descargar Plantilla.')
+      }
+
+      const toNumber = value => {
+        let text = String(value ?? '').trim().replace(/[\s€]/g, '')
+        if (text.includes(',') && text.includes('.')) {
+          text = text.lastIndexOf(',') > text.lastIndexOf('.')
+            ? text.replace(/\./g, '').replace(',', '.')
+            : text.replace(/,/g, '')
+        } else if (text.includes(',')) {
+          text = text.replace(',', '.')
+        }
+        const number = Number(text)
+        return Number.isFinite(number) ? number : 0
+      }
+
+      const cents = number => Math.round((number + Number.EPSILON) * 100)
+      const format = valueInCents => money.format(valueInCents / 100)
+      const field = name => fields.find(element => element.dataset.field === name)
+      const rows = () => Array.from(concepts.querySelectorAll('.concept-row'))
+      const cell = (row, name) => row.querySelector(`[data-col="${name}"]`)
+
+      function fitTextarea (textarea) {
+        textarea.style.height = 'auto'
+        textarea.style.height = `${Math.max(textarea.scrollHeight, 20)}px`
+      }
+
+      function fitAllTextareas () {
+        document.querySelectorAll('textarea').forEach(fitTextarea)
+      }
+
+      function fitItemInput (element) {
+        if (!element.matches('.item-value')) return
+        element.style.width = `${Math.max(3, String(element.value).length + 1)}ch`
+      }
+
+      function fitAllItemInputs () {
+        concepts.querySelectorAll('input.item-value').forEach(fitItemInput)
+      }
+
+      function refreshRowActions () {
+        const all = rows()
+        const paths = {
+          'add-below': 'M12 5v14M5 12h14',
+          remove: 'M5 12h14',
+          up: 'M12 19V5m-7 7 7-7 7 7',
+          down: 'M12 5v14m-7-7 7 7 7-7'
+        }
+        all.forEach((row, index) => {
+          row.querySelector('[data-action="up"]').disabled = index === 0
+          row.querySelector('[data-action="down"]').disabled = index === all.length - 1
+          row.querySelector('[data-action="remove"]').disabled = all.length === 1
+          row.querySelectorAll('[data-action]').forEach(button => {
+            if (button.firstElementChild?.localName === 'svg') return
+            const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+            svg.setAttribute('viewBox', '0 0 24 24')
+            svg.setAttribute('aria-hidden', 'true')
+            path.setAttribute('d', paths[button.dataset.action])
+            svg.append(path)
+            button.replaceChildren(svg)
+          })
+        })
+      }
+
+      function getConcepto (row) {
+        return {
+          descripcion: cell(row, 'descripcion').value,
+          cantidad: toNumber(cell(row, 'cantidad').value),
+          unidad: cell(row, 'unidad').value,
+          precio: toNumber(cell(row, 'precio').value),
+          iva: toNumber(cell(row, 'iva').value)
+        }
+      }
+
+      function syncIVAMode () {
+        itemsTable.classList.toggle('is-individual', ivaIndividual.checked)
+        globalIvaSetting.hidden = ivaIndividual.checked
+        itemsTable.querySelectorAll('.individual-only').forEach(element => {
+          element.hidden = !ivaIndividual.checked
+        })
+      }
+
+      function recalcular () {
+        let base = 0
+        const byTax = new Map()
+
+        rows().forEach(row => {
+          const item = getConcepto(row)
+          const lineCents = cents(item.cantidad * item.precio)
+          const rate = ivaIndividual.checked ? item.iva : toNumber(field('impuestos.ivaGlobal').value)
+          const lineVat = Math.round(lineCents * rate / 100)
+          base += lineCents
+          byTax.set(rate, (byTax.get(rate) || 0) + lineVat)
+          cell(row, 'importe').textContent = format(lineCents)
+          cell(row, 'importeIVA').textContent = format(lineCents + lineVat)
+        })
+
+        const taxList = document.getElementById('taxes')
+        taxList.replaceChildren()
+        let vatCents = 0
+
+        Array.from(byTax).sort((a, b) => a[0] - b[0]).forEach(([rate, value]) => {
+          if (value === 0) return
+          vatCents += value
+          const line = document.createElement('div')
+          line.className = 'total-line'
+          const title = document.createElement('span')
+          title.textContent = `IVA (${rate} %)`
+          const amount = document.createElement('span')
+          amount.textContent = format(value)
+          line.append(title, amount)
+          taxList.append(line)
+        })
+
+        const rateIRPF = toNumber(field('impuestos.irpf').value)
+        const withheld = Math.round(base * rateIRPF / 100)
+        const invoiceTotal = base + vatCents
+        document.getElementById('base').textContent = format(base)
+        document.getElementById('base-row').hidden = vatCents === 0
+        document.getElementById('total-invoice').textContent = format(invoiceTotal)
+        document.getElementById('total-invoice-label').textContent = rateIRPF === 0 ? 'TOTAL' : 'Total factura'
+        document.querySelector('.grand-total').classList.toggle('no-divider', vatCents === 0)
+        document.getElementById('withholding').hidden = rateIRPF === 0
+        document.getElementById('withholding-label').textContent = `Retención IRPF (${rateIRPF} %)`
+        document.getElementById('withholding-value').textContent = `−${format(Math.abs(withheld))}`
+        document.getElementById('payable').textContent = format(invoiceTotal - withheld)
+        document.querySelector('.payable').classList.toggle('no-divider', vatCents === 0 && rateIRPF === 0)
+        fiscalNote.classList.toggle('empty-print', !field('factura.notaFiscal').value.trim())
+        field('receptor.pais').classList.toggle('empty-print', !field('receptor.pais').value.trim())
+        field('emisor.email').classList.toggle('empty-print', !field('emisor.email').value.trim())
+        field('receptor.email').classList.toggle('empty-print', !field('receptor.email').value.trim())
+
+        return { base: base / 100, iva: vatCents / 100, totalFactura: invoiceTotal / 100, irpf: withheld / 100, totalPagar: (invoiceTotal - withheld) / 100 }
+      }
+
+      function setConcepto (row, item = {}) {
+        const values = {
+          descripcion: item.descripcion ?? '',
+          cantidad: item.cantidad ?? 1,
+          unidad: item.unidad ?? 'ud.',
+          precio: item.precio ?? 0,
+          iva: item.iva ?? toNumber(field('impuestos.ivaGlobal').value)
+        }
+        Object.entries(values).forEach(([name, value]) => {
+          cell(row, name).value = String(value)
+          fitItemInput(cell(row, name))
+        })
+        fitTextarea(cell(row, 'descripcion'))
+      }
+
+      function addConcepto (item = {}, options = {}) {
+        const row = template.content.firstElementChild.cloneNode(true)
+        if (options.after?.parentElement === concepts) options.after.after(row)
+        else concepts.append(row)
+        setConcepto(row, item)
+        if (!options.silent) {
+          refreshRowActions()
+          recalcular()
+          scheduleSave()
+        }
+        return row
+      }
+
+      function setConceptos (items = []) {
+        concepts.replaceChildren()
+        if (!items.length) addConcepto({}, { silent: true })
+        else items.forEach(item => addConcepto(item, { silent: true }))
+        refreshRowActions()
+        recalcular()
+        scheduleSave()
+      }
+
+      function setDatos (data = {}) {
+        const walk = (object, prefix = '') => {
+          Object.entries(object).forEach(([key, value]) => {
+            const path = prefix ? `${prefix}.${key}` : key
+            if (value !== null && typeof value === 'object' && !Array.isArray(value)) {
+              walk(value, path)
+            } else {
+              const target = field(path)
+              if (target) target.value = String(value ?? '')
+            }
+          })
+        }
+        walk(data)
+        if (Array.isArray(data.conceptos)) setConceptos(data.conceptos)
+        if (data.impuestos?.modoIVA) ivaIndividual.checked = data.impuestos.modoIVA === 'individual'
+        syncIVAMode()
+        if (data.tema?.color) setColor(data.tema.color)
+        if (data.tema && Object.prototype.hasOwnProperty.call(data.tema, 'logo')) {
+          const logo = data.tema.logo
+          if (!logo) removeLogo()
+          else if (logo.tipo === 'svg') setLogoSVG(logo.contenido)
+          else if (logo.tipo === 'raster') setLogoDataURL(logo.contenido)
+        }
+        syncIRPFSelector()
+        fitAllTextareas()
+        fitAllItemInputs()
+        refreshRowActions()
+        recalcular()
+        scheduleSave()
+      }
+
+      function syncIRPFSelector () {
+        const rate = toNumber(irpfCustom.value)
+        const preset = [0, 7, 15].find(value => value === rate)
+        irpfSelect.value = preset === undefined ? 'custom' : String(preset)
+        irpfCustom.hidden = irpfSelect.value !== 'custom'
+      }
+
+      function setColor (hex) {
+        if (!/^#[0-9a-f]{6}$/i.test(String(hex))) throw new Error('Color hexadecimal no válido')
+        accentPicker.value = hex
+        document.documentElement.style.setProperty('--accent', accentPicker.value)
+        const rgb = [1, 3, 5].map(index => parseInt(accentPicker.value.slice(index, index + 2), 16) / 255)
+        const linear = rgb.map(value => value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4)
+        const light = 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+        document.documentElement.style.setProperty('--accent-text', light > 0.42 ? '#18283b' : '#ffffff')
+        scheduleSave()
+      }
+
+      function removeLogo () {
+        logoHost.replaceChildren()
+        logoHost.hidden = true
+        removeLogoButton.hidden = true
+        addLogoLabel.hidden = false
+        logoStatus.textContent = ''
+        logoStatus.hidden = true
+        scheduleSave()
+      }
+
+      function sanitizeSVG (text) {
+        const parsed = new DOMParser().parseFromString(text, 'image/svg+xml')
+        const svg = parsed.documentElement
+        if (svg.namespaceURI !== 'http://www.w3.org/2000/svg' || svg.localName !== 'svg' || parsed.querySelector('parsererror')) {
+          throw new Error('El archivo no contiene un SVG válido')
+        }
+
+        const tags = new Set([
+          'svg', 'g', 'defs', 'path', 'rect', 'circle', 'ellipse', 'line', 'polyline',
+          'polygon', 'lineargradient', 'radialgradient', 'stop', 'clippath', 'mask',
+          'symbol', 'use', 'image', 'text', 'tspan', 'style', 'pattern', 'title', 'desc'
+        ])
+        const attrs = new Set([
+          'id', 'class', 'style', 'xmlns', 'viewbox', 'width', 'height', 'fill',
+          'fill-rule', 'fill-opacity', 'stroke', 'stroke-width', 'stroke-linecap',
+          'stroke-linejoin', 'stroke-miterlimit', 'stroke-opacity', 'stroke-dasharray',
+          'stroke-dashoffset', 'opacity', 'transform', 'x', 'y', 'x1', 'x2', 'y1',
+          'y2', 'cx', 'cy', 'r', 'rx', 'ry', 'd', 'points', 'offset', 'stop-color',
+          'stop-opacity', 'gradientunits', 'gradienttransform', 'patternunits',
+          'patterntransform', 'clip-path', 'mask', 'href', 'preserveaspectratio',
+          'font-size', 'font-weight', 'font-family', 'text-anchor', 'dominant-baseline',
+          'letter-spacing', 'vector-effect', 'display', 'visibility'
+        ])
+
+        const unsafeStyle = /@import|expression\s*\(|javascript:|url\(\s*['"]?(?!#)/i
+        const clean = node => {
+          Array.from(node.children).forEach(child => {
+            if (!tags.has(child.localName.toLowerCase())) {
+              child.remove()
+            } else {
+              clean(child)
+            }
+          })
+          Array.from(node.attributes).forEach(attribute => {
+            const name = attribute.localName.toLowerCase()
+            const value = attribute.value.trim()
+            const isEmbeddedRaster = node.localName === 'image' && /^data:image\/(?:png|jpeg|webp|gif|avif);base64,/i.test(value)
+            if (!attrs.has(name) || name.startsWith('on') || /javascript:|expression\s*\(/i.test(value) ||
+              ((name === 'href') && !value.startsWith('#') && !isEmbeddedRaster) ||
+              ((name === 'style' || value.includes('url(')) && unsafeStyle.test(value))) {
+              node.removeAttributeNode(attribute)
+            }
+          })
+          if (node.localName === 'style' && unsafeStyle.test(node.textContent)) node.remove()
+        }
+        clean(svg)
+        return document.importNode(svg, true)
+      }
+
+      function setLogoSVG (svgText) {
+        const svg = sanitizeSVG(svgText)
+        logoHost.replaceChildren(svg)
+        logoHost.hidden = false
+        removeLogoButton.hidden = false
+        addLogoLabel.hidden = true
+        logoStatus.textContent = ''
+        logoStatus.hidden = true
+        scheduleSave()
+      }
+
+      function setLogoDataURL (dataURL) {
+        if (!/^data:image\/(?:png|jpeg|webp|gif|avif);base64,/i.test(dataURL)) {
+          throw new Error('Imagen raster no admitida')
+        }
+        const img = document.createElement('img')
+        img.src = dataURL
+        img.alt = 'Logotipo del emisor'
+        logoHost.replaceChildren(img)
+        logoHost.hidden = false
+        removeLogoButton.hidden = false
+        addLogoLabel.hidden = true
+        logoStatus.textContent = ''
+        logoStatus.hidden = true
+        scheduleSave()
+      }
+
+      async function loadLogo (file) {
+        if (!file) return
+        if (file.size > 5 * 1024 * 1024) throw new Error('El logo debe ocupar 5 MB o menos')
+        if (file.type === 'image/svg+xml' || /\.svg$/i.test(file.name)) {
+          setLogoSVG(await file.text())
+          return
+        }
+        const sourceURL = URL.createObjectURL(file)
+        try {
+          const image = new Image()
+          await new Promise((resolve, reject) => {
+            image.onload = resolve
+            image.onerror = () => reject(new Error('No se pudo abrir la imagen'))
+            image.src = sourceURL
+          })
+          // Hasta 3× el tamaño de presentación (160 × 74 CSS px), sin ampliar originales pequeños.
+          const scale = Math.min(1, 480 / image.naturalWidth, 222 / image.naturalHeight)
+          const canvas = document.createElement('canvas')
+          canvas.width = Math.max(1, Math.round(image.naturalWidth * scale))
+          canvas.height = Math.max(1, Math.round(image.naturalHeight * scale))
+          const context = canvas.getContext('2d')
+          if (!context) throw new Error('El navegador no permite procesar imágenes')
+          context.drawImage(image, 0, 0, canvas.width, canvas.height)
+          const webp = canvas.toDataURL('image/webp', 0.84)
+          const converted = webp.startsWith('data:image/webp;base64,')
+          const result = converted ? webp : canvas.toDataURL('image/png')
+          setLogoDataURL(result)
+        } finally {
+          URL.revokeObjectURL(sourceURL)
+        }
+      }
+
+      function getLogoState () {
+        const logo = logoHost.firstElementChild
+        if (!logo) return null
+        if (logo.localName.toLowerCase() === 'svg') {
+          return { tipo: 'svg', contenido: new XMLSerializer().serializeToString(logo) }
+        }
+        return { tipo: 'raster', contenido: logo.src }
+      }
+
+      function getDatos () {
+        const data = {
+          emisor: {}, receptor: {}, factura: {},
+          impuestos: { modoIVA: ivaIndividual.checked ? 'individual' : 'global' },
+          tema: { color: accentPicker.value, logo: getLogoState() },
+          conceptos: rows().map(getConcepto), totales: recalcular()
+        }
+        fields.forEach(element => {
+          const [group, name] = element.dataset.field.split('.')
+          data[group][name] = element.value
+        })
+        return data
+      }
+
+      function saveNow () {
+        if (!storageAvailable || hydrating || !touched) return
+        clearTimeout(saveTimer)
+        try {
+          window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...getDatos(), guardadoEn: new Date().toISOString() }))
+          reportIssue('')
+          touched = false
+        } catch {
+          reportIssue('No se pudo guardar (almacenamiento lleno o bloqueado). Descarga la plantilla.')
+        }
+      }
+
+      function scheduleSave () {
+        if (hydrating) return
+        touched = true
+        if (!storageAvailable) return
+        clearTimeout(saveTimer)
+        saveTimer = setTimeout(saveNow, 400)
+      }
+
+      function restoreLast () {
+        if (!storageAvailable) {
+          reportIssue('Memoria local no disponible en este navegador.')
+          return false
+        }
+        try {
+          const saved = window.localStorage.getItem(STORAGE_KEY)
+          if (!saved) {
+            reportIssue('')
+            return false
+          }
+          hydrating = true
+          setDatos(JSON.parse(saved))
+          hydrating = false
+          touched = false
+          reportIssue('')
+          return true
+        } catch {
+          hydrating = false
+          reportIssue('No se pudieron recuperar los datos anteriores.')
+          return false
+        }
+      }
+
+      function forgetLast () {
+        if (!window.confirm('¿Borrar todos los datos de esta factura, incluido el logo, y el autoguardado del navegador?')) return
+        try {
+          clearTimeout(saveTimer)
+          if (storageAvailable) window.localStorage.removeItem(STORAGE_KEY)
+          hydrating = true
+          setDatos({
+            emisor: { nombre: '', nif: '', direccion: '', email: '' },
+            receptor: { nombre: '', nif: '', direccion: '', pais: '', email: '' },
+            factura: { numero: '', fecha: '', fechaOperacion: '', notaFiscal: '' },
+            impuestos: { modoIVA: 'global', ivaGlobal: '21', irpf: '0' },
+            tema: { color: '#386d77', logo: null },
+            conceptos: [{ descripcion: '', cantidad: 1, unidad: 'ud.', precio: 0, iva: 21 }]
+          })
+          hydrating = false
+          touched = false
+          reportIssue('')
+        } catch {
+          hydrating = false
+          reportIssue('No se pudieron borrar todos los datos.')
+        }
+      }
+
+      function syncValuesIntoHTML () {
+        document.querySelectorAll('input, textarea').forEach(element => {
+          if (element.type === 'file') {
+            element.removeAttribute('value')
+          } else if (element.tagName === 'TEXTAREA') {
+            element.textContent = element.value
+          } else {
+            element.setAttribute('value', element.value)
+          }
+        })
+        document.querySelectorAll('input[type="checkbox"]').forEach(element => {
+          element.toggleAttribute('checked', element.checked)
+        })
+        document.querySelectorAll('select').forEach(select => {
+          Array.from(select.options).forEach(option => {
+            option.toggleAttribute('selected', option.selected)
+          })
+        })
+      }
+
+      function downloadHTML (source, filename) {
+        const blob = new Blob([source], { type: 'text/html;charset=utf-8' })
+        const url = URL.createObjectURL(blob)
+        const link = document.createElement('a')
+        link.href = url
+        link.download = filename
+        document.body.append(link)
+        link.click()
+        link.remove()
+        setTimeout(() => URL.revokeObjectURL(url), 1000)
+      }
+
+      function fileNumber () {
+        return (field('factura.numero').value || 'sin_numero').replace(/[^a-z0-9_-]/gi, '_')
+      }
+
+      function descargarPlantilla () {
+        saveNow()
+        recalcular()
+        fitAllTextareas()
+        syncValuesIntoHTML()
+        const snapshot = document.documentElement.cloneNode(true)
+        snapshot.dataset.savedInvoice = 'true'
+        downloadHTML(`<!doctype html>\n${snapshot.outerHTML}`, `plantilla_factura_${fileNumber()}.html`)
+      }
+
+      function minifyFragment (root) {
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_COMMENT)
+        const redundant = []
+        while (walker.nextNode()) {
+          const node = walker.currentNode
+          if (node.nodeType === Node.COMMENT_NODE ||
+            (!node.nodeValue.trim() && !node.parentElement.closest('svg, .field'))) redundant.push(node)
+        }
+        redundant.forEach(node => node.remove())
+        return root.outerHTML
+      }
+
+      function staticInvoiceHTML () {
+        recalcular()
+        const paper = document.querySelector('.paper').cloneNode(true)
+
+        paper.querySelectorAll('input, textarea').forEach(element => {
+          const replacement = document.createElement('div')
+          replacement.className = element.className
+          replacement.textContent = element.value
+          element.replaceWith(replacement)
+          if (!replacement.textContent.trim()) replacement.remove()
+        })
+        paper.querySelectorAll('output').forEach(element => {
+          const replacement = document.createElement('span')
+          replacement.className = element.className
+          replacement.textContent = element.textContent
+          element.replaceWith(replacement)
+        })
+        paper.querySelectorAll('[hidden], .screen-only, .empty-print, .row-actions').forEach(element => element.remove())
+        paper.querySelectorAll('.date-row').forEach(element => {
+          if (!element.querySelector('.date-value')) element.remove()
+        })
+        paper.querySelectorAll('.date-grid').forEach(element => {
+          if (!element.querySelector('.date-row')) element.closest('.invoice-dates').remove()
+        })
+        paper.querySelectorAll('*').forEach(element => {
+          if (element.namespaceURI === 'http://www.w3.org/2000/svg') return
+          element.classList.remove('individual-only', 'address')
+          if (!element.classList.length) element.removeAttribute('class')
+          Array.from(element.attributes).forEach(attribute => {
+            if (attribute.name.startsWith('data-') ||
+              ['id', 'role', 'aria-label', 'title', 'contenteditable', 'tabindex'].includes(attribute.name)) {
+              element.removeAttribute(attribute.name)
+            }
+          })
+        })
+
+        const css = `
+          :root{color-scheme:light;--ink:#18283b;--muted:#65758a;--line:#dfe5ed;--accent:${accentPicker.value}}
+          *{box-sizing:border-box}
+          body{margin:0;background:#edf1f5;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+          .paper{display:flex;flex-direction:column;width:210mm;min-height:297mm;margin:0 auto;padding:18mm 17mm 20mm;background:#fff}
+          .head{margin-bottom:30px}
+          .head-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;min-height:74px;padding-bottom:20px;margin-bottom:23px;border-bottom:1px solid var(--line)}
+          .head-info{display:flex;flex-direction:row;justify-content:space-between;align-items:start;gap:22px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+          .issuer,.recipient,.invoice-dates{min-width:0}
+          .issuer{grid-column:1;grid-row:1}
+          .recipient{grid-column:2;grid-row:1}
+          .invoice-dates{order:3}
+          .issuer-content{min-width:0}
+          .issuer-logo{max-width:160px;max-height:74px;flex:0 1 auto}
+          .issuer-logo img,.issuer-logo svg{display:block;width:auto;max-width:160px;height:auto;max-height:74px;object-fit:contain}
+          .invoice-heading{text-align:right;min-width:0;margin-left:auto}
+          h1{margin:0 0 7px;font-size:28px;letter-spacing:.4px}
+          .caption{display:block;margin:0 0 9px;color:var(--accent);text-transform:uppercase;letter-spacing:.7px;font-weight:700;font-size:9px}
+          .address-block{display:grid;gap:4px}
+          .date-grid{width:max-content;max-width:100%;margin-left:auto;border-collapse:collapse;font-size:10px}
+          .date-label{padding:0 7px 8px 0;color:var(--muted);font-size:9px;font-weight:400;text-align:left;white-space:nowrap;vertical-align:middle}
+          .date-cell{padding:0 0 8px;text-align:right;vertical-align:middle}
+          .date-row:last-child .date-label,.date-row:last-child .date-cell{padding-bottom:0}
+          .date-cell .date-value{display:block;width:auto;font-size:10px;text-align:right;white-space:nowrap}
+          .field{display:block;width:100%;min-width:0;margin:0;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.45}
+          .name{font-size:13px;font-weight:700}
+          .info{font-size:10.5px;color:#536277}
+          .number{text-align:right;font-weight:700;font-size:11px;color:var(--accent)}
+          .date{font-weight:700;font-size:11px}
+          .items-wrap{width:100%}
+          .items{width:100%;border-collapse:collapse;table-layout:auto}
+          .items th{padding:10px 7px;border-bottom:2px solid var(--ink);font-size:9px;font-weight:700;text-align:right;white-space:nowrap}
+          .items th:first-child,.items td:first-child{width:100%;text-align:left}
+          .items td{padding:12px 7px;border-bottom:1px solid var(--line);vertical-align:top;font-size:10px}
+          .items td:not(:first-child){width:1%;white-space:nowrap}
+          .items td:not(:first-child) .field{text-align:right;margin-left:auto}
+          .items .item-description{min-width:120px;font-size:10.5px}
+          .items .item-value{font-size:10px;font-variant-numeric:tabular-nums}
+          .amount-content{text-align:right;white-space:nowrap}
+          .amount-value{font-weight:700;font-variant-numeric:tabular-nums}
+          .summary{display:flex;justify-content:flex-end;margin-top:22px;margin-bottom:28px}
+          .totals{width:min(100%,310px);border:1px solid var(--line);border-radius:7px;padding:10px 15px;break-inside:avoid}
+          .total-line{display:flex;justify-content:space-between;gap:20px;padding:8px 0;font-size:11px;font-variant-numeric:tabular-nums}
+          .total-line span:first-child{color:var(--muted)}
+          .grand-total{border-top:1px solid var(--line);margin-top:4px;padding-top:13px;font-weight:700;font-size:15px}
+          .grand-total.no-divider,.payable.no-divider{border-top:0}
+          .grand-total span:first-child{color:var(--ink)}
+          .grand-total span:last-child{color:var(--accent)}
+          .payable{border-top:1px solid var(--line);margin-top:3px;padding-top:14px;font-weight:700;font-size:15px}
+          .payable span:last-child{color:var(--accent)}
+          .fiscal-note{margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+          .fiscal-note .field{font-size:10.5px;color:var(--muted)}
+          @page{size:A4;margin:14mm 14mm 15mm}
+          @media print{html,body{width:auto;margin:0;padding:0;background:#fff!important}body{-webkit-print-color-adjust:exact;print-color-adjust:exact}.paper{width:auto;min-height:265mm;margin:0;padding:0}.head,.items tr,.totals{break-inside:avoid}.items thead{display:table-header-group}.items td{padding:7px}}
+          @media screen and (max-width:820px){.paper{width:100%;min-height:100vh;padding:22px 16px 36px}.items-wrap{overflow-x:auto}.items{min-width:560px}.items.is-individual{min-width:700px}}
+          @media screen and (max-width:600px){.head-top{flex-direction:column;align-items:stretch;gap:20px}.invoice-heading{width:100%}.head-info{flex-direction:column}.invoice-dates{margin-left:auto;order:0}.issuer{grid-column:1;grid-row:2}.recipient{grid-column:1;grid-row:3}.items-wrap{overflow:visible;min-width:0}.items,.items.is-individual,.items tbody{display:block;width:100%;min-width:0}.items thead{display:none}.items .concept-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:100%;margin-bottom:12px;padding:12px;border:1px solid var(--line);border-radius:8px}.items td,.items td:first-child,.items td:not(:first-child){display:block;width:auto;min-width:0;padding:0;border:0;white-space:normal}.items td::before{display:block;margin-bottom:4px;color:var(--muted);font-size:9px;font-weight:700;letter-spacing:.3px}.items .col-description{grid-column:1/-1}.items .col-description::before{content:'CONCEPTO'}.items .col-quantity::before{content:'UDS.'}.items .col-unit::before{content:'UNIDAD'}.items .col-price::before{content:'PRECIO'}.items .col-tax::before{content:'IVA %'}.items .col-amount::before{content:'IMPORTE'}.items .col-gross::before{content:'CON IVA'}.items .col-amount,.items .col-gross{padding-top:9px!important;border-top:1px solid var(--line)!important}.items:not(.is-individual) .col-amount{grid-column:1/-1}.items .item-description{min-width:0}.items td:not(:first-child) .field{text-align:left;margin-left:0}.amount-content{text-align:left}}
+        `.replace(/\s+/g, ' ').replace(/\s*([{}:;,>])\s*/g, '$1').replace(/;}/g, '}').trim()
+
+        const title = document.createElement('span')
+        title.textContent = `Factura ${field('factura.numero').value}`
+        return `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${title.innerHTML}</title><style>${css}</style></head><body>${minifyFragment(paper)}</body></html>`
+      }
+
+      function descargarHTML () {
+        saveNow()
+        downloadHTML(staticInvoiceHTML(), `factura_${fileNumber()}.html`)
+      }
+
+      // PDF-GENERATOR-START: sin dependencias, fuentes estándar y compresión opcional.
+      async function createInvoicePDF (data, logo = null) {
+        const pageWidth = 595.28
+        const pageHeight = 841.89
+        const margin = 42
+        const availableWidth = pageWidth - margin * 2
+        const ink = '#18283b'
+        const muted = '#65758a'
+        const lineColor = '#dfe5ed'
+        const accent = data.tema.color
+        const pages = []
+        let commands = []
+        let y = 0
+
+        const round = value => Number(value.toFixed(2))
+        const rgb = hex => [1, 3, 5].map(index => round(parseInt(hex.slice(index, index + 2), 16) / 255)).join(' ')
+        // Métricas WinAnsi de Helvetica y Helvetica-Bold (unidades por 1000 em).
+        // Permiten alinear exactamente a la derecha sin incrustar fuentes en el PDF.
+        const fontWidths = [
+          '278 278 355 556 556 889 667 191 333 333 389 584 278 333 278 278 556 556 556 556 556 556 556 556 556 556 278 278 584 584 584 556 1015 667 667 722 722 667 611 778 722 278 500 667 556 833 722 778 667 778 722 667 611 722 667 944 667 667 611 278 278 278 469 556 333 556 556 500 556 556 278 556 556 222 222 500 222 833 556 556 556 556 333 500 278 556 500 722 500 500 500 334 260 334 584 556 556 556 222 556 333 1000 556 556 333 1000 667 333 1000 556 611 556 556 222 222 333 333 350 556 1000 333 1000 500 333 944 556 500 500 278 333 556 556 556 556 260 556 333 737 370 556 584 333 737 333 400 584 333 333 333 556 537 278 333 333 365 556 834 834 834 611 667 667 667 667 667 667 1000 722 667 667 667 667 278 278 278 278 722 722 778 778 778 778 778 584 778 722 722 722 722 667 667 611 556 556 556 556 556 556 889 500 556 556 556 556 278 278 278 278 556 556 556 556 556 556 556 584 611 556 556 556 556 500 556 500'.split(' ').map(Number),
+          '278 333 474 556 556 889 722 238 333 333 389 584 278 333 278 278 556 556 556 556 556 556 556 556 556 556 333 333 584 584 584 611 975 722 722 722 722 667 611 778 722 278 556 722 611 833 722 778 667 778 722 667 611 722 667 944 667 667 611 333 278 333 584 556 333 556 611 556 611 556 333 611 611 278 278 556 278 889 611 611 611 611 389 556 333 611 556 778 556 556 500 389 280 389 584 556 556 556 278 556 500 1000 556 556 333 1000 667 333 1000 556 611 556 556 278 278 500 500 350 556 1000 333 1000 556 333 944 556 500 556 278 333 556 556 556 556 280 556 333 737 370 556 584 333 737 333 400 584 333 333 333 611 556 278 333 333 365 556 834 834 834 611 722 722 722 722 722 722 1000 722 667 667 667 667 278 278 278 278 722 722 778 778 778 778 778 584 778 722 722 722 722 667 667 611 556 556 556 556 556 556 889 556 556 556 556 556 278 278 278 278 611 611 611 611 611 611 611 584 611 611 611 611 611 556 611 556'.split(' ').map(Number)
+        ]
+        const extras = { '€': 128, '–': 150, '—': 151, '−': 45, '‘': 145, '’': 146, '“': 147, '”': 148, '…': 133, '•': 149, '™': 153 }
+        const winAnsiByte = char => {
+          const code = char.codePointAt(0)
+          return extras[char] ?? ((code >= 32 && code <= 126) || (code >= 160 && code <= 255) ? code : null)
+        }
+        const toWinAnsi = value => {
+          return Array.from(String(value)).map(char => {
+            const byte = winAnsiByte(char)
+            if (byte === null) throw new Error(`El carácter «${char}» no es compatible con el PDF compacto. Puedes descargar la factura en HTML.`)
+            return byte.toString(16).padStart(2, '0')
+          }).join('').toUpperCase()
+        }
+        const estimate = (value, size, bold = false) => Array.from(String(value)).reduce((total, char) => {
+          const byte = winAnsiByte(char)
+          return total + size * (fontWidths[bold ? 1 : 0][byte - 32] ?? 556) / 1000
+        }, 0)
+        const wrap = (value, width, size, bold = false) => {
+          const result = []
+          String(value ?? '').replace(/\r/g, '').split('\n').forEach(paragraph => {
+            if (!paragraph.trim()) { result.push(''); return }
+            let current = ''
+            paragraph.split(/\s+/).filter(Boolean).forEach(word => {
+              const trial = current ? `${current} ${word}` : word
+              if (estimate(trial, size, bold) <= width) { current = trial; return }
+              if (current) result.push(current)
+              current = ''
+              for (const char of word) {
+                if (estimate(current + char, size, bold) > width && current) {
+                  result.push(current)
+                  current = ''
+                }
+                current += char
+              }
+            })
+            if (current) result.push(current)
+          })
+          return result
+        }
+        const drawText = (value, x, top, size = 9, bold = false, color = ink, align = 'left') => {
+          if (!String(value).trim()) return
+          const width = estimate(value, size, bold)
+          const px = align === 'right' ? x - width : x
+          commands.push(`${rgb(color)} rg BT /F${bold ? 2 : 1} ${round(size)} Tf 1 0 0 1 ${round(px)} ${round(pageHeight - top - size)} Tm <${toWinAnsi(value)}> Tj ET`)
+        }
+        const drawLine = (x1, top1, x2, top2, color = lineColor, stroke = .7) => {
+          commands.push(`${rgb(color)} RG ${stroke} w ${round(x1)} ${round(pageHeight - top1)} m ${round(x2)} ${round(pageHeight - top2)} l S`)
+        }
+        const drawBox = (x, top, width, height) => {
+          commands.push(`${rgb(lineColor)} RG .8 w ${round(x)} ${round(pageHeight - top - height)} ${round(width)} ${round(height)} re S`)
+        }
+        const drawBlock = (value, x, top, width, size = 9, bold = false, color = ink, spacing = 3) => {
+          if (!String(value ?? '').trim()) return top
+          const lines = wrap(value, width, size, bold)
+          lines.forEach((line, index) => drawText(line, x, top + index * (size + 3), size, bold, color))
+          return top + lines.length * (size + 3) + spacing
+        }
+        const newPage = continuation => {
+          commands = []
+          pages.push(commands)
+          if (continuation) {
+            drawText(`FACTURA ${data.factura.numero || ''} · continuación`, margin, 37, 10, true, accent)
+            drawLine(margin, 58, pageWidth - margin, 58)
+            y = 73
+          } else {
+            y = 44
+          }
+        }
+
+        newPage(false)
+        const invoice = data.factura
+        const issuer = data.emisor
+        const recipient = data.receptor
+        const issuerX = margin
+        const recipientX = 220
+        const dateX = 398
+        drawText('FACTURA', pageWidth - margin, 43, 20, true, ink, 'right')
+        drawText(invoice.numero || '', pageWidth - margin, 73, 10, true, accent, 'right')
+        if (logo) {
+          const scale = Math.min(120 / logo.width, 55.5 / logo.height)
+          const width = logo.width * scale
+          const height = logo.height * scale
+          commands.push(`q ${round(width)} 0 0 ${round(height)} ${round(issuerX)} ${round(pageHeight - 43 - height)} cm /Logo Do Q`)
+        }
+        drawLine(margin, 114, pageWidth - margin, 114)
+        drawText('EMISOR', issuerX, 136, 8, true, accent)
+        drawText('FACTURAR A', recipientX, 136, 8, true, accent)
+        let issuerTop = 155
+        const issuerWidth = recipientX - issuerX - 16
+        issuerTop = drawBlock(issuer.nombre, issuerX, issuerTop, issuerWidth, 10, true)
+        issuerTop = drawBlock(issuer.nif, issuerX, issuerTop, issuerWidth, 8, false, muted)
+        issuerTop = drawBlock(issuer.direccion, issuerX, issuerTop, issuerWidth, 8, false, muted)
+        issuerTop = drawBlock(issuer.email, issuerX, issuerTop, issuerWidth, 8, false, muted)
+        let recipientTop = 155
+        const recipientWidth = dateX - recipientX - 16
+        recipientTop = drawBlock(recipient.nombre, recipientX, recipientTop, recipientWidth, 10, true)
+        recipientTop = drawBlock(recipient.nif, recipientX, recipientTop, recipientWidth, 8, false, muted)
+        recipientTop = drawBlock(recipient.direccion, recipientX, recipientTop, recipientWidth, 8, false, muted)
+        recipientTop = drawBlock(recipient.pais, recipientX, recipientTop, recipientWidth, 8, false, muted)
+        recipientTop = drawBlock(recipient.email, recipientX, recipientTop, recipientWidth, 8, false, muted)
+        const dateRows = [
+          ['Fecha de emisión', invoice.fecha || '', 155],
+          ['Fecha de operación', invoice.fechaOperacion || '', 173]
+        ]
+        const dateLabelWidth = Math.max(...dateRows.map(([label]) => estimate(label, 7.5)))
+        const dateValueWidth = Math.max(...dateRows.map(([, value]) => estimate(value, 8, true)))
+        const dateLabelX = pageWidth - margin - dateLabelWidth - dateValueWidth - 7
+        dateRows.forEach(([label, value, top]) => {
+          drawText(label, dateLabelX, top, 7.5, false, muted)
+          drawText(value, pageWidth - margin, top, 8, true, ink, 'right')
+        })
+        y = Math.max(issuerTop, recipientTop, 193) + 17
+        drawLine(margin, y, pageWidth - margin, y)
+        y += 25
+
+        const individual = data.impuestos.modoIVA === 'individual'
+        const specs = individual
+          ? [['descripcion', 'CONCEPTO', 171], ['cantidad', 'UDS.', 32], ['unidad', 'UNIDAD', 48], ['precio', 'PRECIO', 58], ['iva', 'IVA %', 36], ['importe', 'IMPORTE', 75], ['importeIVA', 'CON IVA', 91.28]]
+          : [['descripcion', 'CONCEPTO', 236], ['cantidad', 'UDS.', 40], ['unidad', 'UNIDAD', 62], ['precio', 'PRECIO', 80], ['importe', 'IMPORTE', 93.28]]
+        const tableHeader = () => {
+          let x = margin
+          specs.forEach(([key, label, width]) => {
+            drawText(label, key === 'descripcion' ? x + 5 : x + width - 5, y, 7.4, true, ink, key === 'descripcion' ? 'left' : 'right')
+            x += width
+          })
+          y += 22
+          drawLine(margin, y, pageWidth - margin, y, ink, 1.2)
+        }
+        tableHeader()
+
+        let base = 0
+        const groupedTax = new Map()
+        for (const item of data.conceptos) {
+          const rate = individual ? toNumber(item.iva) : toNumber(data.impuestos.ivaGlobal)
+          const priceCents = cents(toNumber(item.cantidad) * toNumber(item.precio))
+          const taxCents = Math.round(priceCents * rate / 100)
+          base += priceCents
+          groupedTax.set(rate, (groupedTax.get(rate) || 0) + taxCents)
+          const amounts = {
+            cantidad: String(item.cantidad), unidad: String(item.unidad), precio: money.format(item.precio),
+            iva: `${rate} %`, importe: format(priceCents), importeIVA: format(priceCents + taxCents)
+          }
+          const descLines = wrap(item.descripcion || '', specs[0][2] - 12, 9.2)
+          if (!descLines.length) descLines.push('')
+          let lineIndex = 0
+          do {
+            if (y > pageHeight - 105) {
+              newPage(true)
+              tableHeader()
+            }
+            const availableLines = Math.max(1, Math.floor((pageHeight - 99 - y - 12) / 12))
+            const portion = descLines.slice(lineIndex, lineIndex + availableLines)
+            const rowHeight = Math.max(25, portion.length * 12 + 12)
+            if (y + rowHeight > pageHeight - 70) {
+              newPage(true)
+              tableHeader()
+              continue
+            }
+            portion.forEach((line, index) => drawText(line, margin + 5, y + 7 + index * 12, 9.2))
+            if (lineIndex === 0) {
+              let x = margin + specs[0][2]
+              specs.slice(1).forEach(([key, label, width]) => {
+                drawText(amounts[key], x + width - 5, y + 7, 8.4, key === 'importe' || key === 'importeIVA', ink, 'right')
+                x += width
+              })
+            }
+            y += rowHeight
+            drawLine(margin, y, pageWidth - margin, y)
+            lineIndex += portion.length
+          } while (lineIndex < descLines.length)
+        }
+
+        const vat = Array.from(groupedTax.values()).reduce((sum, value) => sum + value, 0)
+        const gross = base + vat
+        const rateIRPF = toNumber(data.impuestos.irpf)
+        const withheld = Math.round(base * rateIRPF / 100)
+        const taxLines = Array.from(groupedTax).sort((a, b) => a[0] - b[0])
+          .filter(([, value]) => value !== 0)
+          .map(([rate, value]) => [`IVA (${rate} %)`, format(value)])
+        const totalRows = [
+          ...(vat ? [['Base imponible', format(base)], ...taxLines] : []),
+          [rateIRPF ? 'Total factura' : 'TOTAL', format(gross), 'total'],
+          ...(rateIRPF ? [[`Retención IRPF (${rateIRPF} %)`, `-${format(Math.abs(withheld))}`], ['Total a pagar', format(gross - withheld), 'total']] : [])
+        ]
+        const summaryHeight = totalRows.length * 24 + 18
+        const noteLines = String(invoice.notaFiscal || '').trim() ? wrap(invoice.notaFiscal, availableWidth - 4, 9) : []
+        const noteOnSamePage = noteLines.length <= 35
+        const noteHeight = noteOnSamePage && noteLines.length ? 25 + noteLines.length * 12 : 0
+        const noteTop = pageHeight - margin - noteHeight
+        if (y + 20 + summaryHeight + 28 > noteTop) newPage(true)
+        const boxX = pageWidth - margin - 236
+        const boxTop = y + 19
+        drawBox(boxX, boxTop, 236, summaryHeight)
+        let rowTop = boxTop + 10
+        totalRows.forEach(([label, value, kind], index) => {
+          if (kind === 'total' && index !== 0 && !(vat === 0 && index === 0)) {
+            drawLine(boxX + 12, rowTop - 3, boxX + 224, rowTop - 3)
+          }
+          drawText(label, boxX + 13, rowTop + 2, kind === 'total' ? 12 : 9, kind === 'total', kind === 'total' ? ink : muted)
+          drawText(value, boxX + 223, rowTop + 2, kind === 'total' ? 12 : 9, kind === 'total', kind === 'total' ? accent : ink, 'right')
+          rowTop += 24
+        })
+        if (noteOnSamePage && noteLines.length) {
+          drawLine(margin, noteTop, pageWidth - margin, noteTop)
+          drawText('NOTA FISCAL', margin, noteTop + 10, 8, true, accent)
+          noteLines.forEach((line, index) => drawText(line, margin, noteTop + 26 + index * 12, 9, false, muted))
+        } else if (noteLines.length) {
+          for (let index = 0; index < noteLines.length; index += 40) {
+            newPage(true)
+            const segment = noteLines.slice(index, index + 40)
+            const last = index + 40 >= noteLines.length
+            const segmentTop = last ? pageHeight - margin - (25 + segment.length * 12) : 93
+            drawLine(margin, segmentTop, pageWidth - margin, segmentTop)
+            drawText('NOTA FISCAL', margin, segmentTop + 10, 8, true, accent)
+            segment.forEach((line, offset) => drawText(line, margin, segmentTop + 26 + offset * 12, 9, false, muted))
+          }
+        }
+
+        const bytes = string => Uint8Array.from(string, character => character.charCodeAt(0) & 255)
+        const contentStream = async content => {
+          const uncompressed = bytes(content)
+          if (typeof CompressionStream !== 'function') return { bytes: uncompressed, filter: '' }
+          try {
+            const stream = new Blob([uncompressed]).stream().pipeThrough(new CompressionStream('deflate'))
+            const compressed = new Uint8Array(await new Response(stream).arrayBuffer())
+            if (compressed.length + 40 < uncompressed.length) return { bytes: compressed, filter: '/Filter /FlateDecode ' }
+          } catch {}
+          return { bytes: uncompressed, filter: '' }
+        }
+        const objects = [null]
+        const reserve = () => { objects.push(null); return objects.length - 1 }
+        const catalogID = reserve()
+        const pagesID = reserve()
+        const regularFontID = reserve()
+        const boldFontID = reserve()
+        const logoID = logo ? reserve() : 0
+        objects[catalogID] = `<< /Type /Catalog /Pages ${pagesID} 0 R >>`
+        objects[regularFontID] = '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>'
+        objects[boldFontID] = '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>'
+        if (logo) objects[logoID] = [
+          `<< /Type /XObject /Subtype /Image /Width ${logo.width} /Height ${logo.height} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${logo.bytes.length} >>\nstream\n`,
+          logo.bytes, '\nendstream'
+        ]
+        const pageIDs = []
+        for (const page of pages) {
+          const content = await contentStream(page.join('\n'))
+          const contentID = reserve()
+          const pageID = reserve()
+          objects[contentID] = [`<< /Length ${content.bytes.length} ${content.filter}>>\nstream\n`, content.bytes, '\nendstream']
+          objects[pageID] = `<< /Type /Page /Parent ${pagesID} 0 R /MediaBox [0 0 ${pageWidth} ${pageHeight}] /Resources << /Font << /F1 ${regularFontID} 0 R /F2 ${boldFontID} 0 R >> ${logo ? `/XObject << /Logo ${logoID} 0 R >>` : ''} >> /Contents ${contentID} 0 R >>`
+          pageIDs.push(pageID)
+        }
+        objects[pagesID] = `<< /Type /Pages /Kids [${pageIDs.map(id => `${id} 0 R`).join(' ')}] /Count ${pageIDs.length} >>`
+        const parts = []
+        const offsets = [0]
+        let length = 0
+        const push = part => {
+          const data = typeof part === 'string' ? bytes(part) : part
+          parts.push(data)
+          length += data.length
+        }
+        push('%PDF-1.4\n%\xE2\xE3\xCF\xD3\n')
+        for (let id = 1; id < objects.length; id++) {
+          offsets[id] = length
+          push(`${id} 0 obj\n`)
+          const entry = objects[id]
+          if (Array.isArray(entry)) entry.forEach(push)
+          else push(entry)
+          push('\nendobj\n')
+        }
+        const xref = length
+        push(`xref\n0 ${objects.length}\n0000000000 65535 f \n`)
+        for (let id = 1; id < objects.length; id++) push(`${String(offsets[id]).padStart(10, '0')} 00000 n \n`)
+        push(`trailer\n<< /Size ${objects.length} /Root ${catalogID} 0 R >>\nstartxref\n${xref}\n%%EOF`)
+        return new Blob(parts, { type: 'application/pdf' })
+      }
+      // PDF-GENERATOR-END
+
+      async function logoForPDF () {
+        const element = logoHost.firstElementChild
+        if (!element) return null
+        const isSVG = element.localName.toLowerCase() === 'svg'
+        const objectURL = isSVG
+          ? URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(element)], { type: 'image/svg+xml' }))
+          : null
+        try {
+          const img = new Image()
+          await new Promise((resolve, reject) => {
+            img.onload = resolve
+            img.onerror = () => reject(new Error('No se ha podido incorporar el logotipo al PDF'))
+            img.src = objectURL || element.src
+          })
+          const scale = Math.min(1, 480 / img.naturalWidth, 222 / img.naturalHeight)
+          const canvas = document.createElement('canvas')
+          canvas.width = Math.max(1, Math.round(img.naturalWidth * scale))
+          canvas.height = Math.max(1, Math.round(img.naturalHeight * scale))
+          const context = canvas.getContext('2d')
+          if (!context) throw new Error('Este navegador no permite convertir el logotipo')
+          context.fillStyle = '#ffffff'
+          context.fillRect(0, 0, canvas.width, canvas.height)
+          context.drawImage(img, 0, 0, canvas.width, canvas.height)
+          const jpeg = canvas.toDataURL('image/jpeg', .85)
+          if (!jpeg.startsWith('data:image/jpeg;base64,')) throw new Error('Conversión JPEG no disponible')
+          const decoded = atob(jpeg.split(',')[1])
+          return { width: canvas.width, height: canvas.height, bytes: Uint8Array.from(decoded, char => char.charCodeAt(0)) }
+        } finally {
+          if (objectURL) URL.revokeObjectURL(objectURL)
+        }
+      }
+
+      async function descargarPDF () {
+        const button = document.getElementById('print')
+        button.disabled = true
+        button.textContent = 'Generando PDF…'
+        try {
+          saveNow()
+          const pdf = await createInvoicePDF(getDatos(), await logoForPDF())
+          const url = URL.createObjectURL(pdf)
+          const link = document.createElement('a')
+          link.href = url
+          link.download = `factura_${fileNumber()}.pdf`
+          document.body.append(link)
+          link.click()
+          link.remove()
+          setTimeout(() => URL.revokeObjectURL(url), 1000)
+        } catch (error) {
+          window.alert(`No se pudo generar el PDF: ${error.message}`)
+        } finally {
+          button.disabled = false
+          button.textContent = 'Descargar PDF'
+        }
+      }
+
+      concepts.addEventListener('input', event => {
+        if (event.target.tagName === 'TEXTAREA') fitTextarea(event.target)
+        fitItemInput(event.target)
+        recalcular()
+        scheduleSave()
+      })
+      concepts.addEventListener('click', event => {
+        const button = event.target.closest('[data-action]')
+        if (!button || button.disabled) return
+        const row = button.closest('tr')
+        const action = button.dataset.action
+        if (action === 'add-below') {
+          const added = addConcepto({}, { after: row })
+          cell(added, 'descripcion').focus()
+          return
+        }
+        if (action === 'remove') {
+          const next = row.nextElementSibling || row.previousElementSibling
+          row.remove()
+          if (next) cell(next, 'descripcion').focus()
+        } else if (action === 'up' && row.previousElementSibling) {
+          row.previousElementSibling.before(row)
+          button.focus()
+        } else if (action === 'down' && row.nextElementSibling) {
+          row.nextElementSibling.after(row)
+          button.focus()
+        }
+        refreshRowActions()
+        recalcular()
+        scheduleSave()
+      })
+      fields.forEach(element => element.addEventListener('input', event => {
+        if (event.target.tagName === 'TEXTAREA') fitTextarea(event.target)
+        recalcular()
+        scheduleSave()
+      }))
+      ivaIndividual.addEventListener('change', () => {
+        syncIVAMode()
+        recalcular()
+        scheduleSave()
+      })
+      irpfSelect.addEventListener('change', () => {
+        irpfCustom.hidden = irpfSelect.value !== 'custom'
+        if (irpfSelect.value !== 'custom') irpfCustom.value = irpfSelect.value
+        recalcular()
+        scheduleSave()
+      })
+      accentPicker.addEventListener('input', () => setColor(accentPicker.value))
+      logoFile.addEventListener('change', async () => {
+        try {
+          await loadLogo(logoFile.files[0])
+        } catch (error) {
+          logoStatus.textContent = error.message
+          logoStatus.hidden = false
+        } finally {
+          logoFile.value = ''
+        }
+      })
+      removeLogoButton.addEventListener('click', removeLogo)
+      document.getElementById('forget').addEventListener('click', forgetLast)
+      document.querySelectorAll('[data-today]').forEach(button => {
+        button.addEventListener('click', () => {
+          const target = field(button.dataset.today)
+          target.value = new Date().toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' })
+          recalcular()
+          scheduleSave()
+        })
+      })
+      document.getElementById('print').addEventListener('click', descargarPDF)
+      document.getElementById('export-html').addEventListener('click', descargarHTML)
+      document.getElementById('save-template').addEventListener('click', descargarPlantilla)
+      function toggleInfo (open) {
+        infoHelp.classList.toggle('is-open', open)
+        infoTrigger.setAttribute('aria-expanded', String(open))
+      }
+      infoTrigger.addEventListener('click', () => toggleInfo(!infoHelp.classList.contains('is-open')))
+      document.addEventListener('pointerdown', event => {
+        if (!infoHelp.contains(event.target)) toggleInfo(false)
+      })
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') toggleInfo(false)
+        if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 's') {
+          event.preventDefault()
+          descargarPlantilla()
+        }
+      })
+      window.addEventListener('beforeprint', fitAllTextareas)
+      window.addEventListener('pagehide', () => {
+        if (touched) saveNow()
+      })
+
+      window.Factura = {
+        setDatos, getDatos, addConcepto, setConceptos, recalcular,
+        descargarHTML, descargarPlantilla, descargarPDF, setColor, setLogoSVG, setLogoDataURL,
+        removeLogo, recuperarUltima: restoreLast, guardarLocal: saveNow
+      }
+      hydrating = true
+      syncIVAMode()
+      syncIRPFSelector()
+      setColor(accentPicker.value)
+      removeLogoButton.hidden = !logoHost.children.length
+      addLogoLabel.hidden = !!logoHost.children.length
+      logoHost.hidden = !logoHost.children.length
+      fitAllTextareas()
+      fitAllItemInputs()
+      refreshRowActions()
+      recalcular()
+      hydrating = false
+      if (document.documentElement.dataset.savedInvoice === 'true') {
+        reportIssue('')
+      } else {
+        restoreLast()
+      }
+    })()
+  </script>
+</body>
+</html>
