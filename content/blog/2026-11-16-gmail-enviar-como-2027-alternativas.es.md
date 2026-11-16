@@ -19,7 +19,7 @@ Aquí te cuento **cómo saber si te afecta** y **qué opciones tienes**, desde n
 - **Condición para seguir con tu dominio:** si quieres recibir en Gmail (15 GB gratis) y **enviar con tu dominio**, tendrás que usar **una app de correo, en ordenador y móvil**. **Desde la web de Gmail ya no podrás.**
 - **Única excepción:** **Google Workspace** (de pago). Otros servicios todo en uno, como **Microsoft 365**, también lo resuelven.
 - **Gratis:** servicio de envío (SMTP2GO) + una app. La contraseña de aplicación de Google solo hace falta en algunas apps.
-- **¿Prefieres no complicarte?** [Te lo configuramos](#quiero-que-me-lo-configuréis).
+- **¿Prefieres no complicarte?** [Te lo configuramos](#quiero-que-me-lo-configureis).
 
 ## Qué cambia exactamente
 
@@ -56,7 +56,7 @@ La alternativa gratuita separa las dos tareas: **recibir** sigue como hasta ahor
 Tienes **todos los pasos, dispositivo por dispositivo**, en la guía [Correo gratis con tu dominio](/correo-gratis-con-tu-dominio/):
 
 - [Crear la cuenta y verificar tu dominio](/correo-gratis-con-tu-dominio/#paso-1-crear-la-cuenta-y-verificar-tu-dominio)
-- [Cuándo necesitas la contraseña de aplicación de Google](/correo-gratis-con-tu-dominio/#paso-3-contraseña-de-aplicación-de-google-solo-si-tu-app-la-pide)
+- [Cuándo necesitas la contraseña de aplicación de Google](/correo-gratis-con-tu-dominio/#paso-3-contrasena-de-aplicacion-de-google-solo-si-tu-app-la-pide)
 - [Configurar tu app (Android, iPhone, Mac, Thunderbird)](/correo-gratis-con-tu-dominio/#leer-y-contestar-configura-tu-app)
 - [Alternativas: Brevo y el SMTP de tu proveedor de dominio](/correo-gratis-con-tu-dominio/#alternativa-gratuita-brevo)
 
@@ -71,7 +71,7 @@ Si prefieres no montar nada, hay servicios de pago que **lo dan todo hecho** (we
 - **Google Workspace**: «Enviar como» **no se retira** y es la única forma de seguir enviando con tu dominio desde la web de Gmail. Business Starter: **6,80 €/usuario/mes con compromiso anual, 8,10 € mes a mes** ([precios de Google](https://workspace.google.com/intl/es/business/)).
 - **Microsoft 365 Empresa Básico**: Outlook y Exchange con tu dominio, alrededor de **6 €/usuario/mes (sin IVA, con pago anual)** ([Microsoft](https://www.microsoft.com/es-es/microsoft-365/business/microsoft-365-business-basic)).
 
-Hay que contratar, verificar el dominio, **cambiar los registros MX**, migrar el histórico si quieres conservarlo y configurar firmas, alias y dispositivos. Más limpio, pero de pago y con más trabajo inicial. Los precios cambian: confírmalos. [Te lo configuramos](#quiero-que-me-lo-configuréis).
+Hay que contratar, verificar el dominio, **cambiar los registros MX**, migrar el histórico si quieres conservarlo y configurar firmas, alias y dispositivos. Más limpio, pero de pago y con más trabajo inicial. Los precios cambian: confírmalos. [Te lo configuramos](#quiero-que-me-lo-configureis).
 
 ## Quiero que me lo configuréis
 

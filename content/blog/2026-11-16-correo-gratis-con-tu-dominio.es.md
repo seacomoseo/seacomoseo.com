@@ -16,8 +16,8 @@ date: 2026-11-16 00:00:00
 - **Gratis:** recibes en Gmail (15 GB gratis) y envías con tu dominio usando un servicio de envío gratuito (SMTP2GO).
 - **La condición clave:** para **enviar con tu dominio** tienes que usar **una app de correo, en el ordenador y en el móvil**. **Desde la web de Gmail ya no podrás** (a partir de enero de 2027), que es justo donde mucha gente está acostumbrada a hacerlo.
 - **La única excepción** para seguir usando la web de Gmail con tu dominio es **Google Workspace** (de pago).
-- **Contraseña de aplicación de Google:** no siempre hace falta. Solo es obligatoria en algunas apps (por ejemplo la de Gmail para Android); en otras te basta con iniciar sesión con tu cuenta de Google. Mira [cuándo la necesitas](#paso-3-contraseña-de-aplicación-de-google-solo-si-tu-app-la-pide).
-- **Si prefieres no montar nada:** servicios de pago que lo dan todo hecho, web y apps incluidas ([Google Workspace o Microsoft 365](#opciones-todo-en-uno-google-workspace-y-microsoft-365)), o que [te lo configuremos nosotros](#quiero-que-me-lo-configuréis).
+- **Contraseña de aplicación de Google:** no siempre hace falta. Solo es obligatoria en algunas apps (por ejemplo la de Gmail para Android); en otras te basta con iniciar sesión con tu cuenta de Google. Mira [cuándo la necesitas](#paso-3-contrasena-de-aplicacion-de-google-solo-si-tu-app-la-pide).
+- **Si prefieres no montar nada:** servicios de pago que lo dan todo hecho, web y apps incluidas ([Google Workspace o Microsoft 365](#opciones-todo-en-uno-google-workspace-y-microsoft-365)), o que [te lo configuremos nosotros](#quiero-que-me-lo-configureis).
 
 ## La idea: separar recibir y enviar
 
