@@ -1,7 +1,7 @@
 ---
 slug: correo-gratis-con-tu-dominio
 title: "Correo gratis con tu dominio: recibe en Gmail y envía como info@tunegocio.com"
-img: /u/blog/correo-gratis-con-tu-dominio.jpg
+img: /u/blog/correo-gratis-con-tu-dominio.webp
 author: admin
 toc: true
 date: 2026-11-16 00:00:00

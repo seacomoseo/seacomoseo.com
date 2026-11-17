@@ -1,7 +1,7 @@
 ---
 slug: gmail-enviar-como-2027-alternativas
 title: "Gmail quita «Enviar como» en enero de 2027: qué hacer si usas tu correo con dominio"
-img: /u/blog/gmail-enviar-como-2027-alternativas.jpg
+img: /u/blog/gmail-enviar-como-2027-alternativas.webp
 author: admin
 toc: true
 date: 2026-11-16 00:00:00
