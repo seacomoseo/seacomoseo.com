@@ -20,13 +20,16 @@ boxes:
   - url: https://purotrajin.com/
     label: purotrajin.com
     img: /u/portfolio/purotrajin.com.svg
+  - url: https://cuprico.com/
+    label: cuprico.com
+    img: /u/portfolio/cuprico.com.svg
   - url: https://academiamanuruiz.es/
     label: academiamanuruiz.es
     img: /u/portfolio/academiamanuruiz.es.svg
   - url: https://eli3a.netlify.app/
     label: eli3a.com
     img: /u/portfolio/eli3a.com.svg
-  - url: https://tabanko825.com/
+  - url: https://tabanko825.netlify.app/
     label: tabanko825.com
     img: /u/portfolio/tabanko825.com.svg
   - url: https://saudacepiercing.com/
@@ -68,9 +71,6 @@ boxes:
   - url: https://tubrujula.es/
     label: tubrujula.es
     img: /u/portfolio/tubrujula.es.svg
-  - url: https://technimur.es/
-    label: technimur.es
-    img: /u/portfolio/technimur.es.svg
   - url: https://backtoroots.es/
     label: backtoroots.es
     img: /u/portfolio/backtoroots.es.svg
